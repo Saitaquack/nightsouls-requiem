@@ -14,9 +14,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.saita.nightsoulsmod.common.world.OreGen;
-import com.saita.nightsoulsmod.core.init.*;
+import com.saita.nightsoulsmod.init.*;
 import com.saita.nightsoulsmod.util.ModelProperties;
+import com.saita.nightsoulsmod.world.OreGen;
 
 @Mod(NightSoulsMod.MOD_ID)
 public class NightSoulsMod
@@ -41,7 +41,7 @@ public class NightSoulsMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-    	LOGGER.info("Hello from NightSouls Mod Requiem 1.0!");
+    	LOGGER.info("Hello from NightSouls Mod Requiem 0.1!");
     	LOGGER.info("Loading Star Gatherer's powers...");
     	LOGGER.info("Loading Hellfire Emperor's reign...");
     	LOGGER.info("Loading Hallowed Paladin's might...");

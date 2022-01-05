@@ -1,0 +1,189 @@
+package com.saita.nightsoulsmod.init;
+
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableMap;
+import com.saita.nightsoulsmod.NightSoulsMod;
+import com.saita.nightsoulsmod.world.StructuresConstants;
+import com.saita.nightsoulsmod.world.structures.*;
+
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.world.gen.feature.NoFeatureConfig;
+import net.minecraft.world.gen.feature.structure.Structure;
+import net.minecraft.world.gen.settings.DimensionStructuresSettings;
+import net.minecraft.world.gen.settings.StructureSeparationSettings;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StructureInit {
+	
+	public static final DeferredRegister<Structure<?>> STRUCTURES =
+            DeferredRegister.create(ForgeRegistries.STRUCTURE_FEATURES, NightSoulsMod.MOD_ID);
+
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_CAMP = STRUCTURES.register("nightsouls_camp", NightSoulsCampStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_HOUSE = STRUCTURES.register("nightsouls_house", NightSoulsHouseStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> CRANE_BATTLE_TOWER = STRUCTURES.register("crane_battle_tower", CraneBattleTowerStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_FOSSIL = STRUCTURES.register("dragon_fossil", DragonFossilStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> CRANE_FORGE = STRUCTURES.register("crane_forge", CraneForgeStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_FORGE = STRUCTURES.register("dragon_forge", DragonForgeStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> MIIZEAL_ALTAR = STRUCTURES.register("miizeal_altar", MiizealAltarStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> SAITA_FLOATING_ISLAND = STRUCTURES.register("saita_floating_island", SaitaFloatingIslandStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_TEMPLE = STRUCTURES.register("nightsouls_temple", NightSoulsTempleStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_FINAL_CASTLE = STRUCTURES.register("nightsouls_final_castle", NightSoulsFinalCastleStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_FINAL_CASTLE_ISLAND = STRUCTURES.register("nightsouls_final_castle_island", NightSoulsFinalCastleIslandStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_BARN = STRUCTURES.register("nightsouls_barn", NightSoulsBarnStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_MANSION = STRUCTURES.register("nightsouls_mansion", NightSoulsMansionStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> SKY_BASE = STRUCTURES.register("sky_base", SkyBaseStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> A_NORMAL_CHURCH = STRUCTURES.register("a_normal_church", ANormalChurchStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> A_NORMAL_VILLAGE = STRUCTURES.register("a_normal_village", ANormalVillageStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_ISLANDS = STRUCTURES.register("nightsouls_islands", NightSoulsIslandsStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> GRAVEYARD = STRUCTURES.register("graveyard", GraveyardStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> BASTI_FARM = STRUCTURES.register("basti_farm", BastiFarmStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> BASTI_LAB = STRUCTURES.register("basti_lab", BastiLabStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> FREDDY_FAZBEAR_PIZZA = STRUCTURES.register("freddy_fazbear_pizza", FreddyFazbearPizzaStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> WEREWOLF_CAVE = STRUCTURES.register("werewolf_cave", WerewolfCaveStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> MELDYA_LAKE = STRUCTURES.register("meldya_lake", MeldyaLakeStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> DECUBE_HOUSE = STRUCTURES.register("decube_house", DecubeHouseStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> DECUBE_HOUSE2 = STRUCTURES.register("decube_house2", DecubeHouse2Structure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> ODYSSEY_TOP = STRUCTURES.register("odyssey_top", OdysseyTopStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> ODYSSEY_BOTTOM = STRUCTURES.register("odyssey_bottom", OdysseyBottomStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_TOP = STRUCTURES.register("dragon_statue_top", DragonStatueTopStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_BOTTOM = STRUCTURES.register("dragon_statue_bottom", DragonStatueBottomStructure::new);
+    
+    
+    public static final RegistryObject<Structure<NoFeatureConfig>> PARAGONIC_CORE = STRUCTURES.register("paraconic_core", ParagonicCoreStructure::new);
+    
+
+    //Saita treasure room
+    //Miizeal treasure room
+    //Crane treasure room
+    //Basti treasure room
+    //Power Moon
+    //Celestial Emerald
+    //Lucky Block
+
+
+
+    /* average distance apart in chunks between spawn attempts */
+    /* minimum distance apart in chunks between spawn attempts. MUST BE LESS THAN ABOVE VALUE*/
+    /* this modifies the seed of the structure so no two structures always spawn over each-other.
+    Make this large and unique. */
+    public static void setupStructures() {
+        setupMapSpacingAndLand(NIGHTSOULS_CAMP.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 134218728), true);
+        setupMapSpacingAndLand(NIGHTSOULS_HOUSE.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 134217728), true);
+        setupMapSpacingAndLand(CRANE_BATTLE_TOWER.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 134217723), true);
+        setupMapSpacingAndLand(DRAGON_FOSSIL.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 134217713), false);
+        setupMapSpacingAndLand(CRANE_FORGE.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 1343271914), true);
+        setupMapSpacingAndLand(DRAGON_FORGE.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 1343272014), true);
+        setupMapSpacingAndLand(MIIZEAL_ALTAR.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 666666666), true);
+        setupMapSpacingAndLand(SAITA_FLOATING_ISLAND.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 134217792), false);
+        setupMapSpacingAndLand(NIGHTSOULS_TEMPLE.get(), new StructureSeparationSettings(StructuresConstants.insaneMax, StructuresConstants.insaneMin, 134327928), false);
+        setupMapSpacingAndLand(NIGHTSOULS_FINAL_CASTLE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, StructuresConstants.castleSeed), false);
+        setupMapSpacingAndLand(NIGHTSOULS_FINAL_CASTLE_ISLAND.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, StructuresConstants.castleSeed), false);
+        setupMapSpacingAndLand(NIGHTSOULS_BARN.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 1344321928), true);
+        setupMapSpacingAndLand(NIGHTSOULS_MANSION.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 143227728), false);
+        setupMapSpacingAndLand(SKY_BASE.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 136328728), false);
+        setupMapSpacingAndLand(A_NORMAL_CHURCH.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 1445666999), false);
+        setupMapSpacingAndLand(A_NORMAL_VILLAGE.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 145109928), false);
+        setupMapSpacingAndLand(NIGHTSOULS_ISLANDS.get(), new StructureSeparationSettings(StructuresConstants.insaneMax, StructuresConstants.insaneMin, 158639571), false);
+        setupMapSpacingAndLand(GRAVEYARD.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 1346662014), false);
+        setupMapSpacingAndLand(BASTI_FARM.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 134218253), true);
+        setupMapSpacingAndLand(BASTI_LAB.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 134218228), true);
+        setupMapSpacingAndLand(FREDDY_FAZBEAR_PIZZA.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 19871987), false);
+        setupMapSpacingAndLand(WEREWOLF_CAVE.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 676717723), true);
+        setupMapSpacingAndLand(MELDYA_LAKE.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 777777723), true);
+        setupMapSpacingAndLand(DECUBE_HOUSE.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 934256728), false);
+        setupMapSpacingAndLand(DECUBE_HOUSE2.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 934256722), false);
+        setupMapSpacingAndLand(ODYSSEY_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.odysseySeed), false);
+        setupMapSpacingAndLand(ODYSSEY_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.odysseySeed), false);
+        setupMapSpacingAndLand(DRAGON_STATUE_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
+        setupMapSpacingAndLand(DRAGON_STATUE_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
+        
+        
+        setupMapSpacingAndLand(PARAGONIC_CORE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, 122377928), true);
+
+
+    }
+
+    /**
+     * Adds the provided structure to the registry, and adds the separation settings.
+     * The rarity of the structure is determined based on the values passed into
+     * this method in the structureSeparationSettings argument.
+     * This method is called by setupStructures above.
+     **/
+    public static <F extends Structure<?>> void setupMapSpacingAndLand(F structure, StructureSeparationSettings structureSeparationSettings,
+                                                                       boolean transformSurroundingLand) {
+        //add our structures into the map in Structure class
+        Structure.NAME_STRUCTURE_BIMAP.put(structure.getRegistryName().toString(), structure);
+
+        /*
+         * Whether surrounding land will be modified automatically to conform to the bottom of the structure.
+         * Basically, it adds land at the base of the structure like it does for Villages and Outposts.
+         * Doesn't work well on structure that have pieces stacked vertically or change in heights.
+         *
+         */
+        if (transformSurroundingLand) {
+            Structure.field_236384_t_ = ImmutableList.<Structure<?>>builder()
+                    .addAll(Structure.field_236384_t_)
+                    .add(structure)
+                    .build();
+        }
+
+        /*
+         * This is the map that holds the default spacing of all structures.
+         * Always add your structure to here so that other mods can utilize it if needed.
+         *
+         * However, while it does propagate the spacing to some correct dimensions from this map,
+         * it seems it doesn't always work for code made dimensions as they read from this list beforehand.
+         *
+         * Instead, we will use the WorldEvent.Load event in ModWorldEvents to add the structure
+         * spacing from this list into that dimension or to do dimension blacklisting properly.
+         * We also use our entry in DimensionStructuresSettings.DEFAULTS in WorldEvent.Load as well.
+         *
+         * DEFAULTS requires AccessTransformer  (See resources/META-INF/accesstransformer.cfg)
+         */
+        DimensionStructuresSettings.field_236191_b_ =
+                ImmutableMap.<Structure<?>, StructureSeparationSettings>builder()
+                        .putAll(DimensionStructuresSettings.field_236191_b_)
+                        .put(structure, structureSeparationSettings)
+                        .build();
+
+        /*
+         * There are very few mods that relies on seeing your structure in the
+         * noise settings registry before the world is made.
+         *
+         * You may see some mods add their spacings to DimensionSettings.BUILTIN_OVERWORLD instead of the
+         * NOISE_GENERATOR_SETTINGS loop below but that field only applies for the default overworld and
+         * won't add to other worldtypes or dimensions (like amplified or Nether).
+         * So yeah, don't do DimensionSettings.BUILTIN_OVERWORLD. Use the NOISE_GENERATOR_SETTINGS loop
+         * below instead if you must.
+         */
+        WorldGenRegistries.NOISE_SETTINGS.getEntries().forEach(settings -> {
+            Map<Structure<?>, StructureSeparationSettings> structureMap =
+                    settings.getValue().getStructures().func_236195_a_();
+            /*
+             * Pre-caution in case a mod makes the structure map immutable like datapacks do.
+             * I take no chances myself. You never know what another mods does...
+             *
+             * structureConfig requires AccessTransformer  (See resources/META-INF/accesstransformer.cfg)
+             */
+            if (structureMap instanceof ImmutableMap) {
+                Map<Structure<?>, StructureSeparationSettings> tempMap = new HashMap<>(structureMap);
+                tempMap.put(structure, structureSeparationSettings);
+                settings.getValue().getStructures().func_236195_a_();
+
+            } else {
+                structureMap.put(structure, structureSeparationSettings);
+            }
+        });
+    }
+
+    public static void register(IEventBus eventBus) {
+        STRUCTURES.register(eventBus);
+    }
+
+}

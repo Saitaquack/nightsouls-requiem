@@ -1,7 +1,7 @@
 package com.saita.nightsoulsmod.util;
 
 import com.saita.nightsoulsmod.NightSoulsMod;
-import com.saita.nightsoulsmod.core.init.BlockInit;
+import com.saita.nightsoulsmod.init.BlockInit;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
