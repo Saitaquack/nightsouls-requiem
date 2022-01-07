@@ -27,7 +27,7 @@ public class CraniteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§fFull set bonus : §7Infinite Speed I. Immunity to Poison and Nausea. Reduced cooldowns to Amp It Up and Adaptive Shield."));			
+	tooltip.add(new StringTextComponent("Â§fFull set bonus : Â§7Infinite Speed I. Immunity to Poison and Nausea. Reduced cooldowns to Amp It Up and Adaptive Shield."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

@@ -20,7 +20,7 @@ public class BlankMusicDisc extends Item {
 	  public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	  {
 	    	
-	    tooltip.add(new StringTextComponent("ง7Used to craft NightSouls Music Discs"));
+	    tooltip.add(new StringTextComponent("ยง7Used to craft NightSouls Music Discs"));
 	    super.addInformation(stack, worldIn, tooltip, flagIn);
 	   }  
 

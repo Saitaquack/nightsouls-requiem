@@ -34,7 +34,7 @@ public class ReinhardtHammer extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7HAMMER DOWN !"));
+    tooltip.add(new StringTextComponent("ยง7HAMMER DOWN !"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

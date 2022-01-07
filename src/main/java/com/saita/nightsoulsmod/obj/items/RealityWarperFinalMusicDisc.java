@@ -35,7 +35,7 @@ public class RealityWarperFinalMusicDisc extends MusicDiscItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("§a"+tooltip.get(0).getString()+"§r"));
+	tooltip.set(0, new StringTextComponent("Â§a"+tooltip.get(0).getString()+"ï¿½r"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

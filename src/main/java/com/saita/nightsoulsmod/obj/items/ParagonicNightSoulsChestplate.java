@@ -27,8 +27,8 @@ public class ParagonicNightSoulsChestplate extends ParagonicNightSoulsArmor {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง4Let them taste my true demonic wrath."));
+	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง4Let them taste my true demonic wrath."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

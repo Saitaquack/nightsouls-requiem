@@ -39,8 +39,8 @@ public class HellFireEmperorTrident extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7Feel the wrath of the Hellfire Emperor ! Sometimes grants you a very powerful strength effect"));
+	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7Feel the wrath of the Hellfire Emperor ! Sometimes grants you a very powerful strength effect"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

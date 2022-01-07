@@ -40,7 +40,7 @@ public class NightSoulsCharm extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7While in your inventory, if you are below 2 hearts, you will get temporary invincibility, regeneration and speed. If you fall into the void, you will get teleported back to safety and gain the same buffs. The item gets consumed once it has saved you once."));
+    tooltip.add(new StringTextComponent("ยง7While in your inventory, if you are below 2 hearts, you will get temporary invincibility, regeneration and speed. If you fall into the void, you will get teleported back to safety and gain the same buffs. The item gets consumed once it has saved you once."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

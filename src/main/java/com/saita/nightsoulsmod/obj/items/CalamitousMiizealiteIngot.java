@@ -27,8 +27,8 @@ public class CalamitousMiizealiteIngot extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("ง7Pain, agony and sins are coming out of it. You also feel like you are being watched..."));	
-	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
+	tooltip.add(new StringTextComponent("ยง7Pain, agony and sins are coming out of it. You also feel like you are being watched..."));	
+	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

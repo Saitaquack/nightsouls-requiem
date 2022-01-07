@@ -42,7 +42,7 @@ public class PrimalRage extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ง7Gain immense health instantly, and jump super high. Cooldown : 120 seconds"));
+	   tooltip.add(new StringTextComponent("ยง7Gain immense health instantly, and jump super high. Cooldown : 120 seconds"));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

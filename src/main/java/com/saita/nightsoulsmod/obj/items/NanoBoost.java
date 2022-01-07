@@ -42,7 +42,7 @@ public class NanoBoost extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ง7Makes you very fast, strong and resistant for a while. Cooldown : 120 seconds"));
+	   tooltip.add(new StringTextComponent("ยง7Makes you very fast, strong and resistant for a while. Cooldown : 120 seconds"));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

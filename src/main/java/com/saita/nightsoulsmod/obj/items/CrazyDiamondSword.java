@@ -27,7 +27,7 @@ public class CrazyDiamondSword extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7Sometimes grants you regeneration while attacking."));
+	tooltip.add(new StringTextComponent("ยง7Sometimes grants you regeneration while attacking."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);	
     }
 	

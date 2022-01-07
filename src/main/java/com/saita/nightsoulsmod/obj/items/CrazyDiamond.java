@@ -27,7 +27,7 @@ public class CrazyDiamond extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Can be converted to normal diamonds and craft even more stuff. Can also be consumed to instantly heal 20 hearts."));
+    tooltip.add(new StringTextComponent("ยง7Can be converted to normal diamonds and craft even more stuff. Can also be consumed to instantly heal 20 hearts."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

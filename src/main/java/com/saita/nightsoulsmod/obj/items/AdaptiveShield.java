@@ -37,7 +37,7 @@ public class AdaptiveShield extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ง7Grants you absorption. Effect gets stronger if you are at low HP. Cooldown : 20 seconds. Cooldown is 14 seconds with cranite, necro, nightsouls, hallowed paladin or paragonic armor."));
+	   tooltip.add(new StringTextComponent("ยง7Grants you absorption. Effect gets stronger if you are at low HP. Cooldown : 20 seconds. Cooldown is 14 seconds with cranite, necro, nightsouls, hallowed paladin or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

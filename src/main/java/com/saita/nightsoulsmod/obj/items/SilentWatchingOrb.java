@@ -24,7 +24,7 @@ public class SilentWatchingOrb extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Grants you invisibility when in your inventory, at the cost of making you weaker and slower."));
+    tooltip.add(new StringTextComponent("ยง7Grants you invisibility when in your inventory, at the cost of making you weaker and slower."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

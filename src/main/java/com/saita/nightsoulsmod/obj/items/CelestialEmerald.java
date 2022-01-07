@@ -33,8 +33,8 @@ public class CelestialEmerald extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง2"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7Can be converted to emeralds. Can also duplicate NightSouls ores ingots and Life crystals."));
+	tooltip.set(0, new StringTextComponent("ยง2"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7Can be converted to emeralds. Can also duplicate NightSouls ores ingots and Life crystals."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

@@ -40,8 +40,8 @@ public class JavaFury extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("งc"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7Gives you random positive potions effects upon hitting enemies."));
+	tooltip.set(0, new StringTextComponent("ยงc"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7Gives you random positive potions effects upon hitting enemies."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

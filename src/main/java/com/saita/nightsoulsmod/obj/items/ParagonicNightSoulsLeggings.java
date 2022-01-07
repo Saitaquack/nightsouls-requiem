@@ -27,8 +27,8 @@ public class ParagonicNightSoulsLeggings extends ParagonicNightSoulsArmor {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง1Use my power to dominate the universe."));
+	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง1Use my power to dominate the universe."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     } 
 	

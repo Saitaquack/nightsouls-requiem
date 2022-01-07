@@ -28,7 +28,7 @@ public class PrimiumArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Hero of the Village. Reduced Molten Core cooldown, and you have a chance to not consume it."));			
+	tooltip.add(new StringTextComponent("Â§aFull set bonus : Â§7Infinite Hero of the Village. Reduced Molten Core cooldown, and you have a chance to not consume it."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

@@ -38,8 +38,8 @@ public class BinaryArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("§a"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration IV, Saturation and Resistance III. Automatically gives you nightsouls emeralds overtime."));
+	tooltip.set(0, new StringTextComponent("Â§a"+tooltip.get(0).getString()+"Â§r"));
+    tooltip.add(new StringTextComponent("Â§aFull set bonus : Â§7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration IV, Saturation and Resistance III. Automatically gives you nightsouls emeralds overtime."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

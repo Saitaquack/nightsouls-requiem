@@ -37,7 +37,7 @@ public class Fortify extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ง7Grants you resistance and makes you glow. Cooldown : 16 seconds. Cooldown is 12 seconds with bastirite, nightsouls, binary or paragonic armor."));
+	   tooltip.add(new StringTextComponent("ยง7Grants you resistance and makes you glow. Cooldown : 16 seconds. Cooldown is 12 seconds with bastirite, nightsouls, binary or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

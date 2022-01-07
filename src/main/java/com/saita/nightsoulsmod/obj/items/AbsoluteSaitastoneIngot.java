@@ -27,8 +27,8 @@ public class AbsoluteSaitastoneIngot extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("ง7It holds the energy of dozens of solar systems."));
-	tooltip.set(0, new StringTextComponent("ง1"+tooltip.get(0).getString()+"งr"));
+	tooltip.add(new StringTextComponent("ยง7It holds the energy of dozens of solar systems."));
+	tooltip.set(0, new StringTextComponent("ยง1"+tooltip.get(0).getString()+"ยงr"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

@@ -38,7 +38,7 @@ public class VampireMask extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง4WARNING : ง7Putting this mask on will reject your humanity. You will become a vampire until you die and lose the mask. You will become extremely powerful, but stay away from any form of light !"));			
+	tooltip.add(new StringTextComponent("ยง4WARNING : ยง7Putting this mask on will reject your humanity. You will become a vampire until you die and lose the mask. You will become extremely powerful, but stay away from any form of light !"));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

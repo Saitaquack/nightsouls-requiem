@@ -27,7 +27,7 @@ public class RowequiteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง6Full set bonus : ง7Resistance I every 10 seconds for 5 seconds. Reduced Super Star cooldown, and you have a chance to not consume it."));			
+	tooltip.add(new StringTextComponent("ยง6Full set bonus : ยง7Resistance I every 10 seconds for 5 seconds. Reduced Super Star cooldown, and you have a chance to not consume it."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

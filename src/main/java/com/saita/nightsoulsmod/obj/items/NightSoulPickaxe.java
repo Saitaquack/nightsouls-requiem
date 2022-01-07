@@ -21,8 +21,8 @@ public class NightSoulPickaxe extends PickaxeItem{
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));		
-    tooltip.add(new StringTextComponent("§7Able to mine §cSaitastone§7, §5Miizealite§7, §fCranite§7, §9Bastirite§7, §aPrimium§7, §6Rowequite§7, §bTherenite§7 and §4Heart Crystals§7."));
+	tooltip.set(0, new StringTextComponent("Â§5"+tooltip.get(0).getString()+"Â§r"));		
+    tooltip.add(new StringTextComponent("Â§7Able to mine Â§cSaitastoneÂ§7, Â§5MiizealiteÂ§7, Â§fCraniteÂ§7, Â§9BastiriteÂ§7, Â§aPrimiumÂ§7, Â§6RowequiteÂ§7, Â§bThereniteÂ§7 and Â§4Heart CrystalsÂ§7."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

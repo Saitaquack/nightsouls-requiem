@@ -19,7 +19,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
 public class MoltenCore extends Item {
@@ -39,7 +38,7 @@ public class MoltenCore extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("§7If you can't stand the §cHEAT §7stay out of my way. 1 minute cooldown. Cooldown is 30 seconds and you have a 1/3 chance to not consume the item if you are wearing full primium or champion armor."));
+    tooltip.add(new StringTextComponent("Â§7If you can't stand the Â§cHEAT Â§7stay out of my way. 1 minute cooldown. Cooldown is 30 seconds and you have a 1/3 chance to not consume the item if you are wearing full primium or champion armor."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
     
@@ -63,6 +62,7 @@ public class MoltenCore extends Item {
     			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.CHAMPION_CHESTPLATE.get() && 
     			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.CHAMPION_LEGGINGS.get() && 
     			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.CHAMPION_BOOTS.get()))
+    		
     	{
     		playerIn.getCooldownTracker().setCooldown(this, 600);
     		Random ran = new Random();
@@ -76,11 +76,6 @@ public class MoltenCore extends Item {
     	{
     		playerIn.getCooldownTracker().setCooldown(this, 1200);
         	itemstack.shrink(1);
-    	}
-    	
-    	if(worldIn.isRemote)
-    	{
- 	      playerIn.sendMessage(new TranslationTextComponent("§cHeh heh, you should try my meatballs."), null);
     	}
     	
     	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 600, 9));

@@ -39,8 +39,8 @@ public class MilkyWayArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง1"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง1Full set bonus : ง7Infinite Strength III, Speed II, Jump Boost III, Haste I, Resistance I and restores health overtime. Hold sneak to enable slow falling. Automatically gives you star bits and nightsouls emeralds overtime."));
+	tooltip.set(0, new StringTextComponent("ยง1"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง1Full set bonus : ยง7Infinite Strength III, Speed II, Jump Boost III, Haste I, Resistance I and restores health overtime. Hold sneak to enable slow falling. Automatically gives you star bits and nightsouls emeralds overtime."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

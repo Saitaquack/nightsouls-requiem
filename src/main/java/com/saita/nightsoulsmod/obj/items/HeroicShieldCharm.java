@@ -31,7 +31,7 @@ public class HeroicShieldCharm extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Grants you an absorption II shielding effect every 20 seconds for 8 seconds while in your inventory."));
+    tooltip.add(new StringTextComponent("ยง7Grants you an absorption II shielding effect every 20 seconds for 8 seconds while in your inventory."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	
