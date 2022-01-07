@@ -21,7 +21,7 @@ public class HealingMixer extends BlockItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§e"+tooltip.get(0).getString()+"§r"));		
+	tooltip.set(0, new StringTextComponent("Â§e"+tooltip.get(0).getString()+"Â§r"));		
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

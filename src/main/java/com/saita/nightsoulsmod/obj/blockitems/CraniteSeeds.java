@@ -28,7 +28,7 @@ public class CraniteSeeds extends BlockItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§f"+tooltip.get(0).getString()+"§r"));		
+	tooltip.set(0, new StringTextComponent("Â§f"+tooltip.get(0).getString()+"Â§r"));		
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

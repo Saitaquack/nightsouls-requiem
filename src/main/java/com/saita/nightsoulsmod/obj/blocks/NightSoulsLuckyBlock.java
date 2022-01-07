@@ -196,7 +196,7 @@ public class NightSoulsLuckyBlock extends Block {
 		{
 			ItemStack flower = new ItemStack(Items.POPPY, 1);
 			spawnAsEntity(worldIn, pos, flower);
-	 	    player.sendMessage(new TranslationTextComponent("§d*Flush*. I- I like you a lot, yo- you know..."), null);
+	 	    player.sendMessage(new TranslationTextComponent("Â§d*Flush*. I- I like you a lot, yo- you know..."), null);
 		}
 		else if(randomPrice < 260)
 		{
@@ -364,7 +364,7 @@ public class NightSoulsLuckyBlock extends Block {
 		}
 		else if(randomPrice < 530)
 		{
-			player.sendMessage(new TranslationTextComponent("Parce que les Bâtons de Berger sont mieux entre amis. Justin Bridoux, le vrai goût du partage."), null);
+			player.sendMessage(new TranslationTextComponent("Parce que les BÃ¢tons de Berger sont mieux entre amis. Justin Bridoux, le vrai goÃ»t du partage."), null);
 			ItemStack bridou = new ItemStack(ItemInit.JUSTIN_BRIDOU.get(), 32);
 			spawnAsEntity(worldIn, pos, bridou);
 		}
@@ -444,13 +444,7 @@ public class NightSoulsLuckyBlock extends Block {
 		
 		else if(randomPrice < 600)
 		{
-			player.sendMessage(new TranslationTextComponent("Dans le langage commun, la chance se saisit ou se donne."), null);
-			player.sendMessage(new TranslationTextComponent("Au sein des institutions éducatives, ces deux formes se distinguent suivant que l’on « laisse » une chance ou qu’on la « donne »."), null);
-			player.sendMessage(new TranslationTextComponent("Selon la première option, on favorisera un projet éducatif qui promeut la « conversion » du sujet (à des principes, des valeurs, des façons d’être…)."), null);
-			player.sendMessage(new TranslationTextComponent("Au contraire, selon la seconde, on organisera des prises en charge qui visent une « métamorphose » de l’individu."), null);
-			player.sendMessage(new TranslationTextComponent("L’objectif éducatif est alors de créer les conditions d’une intégration personnelle de ces mêmes éléments."), null);
-			player.sendMessage(new TranslationTextComponent("Cet article dégage quelques arguments en faveur de cette seconde façon de faire, en mobilisant une étude en cours sur les conseils de discipline au sein d’établissements d’enseignement du second degré."), null);
-			player.sendMessage(new TranslationTextComponent("Pour lire l'article en entier : https://journals.openedition.org/formationemploi/6039"), null);
+			player.sendMessage(new TranslationTextComponent("You got jebaited :) Better luck next time."), null);
 
 		}		
 		else if(randomPrice < 615)
@@ -708,7 +702,7 @@ public class NightSoulsLuckyBlock extends Block {
 			boolean isVeryLucky = RANDOM.nextBoolean();
 			if(isVeryLucky)
 			{
-				player.sendMessage(new TranslationTextComponent("§dYOU HAVE BEEN BLESSED BY THE GODS !"), null);
+				player.sendMessage(new TranslationTextComponent("Â§dYOU HAVE BEEN BLESSED BY THE GODS !"), null);
 				int randomOPWeapon = RANDOM.nextInt(3);
 				switch(randomOPWeapon)
 				{		
@@ -736,7 +730,7 @@ public class NightSoulsLuckyBlock extends Block {
 			}
 			else
 			{
-				player.sendMessage(new TranslationTextComponent("§0YOU HAVE BEEN CURSED BY THE GODS !"), null);
+				player.sendMessage(new TranslationTextComponent("Â§0YOU HAVE BEEN CURSED BY THE GODS !"), null);
 				WitherEntity wither = new WitherEntity(EntityType.WITHER, worldIn);
 				wither.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
 				worldIn.addEntity(wither);

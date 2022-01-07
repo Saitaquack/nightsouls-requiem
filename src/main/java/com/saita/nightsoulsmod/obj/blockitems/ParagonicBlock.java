@@ -34,8 +34,8 @@ public class ParagonicBlock extends BlockItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7It holds an infinite power. Can be upgraded to a perfect paragonic block."));
-	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));			
+	tooltip.add(new StringTextComponent("ยง7It holds an infinite power. Can be upgraded to a perfect paragonic block."));
+	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }
