@@ -43,7 +43,7 @@ public class LifeCrystal extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§7Increases your maximum life. You can have a maximum of 15 hearts of health (20 hearts in a NightSouls Requiem World), but you will lose your bonus health if you die."));
+	tooltip.add(new StringTextComponent("Â§7Increases your maximum life. You can have a maximum of 15 hearts of health (20 hearts in a NightSouls Requiem World), but you will lose your bonus health if you die."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }
@@ -55,7 +55,7 @@ public class LifeCrystal extends Item {
 		{
 			PlayerEntity playerIn = (PlayerEntity)entityLiving;
 			
-		     if((playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 30.0D || (playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 40.0D) && (worldIn.getWorldBorder().getSize() == NightSoulsKey.requiemWBSize)))
+		     if((playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 30.0D || (playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 40.0D) && (worldIn.getGameTime() >= NightSoulsKey.requiemConstant)))
     	     {
     	       playerIn.getAttribute(Attributes.MAX_HEALTH).applyPersistentModifier(new AttributeModifier("MaxHealth", 2.0F, AttributeModifier.Operation.ADDITION));
     	       playerIn.heal(2);
@@ -65,7 +65,7 @@ public class LifeCrystal extends Item {
 		     {
 		    	 if(worldIn.isRemote)
 		    	 {
-		  	     playerIn.sendMessage(new TranslationTextComponent("§fYou are already at max HP!"), null);
+		  	     playerIn.sendMessage(new TranslationTextComponent("Â§fYou are already at max HP!"), null);
 		    	 }
 		     }
 		}

@@ -34,7 +34,7 @@ public class PetrifiedHellstone extends Block {
 	@Override
 	public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
 		
-		if(worldIn.getWorldBorder().getSize() == NightSoulsKey.requiemWBSize)
+		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
 		   {	
 			  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
    	       }
@@ -48,7 +48,7 @@ public class PetrifiedHellstone extends Block {
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
 			Hand handIn, BlockRayTraceResult hit) {
 		
-		if(worldIn.getWorldBorder().getSize() == NightSoulsKey.requiemWBSize)
+		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
 		   {	
 			  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
  	       }
@@ -60,7 +60,7 @@ public class PetrifiedHellstone extends Block {
 	public void harvestBlock(World worldIn, PlayerEntity player, BlockPos pos, BlockState state, TileEntity te,
 			ItemStack stack) {
 		
-		if(worldIn.getWorldBorder().getSize() == NightSoulsKey.requiemWBSize)
+		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
 		    {	
 			  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
 	        }
@@ -73,12 +73,24 @@ public class PetrifiedHellstone extends Block {
 	@Override
 	public void onBlockAdded(BlockState state, World worldIn, BlockPos pos, BlockState oldState, boolean isMoving) {
 		
-		if(worldIn.getWorldBorder().getSize() == NightSoulsKey.requiemWBSize)
+		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
 		   {	
 	    	  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
            }
 
 		super.onBlockAdded(state, worldIn, pos, oldState, isMoving);
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
+		
+		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		   {	
+	    	  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
+		   }
+		
+		super.onBlockClicked(state, worldIn, pos, player);
 	}
 	
 }

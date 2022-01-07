@@ -21,11 +21,12 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 
 public class NightSoulsKey extends Item {
 	
-	public static int requiemWBSize = 59999996;
-	public static int defaultWBSize = 59999992;
+	public static long requiemConstant = 240000000L;
+
 	
 	public static final Logger LOGGER = LogManager.getLogger();
 	BlockPos requiemBlockPos = new BlockPos(0,0,0);
@@ -39,7 +40,7 @@ public class NightSoulsKey extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("§7Right Click to consume it and convert this world into a \"§5NightSouls Requiem World§7\". In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, and you will be able to obtain Paragonic blocks around the world."));
+	tooltip.add(new StringTextComponent("Â§7Right Click to consume it and convert this world into a \"Â§5NightSouls Requiem WorldÂ§7\". In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, and you will be able to obtain Paragonic blocks around the world."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	
@@ -72,10 +73,14 @@ public class NightSoulsKey extends Item {
 			    	playerIn.getCooldownTracker().setCooldown(this, 200);
 			    }
 			    
-			    if(worldIn.getWorldBorder().getSize() != NightSoulsKey.requiemWBSize)
+			    if(worldIn.getDayTime() < NightSoulsKey.requiemConstant)
 			    {
 			    	
-			    	worldIn.getWorldBorder().setSize(requiemWBSize);
+			    	if(!worldIn.isRemote) 
+					{
+						long getCurrentDayTime = worldIn.getDayTime();
+						((ServerWorld) worldIn).setDayTime(getCurrentDayTime + NightSoulsKey.requiemConstant);	
+					}
 				    
 				    ItemStack NSEmeralds = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 64); 
 				    ItemStack medallion = new ItemStack(ItemInit.REQUIEM_MEDALLION.get(), 1); 
@@ -88,8 +93,8 @@ public class NightSoulsKey extends Item {
 		
 				    if(worldIn.isRemote)
 				    {			  
-				    	LOGGER.info(""+playerIn.getName().getString()+" a consommé une NightSouls Key et a converti le monde en Requiem.");      	
-				    	playerIn.sendMessage(new TranslationTextComponent("§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
+				    	LOGGER.info(""+playerIn.getName().getString()+" a consommÃ© une NightSouls Key et a converti le monde en Requiem.");      	
+				    	playerIn.sendMessage(new TranslationTextComponent("Â§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
 				    }
 				    
 			    }
@@ -115,7 +120,7 @@ public class NightSoulsKey extends Item {
 	    	{
 	    	    if(worldIn.isRemote)
 	    		{
-	  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Key"), null);
+	  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Key"), null);
 	    		}
 	    	}
 	    	    	
