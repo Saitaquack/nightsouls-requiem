@@ -42,12 +42,18 @@ public class StructureGen {
 	            structures.add(() -> StructureInit.FREDDY_FAZBEAR_PIZZA.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.WEREWOLF_CAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.MELDYA_LAKE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.ROCKET.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DECUBE_HOUSE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DECUBE_HOUSE2.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DRAGON_STATUE_BOTTOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DRAGON_STATUE_TOP.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-	            
+
+ 
 	            structures.add(() -> StructureInit.PARAGONIC_CORE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.LUCKY_BLOCK.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.CELESTIAL_EMERALD.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.POWER_MOON.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+
 	        }
 	        
 	        //Partout
@@ -62,6 +68,11 @@ public class StructureGen {
 	            structures.add(() -> StructureInit.NIGHTSOULS_ISLANDS.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.ODYSSEY_BOTTOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.ODYSSEY_TOP.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            
+	            structures.add(() -> StructureInit.SAITA_LOOT_ROOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.MIIZEAL_LOOT_ROOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.CRANE_LOOT_ROOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.BASTI_LOOT_ROOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	        }
 	        
 	        //Plaines

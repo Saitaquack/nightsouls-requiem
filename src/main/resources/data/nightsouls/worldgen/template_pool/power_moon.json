@@ -1,0 +1,45 @@
+{
+  "name": "nightsouls:power_moon",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "nightsouls:red_power_moon",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    
+    {
+      "weight": 10,
+      "element": {
+        "location": "nightsouls:purple_power_moon",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    
+    {
+      "weight": 10,
+      "element": {
+        "location": "nightsouls:white_power_moon",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    
+    {
+      "weight": 10,
+      "element": {
+        "location": "nightsouls:blue_power_moon",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

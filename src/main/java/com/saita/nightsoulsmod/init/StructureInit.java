@@ -47,24 +47,23 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> FREDDY_FAZBEAR_PIZZA = STRUCTURES.register("freddy_fazbear_pizza", FreddyFazbearPizzaStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> WEREWOLF_CAVE = STRUCTURES.register("werewolf_cave", WerewolfCaveStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> MELDYA_LAKE = STRUCTURES.register("meldya_lake", MeldyaLakeStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> ROCKET = STRUCTURES.register("rocket", RocketStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DECUBE_HOUSE = STRUCTURES.register("decube_house", DecubeHouseStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DECUBE_HOUSE2 = STRUCTURES.register("decube_house2", DecubeHouse2Structure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> ODYSSEY_TOP = STRUCTURES.register("odyssey_top", OdysseyTopStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> ODYSSEY_BOTTOM = STRUCTURES.register("odyssey_bottom", OdysseyBottomStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_TOP = STRUCTURES.register("dragon_statue_top", DragonStatueTopStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_BOTTOM = STRUCTURES.register("dragon_statue_bottom", DragonStatueBottomStructure::new);
-    
+     
     
     public static final RegistryObject<Structure<NoFeatureConfig>> PARAGONIC_CORE = STRUCTURES.register("paraconic_core", ParagonicCoreStructure::new);
-    
-
-    //Saita treasure room
-    //Miizeal treasure room
-    //Crane treasure room
-    //Basti treasure room
-    //Power Moon
-    //Celestial Emerald
-    //Lucky Block
+    public static final RegistryObject<Structure<NoFeatureConfig>> SAITA_LOOT_ROOM = STRUCTURES.register("saita_loot_room", SaitaLootRoomStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> MIIZEAL_LOOT_ROOM = STRUCTURES.register("miizeal_loot_room", MiizealLootRoomStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> CRANE_LOOT_ROOM = STRUCTURES.register("crane_loot_room", CraneLootRoomStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> BASTI_LOOT_ROOM = STRUCTURES.register("basti_loot_room", BastiLootRoomStructure::new); 
+    public static final RegistryObject<Structure<NoFeatureConfig>> LUCKY_BLOCK = STRUCTURES.register("lucky_block", LuckyBlockStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> CELESTIAL_EMERALD = STRUCTURES.register("celestial_emerald", CelestialEmeraldStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> POWER_MOON = STRUCTURES.register("power_moon", PowerMoonStructure::new);
 
 
 
@@ -96,15 +95,23 @@ public class StructureInit {
         setupMapSpacingAndLand(FREDDY_FAZBEAR_PIZZA.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 19871987), false);
         setupMapSpacingAndLand(WEREWOLF_CAVE.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 676717723), true);
         setupMapSpacingAndLand(MELDYA_LAKE.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 777777723), true);
+        setupMapSpacingAndLand(ROCKET.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 134367777), true);
         setupMapSpacingAndLand(DECUBE_HOUSE.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 934256728), false);
         setupMapSpacingAndLand(DECUBE_HOUSE2.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 934256722), false);
         setupMapSpacingAndLand(ODYSSEY_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.odysseySeed), false);
         setupMapSpacingAndLand(ODYSSEY_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.odysseySeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
-        
+       
         
         setupMapSpacingAndLand(PARAGONIC_CORE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, 122377928), true);
+        setupMapSpacingAndLand(SAITA_LOOT_ROOM.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 166656), false);
+        setupMapSpacingAndLand(MIIZEAL_LOOT_ROOM.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 266656), false);
+        setupMapSpacingAndLand(CRANE_LOOT_ROOM.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 366656), false);
+        setupMapSpacingAndLand(BASTI_LOOT_ROOM.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 466656), false);
+        setupMapSpacingAndLand(LUCKY_BLOCK.get(), new StructureSeparationSettings(24, 8, 268435456), false);
+        setupMapSpacingAndLand(CELESTIAL_EMERALD.get(), new StructureSeparationSettings(70, 20, 268435446), false);
+        setupMapSpacingAndLand(POWER_MOON.get(), new StructureSeparationSettings(14, 3, 178509578), false);
 
 
     }
