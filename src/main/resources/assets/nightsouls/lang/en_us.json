@@ -301,7 +301,7 @@
    "item.nightsouls.therox_music_disc.desc": "Pokemon D/P - Opening & Title Screen",
    "item.nightsouls.magasin_music_disc": "Uhm, bro ur good ?",
    "item.nightsouls.magasin_music_disc.desc": "LE MAGASIN DES SUICIDES - CHANSON DES TUVACHES",
-   "item.nightsouls.koro_music_disc": "Sorry Miizeal",
+   "item.nightsouls.koro_music_disc": "Music Disc",
    "item.nightsouls.koro_music_disc.desc": "Assassination Classroom - TABIDACHI NO UTA",
    
    
@@ -480,7 +480,6 @@
 
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",
-   "itemGroup.PlayerSoulsTab": "Souls of NightSouls Members",
    "itemGroup.NightSoulsDiscsTab": "NightSouls Discs",
    "itemGroup.ParagonTab": "???"
    
