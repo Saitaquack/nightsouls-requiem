@@ -76,7 +76,7 @@ public class DecubeHouseStructure extends Structure<NoFeatureConfig> {
                             10), AbstractVillagePiece::new, chunkGenerator, templateManagerIn,
                     blockpos, this.components, this.rand,false,true);
 
-            this.components.forEach(piece -> piece.offset(0, -1, 0));
+            this.components.forEach(piece -> piece.offset(0, 0, 0));
             this.components.forEach(piece -> piece.getBoundingBox().minY -= 1);
 
             this.recalculateStructureSize();

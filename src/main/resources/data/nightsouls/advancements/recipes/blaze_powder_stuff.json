@@ -2,9 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:fire_blade",
-      "nightsouls:ashes_on_the_fire_music_disc"
-    ]
+      "nightsouls:fire_blade"    ]
   },
   "criteria": {
     "has_blaze_powder": {
