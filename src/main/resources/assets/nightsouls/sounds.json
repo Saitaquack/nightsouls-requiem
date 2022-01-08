@@ -840,6 +840,54 @@
 		
 	},
 	
+	"akaza": {
+		"category": "music",
+		"subtitle": "Akaza VS Rengoku",
+		"sounds": [
+			{
+				"name": "nightsouls:music/akaza",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"youseebiggirl": {
+		"category": "music",
+		"subtitle": "You See Big Girl Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/youseebiggirl",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"death_note": {
+		"category": "music",
+		"subtitle": "Death Note Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/death_note",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"helikopter": {
+		"category": "music",
+		"subtitle": "Helikopter Helikopter",
+		"sounds": [
+			{
+				"name": "nightsouls:music/helikopter",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",

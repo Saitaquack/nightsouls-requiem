@@ -266,8 +266,21 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> KORO = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "koro")));
 	
+	public static final Lazy<SoundEvent> AKAZA = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza")));
+	
+	public static final Lazy<SoundEvent> YOUSEEBIGGIRL = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "youseebiggirl")));
+	
+	public static final Lazy<SoundEvent> DEATH_NOTE = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "death_note")));
+	
+	public static final Lazy<SoundEvent> HELIKOPTER = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "helikopter")));
+	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));
+	
 	
 	public static void register(IEventBus eventBus) {
         SOUNDS.register(eventBus);

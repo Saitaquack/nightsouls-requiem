@@ -462,6 +462,50 @@
         ]
       }
     },
+    
+    "akaza_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:akaza_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "youseebiggirl_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:youseebiggirl_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "death_note_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:death_note_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "helikopter_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:helikopter_music_disc"
+          }
+        ]
+      }
+    },
         
     "star_gatherer_final_music_disc": {
       "trigger": "minecraft:inventory_changed",
@@ -551,6 +595,10 @@
       "therox_music_disc",
       "magasin_music_disc",
       "koro_music_disc",
+      "akaza_music_disc",
+      "youseebiggirl_music_disc",
+      "death_note_music_disc",
+      "helikopter_music_disc",
       "star_gatherer_final_music_disc",
       "hellfire_emperor_final_music_disc",
       "hallowed_paladin_final_music_disc",
