@@ -37,7 +37,7 @@ public class AmpItUp extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Grants you a big speed buff and regeneration. Cooldown : 16 seconds. Cooldown is 12 seconds with cranite, necro, nightsouls, hallowed paladin or paragonic armor."));
+	   tooltip.add(new StringTextComponent("ง7Grants you a big speed buff and regeneration. Cooldown : 16 seconds. Cooldown is 12 seconds with cranite, necro, nightsouls, hallowed paladin or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

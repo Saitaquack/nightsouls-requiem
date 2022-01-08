@@ -27,7 +27,7 @@ public class NightSoulsEssence extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-    tooltip.add(new StringTextComponent("ยง7The essence of four fallen legends."));
+    tooltip.add(new StringTextComponent("ง7The essence of four fallen legends."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

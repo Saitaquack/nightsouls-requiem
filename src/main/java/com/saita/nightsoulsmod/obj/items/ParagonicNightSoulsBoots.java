@@ -27,8 +27,8 @@ public class ParagonicNightSoulsBoots extends ParagonicNightSoulsArmor {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("Â§5"+tooltip.get(0).getString()+"Â§r"));
-    tooltip.add(new StringTextComponent("Â§aYou truly are the master of this world now."));
+	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));
+    tooltip.add(new StringTextComponent("§aYou truly are the master of this world now."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

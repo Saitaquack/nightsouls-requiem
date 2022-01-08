@@ -38,7 +38,7 @@ public class MoltenCore extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("Â§7If you can't stand the Â§cHEAT Â§7stay out of my way. 1 minute cooldown. Cooldown is 30 seconds and you have a 1/3 chance to not consume the item if you are wearing full primium or champion armor."));
+    tooltip.add(new StringTextComponent("§7If you can't stand the §cHEAT §7stay out of my way. 1 minute cooldown. Cooldown is 30 seconds and you have a 1/3 chance to not consume the item if you are wearing full primium or champion armor."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
     

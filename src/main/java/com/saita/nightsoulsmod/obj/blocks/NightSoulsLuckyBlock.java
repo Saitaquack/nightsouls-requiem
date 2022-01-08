@@ -196,7 +196,7 @@ public class NightSoulsLuckyBlock extends Block {
 		{
 			ItemStack flower = new ItemStack(Items.POPPY, 1);
 			spawnAsEntity(worldIn, pos, flower);
-	 	    player.sendMessage(new TranslationTextComponent("Â§d*Flush*. I- I like you a lot, yo- you know..."), null);
+	 	    player.sendMessage(new TranslationTextComponent("§d*Flush*. I- I like you a lot, yo- you know..."), null);
 		}
 		else if(randomPrice < 260)
 		{
@@ -364,7 +364,7 @@ public class NightSoulsLuckyBlock extends Block {
 		}
 		else if(randomPrice < 530)
 		{
-			player.sendMessage(new TranslationTextComponent("Parce que les BÃ¢tons de Berger sont mieux entre amis. Justin Bridoux, le vrai goÃ»t du partage."), null);
+			player.sendMessage(new TranslationTextComponent("Parce que les Bâtons de Berger sont mieux entre amis. Justin Bridoux, le vrai goût du partage."), null);
 			ItemStack bridou = new ItemStack(ItemInit.JUSTIN_BRIDOU.get(), 32);
 			spawnAsEntity(worldIn, pos, bridou);
 		}
@@ -702,7 +702,7 @@ public class NightSoulsLuckyBlock extends Block {
 			boolean isVeryLucky = RANDOM.nextBoolean();
 			if(isVeryLucky)
 			{
-				player.sendMessage(new TranslationTextComponent("Â§dYOU HAVE BEEN BLESSED BY THE GODS !"), null);
+				player.sendMessage(new TranslationTextComponent("§dYOU HAVE BEEN BLESSED BY THE GODS !"), null);
 				int randomOPWeapon = RANDOM.nextInt(3);
 				switch(randomOPWeapon)
 				{		
@@ -730,7 +730,7 @@ public class NightSoulsLuckyBlock extends Block {
 			}
 			else
 			{
-				player.sendMessage(new TranslationTextComponent("Â§0YOU HAVE BEEN CURSED BY THE GODS !"), null);
+				player.sendMessage(new TranslationTextComponent("§0YOU HAVE BEEN CURSED BY THE GODS !"), null);
 				WitherEntity wither = new WitherEntity(EntityType.WITHER, worldIn);
 				wither.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
 				worldIn.addEntity(wither);

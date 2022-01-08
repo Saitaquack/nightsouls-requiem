@@ -35,7 +35,7 @@ public class HellfireMoonCharm extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	    tooltip.add(new StringTextComponent("ยง7Has the effects of both moon charm and hellfire charm !"));
+	    tooltip.add(new StringTextComponent("ง7Has the effects of both moon charm and hellfire charm !"));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	

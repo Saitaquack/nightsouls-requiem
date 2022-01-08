@@ -38,7 +38,7 @@ public class Fade extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Gives you a quick speed buff and makes you invisible and invulnerable. Cooldown : 12 seconds. Cooldown is 8 seconds with saitastone, nightsouls, milky way or paragonic armor."));
+	   tooltip.add(new StringTextComponent("ง7Gives you a quick speed buff and makes you invisible and invulnerable. Cooldown : 12 seconds. Cooldown is 8 seconds with saitastone, nightsouls, milky way or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

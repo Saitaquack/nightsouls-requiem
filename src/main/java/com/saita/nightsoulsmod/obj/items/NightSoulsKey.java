@@ -40,7 +40,7 @@ public class NightSoulsKey extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("Â§7Right Click to consume it and convert this world into a \"Â§5NightSouls Requiem WorldÂ§7\". In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, and you will be able to obtain Paragonic blocks around the world."));
+	tooltip.add(new StringTextComponent("§7Right Click to consume it and convert this world into a \"§5NightSouls Requiem World§7\". In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, and you will be able to obtain Paragonic blocks around the world."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	
@@ -93,8 +93,8 @@ public class NightSoulsKey extends Item {
 		
 				    if(worldIn.isRemote)
 				    {			  
-				    	LOGGER.info(""+playerIn.getName().getString()+" a consommÃ© une NightSouls Key et a converti le monde en Requiem.");      	
-				    	playerIn.sendMessage(new TranslationTextComponent("Â§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
+				    	LOGGER.info(""+playerIn.getName().getString()+" a consommé une NightSouls Key et a converti le monde en Requiem.");      	
+				    	playerIn.sendMessage(new TranslationTextComponent("§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
 				    }
 				    
 			    }
@@ -120,7 +120,7 @@ public class NightSoulsKey extends Item {
 	    	{
 	    	    if(worldIn.isRemote)
 	    		{
-	  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Key"), null);
+	  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Key"), null);
 	    		}
 	    	}
 	    	    	

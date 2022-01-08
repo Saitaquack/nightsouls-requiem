@@ -27,7 +27,7 @@ public class EnderDragonEssence extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-    tooltip.add(new StringTextComponent("ยง7The essence of the fallen ruler of the End."));
+    tooltip.add(new StringTextComponent("ง7The essence of the fallen ruler of the End."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

@@ -27,8 +27,8 @@ public class NecroArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ยง8"+tooltip.get(0).getString()+"ยงr"));
-	tooltip.add(new StringTextComponent("ยง8Full set bonus : ยง7Infinite Speed II and Fire Resistance. Immunity to Poison, Nausea and Wither effects. Reduced cooldowns to Wraith Form, Amp It Up and Adaptive Shield."));			
+	tooltip.set(0, new StringTextComponent("ง8"+tooltip.get(0).getString()+"งr"));
+	tooltip.add(new StringTextComponent("ง8Full set bonus : ง7Infinite Speed II and Fire Resistance. Immunity to Poison, Nausea and Wither effects. Reduced cooldowns to Wraith Form, Amp It Up and Adaptive Shield."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

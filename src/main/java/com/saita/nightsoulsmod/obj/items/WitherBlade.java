@@ -24,8 +24,8 @@ public class WitherBlade extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ยง0"+tooltip.get(0).getString()+"ยงr"));	
-    tooltip.add(new StringTextComponent("ยง7Gives the wither effect to your target."));
+	tooltip.set(0, new StringTextComponent("ง0"+tooltip.get(0).getString()+"งr"));	
+    tooltip.add(new StringTextComponent("ง7Gives the wither effect to your target."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

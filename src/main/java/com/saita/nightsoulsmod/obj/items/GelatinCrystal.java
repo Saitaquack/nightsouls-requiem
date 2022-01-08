@@ -22,7 +22,7 @@ public class GelatinCrystal extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ยง7A great food that removes most bad effects."));
+    tooltip.add(new StringTextComponent("ง7A great food that removes most bad effects."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

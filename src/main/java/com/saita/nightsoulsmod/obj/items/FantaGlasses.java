@@ -26,7 +26,7 @@ public class FantaGlasses extends ArmorItem {
 	    public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	    {
 	    	
-	    tooltip.add(new StringTextComponent("ยง7SALUT"));
+	    tooltip.add(new StringTextComponent("ง7SALUT"));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	    }  
 	    

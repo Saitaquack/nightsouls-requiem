@@ -34,8 +34,8 @@ public class PerfectParagonicBlock extends BlockItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ยง1It seems to hold an infinite power,ยงa and to warp spacetime itself. ยง6Are you really worthy of such power, ยง4or will it consume you first ?"));
-	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));			
+	tooltip.add(new StringTextComponent("ง1It seems to hold an infinite power,งa and to warp spacetime itself. ง6Are you really worthy of such power, ง4or will it consume you first ?"));
+	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

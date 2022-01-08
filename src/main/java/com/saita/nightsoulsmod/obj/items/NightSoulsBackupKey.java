@@ -36,7 +36,7 @@ public class NightSoulsBackupKey extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("Â§7ADMIN ONLY. Right Click to revert NightSouls Requiem."));
+	tooltip.add(new StringTextComponent("§7ADMIN ONLY. Right Click to revert NightSouls Requiem."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	
@@ -74,7 +74,7 @@ public class NightSoulsBackupKey extends Item {
 	
 			    if(worldIn.isRemote)
 			    {		
-			    	LOGGER.info(""+playerIn.getName().getString()+" a fait revenir en arriÃ¨re le mode NightSouls Requiem sur ce monde.");      	
+			    	LOGGER.info(""+playerIn.getName().getString()+" a fait revenir en arrière le mode NightSouls Requiem sur ce monde.");      	
 			    	playerIn.sendMessage(new TranslationTextComponent("You reverted the NightSouls Requiem World."), null);   	
 			    }
 			    
@@ -92,7 +92,7 @@ public class NightSoulsBackupKey extends Item {
     	{
     	    if(worldIn.isRemote)
     		{
-  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Backup Key"), null);
+  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Backup Key"), null);
     		}
     	}
 	    	    	

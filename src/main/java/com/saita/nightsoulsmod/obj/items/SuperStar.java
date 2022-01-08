@@ -39,7 +39,7 @@ public class SuperStar extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("Â§7Will make you invincible and incredibly powerful for a short time ! 45 seconds cooldown. Cooldown is 25 seconds and you have a 1/3 chance to not consume the item if you are wearing full rowequite or champion armor."));
+    tooltip.add(new StringTextComponent("§7Will make you invincible and incredibly powerful for a short time ! 45 seconds cooldown. Cooldown is 25 seconds and you have a 1/3 chance to not consume the item if you are wearing full rowequite or champion armor."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
     
@@ -80,7 +80,7 @@ public class SuperStar extends Item {
     	
     	 if(worldIn.isRemote)
     	 {
- 	     playerIn.sendMessage(new TranslationTextComponent("Â§dTATATATATATATATA TATATATATATATATA TATATATATATATATA !"), null);
+ 	     playerIn.sendMessage(new TranslationTextComponent("§dTATATATATATATATA TATATATATATATATA TATATATATATATATA !"), null);
     	 }
     	 
     	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 4));

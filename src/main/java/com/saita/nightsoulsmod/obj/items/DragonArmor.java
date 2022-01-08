@@ -27,8 +27,8 @@ public class DragonArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));	
-	tooltip.add(new StringTextComponent("ยง5Full set bonus : ยง7Has the effects of the NightSouls Armor, but with improved effects, as well as Jump Boost and Strength."));			
+	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));	
+	tooltip.add(new StringTextComponent("ง5Full set bonus : ง7Has the effects of the NightSouls Armor, but with improved effects, as well as Jump Boost and Strength."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

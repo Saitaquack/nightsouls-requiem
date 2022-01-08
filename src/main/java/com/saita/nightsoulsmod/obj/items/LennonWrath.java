@@ -37,8 +37,8 @@ public class LennonWrath extends AxeItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
-    tooltip.add(new StringTextComponent("ยง7BUUUUUULLLIIIAAAAAAA !"));
+	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
+    tooltip.add(new StringTextComponent("ง7BUUUUUULLLIIIAAAAAAA !"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

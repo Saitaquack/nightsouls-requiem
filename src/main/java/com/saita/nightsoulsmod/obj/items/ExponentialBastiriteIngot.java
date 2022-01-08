@@ -27,8 +27,8 @@ public class ExponentialBastiriteIngot extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("Â§kFatal Error : This power exceeds the 64 bits integer limit."));
-	tooltip.set(0, new StringTextComponent("Â§a"+tooltip.get(0).getString()+"Â§r"));
+	tooltip.add(new StringTextComponent("§kFatal Error : This power exceeds the 64 bits integer limit."));
+	tooltip.set(0, new StringTextComponent("§a"+tooltip.get(0).getString()+"§r"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

@@ -25,7 +25,7 @@ public class SaitastoneArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("Â§cFull set bonus : Â§7Slowly restores health overtime. Reduced cooldowns to Take a Breather and Fade."));			
+	tooltip.add(new StringTextComponent("§cFull set bonus : §7Slowly restores health overtime. Reduced cooldowns to Take a Breather and Fade."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

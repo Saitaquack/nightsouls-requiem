@@ -37,7 +37,7 @@ public class TimeClock extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Right click to skip time ! Also grants you short speed and invisibility. ยง7Cooldown : 3 minutes"));
+	   tooltip.add(new StringTextComponent("ง7Right click to skip time ! Also grants you short speed and invisibility. ง7Cooldown : 3 minutes"));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	}  
 	
@@ -70,7 +70,7 @@ public class TimeClock extends Item {
     	{
     	    if(worldIn.isRemote)
     		{
-  	           playerIn.sendMessage(new TranslationTextComponent("ยงf"+playerIn.getName().getString()+", you need to be in the Overworld to use a Time Clock"), null);
+  	           playerIn.sendMessage(new TranslationTextComponent("งf"+playerIn.getName().getString()+", you need to be in the Overworld to use a Time Clock"), null);
     		}
     	}
 

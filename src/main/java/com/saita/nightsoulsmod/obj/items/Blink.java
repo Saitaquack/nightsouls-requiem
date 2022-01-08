@@ -37,7 +37,7 @@ public class Blink extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Teleports you in the direction you are looking. Use with caution, you may get yourself suffocated. Cooldown : 5 seconds. Cooldown is 3 seconds with bastirite, nightsouls, binary or paragonic armor."));
+	   tooltip.add(new StringTextComponent("ง7Teleports you in the direction you are looking. Use with caution, you may get yourself suffocated. Cooldown : 5 seconds. Cooldown is 3 seconds with bastirite, nightsouls, binary or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	} 
 	

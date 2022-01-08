@@ -42,8 +42,8 @@ public class DivineSanction extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-	tooltip.set(0, new StringTextComponent("ยงe"+tooltip.get(0).getString()+"ยงr"));	
-    tooltip.add(new StringTextComponent("ยง7Shall purge the unholy and the unworthy. Sometimes grants you regeneration and strength."));
+	tooltip.set(0, new StringTextComponent("งe"+tooltip.get(0).getString()+"งr"));	
+    tooltip.add(new StringTextComponent("ง7Shall purge the unholy and the unworthy. Sometimes grants you regeneration and strength."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

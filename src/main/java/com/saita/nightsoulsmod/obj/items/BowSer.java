@@ -234,8 +234,8 @@ public class BowSer extends ShootableItem implements IVanishable {
 		   public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 		   {
 			
-			  tooltip.set(0, new StringTextComponent("ยงc"+tooltip.get(0).getString()+"ยงr"));	
-			  tooltip.add(new StringTextComponent("ยง7BWA HA HA HA HA HA !"));
+			  tooltip.set(0, new StringTextComponent("งc"+tooltip.get(0).getString()+"งr"));	
+			  tooltip.add(new StringTextComponent("ง7BWA HA HA HA HA HA !"));
 			  super.addInformation(stack, worldIn, tooltip, flagIn);		
 		   }
 		   

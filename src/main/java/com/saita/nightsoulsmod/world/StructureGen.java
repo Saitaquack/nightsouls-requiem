@@ -20,7 +20,7 @@ public class StructureGen {
 	        RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
 	        Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 	        
-	        //Partout, sauf OcÃ©an
+	        //Partout, sauf Océan
 
 	        if(types.contains(BiomeDictionary.Type.OVERWORLD) && !types.contains(BiomeDictionary.Type.OCEAN)) {
 	            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();

@@ -35,7 +35,7 @@ public class HellfireEmperorFinalMusicDisc extends MusicDiscItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

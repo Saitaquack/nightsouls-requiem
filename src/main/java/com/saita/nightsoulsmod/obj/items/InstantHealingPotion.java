@@ -36,7 +36,7 @@ public class InstantHealingPotion extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ยง7Heals 3 hearts instantly. 3 seconds cooldown. Has no cooldown, heals 4 hearts, and you have a 1/3 chance to not consume the item if you are wearing full therenite or champion armor."));
+    tooltip.add(new StringTextComponent("ง7Heals 3 hearts instantly. 3 seconds cooldown. Has no cooldown, heals 4 hearts, and you have a 1/3 chance to not consume the item if you are wearing full therenite or champion armor."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

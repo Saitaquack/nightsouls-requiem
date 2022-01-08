@@ -23,7 +23,7 @@ public class CatAClysm extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("Â§d"+tooltip.get(0).getString()+"Â§r"));
+	tooltip.set(0, new StringTextComponent("§d"+tooltip.get(0).getString()+"§r"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

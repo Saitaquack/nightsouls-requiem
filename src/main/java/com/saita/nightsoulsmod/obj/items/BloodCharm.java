@@ -32,7 +32,7 @@ public class BloodCharm extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	    tooltip.add(new StringTextComponent("ยง7While in your inventory, you will get a speed and strength buff if you are below 80% HP. The lower your HP, the stronger the effects get."));
+	    tooltip.add(new StringTextComponent("ง7While in your inventory, you will get a speed and strength buff if you are below 80% HP. The lower your HP, the stronger the effects get."));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	}
 	

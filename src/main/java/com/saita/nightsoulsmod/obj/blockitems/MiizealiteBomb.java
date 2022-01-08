@@ -28,7 +28,7 @@ public class MiizealiteBomb extends BlockItem {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ยง7WARNING : Immediately creates a huge explosion after being powered with redstone or after being blown up."));
+	   tooltip.add(new StringTextComponent("ง7WARNING : Immediately creates a huge explosion after being powered with redstone or after being blown up."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	}
 

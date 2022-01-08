@@ -37,7 +37,7 @@ public class WraithForm extends Item{
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Become invisible, faster and invulnerable. Cooldown : 12 seconds. Cooldown is 8 seconds with miizealite, necro, nightsouls, hellfire emperor or paragonic armor. Cooldown is 6 seconds with a vampire mask."));
+	   tooltip.add(new StringTextComponent("ง7Become invisible, faster and invulnerable. Cooldown : 12 seconds. Cooldown is 8 seconds with miizealite, necro, nightsouls, hellfire emperor or paragonic armor. Cooldown is 6 seconds with a vampire mask."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 

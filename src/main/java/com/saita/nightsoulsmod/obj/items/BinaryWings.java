@@ -33,7 +33,7 @@ public class BinaryWings extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Right click to activate or deactivate fly !"));
+	   tooltip.add(new StringTextComponent("ง7Right click to activate or deactivate fly !"));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	}  
 	

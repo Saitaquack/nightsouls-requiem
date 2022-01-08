@@ -35,7 +35,7 @@ public class HellfireCharm extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	    tooltip.add(new StringTextComponent("ยง7Infinite fire resistance while in your inventory. If you are wearing full miizealite, necro or nightsouls armor, being on fire or in lava will grant you regeneration."));
+	    tooltip.add(new StringTextComponent("ง7Infinite fire resistance while in your inventory. If you are wearing full miizealite, necro or nightsouls armor, being on fire or in lava will grant you regeneration."));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	

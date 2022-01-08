@@ -20,7 +20,7 @@ public class Banana extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Monke like banana."));
+	   tooltip.add(new StringTextComponent("ง7Monke like banana."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	}  
 

@@ -37,7 +37,7 @@ public class WealthDigger extends PickaxeItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("Â§7Brings you fortune and riches. Able to mine Â§bTrapped True Night SoulÂ§7."));
+    tooltip.add(new StringTextComponent("§7Brings you fortune and riches. Able to mine §bTrapped True Night Soul§7."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

@@ -27,8 +27,8 @@ public class UltimateCraniteIngot extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ยง6"+tooltip.get(0).getString()+"ยงr"));
-	tooltip.add(new StringTextComponent("ยง7It has been blessed with the Hallowed Paladin's might. It is extremely dense and heavy."));	
+	tooltip.set(0, new StringTextComponent("ง6"+tooltip.get(0).getString()+"งr"));
+	tooltip.add(new StringTextComponent("ง7It has been blessed with the Hallowed Paladin's might. It is extremely dense and heavy."));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

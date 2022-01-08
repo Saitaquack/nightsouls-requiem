@@ -39,7 +39,7 @@ public class AllSeeingOrb extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ยง7Grants you invisibility when in your inventory with no debuffs. Right-Click to also get a temporary night vision effect."));
+    tooltip.add(new StringTextComponent("ง7Grants you invisibility when in your inventory with no debuffs. Right-Click to also get a temporary night vision effect."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

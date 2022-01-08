@@ -38,8 +38,8 @@ public class HallowedPaladinArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ยง6"+tooltip.get(0).getString()+"ยงr"));
-    tooltip.add(new StringTextComponent("ยง6Full set bonus : ยง7Infinite Speed III, Strength II, Regeneration I and Resistance I. Temporary shield every 20 seconds for 10 seconds that gives Absorption III and Resistance II. Hold sneak to jump super high, to regenerate health faster and to get super speed. Automatically gives you nightsouls emeralds overtime."));
+	tooltip.set(0, new StringTextComponent("ง6"+tooltip.get(0).getString()+"งr"));
+    tooltip.add(new StringTextComponent("ง6Full set bonus : ง7Infinite Speed III, Strength II, Regeneration I and Resistance I. Temporary shield every 20 seconds for 10 seconds that gives Absorption III and Resistance II. Hold sneak to jump super high, to regenerate health faster and to get super speed. Automatically gives you nightsouls emeralds overtime."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

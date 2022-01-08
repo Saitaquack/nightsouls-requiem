@@ -39,8 +39,8 @@ public class HellfireEmperorArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
-    tooltip.add(new StringTextComponent("ยง4Full set bonus : ยง7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether or during nighttime. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime. Long live the emperor !"));
+	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
+    tooltip.add(new StringTextComponent("ง4Full set bonus : ง7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether or during nighttime. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime. Long live the emperor !"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

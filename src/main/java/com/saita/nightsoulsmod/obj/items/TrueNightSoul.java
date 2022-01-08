@@ -27,7 +27,7 @@ public class TrueNightSoul extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ยง7The amalgamate of the souls of 4 fallen legends. It holds an incredible power."));
+    tooltip.add(new StringTextComponent("ง7The amalgamate of the souls of 4 fallen legends. It holds an incredible power."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

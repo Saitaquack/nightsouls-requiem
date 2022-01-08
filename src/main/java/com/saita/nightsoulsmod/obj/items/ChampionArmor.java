@@ -27,7 +27,7 @@ public class ChampionArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ยง6Full set bonus : ยง7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Reduced Molten Core and Super Star cooldowns. Instant Healing Potion has no cooldown and heals more. You have a chance to not consume any of these items."));			
+	tooltip.add(new StringTextComponent("ง6Full set bonus : ง7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Reduced Molten Core and Super Star cooldowns. Instant Healing Potion has no cooldown and heals more. You have a chance to not consume any of these items."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

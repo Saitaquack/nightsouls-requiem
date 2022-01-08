@@ -37,7 +37,7 @@ public class TakeABreather extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("ยง7Grants you quick regeneration as well as resistance. Cooldown : 16 seconds. Cooldown is 12 seconds with saitastone, nightsouls, milky way or paragonic armor."));
+	   tooltip.add(new StringTextComponent("ง7Grants you quick regeneration as well as resistance. Cooldown : 16 seconds. Cooldown is 12 seconds with saitastone, nightsouls, milky way or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 
