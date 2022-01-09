@@ -6,6 +6,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.saita.nightsoulsmod.entities.render.*;
 import com.saita.nightsoulsmod.init.*;
 import com.saita.nightsoulsmod.util.ModelProperties;
 import com.saita.nightsoulsmod.world.OreGen;
@@ -32,6 +34,10 @@ public class NightSoulsMod
         BlockInit.register(eventBus);
         SoundInit.register(eventBus);
         StructureInit.register(eventBus);
+        
+        NightSoulsEntityTypes.register(eventBus);
+        
+        
         eventBus.addListener(this::setup);
         eventBus.addListener(this::doClientStuff);
 
@@ -59,6 +65,8 @@ public class NightSoulsMod
               ModelProperties.makeBow(ItemInit.NIGHTSOULS_BOW.get(), 16.0F);
               ModelProperties.makeBow(ItemInit.BOW_SER.get(), 12.0F);
           });
+    	  
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.REAPER.get(), ReaperRenderer::new);
        
     }
     

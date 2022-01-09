@@ -6,6 +6,7 @@ import com.saita.nightsoulsmod.enums.NightSoulsArmorTier;
 import com.saita.nightsoulsmod.enums.NightSoulsItemTier;
 import com.saita.nightsoulsmod.obj.blockitems.*;
 import com.saita.nightsoulsmod.obj.items.*;
+import com.saita.nightsoulsmod.obj.special.ModSpawnEggItem;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
@@ -370,6 +371,9 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PETRIFIED_SPACESTONE = ITEMS.register("petrified_spacestone", () -> new BlockItem(BlockInit.PETRIFIED_SPACESTONE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> PETRIFIED_HEAVENSTONE = ITEMS.register("petrified_heavenstone", () -> new BlockItem(BlockInit.PETRIFIED_HEAVENSTONE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> PETRIFIED_ANTISTONE = ITEMS.register("petrified_antistone", () -> new BlockItem(BlockInit.PETRIFIED_ANTISTONE.get(), new Item.Properties()));
+	
+	public static final RegistryObject<Item> REAPER_SPAWN_EGG = ITEMS.register("reaper_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.REAPER, 0x0D0D0D, 0xA349A4, new Item.Properties().group(NightSoulsItemGroup.instance)));
+
 
 	
 	public static void register(IEventBus eventBus) {

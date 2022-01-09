@@ -484,7 +484,10 @@
    "advancements.end.get_perfect_paragonic_block.description": "Obtain a perfect paragonic block.",
    "advancements.end.get_paragonic_stuff.title": "Beyond Gods",
    "advancements.end.get_paragonic_stuff.description": "Obtain any of the paragonic items.",
-      
+   
+   "item.nightsouls.reaper_spawn_egg": "Reaper Spawn Egg",
+   
+   "entity.nightsouls.reaper": "Reaper",   
 
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",

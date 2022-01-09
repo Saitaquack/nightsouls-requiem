@@ -1054,6 +1054,50 @@
 			}
 		]
 		
+	},
+	
+	"reaper_ambient": {
+		"category": "entity",
+		"subtitle": "Reaper Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reaper_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/reaper_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/reaper_ambient3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_hit": {
+		"category": "entity",
+		"subtitle": "Reaper Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reaper_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_death": {
+		"category": "entity",
+		"subtitle": "Reaper Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reaper_death",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

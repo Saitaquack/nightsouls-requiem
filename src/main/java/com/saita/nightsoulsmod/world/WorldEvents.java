@@ -30,6 +30,8 @@ public class WorldEvents {
 	 @SubscribeEvent
 	    public static void biomeLoadingEvent(final BiomeLoadingEvent event) {
 	        StructureGen.generateStructures(event);
+	        
+	        NightSoulsEntitySpawn.onEntitySpawn(event);
 
 	   }
 	

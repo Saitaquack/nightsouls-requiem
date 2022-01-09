@@ -484,8 +484,11 @@
    "advancements.end.get_perfect_paragonic_block.description": "Obtenez un bloc parangonique parfait.",
    "advancements.end.get_paragonic_stuff.title": "Au-delà des dieux",
    "advancements.end.get_paragonic_stuff.description": "Obtenez un des objets paragoniques.",
+   
+   "item.nightsouls.reaper_spawn_egg": "Oeuf d'apparition de Faucheuse",
+   
+   "entity.nightsouls.reaper": "Faucheuse",
      
-
    "itemGroup.NightSoulsTab": "Mod NightSouls",
    "itemGroup.NightSoulsFinalsTab": "Stuff final de NightSouls",
    "itemGroup.NightSoulsDiscsTab": "Disques NightSouls",
