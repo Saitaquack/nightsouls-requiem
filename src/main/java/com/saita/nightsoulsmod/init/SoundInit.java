@@ -160,6 +160,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> FACE_MONSTER_DEATH = SOUNDS.register("face_monster_death", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "face_monster_death")));
 	
+	public static final RegistryObject<SoundEvent> EYE_HIT = SOUNDS.register("eye_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "eye_hit")));
+	
+	public static final RegistryObject<SoundEvent> EYE_DEATH = SOUNDS.register("eye_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "eye_death")));
+	
 	
 	//Musiques
 	

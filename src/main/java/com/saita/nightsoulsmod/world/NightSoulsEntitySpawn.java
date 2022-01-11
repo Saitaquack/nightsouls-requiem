@@ -18,17 +18,21 @@ public class NightSoulsEntitySpawn {
 		     event.getCategory().equals(Biome.Category.OCEAN) || event.getCategory().equals(Biome.Category.MUSHROOM)))
 		  {
 		  
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.REAPER.get(), 6, 1, 5);
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.WEREWOLF.get(), 6, 1, 5);
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 6, 1, 4);
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.FACE_MONSTER.get(), 6, 1, 5);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.REAPER.get(), 4, 1, 5);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.WEREWOLF.get(), 4, 1, 5);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.FACE_MONSTER.get(), 4, 1, 5);
+			  
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 4, 1, 4);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.DEMON_EYE.get(), 4, 1, 4);
 		  
 		  }
 		  
 		  if(event.getCategory().equals(Biome.Category.NETHER))
 		    {
 				  
-					  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLBORN.get(), 2, 1, 5);
+			    addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLBORN.get(), 1, 1, 6);
+			    addEntity(event.getSpawns(), NightSoulsEntityTypes.REAPER.get(), 1, 1, 4);
+			    addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 1, 1, 3);
 				  
 		    }
 		  

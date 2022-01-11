@@ -47,7 +47,7 @@ public class NightSoulsMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-    	LOGGER.info("Hello from NightSouls Mod Requiem 1.1!");
+    	LOGGER.info("Hello from NightSouls Mod Requiem 2.0!");
     	LOGGER.info("Loading Star Gatherer's powers...");
     	LOGGER.info("Loading Hellfire Emperor's reign...");
     	LOGGER.info("Loading Hallowed Paladin's might...");
@@ -71,6 +71,7 @@ public class NightSoulsMod
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.PSYCHO.get(), PsychoRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.FACE_MONSTER.get(), FaceMonsterRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.HELLBORN.get(), HellbornRenderer::new);
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.DEMON_EYE.get(), DemonEyeRenderer::new);
 
     }
     

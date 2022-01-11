@@ -42,7 +42,13 @@ public class NightSoulsEntityTypes {
 	 public static final RegistryObject<EntityType<HellbornEntity>> HELLBORN =
 	          ENTITY_TYPES.register("hellborn", () -> EntityType.Builder
 	            	.create(HellbornEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
+	            	.immuneToFire()
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "hellborn").toString()));
+	 
+	 public static final RegistryObject<EntityType<DemonEyeEntity>> DEMON_EYE =
+	          ENTITY_TYPES.register("demon_eye", () -> EntityType.Builder
+	            	.create(DemonEyeEntity::new, EntityClassification.MONSTER).size(0.9F, 1.0F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "demon_eye").toString()));
 
 	 
 	 

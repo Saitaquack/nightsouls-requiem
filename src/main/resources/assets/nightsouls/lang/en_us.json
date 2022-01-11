@@ -490,12 +490,14 @@
    "item.nightsouls.psycho_spawn_egg": "Psycho Spawn Egg",
    "item.nightsouls.face_monster_spawn_egg": "Face Monster Spawn Egg",
    "item.nightsouls.hellborn_spawn_egg": "Hellborn Spawn Egg",   
+   "item.nightsouls.demon_eye_spawn_egg": "Demon Eye Spawn Egg",   
    
    "entity.nightsouls.reaper": "Reaper",   
    "entity.nightsouls.werewolf": "Werewolf",
    "entity.nightsouls.psycho": "Psycho",
    "entity.nightsouls.face_monster": "Face Monster",
    "entity.nightsouls.hellborn": "Hellborn",
+   "entity.nightsouls.demon_eye": "Demon Eye",
    
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",

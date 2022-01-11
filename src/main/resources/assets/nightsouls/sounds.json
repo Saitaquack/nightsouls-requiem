@@ -1186,6 +1186,30 @@
 			}
 		]
 		
+	},
+	
+	"eye_hit": {
+		"category": "entity",
+		"subtitle": "Eye Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/eye_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"eye_death": {
+		"category": "entity",
+		"subtitle": "Eye Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/eye_death",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }
