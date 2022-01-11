@@ -67,7 +67,11 @@ public class NightSoulsMod
           });
     	  
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.REAPER.get(), ReaperRenderer::new);
-       
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.WEREWOLF.get(), WerewolfRenderer::new);
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.PSYCHO.get(), PsychoRenderer::new);
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.FACE_MONSTER.get(), FaceMonsterRenderer::new);
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.HELLBORN.get(), HellbornRenderer::new);
+
     }
     
     @SubscribeEvent

@@ -19,26 +19,31 @@ import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ItemStack;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ReaperEntity extends MonsterEntity {
+public class WerewolfEntity extends MonsterEntity {
 
-	public ReaperEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
+	public WerewolfEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
+		
 	
 	}
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 45.0D)
-				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
+				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.32D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 8.0D) 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.4D) 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	
 	@Override
@@ -62,7 +67,7 @@ public class ReaperEntity extends MonsterEntity {
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, false));
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
   
-	   }
+	}
 	 
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
@@ -73,42 +78,63 @@ public class ReaperEntity extends MonsterEntity {
 	@Override
 	protected SoundEvent getAmbientSound() {
 		
-		return SoundInit.REAPER_AMBIENT.get();
+		return SoundInit.WEREWOLF_AMBIENT.get();
 	}
 	
 	@Override
 	protected SoundEvent getDeathSound() {
 		
-		return SoundInit.REAPER_DEATH.get();
+		return SoundInit.WEREWOLF_DEATH.get();
 	}
 	
 	@Override
 	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
 		
-		return SoundInit.REAPER_HIT.get();
+		return SoundInit.WEREWOLF_HIT.get();
 	}
 	
 	@Override
 	protected void playStepSound(BlockPos pos, BlockState blockIn) {
 		
-		return;
-	}
+		this.playSound(SoundEvents.ENTITY_ZOMBIE_STEP, 0.20F, 0.5F);
+	 }
 	
-	@Override
-	public boolean isEntityUndead() {
-		
-		return true;
-	}
+	 //Burns at Day
 	
-	//Negates fall damage
-	@Override
-	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
-				
-		return 0;
-	}
+	 protected boolean shouldBurnInDay() {
+	      return true;
+	 }
+	
+	 
+	 public void livingTick() {
+	      if (this.isAlive()) {
+	         boolean flag = this.shouldBurnInDay() && this.isInDaylight();
+	         if (flag) {
+	            ItemStack itemstack = this.getItemStackFromSlot(EquipmentSlotType.HEAD);
+	            if (!itemstack.isEmpty()) {
+	               if (itemstack.isDamageable()) {
+	                  itemstack.setDamage(itemstack.getDamage() + this.rand.nextInt(2));
+	                  if (itemstack.getDamage() >= itemstack.getMaxDamage()) {
+	                     this.sendBreakAnimation(EquipmentSlotType.HEAD);
+	                     this.setItemStackToSlot(EquipmentSlotType.HEAD, ItemStack.EMPTY);
+	                  }
+	               }
+
+	               flag = false;
+	            }
+
+	            if (flag) {
+	               this.setFire(8);
+	            }
+	         }
+	      }
+
+	      super.livingTick();
+	   }
 	
 
-	// Reaper gets Regeneration on attack
+
+	// Inflicts hunger on attack
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
 		
@@ -118,7 +144,7 @@ public class ReaperEntity extends MonsterEntity {
 	        } else {
 	        	
 	            if (entityIn instanceof LivingEntity) {
-	                this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 160, 1));
+	                ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.HUNGER, 200, 1));
 	            }
 	            return true;
 	        }

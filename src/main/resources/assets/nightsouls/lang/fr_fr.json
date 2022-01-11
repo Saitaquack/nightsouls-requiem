@@ -486,8 +486,16 @@
    "advancements.end.get_paragonic_stuff.description": "Obtenez un des objets paragoniques.",
    
    "item.nightsouls.reaper_spawn_egg": "Oeuf d'apparition de Faucheuse",
+   "item.nightsouls.werewolf_spawn_egg": "Oeuf d'apparition de Loup-garou",
+   "item.nightsouls.psycho_spawn_egg": "Oeuf d'apparition de Psycho",
+   "item.nightsouls.face_monster_spawn_egg": "Oeuf d'apparition de Monstre visage",
+   "item.nightsouls.hellborn_spawn_egg": "Oeuf d'apparition d'Inferné",
    
    "entity.nightsouls.reaper": "Faucheuse",
+   "entity.nightsouls.werewolf": "Loup-garou",
+   "entity.nightsouls.psycho": "Psycho",
+   "entity.nightsouls.face_monster": "Monstre visage",
+   "entity.nightsouls.hellborn": "Inferné",
      
    "itemGroup.NightSoulsTab": "Mod NightSouls",
    "itemGroup.NightSoulsFinalsTab": "Stuff final de NightSouls",

@@ -1,6 +1,5 @@
 package com.saita.nightsoulsmod.entities.entity;
 
-import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -19,37 +18,37 @@ import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ReaperEntity extends MonsterEntity {
+public class HellbornEntity extends MonsterEntity {
 
-	public ReaperEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
+	public HellbornEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
 	
 	}
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 45.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 42.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 9.0D) 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
 	}
 	
 	@Override
 	protected void registerGoals() {
 		 super.registerGoals();   
-		 this.goalSelector.addGoal(1, new SwimGoal(this));
-		 this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
-		 this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2D, true));
-		 this.goalSelector.addGoal(4, new LookAtGoal(this, PlayerEntity.class, 8.0F));
-	     this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-	     this.goalSelector.addGoal(6, new LookAtGoal(this, MobEntity.class, 15.0F));
+		 this.goalSelector.addGoal(0, new SwimGoal(this));
+		 this.goalSelector.addGoal(1, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
+		 this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2D, true));
+		 this.goalSelector.addGoal(3, new LookAtGoal(this, PlayerEntity.class, 8.0F));
+	     this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
+	     this.goalSelector.addGoal(5, new LookAtGoal(this, MobEntity.class, 15.0F));
 	     
 	     this.applyEntityAI();
 
@@ -73,42 +72,54 @@ public class ReaperEntity extends MonsterEntity {
 	@Override
 	protected SoundEvent getAmbientSound() {
 		
-		return SoundInit.REAPER_AMBIENT.get();
+		return SoundEvents.ENTITY_BLAZE_AMBIENT;
 	}
 	
 	@Override
 	protected SoundEvent getDeathSound() {
 		
-		return SoundInit.REAPER_DEATH.get();
+		return SoundEvents.ENTITY_BLAZE_DEATH;
 	}
 	
 	@Override
 	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
 		
-		return SoundInit.REAPER_HIT.get();
+		return SoundEvents.ENTITY_BLAZE_HURT;
 	}
 	
 	@Override
 	protected void playStepSound(BlockPos pos, BlockState blockIn) {
 		
-		return;
-	}
-	
-	@Override
-	public boolean isEntityUndead() {
-		
-		return true;
-	}
+		this.playSound(SoundEvents.ENTITY_WITHER_SKELETON_STEP, 0.20F, 0.5F);
+	 }
 	
 	//Negates fall damage
 	@Override
 	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
-				
+					
 		return 0;
+	}
+			
+	
+	
+	//Takes damage in water
+	@Override
+	protected void updateAITasks() {
+		if (this.isInWaterRainOrBubbleColumn()) {
+		        this.attackEntityFrom(DamageSource.DROWN, 1.0F);
+		}
+	}
+	
+	
+	//Makes Fire Demon Bright
+	@Override
+	public float getBrightness() {
+			
+		return 1.0F;
 	}
 	
 
-	// Reaper gets Regeneration on attack
+	// Burns victim
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
 		
@@ -118,7 +129,7 @@ public class ReaperEntity extends MonsterEntity {
 	        } else {
 	        	
 	            if (entityIn instanceof LivingEntity) {
-	                this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 160, 1));
+	                ((LivingEntity) entityIn).setFire(4);
 	            }
 	            return true;
 	        }

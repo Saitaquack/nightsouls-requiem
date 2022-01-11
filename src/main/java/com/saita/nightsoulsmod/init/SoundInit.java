@@ -139,6 +139,27 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> REAPER_DEATH = SOUNDS.register("reaper_death", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "reaper_death")));
 	
+	public static final RegistryObject<SoundEvent> WEREWOLF_AMBIENT = SOUNDS.register("werewolf_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "werewolf_ambient")));
+	
+	public static final RegistryObject<SoundEvent> WEREWOLF_HIT = SOUNDS.register("werewolf_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "werewolf_hit")));
+	
+	public static final RegistryObject<SoundEvent> WEREWOLF_DEATH = SOUNDS.register("werewolf_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "werewolf_death")));
+	
+	public static final RegistryObject<SoundEvent> PSYCHO_AMBIENT = SOUNDS.register("psycho_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "psycho_ambient")));
+	
+	public static final RegistryObject<SoundEvent> FACE_MONSTER_AMBIENT = SOUNDS.register("face_monster_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "face_monster_ambient")));
+	
+	public static final RegistryObject<SoundEvent> FACE_MONSTER_HIT = SOUNDS.register("face_monster_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "face_monster_hit")));
+	
+	public static final RegistryObject<SoundEvent> FACE_MONSTER_DEATH = SOUNDS.register("face_monster_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "face_monster_death")));
+	
 	
 	//Musiques
 	

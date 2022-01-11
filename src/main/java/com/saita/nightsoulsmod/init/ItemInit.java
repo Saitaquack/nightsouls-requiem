@@ -373,6 +373,10 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PETRIFIED_ANTISTONE = ITEMS.register("petrified_antistone", () -> new BlockItem(BlockInit.PETRIFIED_ANTISTONE.get(), new Item.Properties()));
 	
 	public static final RegistryObject<Item> REAPER_SPAWN_EGG = ITEMS.register("reaper_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.REAPER, 0x0D0D0D, 0xA349A4, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> WEREWOLF_SPAWN_EGG = ITEMS.register("werewolf_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.WEREWOLF, 0x203248, 0x597CA4, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> PSYCHO_SPAWN_EGG = ITEMS.register("psycho_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.PSYCHO, 0x4B3411, 0x55000C, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> FACE_MONSTER_SPAWN_EGG = ITEMS.register("face_monster_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.FACE_MONSTER, 0x734945, 0x7C0000, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> HELLBORN_SPAWN_EGG = ITEMS.register("hellborn_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.HELLBORN, 0xE73706, 0xF7CF01, new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	

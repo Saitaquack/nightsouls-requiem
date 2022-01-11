@@ -2,12 +2,13 @@ package com.saita.nightsoulsmod.entities.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.saita.nightsoulsmod.entities.entity.ReaperEntity;
+import com.saita.nightsoulsmod.entities.entity.HellbornEntity;
 
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.util.math.MathHelper;
 
-public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
+public class HellbornModel <T extends HellbornEntity> extends EntityModel<T> {
 	
 	private final ModelRenderer Body;
 	private final ModelRenderer head;
@@ -17,43 +18,44 @@ public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
 	private final ModelRenderer rightLeg;
 	private final ModelRenderer leftArm;
 
-	public ReaperModel() {
-		textureWidth = 64;
-		textureHeight = 64;
-
-		Body = new ModelRenderer(this);
-		Body.setRotationPoint(-5.0F, 2.0F, 0.0F);
+	public HellbornModel() {
 		
+		textureWidth = 64;
+        textureHeight = 32;
+        
+        Body = new ModelRenderer(this);
+		Body.setRotationPoint(-5.0F, 2.0F, 0.0F);
 
 		head = new ModelRenderer(this);
 		head.setRotationPoint(5.0F, -2.0F, 0.0F);
 		Body.addChild(head);
-		head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
+		head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, true);
 
 		chest = new ModelRenderer(this);
 		chest.setRotationPoint(5.0F, -2.0F, 0.0F);
 		Body.addChild(chest);
-		chest.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
+		chest.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, true);
 
 		rightArm = new ModelRenderer(this);
-		rightArm.setRotationPoint(10.0F, 0.0F, 0.0F);
+		rightArm.setRotationPoint(11.0F, 0.0F, 0.0F);
 		Body.addChild(rightArm);
-		rightArm.setTextureOffset(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+		rightArm.setTextureOffset(40, 16).addBox(-2.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
 
 		leftLeg = new ModelRenderer(this);
 		leftLeg.setRotationPoint(3.1F, 10.0F, 0.0F);
 		Body.addChild(leftLeg);
-		leftLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
+		leftLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
 
 		rightLeg = new ModelRenderer(this);
 		rightLeg.setRotationPoint(6.9F, 10.0F, 0.0F);
 		Body.addChild(rightLeg);
-		rightLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+		rightLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
 
 		leftArm = new ModelRenderer(this);
-		leftArm.setRotationPoint(0.0F, 0.0F, 0.0F);
+		leftArm.setRotationPoint(-1.0F, 0.0F, 0.0F);
 		Body.addChild(leftArm);
-		leftArm.setTextureOffset(40, 16).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
+		leftArm.setTextureOffset(40, 16).addBox(-2.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+
 	}
 	
 
@@ -76,6 +78,10 @@ public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
 		
 		this.head.rotateAngleX = headPitch * ((float)Math.PI / 180F);
         this.head.rotateAngleY = netHeadYaw * ((float)Math.PI / 180F);
+        this.rightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+        this.rightArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leftArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
 		
 	}
 	

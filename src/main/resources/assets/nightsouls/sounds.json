@@ -1098,6 +1098,94 @@
 			}
 		]
 		
+	},
+	
+	"werewolf_ambient": {
+		"category": "entity",
+		"subtitle": "Werewolf Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/werewolf_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/werewolf_ambient2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_hit": {
+		"category": "entity",
+		"subtitle": "Werewolf Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/werewolf_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_death": {
+		"category": "entity",
+		"subtitle": "Werewolf Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/werewolf_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"psycho_ambient": {
+		"category": "entity",
+		"subtitle": "...",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/psycho_ambient",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"face_monster_ambient": {
+		"category": "entity",
+		"subtitle": "Face Monster Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/face_monster_ambient",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"face_monster_hit": {
+		"category": "entity",
+		"subtitle": "Face Monster Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/face_monster_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"face_monster_death": {
+		"category": "entity",
+		"subtitle": "Face Monster Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/face_monster_death",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

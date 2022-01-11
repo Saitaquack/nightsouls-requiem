@@ -2,12 +2,13 @@ package com.saita.nightsoulsmod.entities.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.saita.nightsoulsmod.entities.entity.ReaperEntity;
+import com.saita.nightsoulsmod.entities.entity.WerewolfEntity;
 
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.util.math.MathHelper;
 
-public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
+public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 	
 	private final ModelRenderer Body;
 	private final ModelRenderer head;
@@ -17,7 +18,7 @@ public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
 	private final ModelRenderer rightLeg;
 	private final ModelRenderer leftArm;
 
-	public ReaperModel() {
+	public WerewolfModel() {
 		textureWidth = 64;
 		textureHeight = 64;
 
@@ -38,7 +39,8 @@ public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
 		rightArm = new ModelRenderer(this);
 		rightArm.setRotationPoint(10.0F, 0.0F, 0.0F);
 		Body.addChild(rightArm);
-		rightArm.setTextureOffset(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+		setRotationAngle(rightArm, -1.309F, 0.0873F, -0.0436F);
+		rightArm.setTextureOffset(40, 16).addBox(-2.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
 
 		leftLeg = new ModelRenderer(this);
 		leftLeg.setRotationPoint(3.1F, 10.0F, 0.0F);
@@ -53,7 +55,8 @@ public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
 		leftArm = new ModelRenderer(this);
 		leftArm.setRotationPoint(0.0F, 0.0F, 0.0F);
 		Body.addChild(leftArm);
-		leftArm.setTextureOffset(40, 16).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
+		setRotationAngle(leftArm, -1.309F, -0.0873F, 0.0436F);
+		leftArm.setTextureOffset(40, 16).addBox(-2.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, true);
 	}
 	
 
@@ -76,6 +79,8 @@ public class ReaperModel <T extends ReaperEntity> extends EntityModel<T> {
 		
 		this.head.rotateAngleX = headPitch * ((float)Math.PI / 180F);
         this.head.rotateAngleY = netHeadYaw * ((float)Math.PI / 180F);
+        this.rightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
 		
 	}
 	

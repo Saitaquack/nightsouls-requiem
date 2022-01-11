@@ -486,9 +486,17 @@
    "advancements.end.get_paragonic_stuff.description": "Obtain any of the paragonic items.",
    
    "item.nightsouls.reaper_spawn_egg": "Reaper Spawn Egg",
+   "item.nightsouls.werewolf_spawn_egg": "Werewolf Spawn Egg",
+   "item.nightsouls.psycho_spawn_egg": "Psycho Spawn Egg",
+   "item.nightsouls.face_monster_spawn_egg": "Face Monster Spawn Egg",
+   "item.nightsouls.hellborn_spawn_egg": "Hellborn Spawn Egg",   
    
    "entity.nightsouls.reaper": "Reaper",   
-
+   "entity.nightsouls.werewolf": "Werewolf",
+   "entity.nightsouls.psycho": "Psycho",
+   "entity.nightsouls.face_monster": "Face Monster",
+   "entity.nightsouls.hellborn": "Hellborn",
+   
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",
    "itemGroup.NightSoulsDiscsTab": "NightSouls Discs",

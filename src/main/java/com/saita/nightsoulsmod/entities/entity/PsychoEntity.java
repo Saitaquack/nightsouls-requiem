@@ -21,24 +21,24 @@ import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ReaperEntity extends MonsterEntity {
+public class PsychoEntity extends MonsterEntity {
 
-	public ReaperEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
+	public PsychoEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
 	
 	}
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 45.0D)
-				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
+				.createMutableAttribute(Attributes.MAX_HEALTH, 55.0D)
+				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.20D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 12.0D) 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.6D) 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 50.0D); 
 	}
 	
 	@Override
@@ -62,30 +62,18 @@ public class ReaperEntity extends MonsterEntity {
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, false));
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
   
-	   }
+	  }
 	 
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 10;
+		 return 15;
 	 }
 	 
 	@Override
 	protected SoundEvent getAmbientSound() {
 		
-		return SoundInit.REAPER_AMBIENT.get();
-	}
-	
-	@Override
-	protected SoundEvent getDeathSound() {
-		
-		return SoundInit.REAPER_DEATH.get();
-	}
-	
-	@Override
-	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-		
-		return SoundInit.REAPER_HIT.get();
+		return SoundInit.PSYCHO_AMBIENT.get();
 	}
 	
 	@Override
@@ -100,15 +88,8 @@ public class ReaperEntity extends MonsterEntity {
 		return true;
 	}
 	
-	//Negates fall damage
-	@Override
-	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
-				
-		return 0;
-	}
-	
 
-	// Reaper gets Regeneration on attack
+	// Inflicts Blindness on attack
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
 		
@@ -118,7 +99,7 @@ public class ReaperEntity extends MonsterEntity {
 	        } else {
 	        	
 	            if (entityIn instanceof LivingEntity) {
-	                this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 160, 1));
+	                ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.BLINDNESS, 160, 0));
 	            }
 	            return true;
 	        }
