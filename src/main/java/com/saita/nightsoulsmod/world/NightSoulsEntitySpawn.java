@@ -30,7 +30,7 @@ public class NightSoulsEntitySpawn {
 		  if(event.getCategory().equals(Biome.Category.NETHER))
 		    {
 				  
-			    addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLBORN.get(), 1, 1, 6);
+			    addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLBORN.get(), 2, 1, 6);
 			    addEntity(event.getSpawns(), NightSoulsEntityTypes.REAPER.get(), 1, 1, 4);
 			    addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 1, 1, 3);
 				  
