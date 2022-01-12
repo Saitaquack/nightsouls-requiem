@@ -11,15 +11,15 @@ import net.minecraft.util.LazyValue;
 
 public enum NightSoulsItemTier implements IItemTier
 {
-	SAITASTONE(6, 2185, 11.0F, 5.0F, 22, ()-> //1561 x 1.4  Good damage, efficency, enchantability and armor. Average durability
+	SAITASTONE(6, 2185, 11.0F, 5.0F, 22, ()-> //1561 x 1.4  Good damage, efficiency, enchant and armor. Average durability
 	{ 
 		return Ingredient.fromItems( ItemInit.SAITASTONE_INGOT.get()); 
 	}),
-	MIIZEALITE(6, 2185, 12.0F, 6.0F, 15, ()-> //1561 x 1.4  Best damage and efficency, average armor, durability and enchantability.
+	MIIZEALITE(6, 2185, 12.0F, 6.0F, 15, ()-> //1561 x 1.4  Best damage and efficiency, average armor, durability and enchant.
 	{ 
 		return Ingredient.fromItems( ItemInit.MIIZEALITE_INGOT.get()); 
 	}),
-	CRANITE(6, 2341, 10.0F, 4.5F, 30, ()-> //1561 x 1.5  Better durability and amazing enchantability, average damage and efficency, best armor.
+	CRANITE(6, 2341, 10.0F, 4.5F, 30, ()-> //1561 x 1.5  Better durability and amazing enchant, average damage and efficiency, best armor.
 	{ 
 		return Ingredient.fromItems( ItemInit.CRANITE_INGOT.get()); 
 	}),
@@ -27,7 +27,7 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.CRANITE_INGOT.get()); 
 	}),
-	BASTIRITE(6, 3122, 11.0F, 4.0F, 15, ()-> //1561 x 2  Best durability, better efficency, average stats.
+	BASTIRITE(6, 3122, 11.0F, 4.0F, 15, ()-> //1561 x 2  Best durability, better efficiency, average stats.
 	{ 
 		return Ingredient.fromItems( ItemInit.BASTIRITE_INGOT.get()); 
 	}),
@@ -91,17 +91,27 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.CRAZY_DIAMOND.get()); 
 	}),
-	PRIMIUM(6, 2185, 12.0F, 5.0F, 22, ()->   // Good damage, enchantability. Average durability. Great efficency
+	PRIMIUM(6, 2185, 12.0F, 5.0F, 22, ()->   // Good damage, enchant Average durability. Great efficiency
 	{ 
 		return Ingredient.fromItems( ItemInit.PRIMIUM_INGOT.get()); 
 	}),
-	ROWEQUITE(6, 2731, 10.0F, 4.5F, 20, ()-> // Great durability and average enchantability, average damage and efficency.
+	ROWEQUITE(6, 2731, 10.0F, 4.5F, 20, ()-> // Great durability and average enchant, average damage and efficiency.
 	{ 
 		return Ingredient.fromItems( ItemInit.ROWEQUITE_INGOT.get()); 
 	}),
-	THERENITE(6, 2185, 11.0F, 5.0F, 30, ()-> // Good damage, efficency. Average durability. Amazing enchantability.
+	THERENITE(6, 2185, 11.0F, 5.0F, 30, ()-> // Good damage, efficiency. Average durability. Amazing enchant.
 	{ 
 		return Ingredient.fromItems( ItemInit.THERENITE_INGOT.get()); 
+	}),
+	
+	//Dragonblade and Nanoblade
+	DRAGONBLADE(6, 3746, 16.0F, 13.5F, 22, ()-> //3122 x 1.2
+	{ 
+		return Ingredient.fromItems( ItemInit.PRIMIUM_INGOT.get()); 
+	}),
+	NANOBLADE(6, 7492, 20.0F, 20.0F, 32, ()-> //3746 x 2
+	{ 
+		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
 	
 	//True combos

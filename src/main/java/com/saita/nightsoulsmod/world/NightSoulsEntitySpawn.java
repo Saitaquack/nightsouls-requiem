@@ -22,7 +22,7 @@ public class NightSoulsEntitySpawn {
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.WEREWOLF.get(), 4, 1, 5);
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.FACE_MONSTER.get(), 4, 1, 5);
 			  
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 4, 1, 4);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 4, 1, 4);			  
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.DEMON_EYE.get(), 4, 1, 4);
 		  
 		  }

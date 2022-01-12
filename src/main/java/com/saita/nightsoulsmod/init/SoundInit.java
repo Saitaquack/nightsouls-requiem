@@ -128,6 +128,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> DIVINE_SANCTION = SOUNDS.register("divine_sanction", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "divine_sanction")));
 	
+	public static final RegistryObject<SoundEvent> DRAGONBLADE_DASH = SOUNDS.register("dragonblade_dash", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "dragonblade_dash")));
+	
+	public static final RegistryObject<SoundEvent> DRAGONBLADE_SLASH = SOUNDS.register("dragonblade_slash", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "dragonblade_slash")));
+	
 	//Mobs
 	
 	public static final RegistryObject<SoundEvent> REAPER_AMBIENT = SOUNDS.register("reaper_ambient", () -> new SoundEvent

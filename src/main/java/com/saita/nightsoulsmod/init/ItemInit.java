@@ -216,7 +216,10 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> CHAMPION_LEGGINGS = ITEMS.register("champion_leggings", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> CHAMPION_BOOTS = ITEMS.register("champion_boots", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> SUPER_BLINK = ITEMS.register("super_blink", () -> new SuperBlink(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	
+    public static final RegistryObject<SwordItem> DRAGONBLADE = ITEMS.register("dragonblade", () -> new DragonBlade(NightSoulsItemTier.DRAGONBLADE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
+    public static final RegistryObject<SwordItem> NANOBLADE = ITEMS.register("nanoblade", () -> new NanoBlade(NightSoulsItemTier.NANOBLADE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> BROKEN_DRAGONBLADE = ITEMS.register("broken_dragonblade", () -> new BrokenDragonBlade(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
+
     
 	public static final RegistryObject<BlockItem> HELLSTONE = ITEMS.register("hellstone", () -> new MeteoriteBlock(BlockInit.HELLSTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<BlockItem> SPACESTONE = ITEMS.register("spacestone", () -> new MeteoriteBlock(BlockInit.SPACESTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));

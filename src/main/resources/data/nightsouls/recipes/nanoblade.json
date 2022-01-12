@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:dragonblade"},
+    {"item": "nightsouls:nano_boost"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:nanoblade"
+  }
+}
