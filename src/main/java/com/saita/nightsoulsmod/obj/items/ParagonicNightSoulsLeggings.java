@@ -40,7 +40,7 @@ public class ParagonicNightSoulsLeggings extends ParagonicNightSoulsArmor {
 		 {
 			 player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 2, false, false));	  
 			 player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 2, false, false));	
-			 if(world.getDayTime() % 60 == 0)
+			 if(world.getGameTime() % 60 == 0)
 				{
 				   int randomHealChance = random.nextInt(3);
 						    

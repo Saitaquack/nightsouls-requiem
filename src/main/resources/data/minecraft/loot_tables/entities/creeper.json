@@ -62,6 +62,23 @@
           "looting_multiplier": 0.07
         }
       ]
+    },
+    
+     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:revenge_music_disc"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.02,
+          "looting_multiplier": 0.01
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,6 @@
       "nightsouls:night_soul_pickaxe",
       "nightsouls:night_soul_pickaxe_from_netherite_pickaxe",
       "nightsouls:bloodzeal",
-      "nightsouls:moon_charm",
       "nightsouls:insta_pickaxe",
       "nightsouls:reinhardt_hammer",
       "nightsouls:pyro_barbarian_waraxe",
@@ -16,9 +15,7 @@
       "nightsouls:coolfire_blade",
       "nightsouls:asgore_music_disc",
       "nightsouls:nightsouls_emerald",
-      "nightsouls:silent_watching_orb",
-      "nightsouls:night_town_music_disc",
-      "nightsouls:blood_charm"
+      "nightsouls:silent_watching_orb"
     ]
   },
   "criteria": {

@@ -41,7 +41,7 @@ public class RowequiteArmor extends ArmorItem {
 			    player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ROWEQUITE_BOOTS.get())	
 			    {
 				 
-				 if(world.getDayTime() % 200 == 0)
+				 if(world.getGameTime() % 200 == 0)
 				 	{
 				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));					
 				 	}							 			

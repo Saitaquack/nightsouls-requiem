@@ -39,11 +39,11 @@ public class SaitastoneArmor extends ArmorItem {
 		   player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.SAITASTONE_BOOTS.get())
 		    	 
 			 {		 
-				 if(world.getDayTime() % 80 == 0)
+				 if(world.getGameTime() % 70 == 0)
 				  {
 					 int randomHealChance = random.nextInt(3);
 					    
-					   if(randomHealChance == 0)
+					   if(randomHealChance == 1)
 					   {
 					   player.heal(1.0F);
 					   }

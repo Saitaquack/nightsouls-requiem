@@ -66,7 +66,7 @@ public class ParagonicNightSoulsArmor extends ArmorItem {
 	public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
 		
 		// Donne des NightSouls Emeralds
-		if(world.getDayTime() % 3000 == 0)
+		if(world.getGameTime() % 3000 == 0)
 	    {
 		 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 4);
 		 	player.dropItem(nsEmerald, false).setNoPickupDelay();
@@ -74,7 +74,7 @@ public class ParagonicNightSoulsArmor extends ArmorItem {
         }
 		
 		// Donne des star bits
-		if(world.getDayTime() % 2400 == 0)
+		if(world.getGameTime() % 2400 == 0)
 	   	{
           ItemStack starFragment = new ItemStack(ItemInit.STAR_BIT.get(), 1);
 		    player.dropItem(starFragment, false).setNoPickupDelay();
@@ -94,7 +94,7 @@ public class ParagonicNightSoulsArmor extends ArmorItem {
 	     }
 		
 		// repairs itself
-		 if(world.getDayTime() % 200 == 0)
+		 if(world.getGameTime() % 200 == 0)
 		  {
 			stack.damageItem(-1, player, null);
 		  }

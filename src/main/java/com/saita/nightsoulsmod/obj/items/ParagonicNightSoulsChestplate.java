@@ -60,7 +60,7 @@ public class ParagonicNightSoulsChestplate extends ParagonicNightSoulsArmor {
 				  player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 2, false, false));
 				  player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 3, false, false));
 
-				  if(world.getDayTime() % 60 == 0)
+				  if(world.getGameTime() % 60 == 0)
 				   {
 					  player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 3));
 				    }
@@ -71,7 +71,7 @@ public class ParagonicNightSoulsChestplate extends ParagonicNightSoulsArmor {
 					player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 3, false, false));
 					player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 2, false, false));
 					player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));	
-					if(world.getDayTime() % 60 == 0)
+					if(world.getGameTime() % 60 == 0)
 					  {
 					 	if(player.isBurning())
 					 	  {
@@ -98,7 +98,7 @@ public class ParagonicNightSoulsChestplate extends ParagonicNightSoulsArmor {
 					player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 3, false, false));
 					player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 2, false, false));
 					player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));
-					if(world.getDayTime() % 60 == 0)
+					if(world.getGameTime() % 60 == 0)
 						{
 					 		player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 2));
 						}

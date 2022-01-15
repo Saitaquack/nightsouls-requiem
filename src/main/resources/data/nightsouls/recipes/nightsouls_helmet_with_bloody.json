@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:bloody_helmet"},
+    {"item": "nightsouls:miizealite_helmet"},
+    {"item": "nightsouls:cranite_helmet"},
+    {"item": "nightsouls:bastirite_helmet"},
+    {"item": "nightsouls:nightsouls_essence"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:nightsouls_helmet"
+    }
+}

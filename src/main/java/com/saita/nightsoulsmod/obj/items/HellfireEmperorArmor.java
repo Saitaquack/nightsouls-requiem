@@ -74,7 +74,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 	 @Override
 	 public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {	
 		 
-		 if(world.getDayTime() % 3000 == 0)
+		 if(world.getGameTime() % 3000 == 0)
 		    {
 			 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 1);
 			 	player.dropItem(nsEmerald, false).setNoPickupDelay();
@@ -122,7 +122,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 			  player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 2, false, false));
 			  player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 3, false, false));
 
-			  if(world.getDayTime() % 60 == 0)
+			  if(world.getGameTime() % 60 == 0)
 			   {
 				  player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 3));
 			    }
@@ -133,7 +133,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 				player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 2, false, false));
 				player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1, false, false));
 				player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));	
-				if(world.getDayTime() % 60 == 0)
+				if(world.getGameTime() % 60 == 0)
 				  {
 				 	if(player.isBurning())
 				 	  {
@@ -160,7 +160,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 				player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 2, false, false));
 				player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1, false, false));
 				player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));
-				if(world.getDayTime() % 60 == 0)
+				if(world.getGameTime() % 60 == 0)
 					{
 				 		player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 2));
 					}

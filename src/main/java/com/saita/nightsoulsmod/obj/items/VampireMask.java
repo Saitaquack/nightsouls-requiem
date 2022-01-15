@@ -68,12 +68,12 @@ public class VampireMask extends ArmorItem {
 		 	 player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 1, false, false));	
 		 	 player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));	
 		 	 
-		 	 if(world.getDayTime() % 180 == 0)
+		 	 if(world.getGameTime() % 180 == 0)
 			   {
 				  player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 400, 0, false, false));
 			   }
 		 	 
-		 	 if(world.getDayTime() % 100 == 0)
+		 	 if(world.getGameTime() % 100 == 0)
 			   {
 				  player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 1, false, false));
 			   }

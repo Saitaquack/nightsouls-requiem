@@ -49,7 +49,7 @@ public class MoonCharm extends Item {
 	    		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 1, false, false));
 	    		    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 0, false, false));
 	    		    
-	    		    if(worldIn.getDayTime() % 180 == 0)
+	    		    if(worldIn.getGameTime() % 180 == 0)
 					  {
 						 playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 400, 0, false, false));
 					  }

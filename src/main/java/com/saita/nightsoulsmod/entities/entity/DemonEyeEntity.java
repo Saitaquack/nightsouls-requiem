@@ -63,7 +63,7 @@ public class DemonEyeEntity extends PhantomEntity {
 	    	 
 	    // Make it so it immediatly despawns at day, because it spawns during the day.	  
 	    	  
-	      if(!(world.isRemote && !world.isNightTime()))
+	    	if(world.isDaytime() && !world.isRemote)
 	    	{
 	    		 this.remove();
 	    	}

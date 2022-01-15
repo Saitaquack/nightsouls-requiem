@@ -73,7 +73,7 @@ public class BinaryArmor extends ArmorItem {
 	 @Override
 	 public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
 		 
-		 if(world.getDayTime() % 3000 == 0)
+		 if(world.getGameTime() % 3000 == 0)
 		    {
 			 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 1);
 			 	player.dropItem(nsEmerald, false).setNoPickupDelay();
@@ -99,14 +99,14 @@ public class BinaryArmor extends ArmorItem {
 		player.addPotionEffect(new EffectInstance(Effects.CONDUIT_POWER, 5, 0, false, false));	
 		player.addPotionEffect(new EffectInstance(Effects.DOLPHINS_GRACE, 5, 0, false, false));	
 				 	
-		if(world.getDayTime() % 200 == 0)
+		if(world.getGameTime() % 200 == 0)
 		  {
 			stack.damageItem(-1, player, null);
 		  }
 				 	
 		  if(player.isSneaking())
 			{	
-			    if(world.getDayTime() % 60 == 0)
+			    if(world.getGameTime() % 60 == 0)
 				 {
 					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 3));						 
 				 }

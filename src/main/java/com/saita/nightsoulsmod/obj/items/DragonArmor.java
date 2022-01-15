@@ -54,7 +54,7 @@ public class DragonArmor extends ArmorItem {
 					 player.removePotionEffect(Effects.WITHER);
 					 player.removePotionEffect(Effects.NAUSEA);
 					 
-					 if(world.getDayTime() % 80 == 0)
+					 if(world.getGameTime() % 80 == 0)
 					  {
 						 int randomHealChance = random.nextInt(3);
 						    

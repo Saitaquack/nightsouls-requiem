@@ -73,6 +73,14 @@ public enum NightSoulsArmorTier implements IArmorMaterial
 		     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND , 7.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.ROWEQUITE_INGOT.get());
 	 }),
 	 
+	 JASON_MASK("nightsouls:jason", 49, new int [] {2,3,4,2}, 15, //33 * 1.5
+		     SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 0.0F, 0.2F, ()-> { return Ingredient.fromItems(ItemInit.VILLAGER_BLOOD.get());
+	 }),
+	 
+	 BLOODY("nightsouls:bloody", 106, new int[] {3,7,8,4}, 22, //76 * 1.4  22 Defense
+	            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.0F, 0.0F, () -> { return Ingredient.fromItems(ItemInit.BLOOD_SAMPLE.get());
+	 }),
+	 
 	 //End game armors
 	
 	 HALLOWED_PALADIN("nightsouls:hallowed_paladin", 1000, new int [] {5,8,9,5}, 30,  // 28 Defense points

@@ -35,7 +35,7 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.NIGHT_SOUL.get()); 
 	}),
-	BLOODZEAL(6, 2666, 12.0F, 10.0F, 22, ()->
+	BLOODZEAL(6, 2666, 12.0F, 11.0F, 22, ()->
 	{ 
 		return Ingredient.fromItems( ItemInit.NIGHT_SOUL.get()); 
 	}),
@@ -43,11 +43,11 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.NIGHT_SOUL.get()); 
 	}),
-	REINHARDT_HAMMER(6, 3746, 16.0F, 11.0F, 30, ()-> //3122 x 1.2
+	REINHARDT_HAMMER(6, 3746, 16.0F, 12.0F, 30, ()-> //3122 x 1.2
 	{ 
 		return Ingredient.fromItems( ItemInit.NIGHT_SOUL.get()); 
 	}),
-	PYRO_BARBARIAN_WARAXE(6, 3746, 16.0F, 11.0F, 30, ()->  //3122 x 1.2
+	PYRO_BARBARIAN_WARAXE(6, 3746, 16.0F, 12.0F, 30, ()->  //3122 x 1.2
 	{ 
 		return Ingredient.fromItems( ItemInit.NIGHT_SOUL.get()); 
 	}),	
@@ -59,11 +59,11 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.ENDER_DRAGON_ESSENCE.get()); 
 	}),
-	COOLFIRE(6, 2666, 12.0F, 8.5F, 30, ()-> 
+	COOLFIRE(6, 2666, 12.0F, 9.5F, 30, ()-> 
 	{ 
 		return Ingredient.fromItems( ItemInit.NIGHT_SOUL.get()); 
 	}),
-	DEATH_SCYTHE(6, 2185, 12.0F, 8.5F, 15, ()-> //1561 x 1.4  
+	DEATH_SCYTHE(6, 2185, 12.0F, 10.0F, 15, ()-> //1561 x 1.4  
 	{ 
 		return Ingredient.fromItems( ItemInit.MIIZEALITE_INGOT.get()); 
 	}),
@@ -75,7 +75,7 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( Items.IRON_INGOT); 
 	}),
-	JEFF_KNIFE(6, 2185, 12.0F, 8.0F, 15, ()->
+	JEFF_KNIFE(6, 2185, 12.0F, 9.0F, 15, ()->
 	{ 
 		return Ingredient.fromItems( ItemInit.VILLAGER_BLOOD.get()); 
 	}),
@@ -128,7 +128,7 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	FRACTAL_BLADE(6, 6244, 20.0F, 17.0F, 30, ()-> //3122 x 2
+	FRACTAL_BLADE(6, 6244, 20.0F, 18.0F, 30, ()-> //3122 x 2
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),

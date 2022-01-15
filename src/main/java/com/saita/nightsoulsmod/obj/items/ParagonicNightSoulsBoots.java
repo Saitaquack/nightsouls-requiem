@@ -45,7 +45,7 @@ public class ParagonicNightSoulsBoots extends ParagonicNightSoulsArmor {
 				 	
 		  if(player.isSneaking())
 			{	
-			    if(world.getDayTime() % 60 == 0)
+			    if(world.getGameTime() % 60 == 0)
 				 {
 					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 3));						 
 				 }

@@ -73,7 +73,7 @@ public class HallowedPaladinArmor extends ArmorItem {
 	 @Override
 	 public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
 		 
-		 if(world.getDayTime() % 3000 == 0)
+		 if(world.getGameTime() % 3000 == 0)
 		    {
 			 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 1);
 			 	player.dropItem(nsEmerald, false).setNoPickupDelay();
@@ -95,12 +95,12 @@ public class HallowedPaladinArmor extends ArmorItem {
 		player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 1, false, false));
 		player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 0, false, false));
 				 
-		if(world.getDayTime() % 100 == 0)
+		if(world.getGameTime() % 100 == 0)
 		{
 			player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 0, false, false));
 		}
 				 
-		if(world.getDayTime() % 400 == 0)
+		if(world.getGameTime() % 400 == 0)
 		   {
 			  player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 200, 2, false, false));
 			  player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 200, 1, false, false));
@@ -112,7 +112,7 @@ public class HallowedPaladinArmor extends ArmorItem {
 			  player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20, 5, false, false));	
 			  player.addPotionEffect(new EffectInstance(Effects.SPEED, 130, 4, false, false));	
 			  
-			   if(world.getDayTime() % 60 == 0)
+			   if(world.getGameTime() % 60 == 0)
 				 {
 					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 1));						 
 				 }

@@ -44,12 +44,12 @@ public class ParagonicNightSoulsHelmet extends ParagonicNightSoulsArmor {
 			 player.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 2, false, false));
 			 player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1, false, false));
 			 
-			 if(world.getDayTime() % 100 == 0)
+			 if(world.getGameTime() % 100 == 0)
 				{
 					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 0, false, false));
 				}
 						 
-			if(world.getDayTime() % 400 == 0)
+			if(world.getGameTime() % 400 == 0)
 				{
 					player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 200, 3, false, false));
 					player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 200, 1, false, false));

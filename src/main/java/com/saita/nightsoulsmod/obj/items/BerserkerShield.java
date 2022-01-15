@@ -43,7 +43,7 @@ public class BerserkerShield extends Item {
 	        {
 	    	    PlayerEntity playerIn = (PlayerEntity)entityIn; 
 	    	    
-	    	    if(worldIn.getDayTime() % 400 == 0)
+	    	    if(worldIn.getGameTime() % 400 == 0)
 				  {
 			    	 playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 160, 1, false, false));
 				  }  	

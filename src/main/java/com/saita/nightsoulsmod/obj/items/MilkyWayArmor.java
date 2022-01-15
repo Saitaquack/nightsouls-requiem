@@ -74,7 +74,7 @@ public class MilkyWayArmor extends ArmorItem {
 	 @Override
 	 public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
 		 
-		 if(world.getDayTime() % 3000 == 0)
+		 if(world.getGameTime() % 3000 == 0)
 		    {
 			 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 1);
 			 	player.dropItem(nsEmerald, false).setNoPickupDelay();
@@ -98,7 +98,7 @@ public class MilkyWayArmor extends ArmorItem {
 		 player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 0, false, false));
 		 player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 0, false, false));
 		 
-		 if(world.getDayTime() % 60 == 0)
+		 if(world.getGameTime() % 60 == 0)
 			{
 			   int randomHealChance = random.nextInt(3);
 					    
@@ -113,7 +113,7 @@ public class MilkyWayArmor extends ArmorItem {
 			    	player.addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, 100, 0, false, false));						 
 			   }
 			    			    				    	
-			 if(world.getDayTime() % 2400 == 0)
+			 if(world.getGameTime() % 2400 == 0)
 			   	{
                     ItemStack starFragment = new ItemStack(ItemInit.STAR_BIT.get(), 1);
           		    player.dropItem(starFragment, false).setNoPickupDelay();

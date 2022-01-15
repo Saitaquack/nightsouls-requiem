@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:hellfire_charm"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.04,
+          "looting_multiplier": 0.01
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.2,
+          "looting_multiplier": 0.08
+        }
+      ]
+    },
+    
+     {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:necromantic_bone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.08,
+          "looting_multiplier": 0.04
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:broken_dragonblade"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.005,
+          "looting_multiplier": 0.005
+        }
+      ]
+    }
+  ]    
+}

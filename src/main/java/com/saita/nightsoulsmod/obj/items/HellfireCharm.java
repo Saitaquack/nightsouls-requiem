@@ -65,14 +65,14 @@ public class HellfireCharm extends Item {
 	    			{
 	    			  if(playerIn.isInLava())
 	    			  {
-	    				  if(worldIn.getDayTime() % 60 == 0)
+	    				  if(worldIn.getGameTime() % 60 == 0)
 						  {
 				 			playerIn.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 1));
 						  }
 	    			  }
 	    			  else if(playerIn.isBurning())
 	    			  {
-	    				  if(worldIn.getDayTime() % 60 == 0)
+	    				  if(worldIn.getGameTime() % 60 == 0)
 						  {
 				 			playerIn.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 0));
 						  }

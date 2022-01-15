@@ -37,7 +37,7 @@ public class TakeABreather extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("§7Grants you quick regeneration as well as resistance. Cooldown : 16 seconds. Cooldown is 12 seconds with saitastone, nightsouls, milky way or paragonic armor."));
+	   tooltip.add(new StringTextComponent("§7Grants you quick regeneration as well as resistance. Cooldown : 16 seconds. Cooldown is 12 seconds with saitastone, bloody, nightsouls, milky way or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 
@@ -48,6 +48,11 @@ public class TakeABreather extends Item {
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.SAITASTONE_CHESTPLATE.get() && 
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.SAITASTONE_LEGGINGS.get() && 
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.SAITASTONE_BOOTS.get()) || 
+				 
+				 	(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.BLOODY_HELMET.get() && 
+					playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.BLOODY_CHESTPLATE.get() && 
+					playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.BLOODY_LEGGINGS.get() && 
+					playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.BLOODY_BOOTS.get()) || 
 	    				 			
 					(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.NIGHTSOULS_HELMET.get() && 
 					playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.NIGHTSOULS_CHESTPLATE.get() && 

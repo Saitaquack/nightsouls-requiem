@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.3,
+          "looting_multiplier": 0.2
+        }
+      ]
+    },   
+   
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:night_soul"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.4,
+          "looting_multiplier": 0.1
+        }
+      ]
+    },
+    
+     
+     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:death_scythe"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.04,
+          "looting_multiplier": 0.01
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:crystal_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.02,
+          "looting_multiplier": 0.01
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:broken_dragonblade"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.005,
+          "looting_multiplier": 0.005
+        }
+      ]
+    }
+  ]    
+}
