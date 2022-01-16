@@ -225,6 +225,9 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> BLOODY_CHESTPLATE = ITEMS.register("bloody_chestplate", () -> new BloodyArmor(NightSoulsArmorTier.BLOODY, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> BLOODY_LEGGINGS = ITEMS.register("bloody_leggings", () -> new BloodyArmor(NightSoulsArmorTier.BLOODY, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> BLOODY_BOOTS = ITEMS.register("bloody_boots", () -> new BloodyArmor(NightSoulsArmorTier.BLOODY, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> MANDELA_CATALOGUE = ITEMS.register("mandela_catalogue", () -> new MandelaCatalogue(new Item.Properties().group(NightSoulsItemGroup.instance)));
+    public static final RegistryObject<SwordItem> POISON_MIIZEALITE_DAGGER = ITEMS.register("poison_miizealite_dagger", () -> new PoisonMiizealiteDagger(NightSoulsItemTier.MIIZEALITE, 1, -2.0F, new Item.Properties().group(NightSoulsItemGroup.instance).isImmuneToFire()));
+	public static final RegistryObject<Item> SAITASTONE_HEART = ITEMS.register("saitastone_heart", () -> new SaitastoneHeart(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
 
     
 	public static final RegistryObject<BlockItem> HELLSTONE = ITEMS.register("hellstone", () -> new MeteoriteBlock(BlockInit.HELLSTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
@@ -253,6 +256,7 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> HELLFIRE_EMPEROR_CHESTPLATE = ITEMS.register("hellfire_emperor_chestplate", () -> new HellfireEmperorArmor(NightSoulsArmorTier.HELLFIRE_EMPEROR, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> HELLFIRE_EMPEROR_LEGGINGS = ITEMS.register("hellfire_emperor_leggings", () -> new HellfireEmperorArmor(NightSoulsArmorTier.HELLFIRE_EMPEROR, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> HELLFIRE_EMPEROR_BOOTS = ITEMS.register("hellfire_emperor_boots", () -> new HellfireEmperorArmor(NightSoulsArmorTier.HELLFIRE_EMPEROR, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
+    public static final RegistryObject<ArmorItem> HELLFIRE_EMPEROR_CROWN = ITEMS.register("hellfire_emperor_crown", () -> new HellfireEmperorArmor(NightSoulsArmorTier.HELLFIRE_EMPEROR_CROWN, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> MILKY_WAY_HELMET = ITEMS.register("milky_way_helmet", () -> new MilkyWayArmor(NightSoulsArmorTier.MILKY_WAY, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> MILKY_WAY_CHESTPLATE = ITEMS.register("milky_way_chestplate", () -> new MilkyWayArmor(NightSoulsArmorTier.MILKY_WAY, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> MILKY_WAY_LEGGINGS = ITEMS.register("milky_way_leggings", () -> new MilkyWayArmor(NightSoulsArmorTier.MILKY_WAY, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
@@ -262,16 +266,6 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> BINARY_CHESTPLATE = ITEMS.register("binary_chestplate", () -> new BinaryArmor(NightSoulsArmorTier.BINARY, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> BINARY_LEGGINGS = ITEMS.register("binary_leggings", () -> new BinaryArmor(NightSoulsArmorTier.BINARY, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
     public static final RegistryObject<ArmorItem> BINARY_BOOTS = ITEMS.register("binary_boots", () -> new BinaryArmor(NightSoulsArmorTier.BINARY, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
-    
-    
-	public static final RegistryObject<BlockItem> PARAGONIC_BLOCK = ITEMS.register("paragonic_block", () -> new ParagonicBlock(BlockInit.PARAGONIC_BLOCK.get(), new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-	public static final RegistryObject<BlockItem> PERFECT_PARAGONIC_BLOCK = ITEMS.register("perfect_paragonic_block", () -> new PerfectParagonicBlock(BlockInit.PERFECT_PARAGONIC_BLOCK.get(), new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-    public static final RegistryObject<SwordItem> PARAGONIC_ZENITH = ITEMS.register("paragonic_zenith", () -> new ParagonicZenith(NightSoulsItemTier.PARAGONIC_ZENITH, 3, -2.2F, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_HELMET = ITEMS.register("paragonic_nightsouls_helmet", () -> new ParagonicNightSoulsHelmet(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.HEAD, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_CHESTPLATE = ITEMS.register("paragonic_nightsouls_chestplate", () -> new ParagonicNightSoulsChestplate(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.CHEST, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_LEGGINGS = ITEMS.register("paragonic_nightsouls_leggings", () -> new ParagonicNightSoulsLeggings(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.LEGS, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_BOOTS = ITEMS.register("paragonic_nightsouls_boots", () -> new ParagonicNightSoulsBoots(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.FEET, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
-	public static final RegistryObject<Item> PARAGONIC_MUSIC_DISC = ITEMS.register("paragonic_music_disc", () -> new ParagonicMusicDisc(1, SoundInit.PARAGON.get(), new Item.Properties().maxStackSize(1).group(ParagonItemGroup.instance).isImmuneToFire()));
 	
 	
 	public static final RegistryObject<Item> MARIO_GALAXY_SKY_STATION_MUSIC_DISC = ITEMS.register("mario_galaxy_sky_station_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.MARIO_GALAXY_SKY_STATION.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
@@ -323,6 +317,16 @@ public class ItemInit {
 	public static final RegistryObject<Item> HELLFIRE_EMPEROR_FINAL_MUSIC_DISC = ITEMS.register("hellfire_emperor_final_music_disc", () -> new HellfireEmperorFinalMusicDisc(1, SoundInit.HELLFIRE_EMPEROR_FINAL_THEME.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<Item> HALLOWED_PALADIN_FINAL_MUSIC_DISC = ITEMS.register("hallowed_paladin_final_music_disc", () -> new HallowedPaladinFinalMusicDisc(1, SoundInit.HALLOWED_PALADIN_FINAL_THEME.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<Item> REALITY_WARPER_FINAL_MUSIC_DISC = ITEMS.register("reality_warper_final_music_disc", () -> new RealityWarperFinalMusicDisc(1, SoundInit.REALITY_WARPER_FINAL_THEME.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));
+	
+	
+	public static final RegistryObject<BlockItem> PARAGONIC_BLOCK = ITEMS.register("paragonic_block", () -> new ParagonicBlock(BlockInit.PARAGONIC_BLOCK.get(), new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+	public static final RegistryObject<BlockItem> PERFECT_PARAGONIC_BLOCK = ITEMS.register("perfect_paragonic_block", () -> new PerfectParagonicBlock(BlockInit.PERFECT_PARAGONIC_BLOCK.get(), new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+    public static final RegistryObject<SwordItem> PARAGONIC_ZENITH = ITEMS.register("paragonic_zenith", () -> new ParagonicZenith(NightSoulsItemTier.PARAGONIC_ZENITH, 3, -2.2F, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_HELMET = ITEMS.register("paragonic_nightsouls_helmet", () -> new ParagonicNightSoulsHelmet(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.HEAD, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_CHESTPLATE = ITEMS.register("paragonic_nightsouls_chestplate", () -> new ParagonicNightSoulsChestplate(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.CHEST, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_LEGGINGS = ITEMS.register("paragonic_nightsouls_leggings", () -> new ParagonicNightSoulsLeggings(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.LEGS, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+    public static final RegistryObject<ArmorItem> PARAGONIC_NIGHTSOULS_BOOTS = ITEMS.register("paragonic_nightsouls_boots", () -> new ParagonicNightSoulsBoots(NightSoulsArmorTier.PARAGONIC_NIGHTSOULS, EquipmentSlotType.FEET, new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
+	public static final RegistryObject<Item> PARAGONIC_MUSIC_DISC = ITEMS.register("paragonic_music_disc", () -> new ParagonicMusicDisc(1, SoundInit.PARAGON.get(), new Item.Properties().maxStackSize(1).group(ParagonItemGroup.instance).isImmuneToFire()));
 
 
 	public static final RegistryObject<BlockItem> SAITASTONE_BLOCK = ITEMS.register("saitastone_block", () -> new NightSoulsOreBlock(BlockInit.SAITASTONE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -375,6 +379,7 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PRIMIUM_ORE = ITEMS.register("primium_ore", () -> new NightSoulsOre(BlockInit.PRIMIUM_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> ROWEQUITE_ORE = ITEMS.register("rowequite_ore", () -> new NightSoulsOre(BlockInit.ROWEQUITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> THERENITE_ORE  = ITEMS.register("therenite_ore", () -> new NightSoulsOre(BlockInit.THERENITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> PITCH_BLACK_BLOCK  = ITEMS.register("pitch_black_block", () -> new BlockItem(BlockInit.PITCH_BLACK_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> PETRIFIED_SPACESTONE = ITEMS.register("petrified_spacestone", () -> new BlockItem(BlockInit.PETRIFIED_SPACESTONE.get(), new Item.Properties()));

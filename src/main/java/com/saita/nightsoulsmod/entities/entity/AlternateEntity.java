@@ -30,8 +30,7 @@ public class AlternateEntity extends MonsterEntity {
 
 	public AlternateEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
-		
-		// Should make the alternate step 2 full blocks
+
 		this.stepHeight = 2.0F;
 	
 	}
@@ -115,9 +114,8 @@ public class AlternateEntity extends MonsterEntity {
 	        } else {
 	        	
 	            if (entityIn instanceof LivingEntity) {
-	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.BLINDNESS, 160, 0));
-	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.NAUSEA, 160, 0));
-	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.WITHER, 160, 0));
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.BLINDNESS, 100, 0));
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.WITHER, 100, 0));
 	            	 
 	            	 this.playSound(SoundInit.ALTERNATE_ATTACK.get(), 1.0F, 1.0F);
            }

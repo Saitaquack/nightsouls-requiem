@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:hellfire_emperor_helmet"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:hellfire_emperor_crown"
+  }
+}

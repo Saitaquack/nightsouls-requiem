@@ -1,0 +1,212 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:mandela_catalogue"
+        }     
+      ]
+    },   
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 32.0,
+                "max": 64.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 8.0,
+                "max": 16.0
+              }
+            }
+          ],
+          "name": "nightsouls:pitch_black_block"
+        }
+      ]
+    },
+   
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              }
+            }
+          ],
+          "name": "nightsouls:night_soul"
+        }
+      ]
+    },
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              }
+            }
+          ],
+          "name": "nightsouls:saitastone_ingot"
+        }
+      ]
+    },
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              }
+            }
+          ],
+          "name": "nightsouls:miizealite_ingot"
+        }
+      ]
+    },
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              }
+            }
+          ],
+          "name": "nightsouls:cranite_ingot"
+        }
+      ]
+    },
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              }
+            }
+          ],
+          "name": "nightsouls:bastirite_ingot"
+        }
+      ]
+    },
+    
+    
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:crystal_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.1,
+          "looting_multiplier": 0.05
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:broken_dragonblade"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.05,
+          "looting_multiplier": 0.02
+        }
+      ]
+    }
+  ]    
+}

@@ -89,6 +89,9 @@ public enum NightSoulsArmorTier implements IArmorMaterial
 	 HELLFIRE_EMPEROR("nightsouls:hellfire_emperor", 1000, new int [] {4,7,9,5}, 30, // 26 Defense points
 		     SoundEvents.ITEM_ARMOR_EQUIP_CHAIN , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),
+	 HELLFIRE_EMPEROR_CROWN("nightsouls:hellfire_emperor_crown", 1000, new int [] {4,7,9,5}, 30, // 26 Defense points
+		     SoundEvents.ITEM_ARMOR_EQUIP_GOLD , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
+	 }),
 	 MILKY_WAY("nightsouls:milky_way", 1000, new int [] {4,8,9,5}, 30, // 27 Defense points
 		     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),

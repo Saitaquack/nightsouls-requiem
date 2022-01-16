@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:hellfire_emperor_helmet_from_crown"
+    ]
+  },
+  "criteria": {
+    "has_hellfire_emperor_crown": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_emperor_crown"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_hellfire_emperor_crown"
+    ]
+  ]
+}

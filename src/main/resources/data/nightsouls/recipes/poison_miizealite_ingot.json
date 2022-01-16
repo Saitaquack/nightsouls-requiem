@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " EE",
+    " ME",
+    "S  "
+  ],
+  "key": {
+  
+    "S": {
+      "item": "minecraft:stick"
+    },
+    
+    "E": {
+      "item": "minecraft:spider_eye"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:poison_miizealite_dagger"
+  }
+}

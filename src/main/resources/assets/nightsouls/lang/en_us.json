@@ -228,6 +228,10 @@
    "item.nightsouls.bloody_chestplate": "Bloody Chestplate",
    "item.nightsouls.bloody_leggings": "Bloody Leggings",
    "item.nightsouls.bloody_boots": "Bloody Boots",
+   "item.nightsouls.hellfire_emperor_crown": "Hellfire Emperor Crown",
+   "item.nightsouls.mandela_catalogue": "Mandela Catalogue",
+   "item.nightsouls.poison_miizealite_dagger": "Poison Miizealite Dagger",
+   "item.nightsouls.saitastone_heart": "Saitastone Heart",
      
    
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Music Disc",
@@ -399,6 +403,7 @@
    "block.nightsouls.rowequite_ore": "Rowequite Ore",
    "block.nightsouls.therenite_ore": "Therenite Ore",
    "block.nightsouls.perfect_paragonic_block": "Perfect Paragonic Block",
+   "block.nightsouls.pitch_black_block": "Pitch Black Block",
    
    
    "advancements.story.get_night_soul_pickaxe.title": "Time To Really Mine !",

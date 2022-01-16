@@ -88,7 +88,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 			 	world.playSound(player, player.getPosition(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.MASTER, 0.5F, 1.0F);
             }
 		 
-	if(player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.HELLFIRE_EMPEROR_HELMET.get() && 
+	if((player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.HELLFIRE_EMPEROR_HELMET.get() || player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.HELLFIRE_EMPEROR_CROWN.get()) && 
 	   player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.HELLFIRE_EMPEROR_CHESTPLATE.get() && 
 	   player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.HELLFIRE_EMPEROR_LEGGINGS.get() && 
 	   player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.HELLFIRE_EMPEROR_BOOTS.get())

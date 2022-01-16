@@ -228,6 +228,10 @@
    "item.nightsouls.bloody_chestplate": "Plastron sanglant",
    "item.nightsouls.bloody_leggings": "Jambières sanglantes",
    "item.nightsouls.bloody_boots": "Bottes sanglantes",
+   "item.nightsouls.hellfire_emperor_crown": "Couronne du Hellfire Emperor",
+   "item.nightsouls.mandela_catalogue": "Catalogue de mandela",
+   "item.nightsouls.poison_miizealite_dagger": "Dague en miizealite empoisonnée",
+   "item.nightsouls.saitastone_heart": "Coeur de saitastone",
    
    
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Disque",
@@ -399,6 +403,7 @@
    "block.nightsouls.rowequite_ore": "Minerai de rowequite",
    "block.nightsouls.therenite_ore": "Minerai de therenite",
    "block.nightsouls.perfect_paragonic_block": "Bloc parangonique parfait",
+   "block.nightsouls.pitch_black_block": "Bloc de noir absolu",
       
    
    "advancements.story.get_night_soul_pickaxe.title": "Il est temps de vraiment miner !",
@@ -498,9 +503,9 @@
    "item.nightsouls.werewolf_spawn_egg": "Oeuf d'apparition de Loup-garou",
    "item.nightsouls.psycho_spawn_egg": "Oeuf d'apparition de Psycho",
    "item.nightsouls.face_monster_spawn_egg": "Oeuf d'apparition de Monstre visage",
-   "item.nightsouls.hellborn_spawn_egg": "Oeuf d'apparition d'Infern�",
-   "item.nightsouls.demon_eye_spawn_egg": "Oeuf d'apparition d'Oeil de d�mon",
-   "item.nightsouls.alternate_spawn_egg": "Oeuf d'apparition d'Alterné",
+   "item.nightsouls.hellborn_spawn_egg": "Oeuf d'apparition de Inferné",
+   "item.nightsouls.demon_eye_spawn_egg": "Oeuf d'apparition de Oeil de démon",
+   "item.nightsouls.alternate_spawn_egg": "Oeuf d'apparition de Alterné",
    
    "entity.nightsouls.reaper": "Faucheuse",
    "entity.nightsouls.werewolf": "Loup-garou",

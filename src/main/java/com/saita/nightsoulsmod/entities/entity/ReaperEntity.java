@@ -30,6 +30,8 @@ public class ReaperEntity extends MonsterEntity {
 
 	public ReaperEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
+		
+		this.stepHeight = 1.0F;
 	
 	}
 	
