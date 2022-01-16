@@ -23,6 +23,7 @@ public class ModEventBusEvents {
         event.put(NightSoulsEntityTypes.FACE_MONSTER.get(), FaceMonsterEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.HELLBORN.get(), FaceMonsterEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.DEMON_EYE.get(), FaceMonsterEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.ALTERNATE.get(), AlternateEntity.setCustomAttributes().create());
 
     }
 

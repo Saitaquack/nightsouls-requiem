@@ -33,11 +33,11 @@ public class HellbornEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 42.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 40.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 9.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	
 	@Override
@@ -66,7 +66,7 @@ public class HellbornEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 10;
+		 return 8;
 	 }
 	 
 	@Override

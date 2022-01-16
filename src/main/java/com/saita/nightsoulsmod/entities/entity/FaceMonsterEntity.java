@@ -39,10 +39,10 @@ public class FaceMonsterEntity extends MonsterEntity {
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 40.0D)
-				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.32D) 
+				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.36D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.0D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 40.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D); 
 	}
 	
 	@Override
@@ -71,7 +71,7 @@ public class FaceMonsterEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 10;
+		 return 8;
 	 }
 	 
 	@Override

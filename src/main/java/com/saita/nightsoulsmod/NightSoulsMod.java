@@ -72,6 +72,7 @@ public class NightSoulsMod
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.FACE_MONSTER.get(), FaceMonsterRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.HELLBORN.get(), HellbornRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.DEMON_EYE.get(), DemonEyeRenderer::new);
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.ALTERNATE.get(), AlternateRenderer::new);
 
     }
     

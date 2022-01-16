@@ -7,6 +7,7 @@ import com.saita.nightsoulsmod.init.ItemInit;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
@@ -43,6 +44,12 @@ public class HellfireEmperorArmor extends ArmorItem {
     tooltip.add(new StringTextComponent("§4Full set bonus : §7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether or during nighttime. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime. Long live the emperor !"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
+	
+	@Override
+	public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+		
+		return true;
+	}
 	
 	@Override
 	public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {

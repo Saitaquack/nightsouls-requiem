@@ -500,6 +500,7 @@
    "item.nightsouls.face_monster_spawn_egg": "Oeuf d'apparition de Monstre visage",
    "item.nightsouls.hellborn_spawn_egg": "Oeuf d'apparition d'Inferné",
    "item.nightsouls.demon_eye_spawn_egg": "Oeuf d'apparition d'Oeil de démon",
+   "item.nightsouls.alternate_spawn_egg": "Oeuf d'apparition d'AlternÃ©",
    
    "entity.nightsouls.reaper": "Faucheuse",
    "entity.nightsouls.werewolf": "Loup-garou",
@@ -507,6 +508,7 @@
    "entity.nightsouls.face_monster": "Monstre visage",
    "entity.nightsouls.hellborn": "Inferné",
    "entity.nightsouls.demon_eye": "Oeil de démon",
+   "entity.nightsouls.alternate": "AlternÃ©",
      
    "itemGroup.NightSoulsTab": "Mod NightSouls",
    "itemGroup.NightSoulsFinalsTab": "Stuff final de NightSouls",

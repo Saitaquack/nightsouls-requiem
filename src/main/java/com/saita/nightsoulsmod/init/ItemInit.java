@@ -387,6 +387,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> FACE_MONSTER_SPAWN_EGG = ITEMS.register("face_monster_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.FACE_MONSTER, 0x734945, 0x7C0000, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> HELLBORN_SPAWN_EGG = ITEMS.register("hellborn_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.HELLBORN, 0xE73706, 0xF7CF01, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> DEMON_EYE_SPAWN_EGG = ITEMS.register("demon_eye_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.DEMON_EYE, 0xE7E7E7, 0xD91919, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> ALTERNATE_SPAWN_EGG = ITEMS.register("alternate_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.ALTERNATE, 0x000000, 0xFFFFFF, new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	

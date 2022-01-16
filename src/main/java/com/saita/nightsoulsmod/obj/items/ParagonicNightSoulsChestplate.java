@@ -5,6 +5,7 @@ import java.util.List;
 import com.saita.nightsoulsmod.init.ItemInit;
 
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -21,6 +22,12 @@ public class ParagonicNightSoulsChestplate extends ParagonicNightSoulsArmor {
 	public ParagonicNightSoulsChestplate(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 
+	}
+	
+	@Override
+	public boolean makesPiglinsNeutral(ItemStack stack, LivingEntity wearer) {
+		
+		return super.makesPiglinsNeutral(stack, wearer);
 	}
 	
 	@Override

@@ -172,6 +172,21 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> EYE_DEATH = SOUNDS.register("eye_death", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "eye_death")));
 	
+	public static final RegistryObject<SoundEvent> ALTERNATE_AMBIENT = SOUNDS.register("alternate_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate_ambient")));
+	
+	public static final RegistryObject<SoundEvent> ALTERNATE_HIT = SOUNDS.register("alternate_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate_hit")));
+	
+	public static final RegistryObject<SoundEvent> ALTERNATE_DEATH = SOUNDS.register("alternate_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate_death")));
+	
+	public static final RegistryObject<SoundEvent> ALTERNATE_ATTACK = SOUNDS.register("alternate_attack", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate_attack")));
+	
+	public static final RegistryObject<SoundEvent> ALTERNATE_STEP = SOUNDS.register("alternate_step", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate_step")));
+	
 	
 	//Musiques
 	

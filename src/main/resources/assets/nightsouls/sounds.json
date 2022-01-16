@@ -1234,6 +1234,86 @@
 			}
 		]
 		
+	},
+	
+	"alternate_ambient": {
+		"category": "entity",
+		"subtitle": "Run...",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_ambient3",
+				"stream": false
+			},			
+			{
+				"name": "nightsouls:entity/alternate_ambient4",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_hit": {
+		"category": "entity",
+		"subtitle": "Alternate Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_hit1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_hit2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_death": {
+		"category": "entity",
+		"subtitle": ":)))))))",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_attack": {
+		"category": "entity",
+		"subtitle": "Just accept your fate.",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_attack",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_step": {
+		"category": "entity",
+		"subtitle": "Alternate Running",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_step1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_step2",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

@@ -26,20 +26,23 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ReaperEntity extends MonsterEntity {
+public class AlternateEntity extends MonsterEntity {
 
-	public ReaperEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
+	public AlternateEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
+		
+		// Should make the alternate step 2 full blocks
+		this.stepHeight = 2.0F;
 	
 	}
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 45.0D)
-				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D)
-				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
+				.createMutableAttribute(Attributes.MAX_HEALTH, 110.0D)
+				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.38D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 15.0D) 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D)
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D); 
 	}
 	
 	@Override
@@ -68,38 +71,33 @@ public class ReaperEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 8;
+		 return 50;
 	 }
 	 
 	@Override
 	protected SoundEvent getAmbientSound() {
 		
-		return SoundInit.REAPER_AMBIENT.get();
+		return SoundInit.ALTERNATE_AMBIENT.get();
 	}
 	
 	@Override
 	protected SoundEvent getDeathSound() {
 		
-		return SoundInit.REAPER_DEATH.get();
+		return SoundInit.ALTERNATE_DEATH.get();
 	}
 	
 	@Override
 	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
 		
-		return SoundInit.REAPER_HIT.get();
+		return SoundInit.ALTERNATE_HIT.get();
 	}
 	
 	@Override
 	protected void playStepSound(BlockPos pos, BlockState blockIn) {
 		
-		return;
+		this.playSound(SoundInit.ALTERNATE_STEP.get(), 0.20F, 0.5F);
 	}
 	
-	@Override
-	public boolean isEntityUndead() {
-		
-		return true;
-	}
 	
 	//Negates fall damage
 	@Override
@@ -108,8 +106,6 @@ public class ReaperEntity extends MonsterEntity {
 		return 0;
 	}
 	
-
-	// Reaper gets Regeneration on attack
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
 		
@@ -119,8 +115,12 @@ public class ReaperEntity extends MonsterEntity {
 	        } else {
 	        	
 	            if (entityIn instanceof LivingEntity) {
-	                this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 160, 1));
-	            }
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.BLINDNESS, 160, 0));
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.NAUSEA, 160, 0));
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.WITHER, 160, 0));
+	            	 
+	            	 this.playSound(SoundInit.ALTERNATE_ATTACK.get(), 1.0F, 1.0F);
+           }
 	            return true;
 	        }
 	        

@@ -49,6 +49,11 @@ public class NightSoulsEntityTypes {
 	          ENTITY_TYPES.register("demon_eye", () -> EntityType.Builder
 	            	.create(DemonEyeEntity::new, EntityClassification.MONSTER).size(0.9F, 1.0F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "demon_eye").toString()));
+	 
+	 public static final RegistryObject<EntityType<AlternateEntity>> ALTERNATE =
+	          ENTITY_TYPES.register("alternate", () -> EntityType.Builder
+	            	.create(AlternateEntity::new, EntityClassification.MONSTER).size(1.2F, 4.95F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate").toString()));
 
 	 
 	 

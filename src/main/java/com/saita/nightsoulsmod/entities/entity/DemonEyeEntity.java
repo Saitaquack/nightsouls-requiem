@@ -27,16 +27,16 @@ public class DemonEyeEntity extends PhantomEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 42.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 40.0D)
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 9.0D) 
-				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.8D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 40.0D); 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D) 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D); 
 	}
 	 
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 12;
+		 return 10;
 	 }
 	 
 	@Override

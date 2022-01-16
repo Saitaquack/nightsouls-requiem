@@ -39,7 +39,7 @@ public class WerewolfEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 45.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 50.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.32D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 8.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.4D) 
@@ -72,7 +72,7 @@ public class WerewolfEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 10;
+		 return 8;
 	 }
 	 
 	@Override
