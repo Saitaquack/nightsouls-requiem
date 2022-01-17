@@ -99,6 +99,13 @@ public class WerewolfEntity extends MonsterEntity {
 		this.playSound(SoundEvents.ENTITY_ZOMBIE_STEP, 0.20F, 0.5F);
 	 }
 	
+	//Negates fall damage
+	@Override
+	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
+				
+		return 0;
+	}
+	
 	 //Burns at Day
 	
 	 protected boolean shouldBurnInDay() {

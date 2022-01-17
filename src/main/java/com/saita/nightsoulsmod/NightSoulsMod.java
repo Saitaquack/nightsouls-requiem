@@ -47,7 +47,7 @@ public class NightSoulsMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-    	LOGGER.info("Hello from NightSouls Mod Requiem 2.0!");
+    	LOGGER.info("Hello from NightSouls Mod Requiem 3.0!");
     	LOGGER.info("Loading Star Gatherer's powers...");
     	LOGGER.info("Loading Hellfire Emperor's reign...");
     	LOGGER.info("Loading Hallowed Paladin's might...");
@@ -64,6 +64,7 @@ public class NightSoulsMod
               ModelProperties.makeBow(ItemInit.MIIZEALITE_BOW.get(), 20.0F);
               ModelProperties.makeBow(ItemInit.NIGHTSOULS_BOW.get(), 16.0F);
               ModelProperties.makeBow(ItemInit.BOW_SER.get(), 12.0F);
+                            
           });
     	  
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.REAPER.get(), ReaperRenderer::new);

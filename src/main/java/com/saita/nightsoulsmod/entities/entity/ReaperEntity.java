@@ -65,13 +65,13 @@ public class ReaperEntity extends MonsterEntity {
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, false));
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
   
-	   }
+	}
 	 
-	 @Override
-	 protected int getExperiencePoints(PlayerEntity player)
-	 {
-		 return 8;
-	 }
+	@Override
+	protected int getExperiencePoints(PlayerEntity player)
+	{
+		return 8;
+	}
 	 
 	@Override
 	protected SoundEvent getAmbientSound() {
