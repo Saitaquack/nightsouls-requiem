@@ -43,7 +43,7 @@ public class LifeCrystal extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§7Increases your maximum life. You can have a maximum of 15 hearts of health (20 hearts in a NightSouls Requiem World), but you will lose your bonus health if you die."));
+	tooltip.add(new StringTextComponent("§7Increases your maximum life. You can have a maximum of 15 hearts of health (20 hearts in a Requiem World), but you will lose your bonus health if you die."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

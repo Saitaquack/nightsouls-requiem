@@ -3,7 +3,7 @@
   "pattern": [
     "ECE",
     "CTC",
-    "WCW"
+    "DCD"
   ],
   "key": {
   
@@ -15,8 +15,8 @@
       "item": "nightsouls:heavenstone"
     },
     
-    "W": {
-      "item": "nightsouls:wither_essence"
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
     },
     
     "T": {

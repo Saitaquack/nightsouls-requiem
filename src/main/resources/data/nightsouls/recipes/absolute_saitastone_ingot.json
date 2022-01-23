@@ -3,7 +3,7 @@
   "pattern": [
     "ESE",
     "STS",
-    "WSW"
+    "DSD"
   ],
   "key": {
   
@@ -15,8 +15,8 @@
       "item": "nightsouls:spacestone"
     },
     
-    "W": {
-      "item": "nightsouls:wither_essence"
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
     },
     
     "T": {

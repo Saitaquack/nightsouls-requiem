@@ -398,6 +398,31 @@
           "name": "nightsouls:youseebiggirl_music_disc"
           }
         ]
-     }
+     },
+     
+     {
+     "rolls": {
+        "min": 1.0,
+        "max": 2.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "nightsouls:nightsouls_emerald"
+            }
+          ]
+      }
   ]
 }

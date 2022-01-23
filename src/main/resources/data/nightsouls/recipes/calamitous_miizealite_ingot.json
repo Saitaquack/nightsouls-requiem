@@ -3,7 +3,7 @@
   "pattern": [
     "EME",
     "MTM",
-    "WMW"
+    "DMD"
   ],
   "key": {
   
@@ -15,8 +15,8 @@
       "item": "nightsouls:hellstone"
     },
     
-    "W": {
-      "item": "nightsouls:wither_essence"
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
     },
     
     "T": {

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "P P",
+    "W W",
     "TAT",
     "OCO"
   ],
@@ -15,8 +15,8 @@
       "item": "nightsouls:ultimate_cranite_ingot"
     },
     
-    "P": {
-      "item": "nightsouls:white_power_moon"
+    "W": {
+      "item": "nightsouls:wither_essence"
     },
     
     "T": {

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "P P",
+    "W W",
     "TAT",
     "OMO"
   ],
@@ -15,8 +15,8 @@
       "item": "nightsouls:calamitous_miizealite_ingot"
     },
     
-    "P": {
-      "item": "nightsouls:purple_power_moon"
+    "W": {
+      "item": "nightsouls:wither_essence"
     },
     
     "T": {

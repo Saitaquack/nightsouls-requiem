@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "P P",
+    "W W",
     "TAT",
     "OBO"
   ],
@@ -15,8 +15,8 @@
       "item": "nightsouls:exponential_bastirite_ingot"
     },
     
-    "P": {
-      "item": "nightsouls:blue_power_moon"
+    "W": {
+      "item": "nightsouls:wither_essence"
     },
     
     "T": {

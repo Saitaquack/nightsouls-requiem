@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import com.saita.nightsoulsmod.init.ItemInit;
 import com.saita.nightsoulsmod.init.SoundInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -39,8 +40,16 @@ public class NightSoulsKey extends Item {
 	@Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
+		
+	if(Screen.hasShiftDown())
+	{
+		tooltip.add(new StringTextComponent("§7In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, NightSouls forcefields will disappear, allowing you to get paragonic blocks. Stargazers, Hellfire Servants, Paladins and Reality Walkers will appear in the world, so be prepared !"));
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7Right Click to consume it and convert this world into a \"§5NightSouls Requiem World§7\". Press §eSHIFT§7 for more info."));
+	}
 
-	tooltip.add(new StringTextComponent("§7Right Click to consume it and convert this world into a \"§5NightSouls Requiem World§7\". In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, and you will be able to obtain Paragonic blocks around the world."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	
@@ -93,7 +102,7 @@ public class NightSoulsKey extends Item {
 		
 				    if(worldIn.isRemote)
 				    {			  
-				    	LOGGER.info(""+playerIn.getName().getString()+" a consommé une NightSouls Key et a converti le monde en Requiem.");      	
+				    	LOGGER.info(""+playerIn.getName().getString()+" enabled NightSouls Requiem in this world.");      	
 				    	playerIn.sendMessage(new TranslationTextComponent("§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
 				    }
 				    

@@ -49,15 +49,6 @@ public class NightSoulsEntitySpawn {
 				  
 		    }
 		  
-		  if(event.getName().equals(Biomes.BASALT_DELTAS.getLocation()))
-		    {
-				  
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLBORN.get(), 2, 1, 4);
-			  
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 2, 1, 3);
-				  
-		    }
-		  
 		  if(event.getName().equals(Biomes.SOUL_SAND_VALLEY.getLocation()))
 		    {
 				  

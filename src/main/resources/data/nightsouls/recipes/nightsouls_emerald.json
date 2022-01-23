@@ -4,11 +4,13 @@
   "ingredients": [
   
     {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
     {"item": "nightsouls:night_soul"}
     
   ],
   
   "result": {
-    "item": "nightsouls:nightsouls_emerald"
+    "item": "nightsouls:nightsouls_emerald",
+    "count": 2
   }
 }
