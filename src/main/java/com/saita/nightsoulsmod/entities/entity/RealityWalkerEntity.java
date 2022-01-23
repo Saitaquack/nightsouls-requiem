@@ -1,10 +1,14 @@
 package com.saita.nightsoulsmod.entities.entity;
 
+import java.util.Random;
+
 import com.saita.nightsoulsmod.init.SoundInit;
 import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
@@ -16,6 +20,8 @@ import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
@@ -55,6 +61,8 @@ public class RealityWalkerEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, StargazerEntity.class, true));
+
   
 	  }
 	 
@@ -109,5 +117,50 @@ public class RealityWalkerEntity extends MonsterEntity {
 				
 		return 0;
 	}
+	
+	// Inflicts random nasty effects
+	@Override
+	public boolean attackEntityAsMob(Entity entityIn) {
+		
+	     if (!super.attackEntityAsMob(entityIn)) {
+	         return false;
+	         
+	        } else {
+	        	
+	            if (entityIn instanceof LivingEntity) {
+
+	            	Random random = new Random();
+	            	int randomEffect = random.nextInt(7);
+	            	
+	            	switch(randomEffect)
+	        		{
+	        		case 0:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.SLOWNESS, 160, 0));
+	        		break;
+	        		case 1:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, 160, 0));
+	        		break;
+	        		case 2:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.WEAKNESS, 160, 0));
+	        		break;
+	        		case 3:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.BLINDNESS, 160, 0));
+	        		break;
+	        		case 4:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.HUNGER, 160, 0));
+	        		break;
+	        		case 5:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.POISON, 160, 0));
+	        		break;
+	        		case 6:
+	        			((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.WITHER, 160, 0));
+	        		break;
+	        		}
+	            	
+	            }
+	            return true;
+	        }
+	        
+	  }
 		
 }

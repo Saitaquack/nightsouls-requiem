@@ -18,6 +18,8 @@ import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -58,6 +60,7 @@ public class HellfireServantEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, PaladinEntity.class, true));
   
 	  }
 	 
@@ -99,7 +102,18 @@ public class HellfireServantEntity extends MonsterEntity {
 	    	if(world.getDayTime() < NightSoulsKey.requiemConstant)
 	    	{
 	    		 this.remove();
-	    	}	    	  
+	    	}	    
+	    	
+	    	if(this.isBurning())
+	    	{
+	    		if(world.getGameTime() % 60 == 0)
+	    		{
+	            	this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 2));
+	    		}
+	    		
+            	this.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 1));
+            	this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 1));
+	    	}
 	      
 	      }
 

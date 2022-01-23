@@ -1,10 +1,14 @@
 package com.saita.nightsoulsmod.entities.entity;
 
+import java.util.Random;
+
 import com.saita.nightsoulsmod.init.SoundInit;
 import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
@@ -16,6 +20,8 @@ import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
@@ -55,6 +61,8 @@ public class StargazerEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, RealityWalkerEntity.class, true));
+
   
 	  }
 	 
@@ -109,5 +117,29 @@ public class StargazerEntity extends MonsterEntity {
 				
 		return 0;
 	}
+	
+	// 1 in 4 chance to inflict levitation on attack
+	@Override
+	public boolean attackEntityAsMob(Entity entityIn) {
+		
+	     if (!super.attackEntityAsMob(entityIn)) {
+	         return false;
+	         
+	        } else {
+	        	
+	            if (entityIn instanceof LivingEntity) {
+	            	
+	            	Random random = new Random();
+	            	int randomLevitation = random.nextInt(3);
+	            	
+	            	if(randomLevitation == 0)
+	            	{
+	            		((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.LEVITATION, 40, 2));
+	            	}
+	            }
+	            return true;
+	        }
+	        
+	  }
 		
 }

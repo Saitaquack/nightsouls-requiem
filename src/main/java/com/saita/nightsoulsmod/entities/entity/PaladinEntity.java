@@ -4,7 +4,9 @@ import com.saita.nightsoulsmod.init.SoundInit;
 import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
@@ -16,6 +18,8 @@ import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -57,6 +61,8 @@ public class PaladinEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, HellfireServantEntity.class, true));
+
   
 	  }
 	 
@@ -111,5 +117,26 @@ public class PaladinEntity extends MonsterEntity {
 				
 		return 0;
 	}
+	
+	
+	// Paladin gets regeneration on attack
+	@Override
+	public boolean attackEntityAsMob(Entity entityIn) {
+		
+	     if (!super.attackEntityAsMob(entityIn)) {
+	         return false;
+	         
+	        } else {
+	        	
+	            if (entityIn instanceof LivingEntity) {
+
+	            	this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 1));
+	            	this.addPotionEffect(new EffectInstance(Effects.GLOWING, 80, 1));
+	            	
+	            }
+	            return true;
+	        }
+	        
+	  }
 		
 }
