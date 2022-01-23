@@ -24,6 +24,11 @@ public class ModEventBusEvents {
         event.put(NightSoulsEntityTypes.HELLBORN.get(), FaceMonsterEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.DEMON_EYE.get(), FaceMonsterEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.ALTERNATE.get(), AlternateEntity.setCustomAttributes().create());
+        
+        event.put(NightSoulsEntityTypes.STARGAZER.get(), StargazerEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), HellfireServantEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.PALADIN.get(), PaladinEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.REALITY_WALKER.get(), RealityWalkerEntity.setCustomAttributes().create());
 
     }
 

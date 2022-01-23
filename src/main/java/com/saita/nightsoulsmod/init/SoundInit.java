@@ -187,6 +187,24 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> ALTERNATE_STEP = SOUNDS.register("alternate_step", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate_step")));
 	
+	public static final RegistryObject<SoundEvent> REQUIEM_DEATH = SOUNDS.register("requiem_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "requiem_death")));
+	
+	public static final RegistryObject<SoundEvent> STARGAZER_HIT = SOUNDS.register("stargazer_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "stargazer_hit")));
+	
+	public static final RegistryObject<SoundEvent> PALADIN_HIT = SOUNDS.register("paladin_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "paladin_hit")));
+	
+	public static final RegistryObject<SoundEvent> PALADIN_AMBIENT = SOUNDS.register("paladin_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "paladin_ambient")));
+	
+	public static final RegistryObject<SoundEvent> REALITY_WALKER_AMBIENT = SOUNDS.register("reality_walker_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "reality_walker_ambient")));
+	
+	public static final RegistryObject<SoundEvent> REALITY_WALKER_HIT = SOUNDS.register("reality_walker_hit", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "reality_walker_hit")));
+	
 	
 	//Musiques
 	

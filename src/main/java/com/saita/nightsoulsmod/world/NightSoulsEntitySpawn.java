@@ -38,6 +38,13 @@ public class NightSoulsEntitySpawn {
 				  
 		    }
 		  
+		  if((event.getCategory().equals(Biome.Category.THEEND)))
+		    {
+				  
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.ALTERNATE.get(), 1, 1, 1);
+				  
+		    }
+		  
 	    }		
 		
 		private static void addEntity(MobSpawnInfoBuilder spawns, EntityType<?> type,

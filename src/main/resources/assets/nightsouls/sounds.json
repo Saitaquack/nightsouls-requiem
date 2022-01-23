@@ -1314,6 +1314,82 @@
 			}
 		]
 		
+	},
+	
+	"requiem_death": {
+		"category": "entity",
+		"subtitle": "Requiem Mob Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/requiem_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"stargazer_hit": {
+		"category": "entity",
+		"subtitle": "Stargazer Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/stargazer_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"paladin_hit": {
+		"category": "entity",
+		"subtitle": "Paladin Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/paladin_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"paladin_ambient": {
+		"category": "entity",
+		"subtitle": "Paladin Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/paladin_ambient",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reality_walker_hit": {
+		"category": "entity",
+		"subtitle": "Reality Walker Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reality_walker_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reality_walker_ambient": {
+		"category": "entity",
+		"subtitle": "Reality Walker Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reality_walker_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/reality_walker_ambient2",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

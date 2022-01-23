@@ -54,6 +54,29 @@ public class NightSoulsEntityTypes {
 	          ENTITY_TYPES.register("alternate", () -> EntityType.Builder
 	            	.create(AlternateEntity::new, EntityClassification.MONSTER).size(1.2F, 4.95F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate").toString()));
+	 
+	 
+	 
+	 public static final RegistryObject<EntityType<StargazerEntity>> STARGAZER =
+	          ENTITY_TYPES.register("stargazer", () -> EntityType.Builder
+	            	.create(StargazerEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "stargazer").toString()));
+	 
+	 public static final RegistryObject<EntityType<HellfireServantEntity>> HELLFIRE_SERVANT =
+	          ENTITY_TYPES.register("hellfire_servant", () -> EntityType.Builder
+	            	.create(HellfireServantEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
+	            	.immuneToFire()
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "hellfire_servant").toString()));
+	 
+	 public static final RegistryObject<EntityType<PaladinEntity>> PALADIN =
+	          ENTITY_TYPES.register("paladin", () -> EntityType.Builder
+	            	.create(PaladinEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "paladin").toString()));
+	 
+	 public static final RegistryObject<EntityType<RealityWalkerEntity>> REALITY_WALKER =
+	          ENTITY_TYPES.register("reality_walker", () -> EntityType.Builder
+	            	.create(RealityWalkerEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "reality_walker").toString()));
 
 	 
 	 

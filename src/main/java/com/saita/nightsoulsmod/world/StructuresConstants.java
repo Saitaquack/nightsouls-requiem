@@ -2,7 +2,7 @@ package com.saita.nightsoulsmod.world;
 
 public class StructuresConstants {	
 	
-	static int rarityUpdate = 0;
+	static int rarityUpdate = 5;
 	
 	public static int castleSeed = 144217792;
 	public static int dragonStatueSeed = 144191418;

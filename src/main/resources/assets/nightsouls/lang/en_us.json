@@ -506,7 +506,11 @@
    "item.nightsouls.hellborn_spawn_egg": "Hellborn Spawn Egg",   
    "item.nightsouls.demon_eye_spawn_egg": "Demon Eye Spawn Egg",   
    "item.nightsouls.alternate_spawn_egg": "Alternate Spawn Egg", 
-   
+   "item.nightsouls.stargazer_spawn_egg": "Stargazer Spawn Egg", 
+   "item.nightsouls.hellfire_servant_spawn_egg": "Hellfire Servant Spawn Egg", 
+   "item.nightsouls.paladin_spawn_egg": "Paladin Spawn Egg", 
+   "item.nightsouls.reality_walker_spawn_egg": "Reality Walker Spawn Egg", 
+      
    "entity.nightsouls.reaper": "Reaper",   
    "entity.nightsouls.werewolf": "Werewolf",
    "entity.nightsouls.psycho": "Psycho",
@@ -514,6 +518,10 @@
    "entity.nightsouls.hellborn": "Hellborn",
    "entity.nightsouls.demon_eye": "Demon Eye",
    "entity.nightsouls.alternate": "Alternate",
+   "entity.nightsouls.stargazer": "Stargazer",
+   "entity.nightsouls.hellfire_servant": "Hellfire Servant",
+   "entity.nightsouls.paladin": "Paladin",
+   "entity.nightsouls.reality_walker": "Reality Walker",
    
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",

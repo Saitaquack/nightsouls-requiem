@@ -506,6 +506,10 @@
    "item.nightsouls.hellborn_spawn_egg": "Oeuf d'apparition de Inferné",
    "item.nightsouls.demon_eye_spawn_egg": "Oeuf d'apparition de Oeil de démon",
    "item.nightsouls.alternate_spawn_egg": "Oeuf d'apparition de Alterné",
+   "item.nightsouls.stargazer_spawn_egg": "Oeuf d'apparition de Stargazer",
+   "item.nightsouls.hellfire_servant_spawn_egg": "Oeuf d'apparition de Servant infernal", 
+   "item.nightsouls.paladin_spawn_egg": "Oeuf d'apparition de Paladin", 
+   "item.nightsouls.reality_walker_spawn_egg": "Oeuf d'apparition de Marcheur de la réalité", 
    
    "entity.nightsouls.reaper": "Faucheuse",
    "entity.nightsouls.werewolf": "Loup-garou",
@@ -514,6 +518,10 @@
    "entity.nightsouls.hellborn": "Infern�",
    "entity.nightsouls.demon_eye": "Oeil de d�mon",
    "entity.nightsouls.alternate": "Alterné",
+   "entity.nightsouls.stargazer": "Stargazer",
+   "entity.nightsouls.hellfire_servant": "Servant infernal",
+   "entity.nightsouls.paladin": "Paladin",
+   "entity.nightsouls.reality_walker": "Marcheur de la réalité",
      
    "itemGroup.NightSoulsTab": "Mod NightSouls",
    "itemGroup.NightSoulsFinalsTab": "Stuff final de NightSouls",
