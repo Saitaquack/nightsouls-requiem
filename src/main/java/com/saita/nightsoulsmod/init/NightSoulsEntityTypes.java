@@ -65,7 +65,6 @@ public class NightSoulsEntityTypes {
 	 public static final RegistryObject<EntityType<HellfireServantEntity>> HELLFIRE_SERVANT =
 	          ENTITY_TYPES.register("hellfire_servant", () -> EntityType.Builder
 	            	.create(HellfireServantEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
-	            	.immuneToFire()
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "hellfire_servant").toString()));
 	 
 	 public static final RegistryObject<EntityType<PaladinEntity>> PALADIN =

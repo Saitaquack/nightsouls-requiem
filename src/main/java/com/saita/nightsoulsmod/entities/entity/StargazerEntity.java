@@ -12,6 +12,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -60,6 +61,7 @@ public class StargazerEntity extends MonsterEntity {
 	
 	protected void applyEntityAI() {
 		  
+		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, RealityWalkerEntity.class, true));
 
@@ -130,7 +132,7 @@ public class StargazerEntity extends MonsterEntity {
 	            if (entityIn instanceof LivingEntity) {
 	            	
 	            	Random random = new Random();
-	            	int randomLevitation = random.nextInt(3);
+	            	int randomLevitation = random.nextInt(4);
 	            	
 	            	if(randomLevitation == 0)
 	            	{

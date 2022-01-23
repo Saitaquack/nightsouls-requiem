@@ -10,6 +10,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -60,9 +61,16 @@ public class PaladinEntity extends MonsterEntity {
 	
 	protected void applyEntityAI() {
 		  
+		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, HellfireServantEntity.class, true));
-
+	      
+	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AlternateEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, WerewolfEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, ReaperEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, PsychoEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, HellbornEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, FaceMonsterEntity.class, true));
   
 	  }
 	 
