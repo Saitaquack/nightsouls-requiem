@@ -14,9 +14,7 @@ import com.saita.nightsoulsmod.init.NightSoulsEntityTypes;
 public class NightSoulsEntitySpawn {
 	
 	public static void onEntitySpawn(final BiomeLoadingEvent event) {
-		
-		System.out.println(event.getName().toString());
-		  
+				  
 		  if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND) ||
 		     event.getCategory().equals(Biome.Category.OCEAN) || event.getCategory().equals(Biome.Category.MUSHROOM)))
 		  {

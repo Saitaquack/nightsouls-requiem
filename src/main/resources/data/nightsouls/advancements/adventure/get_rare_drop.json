@@ -1,0 +1,90 @@
+{
+  "parent": "nightsouls:adventure/kill_nightsouls_mob",
+  "display": {
+    "icon": {
+      "item": "nightsouls:moon_charm"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_rare_drop.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_rare_drop.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "moon_charm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:moon_charm"
+          }
+        ]
+      }
+    },
+    "death_scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:death_scythe"
+          }
+        ]
+      }
+    },
+    "jason_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:jason_mask"
+          }
+        ]
+      }
+    },
+    "blood_charm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:blood_charm"
+          }
+        ]
+      }
+    },
+    "hellfire_charm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_charm"
+          }
+        ]
+      }
+    },
+    "broken_dragonblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:broken_dragonblade"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "moon_charm",
+      "death_scythe",
+      "jason_mask",
+      "blood_charm",
+      "hellfire_charm",
+      "broken_dragonblade"
+    ]
+  ]
+}

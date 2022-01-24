@@ -1,0 +1,39 @@
+{
+  "parent": "nightsouls:adventure/kill_nightsouls_mob",
+  "display": {
+    "icon": {
+      "item": "nightsouls:saitastone_sword"
+    },
+    "title": {
+      "translate": "advancements.adventure.kill_demon_eye.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.kill_demon_eye.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demon_eye": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:demon_eye"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    } 
+  },
+  "requirements": [
+    [
+      "demon_eye"
+    ]
+  ]
+}

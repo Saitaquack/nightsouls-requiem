@@ -1,0 +1,79 @@
+{
+  "parent": "nightsouls:end/get_true_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:fractal_blade"
+    },
+    "title": {
+      "translate": "advancements.end.get_true_combo.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_true_combo.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "golden_reinhardt_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:golden_reinhardt_hammer"
+          }
+        ]
+      }
+    },
+    "lennon_wrath": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:lennon_wrath"
+          }
+        ]
+      }
+    },
+    "rumpaquack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rumpaquack"
+          }
+        ]
+      }
+    },
+    "fractal_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fractal_blade"
+          }
+        ]
+      }
+    },
+    "nanoblade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nanoblade"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "golden_reinhardt_hammer",
+      "lennon_wrath",
+      "rumpaquack",
+      "fractal_blade",
+      "nanoblade"
+    ]
+  ]
+}
