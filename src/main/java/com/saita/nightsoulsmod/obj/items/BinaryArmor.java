@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -39,7 +40,15 @@ public class BinaryArmor extends ArmorItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§a"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration IV, Saturation and Resistance III. Automatically gives you nightsouls emeralds overtime."));
+    
+    if(Screen.hasShiftDown())
+   	{
+   		 tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration IV, Saturation and Resistance III. Automatically gives you nightsouls emeralds overtime."));	
+   	}
+   	else
+   	{
+   		tooltip.add(new StringTextComponent("§7A perfect armor created by the §kReality Warper§7. It has no known limits to its power. Press §eSHIFT§7 for more info."));
+   	}
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

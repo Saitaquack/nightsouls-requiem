@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:saitastone_boots"},
+    {"item": "nightsouls:miizealite_boots"},
+    {"item": "nightsouls:cranite_boots"},
+    {"item": "nightsouls:alternate_boots"},
+    {"item": "nightsouls:nightsouls_essence"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:nightsouls_boots"
+    }
+}

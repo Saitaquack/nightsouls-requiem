@@ -78,24 +78,27 @@ public enum NightSoulsArmorTier implements IArmorMaterial
 	 }),
 	 
 	 BLOODY("nightsouls:bloody", 106, new int[] {3,7,8,4}, 22, //76 * 1.4  22 Defense
-	            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.0F, 0.0F, () -> { return Ingredient.fromItems(ItemInit.BLOOD_SAMPLE.get());
+	         SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6.0F, 0.0F, () -> { return Ingredient.fromItems(ItemInit.BLOOD_SAMPLE.get());
+	 }),
+	 ALTERNATE("nightsouls:alternate", 114, new int [] {3,7,8,4}, 15, // 76 * 1.5 22 Defense 
+		     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND , 6.0F, 0.0F, ()-> { return Ingredient.fromItems(ItemInit.ALTERNATE_INGOT.get());
 	 }),
 	 
 	 //End game armors
 	
-	 HALLOWED_PALADIN("nightsouls:hallowed_paladin", 1000, new int [] {5,8,9,5}, 30,  // 28 Defense points
-		     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND , 15.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
+	 HALLOWED_PALADIN("nightsouls:hallowed_paladin", 1000, new int [] {5,9,10,6}, 30,  // 30 Defense points
+		     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND , 18.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),
-	 HELLFIRE_EMPEROR("nightsouls:hellfire_emperor", 1000, new int [] {4,7,9,5}, 30, // 26 Defense points
+	 HELLFIRE_EMPEROR("nightsouls:hellfire_emperor", 1000, new int [] {4,8,9,5}, 30, // 26 Defense points
 		     SoundEvents.ITEM_ARMOR_EQUIP_CHAIN , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),
-	 HELLFIRE_EMPEROR_CROWN("nightsouls:hellfire_emperor_crown", 1000, new int [] {4,7,9,5}, 30, // 26 Defense points
+	 HELLFIRE_EMPEROR_CROWN("nightsouls:hellfire_emperor_crown", 1000, new int [] {4,8,9,5}, 30, // 26 Defense points
 		     SoundEvents.ITEM_ARMOR_EQUIP_GOLD , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),
-	 MILKY_WAY("nightsouls:milky_way", 1000, new int [] {4,8,9,5}, 30, // 27 Defense points
+	 MILKY_WAY("nightsouls:milky_way", 1000, new int [] {5,8,9,5}, 30, // 27 Defense points
 		     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),
-	 BINARY("nightsouls:binary", 1000, new int [] {4,7,9,5}, 30, // 26 Defense points
+	 BINARY("nightsouls:binary", 1000, new int [] {4,8,9,5}, 30, // 26 Defense points
 		     SoundEvents.ITEM_ARMOR_EQUIP_IRON , 12.0F, 0.1F, ()-> { return Ingredient.fromItems(ItemInit.TRUE_NIGHT_SOUL.get());
 	 }),
 	

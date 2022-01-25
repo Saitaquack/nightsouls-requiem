@@ -219,7 +219,7 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> DRAGONBLADE = ITEMS.register("dragonblade", () -> new DragonBlade(NightSoulsItemTier.DRAGONBLADE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> NANOBLADE = ITEMS.register("nanoblade", () -> new NanoBlade(NightSoulsItemTier.NANOBLADE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> BROKEN_DRAGONBLADE = ITEMS.register("broken_dragonblade", () -> new BrokenDragonBlade(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
-	public static final RegistryObject<Item> BLOOD_SAMPLE = ITEMS.register("blood_sample", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(64)));
+	public static final RegistryObject<Item> BLOOD_SAMPLE = ITEMS.register("blood_sample", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> JASON_MASK = ITEMS.register("jason_mask", () -> new JasonMask(NightSoulsArmorTier.JASON_MASK, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> BLOODY_HELMET = ITEMS.register("bloody_helmet", () -> new BloodyArmor(NightSoulsArmorTier.BLOODY, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> BLOODY_CHESTPLATE = ITEMS.register("bloody_chestplate", () -> new BloodyArmor(NightSoulsArmorTier.BLOODY, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -228,6 +228,11 @@ public class ItemInit {
 	public static final RegistryObject<Item> MANDELA_CATALOGUE = ITEMS.register("mandela_catalogue", () -> new MandelaCatalogue(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> POISON_MIIZEALITE_DAGGER = ITEMS.register("poison_miizealite_dagger", () -> new PoisonMiizealiteDagger(NightSoulsItemTier.MIIZEALITE, 1, -2.0F, new Item.Properties().group(NightSoulsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<Item> SAITASTONE_HEART = ITEMS.register("saitastone_heart", () -> new SaitastoneHeart(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
+	public static final RegistryObject<Item> ALTERNATE_INGOT = ITEMS.register("alternate_ingot", () -> new AlternateIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<ArmorItem> ALTERNATE_HELMET = ITEMS.register("alternate_helmet", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<ArmorItem> ALTERNATE_CHESTPLATE = ITEMS.register("alternate_chestplate", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<ArmorItem> ALTERNATE_LEGGINGS = ITEMS.register("alternate_leggings", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<ArmorItem> ALTERNATE_BOOTS = ITEMS.register("alternate_boots", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
 
     
 	public static final RegistryObject<BlockItem> HELLSTONE = ITEMS.register("hellstone", () -> new MeteoriteBlock(BlockInit.HELLSTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));

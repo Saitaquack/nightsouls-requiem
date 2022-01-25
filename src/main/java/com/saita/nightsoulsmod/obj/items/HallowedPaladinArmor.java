@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -39,7 +40,16 @@ public class HallowedPaladinArmor extends ArmorItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§6"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§6Full set bonus : §7Infinite Speed III, Strength II, Regeneration I and Resistance I. Temporary shield every 20 seconds for 10 seconds that gives Absorption III and Resistance II. Hold sneak to jump super high, to regenerate health faster and to get super speed. Automatically gives you nightsouls emeralds overtime."));
+	
+	if(Screen.hasShiftDown())
+	{
+		 tooltip.add(new StringTextComponent("§6Full set bonus : §7Infinite Speed III, Strength II, Regeneration I and Resistance I. Temporary shield every 20 seconds for 10 seconds that gives Absorption III and Resistance II. Hold sneak to jump super high, to regenerate health faster and to get super speed. Automatically gives you nightsouls emeralds overtime."));	
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7A mythical armor forged in the heavens by the most powerful servant of God. Press §eSHIFT§7 for more info."));
+	}
+   
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

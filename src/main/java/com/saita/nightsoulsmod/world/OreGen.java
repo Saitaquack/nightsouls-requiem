@@ -67,16 +67,16 @@ public class OreGen {
 				
 				
 				generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-						BlockInit.PETRIFIED_HELLSTONE.get().getDefaultState(), 5, 1, 48, 1);
+						BlockInit.PETRIFIED_HELLSTONE.get().getDefaultState(), 6, 1, 48, 1);
 				
 				generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-						BlockInit.PETRIFIED_SPACESTONE.get().getDefaultState(), 5, 1, 48, 1);
+						BlockInit.PETRIFIED_SPACESTONE.get().getDefaultState(), 6, 1, 48, 1);
 				
 				generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-						BlockInit.PETRIFIED_HEAVENSTONE.get().getDefaultState(), 5, 1, 48, 1);
+						BlockInit.PETRIFIED_HEAVENSTONE.get().getDefaultState(), 6, 1, 48, 1);
 				
 				generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD,
-						BlockInit.PETRIFIED_ANTISTONE.get().getDefaultState(), 5, 1, 48, 1);
+						BlockInit.PETRIFIED_ANTISTONE.get().getDefaultState(), 6, 1, 48, 1);
 			}
 			
 			if (event.getCategory().equals(Biome.Category.NETHER)) {

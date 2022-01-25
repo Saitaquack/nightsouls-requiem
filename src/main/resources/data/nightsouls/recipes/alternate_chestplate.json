@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IAI"
+  ],
+  "key": {
+  
+    "I": {
+      "item": "nightsouls:alternate_ingot"
+    },
+    
+    "A": {
+      "item": "nightsouls:bastirite_chestplate"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:alternate_chestplate"
+  }
+}

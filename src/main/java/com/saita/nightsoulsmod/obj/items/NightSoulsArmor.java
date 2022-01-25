@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -28,9 +29,17 @@ public class NightSoulsArmor extends ArmorItem {
     {
     
 	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));	
-	tooltip.add(new StringTextComponent("§5Full set bonus : §7Has the effects of Saitastone, Miizealite, Cranite and Bastirite armors at the same time !. Reduced cooldowns of all Overwatch abilities !"));			
-	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
+	if(Screen.hasShiftDown())
+	{
+		 tooltip.add(new StringTextComponent("§5Full set bonus : §7Has the effects of Saitastone, Miizealite, Cranite and Bastirite armors at the same time ! Reduced cooldowns of all Overwatch abilities !"));	
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7A powerful armor created from the essence of four ancient legends. Press §eSHIFT§7 for more info."));
+	}
+	
+	super.addInformation(stack, worldIn, tooltip, flagIn);	
     }
 	
 	 @Override

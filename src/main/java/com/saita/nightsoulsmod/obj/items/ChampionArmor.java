@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -26,8 +27,17 @@ public class ChampionArmor extends ArmorItem {
 	@Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
-    
-	tooltip.add(new StringTextComponent("§6Full set bonus : §7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Reduced Molten Core and Super Star cooldowns. Instant Healing Potion has no cooldown and heals more. You have a chance to not consume any of these items."));			
+		
+	tooltip.set(0, new StringTextComponent("§e"+tooltip.get(0).getString()+"§r"));	
+    	
+	if(Screen.hasShiftDown())
+	{
+		 tooltip.add(new StringTextComponent("§6Full set bonus : §7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Reduced Molten Core and Super Star cooldowns. Instant Healing Potion has no cooldown and heals more. You have a chance to not consume any of these items."));	
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7It once belonged to the finest warrior of a fallen city. Press §eSHIFT§7 for more info."));
+	}
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

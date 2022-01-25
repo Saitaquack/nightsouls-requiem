@@ -37,7 +37,7 @@ public class Fortify extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	   tooltip.add(new StringTextComponent("§7Grants you resistance and makes you glow. Cooldown : 16 seconds. Cooldown is 12 seconds with bastirite, nightsouls, binary or paragonic armor."));
+	   tooltip.add(new StringTextComponent("§7Grants you resistance and makes you glow. Cooldown : 16 seconds. Cooldown is 12 seconds with bastirite, alternate, nightsouls, binary or paragonic armor."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	 
@@ -48,6 +48,11 @@ public class Fortify extends Item {
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.BASTIRITE_CHESTPLATE.get() && 
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.BASTIRITE_LEGGINGS.get() && 
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.BASTIRITE_BOOTS.get()) || 
+				 
+				 	(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.ALTERNATE_HELMET.get() && 
+					playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.ALTERNATE_CHESTPLATE.get() && 
+					playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.ALTERNATE_LEGGINGS.get() && 
+					playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ALTERNATE_BOOTS.get()) || 
 	    				 			
 					(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.NIGHTSOULS_HELMET.get() && 
 					playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.NIGHTSOULS_CHESTPLATE.get() && 

@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -27,8 +28,17 @@ public class DragonArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));	
-	tooltip.add(new StringTextComponent("§5Full set bonus : §7Has the effects of the NightSouls Armor, but with improved effects, as well as Jump Boost and Strength."));			
+	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));			
+	
+	if(Screen.hasShiftDown())
+	{
+		tooltip.add(new StringTextComponent("§5Full set bonus : §7Has the effects of the NightSouls Armor, but with improved effects, as well as Jump Boost and Strength."));	
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7Only dragonhearted warriors are worthy of wearing it. Press §eSHIFT§7 for more info."));
+	}
+	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

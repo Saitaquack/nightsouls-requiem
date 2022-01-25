@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -28,8 +29,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 		super(materialIn, slot, builder);
 
 	}
-	
-	
+		
 	@Override
 	public Rarity getRarity(ItemStack stack) {
 		
@@ -41,7 +41,16 @@ public class HellfireEmperorArmor extends ArmorItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§4"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§4Full set bonus : §7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether or during nighttime. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime. Long live the emperor !"));
+	
+    if(Screen.hasShiftDown())
+	{
+		tooltip.add(new StringTextComponent("§4Full set bonus : §7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether or during nighttime. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime."));
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7Belonging to an evil emperor, it emits an overwhelming aura that could burn down anyone and anything. Press §eSHIFT§7 for more info."));
+	}
+    
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

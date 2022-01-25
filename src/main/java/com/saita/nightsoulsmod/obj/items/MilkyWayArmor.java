@@ -5,6 +5,7 @@ import java.util.List;
 import com.saita.nightsoulsmod.init.ItemInit;
 import com.saita.nightsoulsmod.init.SoundInit;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -40,7 +41,15 @@ public class MilkyWayArmor extends ArmorItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§1"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§1Full set bonus : §7Infinite Strength III, Speed II, Jump Boost III, Haste I, Resistance I and restores health overtime. Hold sneak to enable slow falling. Automatically gives you star bits and nightsouls emeralds overtime."));
+    
+    if(Screen.hasShiftDown())
+	{
+		 tooltip.add(new StringTextComponent("§1Full set bonus : §7Infinite Strength III, Speed II, Jump Boost III, Haste I, Resistance I and restores health overtime. Hold sneak to enable slow falling. Automatically gives you star bits and nightsouls emeralds overtime."));	
+	}
+	else
+	{
+		tooltip.add(new StringTextComponent("§7It is said that this armor was forged by a single entity after gathering hundreds of stars. You can feel the whole universe just by gazing at it. Press §eSHIFT§7 for more info."));
+	}
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	
