@@ -888,6 +888,42 @@
 		
 	},
 	
+	"fossil_falls": {
+		"category": "music",
+		"subtitle": "Fossil Falls Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/fossil_falls",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"tanjiro": {
+		"category": "music",
+		"subtitle": "Tanjiro VS Rui Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/tanjiro",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"muzan": {
+		"category": "music",
+		"subtitle": "Muzan Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/muzan",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",

@@ -2,7 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:saitastone_ingot_from_power_moon"
+      "nightsouls:saitastone_ingot_from_power_moon",
+      "nightsouls:fossil_falls_music_disc"
     ]
   },
   "criteria": {

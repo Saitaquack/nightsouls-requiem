@@ -355,6 +355,15 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> HELIKOPTER = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "helikopter")));
 	
+	public static final Lazy<SoundEvent> FOSSIL_FALLS = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "fossil_falls")));
+	
+	public static final Lazy<SoundEvent> TANJIRO = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "tanjiro")));
+	
+	public static final Lazy<SoundEvent> MUZAN = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "muzan")));
+	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));
 	

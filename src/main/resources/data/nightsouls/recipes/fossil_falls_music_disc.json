@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:red_power_moon"},
+    {"item": "nightsouls:purple_power_moon"},
+    {"item": "nightsouls:white_power_moon"},
+    {"item": "nightsouls:blue_power_moon"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:fossil_falls_music_disc"
+  }
+
+}
