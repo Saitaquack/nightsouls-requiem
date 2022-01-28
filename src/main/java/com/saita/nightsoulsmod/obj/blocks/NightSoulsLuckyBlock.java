@@ -35,7 +35,7 @@ public class NightSoulsLuckyBlock extends Block {
 	public void harvestBlock(World worldIn, PlayerEntity player, BlockPos pos, BlockState state, TileEntity te,
 			ItemStack stack) {
 		
-		int randomPrice = RANDOM.nextInt(661);
+		int randomPrice = RANDOM.nextInt(766);
 		
 		if(randomPrice < 30)
 		{
@@ -210,7 +210,6 @@ public class NightSoulsLuckyBlock extends Block {
 			worldIn.setBlockState(pos, Blocks.STONE.getDefaultState());
 			worldIn.setBlockState(pos.add(0, 1, 0), Blocks.STONE.getDefaultState());
 			worldIn.setBlockState(pos.add(0, 2, 0), Blocks.STONE.getDefaultState());			
-	 	    player.sendMessage(new TranslationTextComponent("Baptiste Terracotta Skin be like :"), null);
 		}
 		else if(randomPrice < 290)
 		{
@@ -444,7 +443,8 @@ public class NightSoulsLuckyBlock extends Block {
 		
 		else if(randomPrice < 600)
 		{
-			player.sendMessage(new TranslationTextComponent("You got jebaited :) Better luck next time."), null);
+			worldIn.setBlockState(pos.add(0, 0, 0), BlockInit.UNDERGROUND_HEART_CRYSTAL.get().getDefaultState());
+			worldIn.setBlockState(pos.add(0, 1, 0), BlockInit.UNDERGROUND_HEART_CRYSTAL.get().getDefaultState());
 
 		}		
 		else if(randomPrice < 615)
@@ -707,12 +707,55 @@ public class NightSoulsLuckyBlock extends Block {
 				worldIn.addEntity(wither);
 			}
 		}
-		else if(randomPrice <= 660)
+		else if(randomPrice < 660)
 		{
 		    ItemStack nightSoulsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), RANDOM.nextInt(11) + 6);
 		    spawnAsEntity(worldIn, pos, nightSoulsEmerald);
 		}
-		else if(randomPrice > 660)
+		else if(randomPrice < 680)
+		{
+		    ItemStack beer = new ItemStack(ItemInit.BEER.get(), RANDOM.nextInt(6) + 5);
+		    ItemStack wine = new ItemStack(ItemInit.WINE.get(), RANDOM.nextInt(6) + 5);
+		    spawnAsEntity(worldIn, pos, beer);
+		    spawnAsEntity(worldIn, pos, wine);
+		}
+		else if(randomPrice < 700)
+		{
+		    ItemStack banana = new ItemStack(ItemInit.BANANA.get(), RANDOM.nextInt(15) + 10);
+		    spawnAsEntity(worldIn, pos, banana);
+		    player.sendMessage(new TranslationTextComponent("MONKE !"), null);
+	
+		}
+		else if(randomPrice < 720)
+		{
+		    ItemStack pizza = new ItemStack(ItemInit.PIZZA_SLICE.get(), RANDOM.nextInt(11) + 8);
+		    spawnAsEntity(worldIn, pos, pizza);
+		    player.sendMessage(new TranslationTextComponent("Pizza ?! Save me some !"), null);
+	
+		}
+		else if(randomPrice < 735)
+		{
+			ItemStack primiumIngots = new ItemStack(ItemInit.PRIMIUM_INGOT.get(), 2 + RANDOM.nextInt(3));
+			ItemStack rowequiteIngots = new ItemStack(ItemInit.ROWEQUITE_INGOT.get(), 2 + RANDOM.nextInt(3));
+			ItemStack thereniteIngots = new ItemStack(ItemInit.THERENITE_INGOT.get(), 2 + RANDOM.nextInt(3));
+			spawnAsEntity(worldIn, pos, primiumIngots);
+			spawnAsEntity(worldIn, pos, rowequiteIngots);
+			spawnAsEntity(worldIn, pos, thereniteIngots);
+	
+		}
+		else if(randomPrice < 750)
+		{
+			ItemStack crazy = new ItemStack(ItemInit.CRAZY_DIAMOND.get(), 1 + RANDOM.nextInt(3));
+			spawnAsEntity(worldIn, pos, crazy);
+	
+		}
+		else if(randomPrice <= 765)
+		{
+			worldIn.setBlockState(pos.add(0, 0, 0), BlockInit.CELESTIAL_EMERALD_BLOCK.get().getDefaultState());
+	
+		}
+		
+		else if(randomPrice > 765)
 		{
 	        player.sendMessage(new TranslationTextComponent("You got jebaited :) Better luck next time."), null);
 		}
