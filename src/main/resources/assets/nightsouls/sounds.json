@@ -924,6 +924,30 @@
 		
 	},
 	
+	"mhwi": {
+		"category": "music",
+		"subtitle": "MHWI Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/mhwi",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"marsch": {
+		"category": "music",
+		"subtitle": "Marsch Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/marsch",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",
