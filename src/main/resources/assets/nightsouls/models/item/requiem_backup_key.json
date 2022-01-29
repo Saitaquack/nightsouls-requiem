@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-        "layer0": "nightsouls:items/nightsouls_key" 
+        "layer0": "nightsouls:items/requiem_backup_key" 
         }
 }

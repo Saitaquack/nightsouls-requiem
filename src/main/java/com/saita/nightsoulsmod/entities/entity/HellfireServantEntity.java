@@ -1,7 +1,7 @@
 package com.saita.nightsoulsmod.entities.entity;
 
 import com.saita.nightsoulsmod.init.SoundInit;
-import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
+import com.saita.nightsoulsmod.obj.items.RequiemKey;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -108,7 +108,7 @@ public class HellfireServantEntity extends MonsterEntity {
 	    	  
 	    	this.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20, 0, false, false));
 	    	  
-	    	if(world.getDayTime() < NightSoulsKey.requiemConstant)
+	    	if(world.getDayTime() < RequiemKey.requiemConstant)
 	    	{
 	    		 this.remove();
 	    	}	    

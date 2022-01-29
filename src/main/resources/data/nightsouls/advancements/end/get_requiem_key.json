@@ -2,13 +2,13 @@
   "parent": "minecraft:end/kill_dragon",
   "display": {
     "icon": {
-      "item": "nightsouls:nightsouls_key"
+      "item": "nightsouls:requiem_key"
     },
     "title": {
-      "translate": "advancements.end.get_nightsouls_key.title"
+      "translate": "advancements.end.get_requiem_key.title"
     },
     "description": {
-      "translate": "advancements.end.get_nightsouls_key.description"
+      "translate": "advancements.end.get_requiem_key.description"
     },
     "frame": "goal",
     "show_toast": true,
@@ -16,12 +16,12 @@
     "hidden": false
   },
   "criteria": {
-    "nightsouls_key": {
+    "requiem_key": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "nightsouls:nightsouls_key"
+            "item": "nightsouls:requiem_key"
           }
         ]
       }
@@ -29,7 +29,7 @@
   },
   "requirements": [
     [
-      "nightsouls_key"
+      "requiem_key"
     ]
   ]
 }

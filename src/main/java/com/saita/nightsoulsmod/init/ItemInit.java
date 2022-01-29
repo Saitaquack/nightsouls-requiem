@@ -174,10 +174,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Banana(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(7).saturation(0.6F).build())));
 	public static final RegistryObject<Item> HEROIC_SHIELD_CHARM = ITEMS.register("heroic_shield_charm", () -> new HeroicShieldCharm(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
     public static final RegistryObject<SwordItem> WITHER_BLADE = ITEMS.register("wither_blade", () -> new WitherBlade(NightSoulsItemTier.WITHER, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> NIGHTSOULS_KEY = ITEMS.register("nightsouls_key", () -> new NightSoulsKey(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> CRAZY_DIAMOND = ITEMS.register("crazy_diamond", () -> new CrazyDiamond(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> CRAZY_DIAMOND_SWORD = ITEMS.register("crazy_diamond_sword", () -> new CrazyDiamondSword(NightSoulsItemTier.CRAZY_DIAMOND, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> NIGHTSOULS_BACKUP_KEY = ITEMS.register("nightsouls_backup_key", () -> new NightSoulsBackupKey(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> PRIMIUM_INGOT = ITEMS.register("primium_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> ROWEQUITE_INGOT = ITEMS.register("rowequite_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> THERENITE_INGOT = ITEMS.register("therenite_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -210,7 +208,6 @@ public class ItemInit {
 	public static final RegistryObject<ArmorItem> THERENITE_BOOTS = ITEMS.register("therenite_boots", () -> new ThereniteArmor(NightSoulsArmorTier.THERENITE, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> BLOOD_CHARM = ITEMS.register("blood_charm", () -> new BloodCharm(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> BERSERKER_SHIELD = ITEMS.register("berserker_shield", () -> new BerserkerShield(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	public static final RegistryObject<Item> REQUIEM_MEDALLION = ITEMS.register("requiem_medallion", () -> new RequiemMedallion(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<ArmorItem> CHAMPION_HELMET = ITEMS.register("champion_helmet", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> CHAMPION_CHESTPLATE = ITEMS.register("champion_chestplate", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> CHAMPION_LEGGINGS = ITEMS.register("champion_leggings", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -233,8 +230,12 @@ public class ItemInit {
 	public static final RegistryObject<ArmorItem> ALTERNATE_CHESTPLATE = ITEMS.register("alternate_chestplate", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<ArmorItem> ALTERNATE_LEGGINGS = ITEMS.register("alternate_leggings", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<ArmorItem> ALTERNATE_BOOTS = ITEMS.register("alternate_boots", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> STAR_PLATINUM = ITEMS.register("star_platinum", () -> new StarPlatinum(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
 
     
+	public static final RegistryObject<Item> REQUIEM_KEY = ITEMS.register("requiem_key", () -> new RequiemKey(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));
+	public static final RegistryObject<Item> REQUIEM_MEDALLION = ITEMS.register("requiem_medallion", () -> new RequiemMedallion(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));
+	public static final RegistryObject<Item> REQUIEM_BACKUP_KEY = ITEMS.register("requiem_backup_key", () -> new RequiemBackupKey(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<BlockItem> HELLSTONE = ITEMS.register("hellstone", () -> new MeteoriteBlock(BlockInit.HELLSTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<BlockItem> SPACESTONE = ITEMS.register("spacestone", () -> new MeteoriteBlock(BlockInit.SPACESTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<BlockItem> HEAVENSTONE = ITEMS.register("heavenstone", () -> new MeteoriteBlock(BlockInit.HEAVENSTONE.get(), new Item.Properties().group(NightSoulsFinalsItemGroup.instance).isImmuneToFire()));

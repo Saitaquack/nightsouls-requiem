@@ -3,7 +3,7 @@ package com.saita.nightsoulsmod.entities.entity;
 import java.util.Random;
 
 import com.saita.nightsoulsmod.init.SoundInit;
-import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
+import com.saita.nightsoulsmod.obj.items.RequiemKey;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -103,7 +103,7 @@ public class RealityWalkerEntity extends MonsterEntity {
 	 public void livingTick() {
 	      if (this.isAlive()) {	    	 
 	    	  
-	    	if(world.getDayTime() < NightSoulsKey.requiemConstant)
+	    	if(world.getDayTime() < RequiemKey.requiemConstant)
 	    	{
 	    		 this.remove();
 	    	}	    	  

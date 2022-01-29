@@ -22,12 +22,12 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
-public class NightSoulsBackupKey extends Item {
+public class RequiemBackupKey extends Item {
 	
 	public static final Logger LOGGER = LogManager.getLogger();
 	BlockPos requiemBlockPos = new BlockPos(0,0,0);
 
-	public NightSoulsBackupKey(Properties properties) {
+	public RequiemBackupKey(Properties properties) {
 		super(properties);
 
 	}
@@ -59,12 +59,12 @@ public class NightSoulsBackupKey extends Item {
   	    {
 		    playerIn.getCooldownTracker().setCooldown(this, 200);
 	    
-		    if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		    if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		    {
 		    	if(!worldIn.isRemote) 
 				{
 					long getCurrentDayTime = worldIn.getDayTime();
-					((ServerWorld) worldIn).setDayTime(getCurrentDayTime - NightSoulsKey.requiemConstant);	
+					((ServerWorld) worldIn).setDayTime(getCurrentDayTime - RequiemKey.requiemConstant);	
 				}	    	
 		    	
 		    	ItemStack itemstack = playerIn.getHeldItem(handIn);

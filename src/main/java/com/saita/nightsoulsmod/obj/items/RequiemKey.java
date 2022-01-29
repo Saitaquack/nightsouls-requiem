@@ -24,7 +24,7 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
-public class NightSoulsKey extends Item {
+public class RequiemKey extends Item {
 	
 	public static long requiemConstant = 240000000L;
 
@@ -32,7 +32,7 @@ public class NightSoulsKey extends Item {
 	public static final Logger LOGGER = LogManager.getLogger();
 	BlockPos requiemBlockPos = new BlockPos(0,0,0);
 
-	public NightSoulsKey(Properties properties) {
+	public RequiemKey(Properties properties) {
 		super(properties);
 
 	}
@@ -82,13 +82,13 @@ public class NightSoulsKey extends Item {
 			    	playerIn.getCooldownTracker().setCooldown(this, 200);
 			    }
 			    
-			    if(worldIn.getDayTime() < NightSoulsKey.requiemConstant)
+			    if(worldIn.getDayTime() < RequiemKey.requiemConstant)
 			    {
 			    	
 			    	if(!worldIn.isRemote) 
 					{
 						long getCurrentDayTime = worldIn.getDayTime();
-						((ServerWorld) worldIn).setDayTime(getCurrentDayTime + NightSoulsKey.requiemConstant);	
+						((ServerWorld) worldIn).setDayTime(getCurrentDayTime + RequiemKey.requiemConstant);	
 					}
 				    
 				    ItemStack NSEmeralds = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 64); 

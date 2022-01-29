@@ -86,6 +86,9 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> DOPPIO = SOUNDS.register("doppio", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "doppio")));
 	
+	public static final RegistryObject<SoundEvent> STAR_PLATINUM = SOUNDS.register("star_platinum", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "star_platinum")));
+	
 	
 	//Armes 
 	

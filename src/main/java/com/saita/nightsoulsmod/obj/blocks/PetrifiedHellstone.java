@@ -3,7 +3,7 @@ package com.saita.nightsoulsmod.obj.blocks;
 import java.util.Random;
 
 import com.saita.nightsoulsmod.init.BlockInit;
-import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
+import com.saita.nightsoulsmod.obj.items.RequiemKey;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -34,7 +34,7 @@ public class PetrifiedHellstone extends Block {
 	@Override
 	public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
 		
-		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		   {	
 			  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
    	       }
@@ -48,7 +48,7 @@ public class PetrifiedHellstone extends Block {
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
 			Hand handIn, BlockRayTraceResult hit) {
 		
-		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		   {	
 			  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
  	       }
@@ -60,7 +60,7 @@ public class PetrifiedHellstone extends Block {
 	public void harvestBlock(World worldIn, PlayerEntity player, BlockPos pos, BlockState state, TileEntity te,
 			ItemStack stack) {
 		
-		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		    {	
 			  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
 	        }
@@ -73,7 +73,7 @@ public class PetrifiedHellstone extends Block {
 	@Override
 	public void onBlockAdded(BlockState state, World worldIn, BlockPos pos, BlockState oldState, boolean isMoving) {
 		
-		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		   {	
 	    	  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
            }
@@ -85,7 +85,7 @@ public class PetrifiedHellstone extends Block {
 	@Override
 	public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
 		
-		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		   {	
 	    	  worldIn.setBlockState(pos, BlockInit.HELLSTONE.get().getDefaultState());
 		   }

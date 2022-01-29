@@ -3,7 +3,7 @@ package com.saita.nightsoulsmod.obj.blocks;
 import java.util.Random;
 
 import com.saita.nightsoulsmod.init.BlockInit;
-import com.saita.nightsoulsmod.obj.items.NightSoulsKey;
+import com.saita.nightsoulsmod.obj.items.RequiemKey;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -53,7 +53,7 @@ public class NightSoulsForcefield extends Block {
 	@Override
 	public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
 		
-		if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
       	  {			
 			 worldIn.removeBlock(pos, false);
           }
@@ -65,7 +65,7 @@ public class NightSoulsForcefield extends Block {
 	@Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
     	
-    	if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+    	if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
     	{
     		worldIn.removeBlock(pos, false);
       	}
@@ -77,7 +77,7 @@ public class NightSoulsForcefield extends Block {
 	@Override
     public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
     	  	
-    	if(worldIn.getDayTime() >= NightSoulsKey.requiemConstant)
+    	if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
     	{
     		worldIn.removeBlock(pos, false);
       	}
