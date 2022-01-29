@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:adventure/get_celestial_emerald",
+  "display": {
+    "icon": {
+      "item": "nightsouls:star_platinum"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_star_platinum.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_star_platinum.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "star_platinum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:star_platinum"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "star_platinum"
+    ]
+  ]
+}
