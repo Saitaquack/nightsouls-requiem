@@ -528,17 +528,6 @@
         ]
       }
     },
-    
-    "muzan_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:muzan_music_disc"
-          }
-        ]
-      }
-    },
         
     "star_gatherer_final_music_disc": {
       "trigger": "minecraft:inventory_changed",
@@ -634,7 +623,6 @@
       "helikopter_music_disc",
       "fossil_falls_music_disc",
       "tanjiro_music_disc",
-      "muzan_music_disc",
       "star_gatherer_final_music_disc",
       "hellfire_emperor_final_music_disc",
       "hallowed_paladin_final_music_disc",
