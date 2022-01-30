@@ -37,7 +37,7 @@ public class TimeClock extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("§7Right click to skip time ! Also grants you short speed and invisibility. §7Cooldown : 3 minutes"));
+	   tooltip.add(new StringTextComponent("§7Right Click to skip time ! Also grants you short speed and invisibility. §7Cooldown : 3 minutes"));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	}  
 	

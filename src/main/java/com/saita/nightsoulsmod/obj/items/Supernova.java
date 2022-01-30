@@ -44,7 +44,7 @@ public class Supernova extends SwordItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§e"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§7Has a chance to give the enemy deadly levitation and wither effect. Right click to get levitation yourself."));
+    tooltip.add(new StringTextComponent("§7Has a chance to give the enemy deadly levitation and wither effect. Right Click to get levitation yourself."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	
