@@ -231,6 +231,7 @@ public class ItemInit {
 	public static final RegistryObject<ArmorItem> ALTERNATE_LEGGINGS = ITEMS.register("alternate_leggings", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<ArmorItem> ALTERNATE_BOOTS = ITEMS.register("alternate_boots", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> STAR_PLATINUM = ITEMS.register("star_platinum", () -> new StarPlatinum(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
+	public static final RegistryObject<Item> LIFE_BAND = ITEMS.register("life_band", () -> new LifeBand(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 
     
 	public static final RegistryObject<Item> REQUIEM_KEY = ITEMS.register("requiem_key", () -> new RequiemKey(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));

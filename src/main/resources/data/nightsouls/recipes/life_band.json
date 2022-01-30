@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "SYS",
+    "BSB" 
+  ],
+  
+  "key": {
+  
+    "Y": {
+      "item": "nightsouls:life_crystal"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:life_band"
+  }
+}

@@ -4,7 +4,8 @@
     "recipes": [
       "nightsouls:instant_healing_potion_from_life_crystal",
       "nightsouls:asgore_music_disc",
-      "nightsouls:biotic_blade"
+      "nightsouls:biotic_blade",
+      "nightsouls:life_band"
     ]
   },
   "criteria": {

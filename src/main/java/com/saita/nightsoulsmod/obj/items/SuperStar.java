@@ -46,7 +46,7 @@ public class SuperStar extends Item {
     @Override
     public Rarity getRarity(ItemStack stack) {
     	
-    	return Rarity.RARE;
+    	return Rarity.EPIC;
     }
     
     @Override
@@ -82,6 +82,8 @@ public class SuperStar extends Item {
     	 {
  	     playerIn.sendMessage(new TranslationTextComponent("§dTATATATATATATATA TATATATATATATATA TATATATATATATATA !"), null);
     	 }
+    	 
+    	playerIn.getCooldownTracker().setCooldown(ItemInit.STAR_PLATINUM.get(), 900);
     	 
     	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 4));
     	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
