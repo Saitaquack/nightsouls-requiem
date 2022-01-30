@@ -42,8 +42,8 @@ public class WerewolfEntity extends MonsterEntity {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 50.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.32D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 8.0D) 
-				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.4D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7.0D) 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.3D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	

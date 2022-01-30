@@ -40,7 +40,7 @@ public class ReaperEntity extends MonsterEntity {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 45.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D)
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 9.0D)
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
 	}

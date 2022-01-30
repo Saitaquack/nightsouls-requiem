@@ -38,9 +38,9 @@ public class AlternateEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 110.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 100.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.38D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 15.0D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 13.0D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D)
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D); 
 	}

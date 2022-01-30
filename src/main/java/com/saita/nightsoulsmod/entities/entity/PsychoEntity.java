@@ -37,8 +37,8 @@ public class PsychoEntity extends MonsterEntity {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 55.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.20D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 12.0D) 
-				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.6D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 11.0D) 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 50.0D); 
 	}
 	
