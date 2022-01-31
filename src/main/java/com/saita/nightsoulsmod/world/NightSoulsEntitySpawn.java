@@ -15,8 +15,7 @@ public class NightSoulsEntitySpawn {
 	
 	public static void onEntitySpawn(final BiomeLoadingEvent event) {
 				  
-		  if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND) ||
-		     event.getCategory().equals(Biome.Category.OCEAN) || event.getCategory().equals(Biome.Category.MUSHROOM)))
+		  if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND) || event.getCategory().equals(Biome.Category.MUSHROOM)))
 		  {
 		  
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.REAPER.get(), 4, 1, 5); 

@@ -105,13 +105,6 @@ public class WerewolfEntity extends MonsterEntity {
 		this.playSound(SoundEvents.ENTITY_ZOMBIE_STEP, 0.20F, 0.5F);
 	 }
 	
-	//Negates fall damage
-	@Override
-	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
-				
-		return 0;
-	}
-	
 	 //Burns at Day
 	
 	 protected boolean shouldBurnInDay() {
@@ -164,12 +157,17 @@ public class WerewolfEntity extends MonsterEntity {
 	        
 	  }
 	
-	// only spawns on blocks and with a light level below or equals to 7
+	// Only spawns on blocks and with a light level below or equals to 7. Also doesn't spawn in water.
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 
-		return (worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
+		return 
+		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
 		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.CAVE_AIR.getDefaultState()) &&
+		
+		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY(), this.getPosZ())) != Blocks.WATER.getDefaultState() || 
+		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.WATER.getDefaultState()) &&
+		
 		worldIn.getLight(this.getPosition()) <= 7;
 	}
 		

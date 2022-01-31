@@ -3,10 +3,12 @@ package com.saita.nightsoulsmod.entities.entity;
 import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
@@ -24,6 +26,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
 public class PsychoEntity extends MonsterEntity {
@@ -89,14 +92,6 @@ public class PsychoEntity extends MonsterEntity {
 		
 		return true;
 	}
-	
-	//Negates fall damage
-	@Override
-	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
-				
-		return 0;
-	}
-	
 
 	// Inflicts Blindness on attack
 	@Override
@@ -114,5 +109,19 @@ public class PsychoEntity extends MonsterEntity {
 	        }
 	        
 	  }
+	
+	// Only spawns on blocks and with a light level below or equals to 7. Also doesn't spawn in water.
+	@Override
+	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
+
+		return 
+		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
+		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.CAVE_AIR.getDefaultState()) &&
+		
+		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY(), this.getPosZ())) != Blocks.WATER.getDefaultState() || 
+		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.WATER.getDefaultState()) &&
+		
+		worldIn.getLight(this.getPosition()) <= 7;
+	}
 		
 }
