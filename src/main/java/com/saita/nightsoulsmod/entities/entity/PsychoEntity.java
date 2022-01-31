@@ -113,7 +113,7 @@ public class PsychoEntity extends MonsterEntity {
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 
-		return this.getStateBelow() != Blocks.AIR.getDefaultState() && this.getStateBelow() != Blocks.WATER.getDefaultState() && worldIn.getLight(this.getPosition()) <= 7;
+		return this.getStateBelow() != Blocks.AIR.getDefaultState() && this.getStateBelow() != Blocks.CAVE_AIR.getDefaultState() && this.getStateBelow() != Blocks.WATER.getDefaultState() && worldIn.getLight(this.getPosition()) <= 7;
 	}
 		
 }

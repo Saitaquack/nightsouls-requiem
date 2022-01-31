@@ -42,7 +42,7 @@ public class NightSoulsEntitySpawn {
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.REAPER.get(), 2, 1, 3);
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 2, 1, 3);
 			  
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 3, 1, 3);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 3, 1, 4);
 				  
 		    }
 		  
@@ -59,7 +59,7 @@ public class NightSoulsEntitySpawn {
 				  
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLBORN.get(), 3, 1, 4);
 
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 3, 1, 3);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 3, 1, 4);
 				  
 		    }
 		  
