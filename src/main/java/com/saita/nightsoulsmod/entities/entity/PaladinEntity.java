@@ -107,22 +107,6 @@ public class PaladinEntity extends MonsterEntity {
 		this.playSound(SoundEvents.ENTITY_IRON_GOLEM_STEP, 0.20F, 0.5F);
 	 }
 	
-	
-	// Immediatly dissapears if the world isn't Requiem.
-	 public void livingTick() {
-	      if (this.isAlive()) {	    	 
-	    	  
-	    	if(world.getDayTime() < RequiemKey.requiemConstant)
-	    	{
-	    		 this.remove();
-	    	}	    	  
-	      
-	      }
-
-	      super.livingTick();
-	   }
-	
-	
 	// Paladin gets regeneration on attack
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
@@ -154,7 +138,7 @@ public class PaladinEntity extends MonsterEntity {
 		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY(), this.getPosZ())) != Blocks.WATER.getDefaultState() || 
 		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.WATER.getDefaultState()) &&
 		
-		worldIn.getLight(this.getPosition()) <= 7;
+		worldIn.getLight(this.getPosition()) <= 7  && ((World) worldIn).getDayTime() >= RequiemKey.requiemConstant;
 	}
 		
 }

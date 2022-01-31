@@ -101,21 +101,6 @@ public class RealityWalkerEntity extends MonsterEntity {
 		return;
 	}
 	
-	
-	// Immediatly dissapears if the world isn't Requiem.
-	 public void livingTick() {
-	      if (this.isAlive()) {	    	 
-	    	  
-	    	if(world.getDayTime() < RequiemKey.requiemConstant)
-	    	{
-	    		 this.remove();
-	    	}	    	  
-	      
-	      }
-
-	      super.livingTick();
-	   }
-	
 	// Inflicts random nasty effects
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
@@ -172,7 +157,7 @@ public class RealityWalkerEntity extends MonsterEntity {
 		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY(), this.getPosZ())) != Blocks.WATER.getDefaultState() || 
 		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.WATER.getDefaultState()) &&
 		
-		worldIn.getLight(this.getPosition()) <= 7;
+		worldIn.getLight(this.getPosition()) <= 7  && ((World) worldIn).getDayTime() >= RequiemKey.requiemConstant;
 	}
 		
 }

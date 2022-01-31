@@ -64,14 +64,6 @@ public class DemonEyeEntity extends PhantomEntity {
 	 
 	 public void livingTick() {
 	      if (this.isAlive()) {
-	    	 
-	    // Make it so it immediatly despawns at day, because it spawns during the day.	  
-	    	  
-	    	if(world.isDaytime() && !world.isRemote)
-	    	{
-	    		 this.remove();
-	    	}
-	    	  
 	         boolean flag = this.shouldBurnInDay() && this.isInDaylight();
 	         if (flag) {
 	            ItemStack itemstack = this.getItemStackFromSlot(EquipmentSlotType.HEAD);

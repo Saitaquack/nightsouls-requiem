@@ -105,16 +105,11 @@ public class HellfireServantEntity extends MonsterEntity {
 	 }
 	
 	
-	// Immediatly dissapears if the world isn't Requiem. Has infinite fire resistance, and has buffs when on fire.
+	//Has infinite fire resistance, and has buffs when on fire.
 	 public void livingTick() {
 	      if (this.isAlive()) {	  
 	    	  
-	    	this.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20, 0, false, false));
-	    	  
-	    	if(world.getDayTime() < RequiemKey.requiemConstant)
-	    	{
-	    		 this.remove();
-	    	}	    
+	    	this.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 20, 0, false, false));    
 	    	
 	    	if(this.isBurning())
 	    	{
@@ -171,8 +166,9 @@ public class HellfireServantEntity extends MonsterEntity {
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 
 		return 
-		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
-		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.CAVE_AIR.getDefaultState();
+		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
+		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.CAVE_AIR.getDefaultState()) &&
+		((World) worldIn).getDayTime() >= RequiemKey.requiemConstant;
 	}
 		
 }
