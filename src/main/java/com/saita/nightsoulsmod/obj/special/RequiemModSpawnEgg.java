@@ -22,7 +22,7 @@ public class RequiemModSpawnEgg extends ModSpawnEggItem {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("§7Will only spawn in the world if the world is in Requiem Mod."));
+	   tooltip.add(new StringTextComponent("§7Only spawns naturally if the world is a Requiem World."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	} 
 

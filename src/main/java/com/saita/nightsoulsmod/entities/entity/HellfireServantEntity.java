@@ -161,7 +161,6 @@ public class HellfireServantEntity extends MonsterEntity {
 	        
 	  }
 	
-	// Only spawns on blocks.
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 

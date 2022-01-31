@@ -146,7 +146,6 @@ public class RealityWalkerEntity extends MonsterEntity {
 	        
 	  }
 	
-	// Only spawns on blocks and with a light level below or equals to 7. Also doesn't spawn in water.
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 
