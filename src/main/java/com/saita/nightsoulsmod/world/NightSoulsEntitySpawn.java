@@ -71,6 +71,7 @@ public class NightSoulsEntitySpawn {
 		   int weight, int minCount, int maxCount) {
 		List<MobSpawnInfo.Spawners> base = spawns.getSpawner(type.getClassification());
 		base.add(new MobSpawnInfo.Spawners(type,weight, minCount, maxCount));
+		base.add(new MobSpawnInfo.Spawners(type,weight, minCount, maxCount));
 		}
 
 }
