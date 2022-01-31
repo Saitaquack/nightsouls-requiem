@@ -136,9 +136,7 @@ public class HellbornEntity extends MonsterEntity {
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 
-		return 
-		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
-		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.CAVE_AIR.getDefaultState();
+		return this.getStateBelow() != Blocks.AIR.getDefaultState() && this.getStateBelow() != Blocks.WATER.getDefaultState();
 	}
 		
 }

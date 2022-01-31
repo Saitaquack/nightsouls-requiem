@@ -165,10 +165,7 @@ public class HellfireServantEntity extends MonsterEntity {
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {
 
-		return 
-		(worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.AIR.getDefaultState() || 
-		worldIn.getBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ())) != Blocks.CAVE_AIR.getDefaultState()) &&
-		((World) worldIn).getDayTime() >= RequiemKey.requiemConstant;
+		return this.getStateBelow() != Blocks.AIR.getDefaultState() && this.getStateBelow() != Blocks.WATER.getDefaultState() &&  worldIn.getLight(this.getPosition()) <= 7 && ((World) worldIn).getDayTime() >= RequiemKey.requiemConstant;
 	}
 		
 }
