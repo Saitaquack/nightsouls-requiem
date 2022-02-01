@@ -233,6 +233,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> STAR_PLATINUM = ITEMS.register("star_platinum", () -> new StarPlatinum(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
 	public static final RegistryObject<Item> LIFE_BAND = ITEMS.register("life_band", () -> new LifeBand(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> PURIFICATION_GEM = ITEMS.register("purification_gem", () -> new PurificationGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
+	public static final RegistryObject<Item> NIGHTSOULS_CAKE_SLICE = ITEMS.register("nightsouls_cake_slice", () -> new NightSoulsCakeSlice(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(0.9F).setAlwaysEdible().build())));
 
     
 	public static final RegistryObject<Item> REQUIEM_KEY = ITEMS.register("requiem_key", () -> new RequiemKey(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));

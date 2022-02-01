@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BEB",
+    "CCC"
+  ],
+  
+  "key": {
+  
+    "A": {
+      "item": "minecraft:milk_bucket"
+    },
+    
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    
+    "C": {
+      "item": "minecraft:wheat"
+    },
+    
+    "E": {
+      "item": "nightsouls:nightsouls_essence"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:nightsouls_cake_slice",
+    "count": 16
+  }
+}
