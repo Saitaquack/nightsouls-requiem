@@ -45,7 +45,7 @@ public class HellfireServantEntity extends MonsterEntity {
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.34D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 20.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.4D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 40.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	
 	@Override

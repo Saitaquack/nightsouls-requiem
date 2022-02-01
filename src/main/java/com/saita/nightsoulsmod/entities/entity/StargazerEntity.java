@@ -44,7 +44,7 @@ public class StargazerEntity extends MonsterEntity {
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.30D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 22.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.4D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	
 	@Override
@@ -65,8 +65,7 @@ public class StargazerEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
-	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, RealityWalkerEntity.class, true));
+	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, RealityWalkerEntity.class, true));
 
   
 	  }

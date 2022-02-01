@@ -33,7 +33,7 @@ public class DemonEyeEntity extends PhantomEntity {
 				.createMutableAttribute(Attributes.MAX_HEALTH, 35.0D)
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 7.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	 
 	 @Override

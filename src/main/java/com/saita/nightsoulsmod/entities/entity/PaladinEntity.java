@@ -44,7 +44,7 @@ public class PaladinEntity extends MonsterEntity {
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 18.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.6D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	
 	@Override
@@ -65,7 +65,6 @@ public class PaladinEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, HellfireServantEntity.class, true));
 	      
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AlternateEntity.class, true));

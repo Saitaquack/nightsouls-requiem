@@ -45,7 +45,7 @@ public class ReaperEntity extends MonsterEntity {
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 9.0D)
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 25.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 30.0D); 
 	}
 	
 	@Override

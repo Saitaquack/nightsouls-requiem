@@ -42,7 +42,7 @@ public class PsychoEntity extends MonsterEntity {
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.20D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 11.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 50.0D); 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 45.0D); 
 	}
 	
 	@Override
