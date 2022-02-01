@@ -92,7 +92,7 @@ public class RequiemBackupKey extends Item {
     	{
     	    if(worldIn.isRemote)
     		{
-  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a NightSouls Backup Key"), null);
+  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Requiem Backup Key"), null);
     		}
     	}
 	    	    	
