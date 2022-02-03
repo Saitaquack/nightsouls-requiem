@@ -948,6 +948,18 @@
 		
 	},
 	
+	"muzan": {
+		"category": "music",
+		"subtitle": "Muzan Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/muzan",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",
