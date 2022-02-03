@@ -39,7 +39,7 @@ public class GalacticSlayer extends SwordItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§1"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§7The strongest blade in the cosmos, created by the Star Gatherer itself !"));
+    tooltip.add(new StringTextComponent("§7The strongest blade in the cosmos, created by the Star Gatherer himself !"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

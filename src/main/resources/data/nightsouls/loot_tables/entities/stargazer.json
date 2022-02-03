@@ -1,7 +1,7 @@
 {
   "type": "minecraft:entity",
   "pools": [
-    {
+  	{
       "rolls": 1,
       "entries": [
         {
@@ -10,6 +10,11 @@
         }
       ],
       "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.5,
+          "looting_multiplier": 0.07
+        },
         {
           "condition": "minecraft:killed_by_player"
         }
@@ -47,8 +52,8 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.05,
-          "looting_multiplier": 0.02
+          "chance": 0.025,
+          "looting_multiplier": 0.01
         },
         {
           "condition": "minecraft:killed_by_player"

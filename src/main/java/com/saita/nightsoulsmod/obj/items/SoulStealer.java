@@ -32,7 +32,7 @@ public class SoulStealer extends SwordItem {
     {
 
 	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§7Restore your health by reaping the souls of living beings."));
+    tooltip.add(new StringTextComponent("§7Restores your health by reaping the souls of living beings."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	
