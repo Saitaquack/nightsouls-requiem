@@ -19,6 +19,10 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.MIIZEALITE_INGOT.get()); 
 	}),
+	POISON_MIIZEALITE_DAGGER(6, 2185, 12.0F, 4.5F, 15, ()-> //1561 x 1.4  Best damage and efficiency, average armor, durability and enchant.
+	{ 
+		return Ingredient.fromItems( ItemInit.MIIZEALITE_INGOT.get()); 
+	}),
 	CRANITE(6, 2341, 10.0F, 4.5F, 30, ()-> //1561 x 1.5  Better durability and amazing enchant, average damage and efficiency, best armor.
 	{ 
 		return Ingredient.fromItems( ItemInit.CRANITE_INGOT.get()); 
@@ -83,7 +87,7 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.BASTIRITE_INGOT.get()); 
 	}),
-	WITHER(6, 4683, 20.0F, 14.0F, 30, ()-> //3122 x 1.5
+	WITHER(6, 4683, 20.0F, 14.5F, 30, ()-> //3122 x 1.5
 	{ 
 		return Ingredient.fromItems( ItemInit.WITHER_ESSENCE.get()); 
 	}),

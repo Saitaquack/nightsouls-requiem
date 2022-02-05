@@ -3,7 +3,15 @@
   "rewards": {
     "recipes": [
       "nightsouls:nightsouls_emerald_block",
-      "nightsouls:redacted_music_disc"
+      "nightsouls:redacted_music_disc",
+      "nightsouls:nightsouls_lucky_block",
+      "nightsouls:saitastone_ingot_from_nightsouls_emerald",
+      "nightsouls:miizealite_ingot_from_nightsouls_emerald",
+      "nightsouls:cranite_ingot_from_nightsouls_emerald",
+      "nightsouls:bastirite_ingot_from_nightsouls_emerald",
+      "nightsouls:primium_ingot_from_nightsouls_emerald",
+      "nightsouls:rowequite_ingot_from_nightsouls_emerald",
+      "nightsouls:therenite_ingot_from_nightsouls_emerald"
     ]
   },
   "criteria": {

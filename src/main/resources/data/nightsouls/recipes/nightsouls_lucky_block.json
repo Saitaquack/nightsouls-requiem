@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GIG",
+    "EEE",
     "NDN",
-    "GIG"
+    "EEE"
   ],
   "key": {
   
@@ -11,12 +11,8 @@
       "item": "minecraft:dropper"
     },
     
-    "G": {
-      "item": "minecraft:gold_ingot"
-    },
-    
-    "I": {
-      "item": "minecraft:iron_ingot"
+    "E": {
+      "item": "nightsouls:nightsouls_emerald"
     },
     
     "N": {
