@@ -423,6 +423,10 @@
    "block.nightsouls.therenite_ore": "Minerai de therenite",
    "block.nightsouls.perfect_paragonic_block": "Bloc parangonique parfait",
    "block.nightsouls.pitch_black_block": "Bloc de noir absolu",
+   "block.nightsouls.backrooms_wall": "Mur des backrooms",
+   "block.nightsouls.backrooms_carpet": "Carpette des backrooms",
+   "block.nightsouls.backrooms_ceiling": "Plafond des backrooms",
+   "block.nightsouls.backrooms_light": "Lampe des backrooms",
       
    
    "advancements.story.get_night_soul_pickaxe.title": "Il est temps de vraiment miner !",

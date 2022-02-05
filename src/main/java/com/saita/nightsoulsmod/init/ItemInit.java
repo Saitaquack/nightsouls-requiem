@@ -397,11 +397,17 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> ROWEQUITE_ORE = ITEMS.register("rowequite_ore", () -> new NightSoulsOre(BlockInit.ROWEQUITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> THERENITE_ORE  = ITEMS.register("therenite_ore", () -> new NightSoulsOre(BlockInit.THERENITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> PITCH_BLACK_BLOCK  = ITEMS.register("pitch_black_block", () -> new BlockItem(BlockInit.PITCH_BLACK_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> BACKROOMS_WALL  = ITEMS.register("backrooms_wall", () -> new BlockItem(BlockInit.BACKROOMS_WALL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> BACKROOMS_CARPET  = ITEMS.register("backrooms_carpet", () -> new BlockItem(BlockInit.BACKROOMS_CARPET.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> BACKROOMS_CEILING  = ITEMS.register("backrooms_ceiling", () -> new BlockItem(BlockInit.BACKROOMS_CEILING.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> BACKROOMS_LIGHT  = ITEMS.register("backrooms_light", () -> new BlockItem(BlockInit.BACKROOMS_LIGHT.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> PETRIFIED_SPACESTONE = ITEMS.register("petrified_spacestone", () -> new BlockItem(BlockInit.PETRIFIED_SPACESTONE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> PETRIFIED_HEAVENSTONE = ITEMS.register("petrified_heavenstone", () -> new BlockItem(BlockInit.PETRIFIED_HEAVENSTONE.get(), new Item.Properties()));
 	public static final RegistryObject<BlockItem> PETRIFIED_ANTISTONE = ITEMS.register("petrified_antistone", () -> new BlockItem(BlockInit.PETRIFIED_ANTISTONE.get(), new Item.Properties()));
+	
 	
 	public static final RegistryObject<Item> REAPER_SPAWN_EGG = ITEMS.register("reaper_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.REAPER, 0x0D0D0D, 0xA349A4, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> WEREWOLF_SPAWN_EGG = ITEMS.register("werewolf_spawn_egg", () -> new ModSpawnEggItem(NightSoulsEntityTypes.WEREWOLF, 0x203248, 0x597CA4, new Item.Properties().group(NightSoulsItemGroup.instance)));
