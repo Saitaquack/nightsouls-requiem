@@ -67,16 +67,6 @@
         ]
       }
     },
-    "nounours_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:nounours_music_disc"
-          }
-        ]
-      }
-    },
     
      "awaken_music_disc": {
       "trigger": "minecraft:inventory_changed",
@@ -260,17 +250,6 @@
         "items": [
           {
             "item": "nightsouls:megalovania_music_disc"
-          }
-        ]
-      }
-    },
-    
-    "fanta_bob_show_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:fanta_bob_show_music_disc"
           }
         ]
       }
@@ -540,17 +519,6 @@
       }
     },
     
-    "marsch_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:marsch_music_disc"
-          }
-        ]
-      }
-    },
-    
     "muzan_music_disc": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -614,7 +582,6 @@
       "hopes_and_dreams_music_disc",
       "toto_africa_music_disc",
       "kira_music_disc",
-      "nounours_music_disc",
       "awaken_music_disc" ,
       "infogrames_music_disc" ,
       "pyro_barbarian_music_disc",
@@ -632,7 +599,6 @@
       "mama_lauda_music_disc",
       "ashes_on_the_fire_music_disc",
       "megalovania_music_disc",
-      "fanta_bob_show_music_disc",
       "mickie_krause_music_disc",
       "revenge_music_disc",
       "jevil_music_disc",
@@ -657,7 +623,6 @@
       "fossil_falls_music_disc",
       "tanjiro_music_disc",
       "mhwi_music_disc",
-      "marsch_music_disc",
       "muzan_music_disc",
       "star_gatherer_final_music_disc",
       "hellfire_emperor_final_music_disc",

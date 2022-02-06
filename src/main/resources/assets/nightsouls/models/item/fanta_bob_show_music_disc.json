@@ -1,6 +1,0 @@
-{
-   "parent": "item/generated",
-   "textures": {
-        "layer0": "nightsouls:items/fanta_bob_show_music_disc" 
-        }
-}

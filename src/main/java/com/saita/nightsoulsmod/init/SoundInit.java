@@ -226,9 +226,6 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> KIRA = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "kira")));
 	
-	public static final Lazy<SoundEvent> NOUNOURS = Lazy.of(() -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "nounours")));
-	
 	public static final Lazy<SoundEvent> AWAKEN = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "awaken")));
 	
@@ -292,9 +289,6 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> MEGALOVANIA = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "megalovania")));
 	
-	public static final Lazy<SoundEvent> FANTA_BOB_SHOW = Lazy.of(() -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "fanta_bob_show")));
-	
 	public static final Lazy<SoundEvent> MICKIE_KRAUSE = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "mickie_krause")));
 	
@@ -306,9 +300,6 @@ public class SoundInit {
 	
 	public static final Lazy<SoundEvent> BURNING_COLOSSEUM = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "burning_colosseum")));
-	
-	public static final Lazy<SoundEvent> AVALON = Lazy.of(() -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "avalon")));
 	
 	public static final Lazy<SoundEvent> DIAVOLO = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "diavolo")));
@@ -369,9 +360,6 @@ public class SoundInit {
 	
 	public static final Lazy<SoundEvent> MUZAN = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "muzan")));
-	
-	public static final Lazy<SoundEvent> MARSCH = Lazy.of(() -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "marsch")));
 	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));

@@ -371,18 +371,6 @@
 		
 	},
 	
-	"nounours": {
-		"category": "music",
-		"subtitle": "Nounours Rap",
-		"sounds": [
-			{
-				"name": "nightsouls:music/nounours",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"awaken": {
 		"category": "music",
 		"subtitle": "AWAKEN MY MASTERS !",
@@ -635,18 +623,6 @@
 		
 	},
 	
-	"fanta_bob_show": {
-		"category": "music",
-		"subtitle": "Fanta Bob Show Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/fanta_bob_show",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"mickie_krause": {
 		"category": "music",
 		"subtitle": "Pourquoi j'ai ajoute ca",
@@ -694,19 +670,6 @@
 		]
 		
 	},
-	
-	"avalon": {
-		"category": "music",
-		"subtitle": "Avalon Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/avalon",
-				"stream": true
-			}
-		]
-		
-	},
-	
 		
 	"diavolo": {
 		"category": "music",
@@ -930,18 +893,6 @@
 		"sounds": [
 			{
 				"name": "nightsouls:music/mhwi",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"marsch": {
-		"category": "music",
-		"subtitle": "Marsch Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/marsch",
 				"stream": true
 			}
 		]

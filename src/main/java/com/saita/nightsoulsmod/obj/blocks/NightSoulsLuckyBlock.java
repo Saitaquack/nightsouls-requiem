@@ -482,35 +482,32 @@ public class NightSoulsLuckyBlock extends Block {
 		    ItemStack disc1 = new ItemStack(ItemInit.HOPES_AND_DREAMS_MUSIC_DISC.get());
 		    ItemStack disc2 = new ItemStack(ItemInit.TOTO_AFRICA_MUSIC_DISC.get());
 		    ItemStack disc3 = new ItemStack(ItemInit.KIRA_MUSIC_DISC.get());
-		    ItemStack disc4 = new ItemStack(ItemInit.NOUNOURS_MUSIC_DISC.get());
-		    ItemStack disc5 = new ItemStack(ItemInit.AWAKEN_MUSIC_DISC.get());
-		    ItemStack disc6 = new ItemStack(ItemInit.INFOGRAMES_MUSIC_DISC.get());
-		    ItemStack disc7 = new ItemStack(ItemInit.PYRO_BARBARIAN_MUSIC_DISC.get());
-		    ItemStack disc8 = new ItemStack(ItemInit.FANTA_MUSIC_DISC.get());
-		    ItemStack disc9 = new ItemStack(ItemInit.BOWSER_MUSIC_DISC.get());
-		    ItemStack disc10 = new ItemStack(ItemInit.OBSERVATORY_MUSIC_DISC.get());
-		    ItemStack disc11 = new ItemStack(ItemInit.STARSHIP_MUSIC_DISC.get());
-		    ItemStack disc12 = new ItemStack(ItemInit.UNDYNE_MUSIC_DISC.get());
-		    ItemStack disc13 = new ItemStack(ItemInit.ASGORE_MUSIC_DISC.get());
-		    ItemStack disc14 = new ItemStack(ItemInit.MAMA_LAUDA_MUSIC_DISC.get());
-		    ItemStack disc15 = new ItemStack(ItemInit.FANTA_BOB_SHOW_MUSIC_DISC.get());
-		    ItemStack disc16 = new ItemStack(ItemInit.MICKIE_KRAUSE_MUSIC_DISC.get());
-		    ItemStack disc17 = new ItemStack(ItemInit.JEVIL_MUSIC_DISC.get());
-		    ItemStack disc18 = new ItemStack(ItemInit.BURNING_COLOSSEUM_MUSIC_DISC.get());
-		    ItemStack disc19 = new ItemStack(ItemInit.AVALON_MUSIC_DISC.get());
-		    ItemStack disc20 = new ItemStack(ItemInit.REDACTED_MUSIC_DISC.get());
-		    ItemStack disc21 = new ItemStack(ItemInit.GIORNO_MUSIC_DISC.get());
-		    ItemStack disc22 = new ItemStack(ItemInit.JOTARO_MUSIC_DISC.get());
-		    ItemStack disc23 = new ItemStack(ItemInit.JOSUKE_MUSIC_DISC.get());
-		    ItemStack disc24 = new ItemStack(ItemInit.PRIME_MUSIC_DISC.get());
-		    ItemStack disc25 = new ItemStack(ItemInit.EQUILA_MUSIC_DISC.get());
-		    ItemStack disc26 = new ItemStack(ItemInit.THEROX_MUSIC_DISC.get());
-		    ItemStack disc27 = new ItemStack(ItemInit.MAGASIN_MUSIC_DISC.get());
-		    ItemStack disc28 = new ItemStack(ItemInit.HELIKOPTER_MUSIC_DISC.get());
-		    ItemStack disc29 = new ItemStack(ItemInit.FOSSIL_FALLS_MUSIC_DISC.get());
-		    ItemStack disc30 = new ItemStack(ItemInit.TANJIRO_MUSIC_DISC.get());
-		    ItemStack disc31 = new ItemStack(ItemInit.MHWI_MUSIC_DISC.get());
-		    ItemStack disc32 = new ItemStack(ItemInit.MUZAN_MUSIC_DISC.get());
+		    ItemStack disc4 = new ItemStack(ItemInit.AWAKEN_MUSIC_DISC.get());
+		    ItemStack disc5 = new ItemStack(ItemInit.INFOGRAMES_MUSIC_DISC.get());
+		    ItemStack disc6 = new ItemStack(ItemInit.PYRO_BARBARIAN_MUSIC_DISC.get());
+		    ItemStack disc7 = new ItemStack(ItemInit.FANTA_MUSIC_DISC.get());
+		    ItemStack disc8 = new ItemStack(ItemInit.BOWSER_MUSIC_DISC.get());
+		    ItemStack disc9 = new ItemStack(ItemInit.OBSERVATORY_MUSIC_DISC.get());
+		    ItemStack disc10 = new ItemStack(ItemInit.STARSHIP_MUSIC_DISC.get());
+		    ItemStack disc11 = new ItemStack(ItemInit.UNDYNE_MUSIC_DISC.get());
+		    ItemStack disc12 = new ItemStack(ItemInit.ASGORE_MUSIC_DISC.get());
+		    ItemStack disc13 = new ItemStack(ItemInit.MAMA_LAUDA_MUSIC_DISC.get());
+		    ItemStack disc14 = new ItemStack(ItemInit.MICKIE_KRAUSE_MUSIC_DISC.get());
+		    ItemStack disc15 = new ItemStack(ItemInit.JEVIL_MUSIC_DISC.get());
+		    ItemStack disc16 = new ItemStack(ItemInit.BURNING_COLOSSEUM_MUSIC_DISC.get());
+		    ItemStack disc17 = new ItemStack(ItemInit.REDACTED_MUSIC_DISC.get());
+		    ItemStack disc18 = new ItemStack(ItemInit.GIORNO_MUSIC_DISC.get());
+		    ItemStack disc19 = new ItemStack(ItemInit.JOTARO_MUSIC_DISC.get());
+		    ItemStack disc20 = new ItemStack(ItemInit.JOSUKE_MUSIC_DISC.get());
+		    ItemStack disc21 = new ItemStack(ItemInit.PRIME_MUSIC_DISC.get());
+		    ItemStack disc22 = new ItemStack(ItemInit.EQUILA_MUSIC_DISC.get());
+		    ItemStack disc23 = new ItemStack(ItemInit.THEROX_MUSIC_DISC.get());
+		    ItemStack disc24 = new ItemStack(ItemInit.MAGASIN_MUSIC_DISC.get());
+		    ItemStack disc25 = new ItemStack(ItemInit.HELIKOPTER_MUSIC_DISC.get());
+		    ItemStack disc26 = new ItemStack(ItemInit.FOSSIL_FALLS_MUSIC_DISC.get());
+		    ItemStack disc27 = new ItemStack(ItemInit.TANJIRO_MUSIC_DISC.get());
+		    ItemStack disc28 = new ItemStack(ItemInit.MHWI_MUSIC_DISC.get());
+		    ItemStack disc29 = new ItemStack(ItemInit.MUZAN_MUSIC_DISC.get());
 
 		    
 		    if(randomDisc == 1 || randomDisc2 == 1)
@@ -656,21 +653,6 @@ public class NightSoulsLuckyBlock extends Block {
 		    if(randomDisc == 29 || randomDisc2 == 29)
 		    {
 		    	spawnAsEntity(worldIn, pos, disc29);
-		    }
-		    
-		    if(randomDisc == 30 || randomDisc2 == 30)
-		    {
-		    	spawnAsEntity(worldIn, pos, disc30);
-		    }
-		    
-		    if(randomDisc == 31 || randomDisc2 == 31)
-		    {
-		    	spawnAsEntity(worldIn, pos, disc31);
-		    }
-		    
-		    if(randomDisc == 32 || randomDisc2 == 32)
-		    {
-		    	spawnAsEntity(worldIn, pos, disc32);
 		    }
 		    		    
 		}
