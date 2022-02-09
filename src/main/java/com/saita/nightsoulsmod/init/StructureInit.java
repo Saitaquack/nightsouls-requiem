@@ -54,7 +54,8 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> ODYSSEY_BOTTOM = STRUCTURES.register("odyssey_bottom", OdysseyBottomStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_TOP = STRUCTURES.register("dragon_statue_top", DragonStatueTopStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_BOTTOM = STRUCTURES.register("dragon_statue_bottom", DragonStatueBottomStructure::new);
-     
+    public static final RegistryObject<Structure<NoFeatureConfig>> BACKROOMS = STRUCTURES.register("backrooms", BackroomsStructure::new);
+
     
     public static final RegistryObject<Structure<NoFeatureConfig>> PARAGONIC_CORE = STRUCTURES.register("paraconic_core", ParagonicCoreStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> SAITA_LOOT_ROOM = STRUCTURES.register("saita_loot_room", SaitaLootRoomStructure::new);
@@ -102,6 +103,7 @@ public class StructureInit {
         setupMapSpacingAndLand(ODYSSEY_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.odysseySeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
+        setupMapSpacingAndLand(BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 752366482), false);
        
         
         setupMapSpacingAndLand(PARAGONIC_CORE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, 122377928), true);

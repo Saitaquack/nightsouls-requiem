@@ -47,6 +47,7 @@ public class StructureGen {
 	            structures.add(() -> StructureInit.DECUBE_HOUSE2.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DRAGON_STATUE_BOTTOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DRAGON_STATUE_TOP.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.BACKROOMS.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 
  
 	            structures.add(() -> StructureInit.PARAGONIC_CORE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
