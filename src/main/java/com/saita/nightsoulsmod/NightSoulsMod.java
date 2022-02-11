@@ -63,8 +63,7 @@ public class NightSoulsMod
     	  event.enqueueWork(() -> {
               ModelProperties.makeBow(ItemInit.MIIZEALITE_BOW.get(), 20.0F);
               ModelProperties.makeBow(ItemInit.NIGHTSOULS_BOW.get(), 16.0F);
-              ModelProperties.makeBow(ItemInit.BOW_SER.get(), 12.0F);
-                            
+              ModelProperties.makeBow(ItemInit.BOW_SER.get(), 12.0F);                         
           });
     	  
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.REAPER.get(), ReaperRenderer::new);

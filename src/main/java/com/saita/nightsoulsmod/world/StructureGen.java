@@ -48,8 +48,8 @@ public class StructureGen {
 	            structures.add(() -> StructureInit.DRAGON_STATUE_BOTTOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.DRAGON_STATUE_TOP.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.BACKROOMS.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.PALADIN_HILL.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 
- 
 	            structures.add(() -> StructureInit.PARAGONIC_CORE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.LUCKY_BLOCK.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.CELESTIAL_EMERALD.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
@@ -78,10 +78,17 @@ public class StructureGen {
 	        
 	        //Plaines
 	        
-	        if(types.contains(BiomeDictionary.Type.OVERWORLD) && types.contains(BiomeDictionary.Type.PLAINS)) {
+	        if(types.contains(BiomeDictionary.Type.PLAINS)) {
 	            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
 	            structures.add(() -> StructureInit.A_NORMAL_VILLAGE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	
+	        }
+	        
+	        if(types.contains(BiomeDictionary.Type.PLAINS) || types.contains(BiomeDictionary.Type.FOREST) || types.contains(BiomeDictionary.Type.SNOWY)) {
+	            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+	            structures.add(() -> StructureInit.UNDERGROUND_CITY.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	
 	        }
 	        

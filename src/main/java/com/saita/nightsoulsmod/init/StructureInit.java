@@ -55,6 +55,8 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_TOP = STRUCTURES.register("dragon_statue_top", DragonStatueTopStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> DRAGON_STATUE_BOTTOM = STRUCTURES.register("dragon_statue_bottom", DragonStatueBottomStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> BACKROOMS = STRUCTURES.register("backrooms", BackroomsStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> UNDERGROUND_CITY = STRUCTURES.register("underground_city", UndergroundCityStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> PALADIN_HILL = STRUCTURES.register("paladin_hill", PaladinHillStructure::new);
 
     
     public static final RegistryObject<Structure<NoFeatureConfig>> PARAGONIC_CORE = STRUCTURES.register("paraconic_core", ParagonicCoreStructure::new);
@@ -104,6 +106,8 @@ public class StructureInit {
         setupMapSpacingAndLand(DRAGON_STATUE_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
         setupMapSpacingAndLand(BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 752366482), false);
+        setupMapSpacingAndLand(UNDERGROUND_CITY.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 972366482), false);
+        setupMapSpacingAndLand(PALADIN_HILL.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 688386482), true);
        
         
         setupMapSpacingAndLand(PARAGONIC_CORE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, 122377928), true);
