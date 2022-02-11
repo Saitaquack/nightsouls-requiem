@@ -18,8 +18,11 @@ public class MiizealiteBomb extends Block {
 	public void neighborChanged(BlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
 		 if(worldIn.isBlockPowered(pos))
 		  {
-			 worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
-			 worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 90.0F, Explosion.Mode.DESTROY);
+			 if(!worldIn.isRemote)
+	    	 {
+				 worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
+				 worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 90.0F, Explosion.Mode.DESTROY);
+	    	 }
 		  }	      
 
 	   }
@@ -27,8 +30,11 @@ public class MiizealiteBomb extends Block {
 	@Override
 	public void onBlockExploded(BlockState state, World world, BlockPos pos, Explosion explosion) {
 		 
-		 world.setBlockState(pos, Blocks.AIR.getDefaultState());
-		 world.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 90.0F, Explosion.Mode.DESTROY);
+		 if(!world.isRemote)
+    	 {
+			 world.setBlockState(pos, Blocks.AIR.getDefaultState());
+			 world.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 90.0F, Explosion.Mode.DESTROY);
+    	 }
 		
 		super.onBlockExploded(state, world, pos, explosion);
 	}
