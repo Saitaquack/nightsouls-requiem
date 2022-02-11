@@ -299,17 +299,6 @@
       }
     },
     
-    "avalon_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:avalon_music_disc"
-          }
-        ]
-      }
-    },
-    
     "diavolo_music_disc": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -603,7 +592,6 @@
       "revenge_music_disc",
       "jevil_music_disc",
       "burning_colosseum_music_disc",
-      "avalon_music_disc",
       "diavolo_music_disc",
       "redacted_music_disc",
       "giorno_music_disc",
