@@ -89,6 +89,9 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> STAR_PLATINUM = SOUNDS.register("star_platinum", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "star_platinum")));
 	
+	public static final RegistryObject<SoundEvent> BACKROOMS_LIGHT = SOUNDS.register("backrooms_light", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "backrooms_light")));
+	
 	
 	//Armes 
 	

@@ -311,6 +311,18 @@
 		
 	},
 	
+	"backrooms_light": {
+		"category": "master",
+		"subtitle": "Backrooms lights",
+		"sounds": [
+			{
+				"name": "nightsouls:master/backrooms_light",
+				"stream": false
+			}
+		]
+		
+	},
+	
 	"mario_galaxy_sky_station": {
 		"category": "music",
 		"subtitle": "Mario Galaxy Sky Station Music",
