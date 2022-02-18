@@ -7,8 +7,13 @@
         {
           "type": "minecraft:item",
           "name": "nightsouls:mandela_catalogue"
-        }     
-      ]
+        }        
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }     
+      	]
     },   
     
     {
@@ -35,7 +40,12 @@
           ],
           "name": "nightsouls:pitch_black_block"
         }
-      ]
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]
     },
    
     {
@@ -62,7 +72,12 @@
           ],
           "name": "nightsouls:night_soul"
         }
-      ]
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]     
     },
     
     {
@@ -82,6 +97,11 @@
           ],
           "name": "nightsouls:saitastone_ingot"
         }
+      ],
+     	"conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }          	   	
       ]
     },
     
@@ -102,7 +122,12 @@
           ],
           "name": "nightsouls:miizealite_ingot"
         }
-      ]
+       ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]     
     },
     
     {
@@ -122,7 +147,13 @@
           ],
           "name": "nightsouls:cranite_ingot"
         }
-      ]
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]     
+      
     },
     
     {
@@ -142,7 +173,12 @@
           ],
           "name": "nightsouls:bastirite_ingot"
         }
-      ]
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]        
     },
     
     
@@ -160,6 +196,9 @@
           "condition": "minecraft:random_chance_with_looting",
           "chance": 0.1,
           "looting_multiplier": 0.05
+        },
+        {
+          "condition": "minecraft:killed_by_player"
         }
       ]
     },
@@ -177,6 +216,9 @@
           "condition": "minecraft:random_chance_with_looting",
           "chance": 0.05,
           "looting_multiplier": 0.02
+        },
+        {
+          "condition": "minecraft:killed_by_player"
         }
       ]
     },
@@ -194,6 +236,9 @@
           "condition": "minecraft:random_chance_with_looting",
           "chance": 0.4,
           "looting_multiplier": 0.1
+        },
+        {
+          "condition": "minecraft:killed_by_player"
         }
       ]
     }

@@ -55,8 +55,8 @@ public class LifeCrystal extends Item {
 		{
 			PlayerEntity playerIn = (PlayerEntity)entityLiving;
 			
-		     if((playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 30.0D || (playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 40.0D) && (worldIn.getGameTime() >= RequiemKey.requiemConstant)))
-    	     {
+		     if((playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 30.0D) || (playerIn.getAttribute(Attributes.MAX_HEALTH).getValue() < 40.0D && worldIn.getDayTime() >= RequiemKey.requiemConstant))
+		     {
     	       playerIn.getAttribute(Attributes.MAX_HEALTH).applyPersistentModifier(new AttributeModifier("MaxHealth", 2.0F, AttributeModifier.Operation.ADDITION));
     	       playerIn.heal(2);
     	       playerIn.playSound(SoundInit.LIFE_CRYSTAL.get(), 1.0F, 1.0F);    	
