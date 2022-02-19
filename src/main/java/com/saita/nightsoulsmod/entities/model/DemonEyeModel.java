@@ -6,6 +6,7 @@ import com.saita.nightsoulsmod.entities.entity.DemonEyeEntity;
 
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.util.math.MathHelper;
 
 public class DemonEyeModel <T extends DemonEyeEntity> extends EntityModel<T> {
 	
@@ -86,8 +87,15 @@ public class DemonEyeModel <T extends DemonEyeEntity> extends EntityModel<T> {
 	@Override
 	public void setRotationAngles(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks,
 			float netHeadYaw, float headPitch) {
-
 		
+        this.Tentacle3.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.3F * limbSwingAmount;
+        this.Tentacle2.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.3F * limbSwingAmount;
+        this.Tentacle6.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.3F * limbSwingAmount;
+        
+        this.Tentacle1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.3F * limbSwingAmount;
+        this.Tentacle4.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.3F * limbSwingAmount;
+        this.Tentacle5.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.3F * limbSwingAmount;
+
 	}
 	
 }

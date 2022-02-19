@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "GCG",
+    "BBB" 
+  ],
+  "key": {
+    "B": {
+      "item": "nightsouls:pitch_black_block"
+    },
+    
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:pure_light_block",
+    "count": 8
+  }
+}
