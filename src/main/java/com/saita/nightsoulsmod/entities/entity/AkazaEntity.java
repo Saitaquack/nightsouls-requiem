@@ -29,6 +29,7 @@ import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.BossInfo;
@@ -253,6 +254,8 @@ public class AkazaEntity extends MonsterEntity {
 					 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 180, 3));
 					 this.addPotionEffect(new EffectInstance(Effects.SPEED, 180, 3));
 					 world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), SoundInit.AKAZA_COMPASS.get(), SoundCategory.HOSTILE, 1.0F, 1.0F, false);
+					 world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.HOSTILE, 1.0F, 1.0F, false);
+					 
 					 
 					 if(!world.isRemote)
 					 {
