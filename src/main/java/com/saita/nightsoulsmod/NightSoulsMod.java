@@ -1,5 +1,7 @@
 package com.saita.nightsoulsmod;
 
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.RangedAttribute;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -12,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -47,7 +50,7 @@ public class NightSoulsMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-    	LOGGER.info("Hello from NightSouls Mod Requiem 3.3!");
+    	LOGGER.info("Hello from NightSouls Mod Requiem 4.0!");
     	LOGGER.info("Loading Star Gatherer's powers...");
     	LOGGER.info("Loading Hellfire Emperor's reign...");
     	LOGGER.info("Loading Hallowed Paladin's might...");
@@ -55,7 +58,13 @@ public class NightSoulsMod
     	
     	event.enqueueWork(() -> {
     		StructureInit.setupStructures();
+    		
+    		replaceAttributeValue((RangedAttribute) Attributes.MAX_HEALTH, 100000);
     	});
+    }
+    
+    protected static void replaceAttributeValue(RangedAttribute attribute, double maximumValue) {
+        attribute.maximumValue = maximumValue;
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
@@ -78,6 +87,8 @@ public class NightSoulsMod
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), HellfireServantRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.PALADIN.get(), PaladinRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.REALITY_WALKER.get(), RealityWalkerRenderer::new);
+    	  
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.AKAZA.get(), AkazaRenderer::new);
 
 
     }

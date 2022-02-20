@@ -65,7 +65,9 @@ public class PaladinEntity extends MonsterEntity {
 	protected void applyEntityAI() {
 		  
 		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+		  this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, AkazaEntity.class, true));
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, HellfireServantEntity.class, true));
+	      
 	      
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AlternateEntity.class, true));
 	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, WerewolfEntity.class, true));
