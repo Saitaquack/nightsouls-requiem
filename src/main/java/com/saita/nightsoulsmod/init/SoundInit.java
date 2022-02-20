@@ -211,6 +211,15 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> REALITY_WALKER_HIT = SOUNDS.register("reality_walker_hit", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "reality_walker_hit")));
 	
+	public static final RegistryObject<SoundEvent> AKAZA_AMBIENT = SOUNDS.register("akaza_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_ambient")));
+	
+	public static final RegistryObject<SoundEvent> AKAZA_DEATH = SOUNDS.register("akaza_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_death")));
+	
+	public static final RegistryObject<SoundEvent> AKAZA_COMPASS = SOUNDS.register("akaza_compass", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_compass")));
+	
 	
 	//Musiques
 	

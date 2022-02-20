@@ -1425,6 +1425,58 @@
 			}
 		]
 		
+	},
+	
+	"akaza_ambient": {
+		"category": "entity",
+		"subtitle": "Akaza Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"akaza_death": {
+		"category": "entity",
+		"subtitle": "Akaza Defeated",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"akaza_compass": {
+		"category": "entity",
+		"subtitle": "Akaza Compass",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_compass",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

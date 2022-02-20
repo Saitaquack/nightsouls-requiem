@@ -3,6 +3,7 @@ package com.saita.nightsoulsmod.entities.entity;
 import java.util.Random;
 
 import com.saita.nightsoulsmod.init.NightSoulsEntityTypes;
+import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -26,6 +27,7 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
@@ -74,7 +76,8 @@ public class AkazaEntity extends MonsterEntity {
 		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, false));
-	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
+	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, PaladinEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
   
 	   }
 	 
@@ -124,13 +127,13 @@ public class AkazaEntity extends MonsterEntity {
 	@Override
 	protected SoundEvent getAmbientSound() {
 		
-		return null;
+		return SoundInit.AKAZA_AMBIENT.get();
 	}
 	
 	@Override
 	protected SoundEvent getDeathSound() {
 		
-		return null;
+		return SoundInit.AKAZA_DEATH.get();
 	}
 	
 	@Override
@@ -212,7 +215,7 @@ public class AkazaEntity extends MonsterEntity {
 			 
 			 if(world.getGameTime() % 150 == 0)
 			 {
-				 this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 3, false, false));
+				 this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 4, false, false));
 				 
 				 Random random = new Random();
 				 int randomBoom = random.nextInt(2);
@@ -225,7 +228,7 @@ public class AkazaEntity extends MonsterEntity {
 				 }
 			 }
 			 
-			 if(world.getGameTime() % 750 == 0)
+			 if(world.getGameTime() % 975 == 0)
 			 {
 				HellfireServantEntity servant = new HellfireServantEntity(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), world);
 				HellfireServantEntity servant2 = new HellfireServantEntity(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), world);
@@ -249,6 +252,7 @@ public class AkazaEntity extends MonsterEntity {
 				 {
 					 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 180, 3));
 					 this.addPotionEffect(new EffectInstance(Effects.SPEED, 180, 3));
+					 world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), SoundInit.AKAZA_COMPASS.get(), SoundCategory.HOSTILE, 1.0F, 1.0F, false);
 					 
 					 if(!world.isRemote)
 					 {
