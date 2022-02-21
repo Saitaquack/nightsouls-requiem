@@ -398,7 +398,8 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> BACKROOMS_CEILING  = ITEMS.register("backrooms_ceiling", () -> new BlockItem(BlockInit.BACKROOMS_CEILING.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BACKROOMS_LIGHT  = ITEMS.register("backrooms_light", () -> new BlockItem(BlockInit.BACKROOMS_LIGHT.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> PURE_LIGHT_BLOCK  = ITEMS.register("pure_light_block", () -> new BlockItem(BlockInit.PURE_LIGHT_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> AKAZA_ALTAR  = ITEMS.register("akaza_altar", () -> new BlockItem(BlockInit.AKAZA_ALTAR.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> AKAZA_ALTAR  = ITEMS.register("akaza_altar", () -> new AkazaAltar(BlockInit.AKAZA_ALTAR.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> AKAZICE = ITEMS.register("akazice", () -> new BlockItem(BlockInit.AKAZICE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));

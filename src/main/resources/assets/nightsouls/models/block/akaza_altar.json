@@ -1,6 +1,12 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "nightsouls:blocks/akaza_altar"
-    }
+   "parent": "block/cube_all",
+   "textures": {
+       "particle": "nightsouls:blocks/akaza_altar_side",
+       "up": "nightsouls:blocks/akaza_altar_bottop",
+       "down": "nightsouls:blocks/akaza_altar_bottop",
+       "south": "nightsouls:blocks/akaza_altar_side",
+       "north": "nightsouls:blocks/akaza_altar_side",
+       "west": "nightsouls:blocks/akaza_altar_side",
+       "east": "nightsouls:blocks/akaza_altar_side"
+   }
 }

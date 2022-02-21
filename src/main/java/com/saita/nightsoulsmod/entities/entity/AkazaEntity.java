@@ -2,10 +2,10 @@ package com.saita.nightsoulsmod.entities.entity;
 
 import java.util.Random;
 
+import com.saita.nightsoulsmod.init.BlockInit;
 import com.saita.nightsoulsmod.init.NightSoulsEntityTypes;
 import com.saita.nightsoulsmod.init.SoundInit;
 
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -26,7 +26,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -82,11 +81,17 @@ public class AkazaEntity extends MonsterEntity {
   
 	   }
 	 
-	 @Override
-	 protected int getExperiencePoints(PlayerEntity player)
-	 {
-		 return 2500;
-	 }
+    @Override
+	protected int getExperiencePoints(PlayerEntity player)
+	{
+		return 2500;
+	}
+	 
+	@Override
+	protected float getWaterSlowDown() {
+		
+		return 0.98F;
+	}
 	 
 	@Override
  	public boolean isEntityUndead() {
@@ -135,12 +140,6 @@ public class AkazaEntity extends MonsterEntity {
 	protected SoundEvent getDeathSound() {
 		
 		return SoundInit.AKAZA_DEATH.get();
-	}
-	
-	@Override
-	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-		
-		return null;
 	}
 	
 	@Override
@@ -197,8 +196,8 @@ public class AkazaEntity extends MonsterEntity {
 	                {
 	                	 if(!world.isRemote)
 						 {
-							 world.createExplosion(null, entityIn.getPosX(), entityIn.getPosY(), entityIn.getPosZ(), 5.0F, Explosion.Mode.DESTROY);
-							 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.DESTROY);
+							 world.createExplosion(null, entityIn.getPosX(), entityIn.getPosY(), entityIn.getPosZ(), 5.0F, Explosion.Mode.NONE);
+							 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
 						 }
 	                }
 	               
@@ -253,6 +252,7 @@ public class AkazaEntity extends MonsterEntity {
 				 {
 					 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 180, 3));
 					 this.addPotionEffect(new EffectInstance(Effects.SPEED, 180, 3));
+					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
 					 world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), SoundInit.AKAZA_COMPASS.get(), SoundCategory.HOSTILE, 1.0F, 1.0F, false);
 					 world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.HOSTILE, 1.0F, 1.0F, false);
 					 
@@ -260,54 +260,54 @@ public class AkazaEntity extends MonsterEntity {
 					 if(!world.isRemote)
 					 {
 	
-						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 2 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 3 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 4 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 5 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 2 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 3 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 4 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 5 ,this.getPosY() - 1, this.getPosZ()), Blocks.PACKED_ICE.getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 2 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 3 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 4 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 5 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 2 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 3 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 4 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 5 ,this.getPosY() - 1, this.getPosZ()), BlockInit.AKAZICE.get().getDefaultState());
 						 
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 2), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 3), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 4), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 5), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 2), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 3), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 4), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 5), Blocks.PACKED_ICE.getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 2), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 3), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 4), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() + 5), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 2), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 3), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 4), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX(), this.getPosY() - 1, this.getPosZ() - 5), BlockInit.AKAZICE.get().getDefaultState());
 						 
-						 world.setBlockState(new BlockPos(this.getPosX() + 4 ,this.getPosY() - 1, this.getPosZ() - 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 4 ,this.getPosY() - 1, this.getPosZ() + 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 4 ,this.getPosY() - 1, this.getPosZ() - 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 4 ,this.getPosY() - 1, this.getPosZ() + 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() + 4), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() + 4), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() - 4), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() - 4), Blocks.PACKED_ICE.getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 4 ,this.getPosY() - 1, this.getPosZ() - 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 4 ,this.getPosY() - 1, this.getPosZ() + 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 4 ,this.getPosY() - 1, this.getPosZ() - 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 4 ,this.getPosY() - 1, this.getPosZ() + 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() + 4), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() + 4), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() - 4), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() - 4), BlockInit.AKAZICE.get().getDefaultState());
 						 
-						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() + 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() - 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() - 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() + 1), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 2 ,this.getPosY() - 1, this.getPosZ() + 2), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 2 ,this.getPosY() - 1, this.getPosZ() - 2), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 2 ,this.getPosY() - 1, this.getPosZ() - 2), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 2 ,this.getPosY() - 1, this.getPosZ() + 2), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 3 ,this.getPosY() - 1, this.getPosZ() + 3), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 3 ,this.getPosY() - 1, this.getPosZ() - 3), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() + 3 ,this.getPosY() - 1, this.getPosZ() - 3), Blocks.PACKED_ICE.getDefaultState());
-						 world.setBlockState(new BlockPos(this.getPosX() - 3 ,this.getPosY() - 1, this.getPosZ() + 3), Blocks.PACKED_ICE.getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() + 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() - 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 1 ,this.getPosY() - 1, this.getPosZ() - 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 1 ,this.getPosY() - 1, this.getPosZ() + 1), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 2 ,this.getPosY() - 1, this.getPosZ() + 2), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 2 ,this.getPosY() - 1, this.getPosZ() - 2), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 2 ,this.getPosY() - 1, this.getPosZ() - 2), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 2 ,this.getPosY() - 1, this.getPosZ() + 2), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 3 ,this.getPosY() - 1, this.getPosZ() + 3), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 3 ,this.getPosY() - 1, this.getPosZ() - 3), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() + 3 ,this.getPosY() - 1, this.getPosZ() - 3), BlockInit.AKAZICE.get().getDefaultState());
+						 world.setBlockState(new BlockPos(this.getPosX() - 3 ,this.getPosY() - 1, this.getPosZ() + 3), BlockInit.AKAZICE.get().getDefaultState());
 					 
 					 }
 				 
 				 }
-				 else
+				 if(randomAttack == 1)
 				 {
 					 if(!world.isRemote)
 					 {
