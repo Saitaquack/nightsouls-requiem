@@ -7,7 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 
 public class Akazice extends Block {
 
@@ -23,14 +23,18 @@ public class Akazice extends Block {
 	}
 	
 	@Override
-	public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+	public boolean ticksRandomly(BlockState state) {
 		
-		if(worldIn.getGameTime() % 60 == 0)
-		{
-			worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
-		}
+		return true;
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
+
+		worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
 		
-		super.animateTick(stateIn, worldIn, pos, rand);
+		super.randomTick(state, worldIn, pos, random);
 	}
 
 }

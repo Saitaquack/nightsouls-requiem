@@ -49,7 +49,7 @@ public class AkazaEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 2500.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 3000.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.42D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 24.0D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 80.0D)

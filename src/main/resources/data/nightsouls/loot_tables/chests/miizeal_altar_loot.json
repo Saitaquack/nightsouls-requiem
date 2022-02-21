@@ -160,29 +160,7 @@
           ],
           "name": "nightsouls:miizealite_ingot"
             }
-          ]
-      },
-      
-      {
-     "rolls": {
-        "min": 0.0,
-        "max": 1.0,
-        "type": "minecraft:uniform"
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-                "type": "minecraft:uniform"
-              }
-          ],
-          "name": "nightsouls:akaza_music_disc"
-          }
-        ]
+         ]
      }
   ]
 }

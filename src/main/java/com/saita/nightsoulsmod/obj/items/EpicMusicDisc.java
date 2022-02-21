@@ -5,12 +5,18 @@ import net.minecraft.item.MusicDiscItem;
 import net.minecraft.item.Rarity;
 import net.minecraft.util.SoundEvent;
 
-public class MarioGalaxyCreditsMusicDisc extends MusicDiscItem {
+public class EpicMusicDisc extends MusicDiscItem {
 
 	@SuppressWarnings("deprecation")
-	public MarioGalaxyCreditsMusicDisc(int comparatorValueIn, SoundEvent soundIn, Properties builder) {
+	public EpicMusicDisc(int comparatorValueIn, SoundEvent soundIn, Properties builder) {
 		super(comparatorValueIn, soundIn, builder);
 
+	}
+	
+	@Override
+	public boolean hasEffect(ItemStack stack) {
+		
+		return true;
 	}
 	
 	@Override

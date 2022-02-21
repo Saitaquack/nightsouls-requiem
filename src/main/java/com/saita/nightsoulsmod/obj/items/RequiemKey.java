@@ -109,10 +109,10 @@ public class RequiemKey extends Item {
 			    }
 			    else
 			    {	 	     
-			 	     ItemStack hellstone = new ItemStack(ItemInit.HELLSTONE.get(), 4);  
-			 	     ItemStack spacestone = new ItemStack(ItemInit.SPACESTONE.get(), 4);
-			 	     ItemStack heavenstone = new ItemStack(ItemInit.HEAVENSTONE.get(), 4);
-			 	     ItemStack antistone = new ItemStack(ItemInit.ANTISTONE.get(), 4);
+			 	     ItemStack hellstone = new ItemStack(ItemInit.HELLSTONE.get(), 6);  
+			 	     ItemStack spacestone = new ItemStack(ItemInit.SPACESTONE.get(), 6);
+			 	     ItemStack heavenstone = new ItemStack(ItemInit.HEAVENSTONE.get(), 6);
+			 	     ItemStack antistone = new ItemStack(ItemInit.ANTISTONE.get(), 6);
 					 playerIn.dropItem(hellstone, false).setNoPickupDelay();
 					 playerIn.dropItem(spacestone, false).setNoPickupDelay();
 					 playerIn.dropItem(heavenstone, false).setNoPickupDelay();
