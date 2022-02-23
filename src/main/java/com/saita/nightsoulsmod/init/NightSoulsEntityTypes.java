@@ -84,6 +84,13 @@ public class NightSoulsEntityTypes {
 	            	.create(AkazaEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
 	            	.immuneToFire()
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza").toString()));
+	 
+	 public static final RegistryObject<EntityType<EyeOfCthulhuEntity>> EYE_OF_CTHULHU =
+	          ENTITY_TYPES.register("eye_of_cthulhu", () -> EntityType.Builder
+	            	.create(EyeOfCthulhuEntity::new, EntityClassification.MONSTER).size(1.5F, 2.0F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "eye_of_cthulhu").toString()));
+	 
+	 
 
 	 
 	 

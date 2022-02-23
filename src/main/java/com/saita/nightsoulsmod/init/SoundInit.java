@@ -220,6 +220,9 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> AKAZA_COMPASS = SOUNDS.register("akaza_compass", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_compass")));
 	
+	public static final RegistryObject<SoundEvent> CTHULHU_SCREAM = SOUNDS.register("cthulhu_scream", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "cthulhu_scream")));
+	
 	
 	//Musiques
 	
@@ -372,6 +375,9 @@ public class SoundInit {
 	
 	public static final Lazy<SoundEvent> MUZAN = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "muzan")));
+	
+	public static final Lazy<SoundEvent> DRAGONHEARTED = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "dragonhearted")));
 	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));

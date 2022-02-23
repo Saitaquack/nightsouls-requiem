@@ -51,8 +51,8 @@ public class AkazaEntity extends MonsterEntity {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 3000.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.42D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 24.0D) 
-				.createMutableAttribute(Attributes.FOLLOW_RANGE, 80.0D)
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 26.0D) 
+				.createMutableAttribute(Attributes.FOLLOW_RANGE, 60.0D)
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D); 
 	}
 	
@@ -84,13 +84,13 @@ public class AkazaEntity extends MonsterEntity {
     @Override
 	protected int getExperiencePoints(PlayerEntity player)
 	{
-		return 2500;
+		return 4000;
 	}
 	 
 	@Override
 	protected float getWaterSlowDown() {
 		
-		return 0.98F;
+		return 1.00F;
 	}
 	 
 	@Override

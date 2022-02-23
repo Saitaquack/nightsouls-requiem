@@ -923,6 +923,18 @@
 		
 	},
 	
+	"dragonhearted": {
+		"category": "music",
+		"subtitle": "Dragonhearted Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/dragonhearted",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",
@@ -1473,6 +1485,18 @@
 		"sounds": [
 			{
 				"name": "nightsouls:entity/akaza_compass",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"cthulhu_scream": {
+		"category": "entity",
+		"subtitle": "Eye of Cthulhu screams",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/cthulhu_scream",
 				"stream": false
 			}
 		]

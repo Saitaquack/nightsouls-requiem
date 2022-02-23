@@ -335,6 +335,8 @@
    "item.nightsouls.mhwi_music_disc.desc": "MHWI - Arch Tempered Velkhana's Theme",
    "item.nightsouls.muzan_music_disc": "Music Disc",
    "item.nightsouls.muzan_music_disc.desc": "Demon Slayer - Kibutsuji Muzan's Theme (Recreated by TheBandWagon)",
+   "item.nightsouls.dragonhearted_music_disc": "Music Disc",
+   "item.nightsouls.dragonhearted_music_disc.desc": "Captain Sparklez - Dragonhearted",
    
    
    "item.nightsouls.star_gatherer_final_music_disc": "Star Gatherer's Theme",
@@ -555,6 +557,7 @@
    "entity.nightsouls.paladin": "Paladin",
    "entity.nightsouls.reality_walker": "Reality Walker",
    "entity.nightsouls.akaza": "Akaza",
+   "entity.nightsouls.eye_of_cthulhu": "Eye of Cthulhu",
    
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",

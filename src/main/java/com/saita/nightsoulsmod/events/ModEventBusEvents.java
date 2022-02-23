@@ -21,8 +21,8 @@ public class ModEventBusEvents {
         event.put(NightSoulsEntityTypes.WEREWOLF.get(), WerewolfEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.PSYCHO.get(), PsychoEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.FACE_MONSTER.get(), FaceMonsterEntity.setCustomAttributes().create());
-        event.put(NightSoulsEntityTypes.HELLBORN.get(), FaceMonsterEntity.setCustomAttributes().create());
-        event.put(NightSoulsEntityTypes.DEMON_EYE.get(), FaceMonsterEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.HELLBORN.get(), HellbornEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.DEMON_EYE.get(), DemonEyeEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.ALTERNATE.get(), AlternateEntity.setCustomAttributes().create());
         
         event.put(NightSoulsEntityTypes.STARGAZER.get(), StargazerEntity.setCustomAttributes().create());
@@ -31,6 +31,7 @@ public class ModEventBusEvents {
         event.put(NightSoulsEntityTypes.REALITY_WALKER.get(), RealityWalkerEntity.setCustomAttributes().create());
         
         event.put(NightSoulsEntityTypes.AKAZA.get(), AkazaEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), EyeOfCthulhuEntity.setCustomAttributes().create());
 
     }
 
