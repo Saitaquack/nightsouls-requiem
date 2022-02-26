@@ -38,11 +38,10 @@ public class AkazaAltar extends Block {
 		
 		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		{
-	    	
 			worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
 			worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 4.0F, Explosion.Mode.NONE);
 			worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(), SoundInit.AKAZA.get(), SoundCategory.MASTER , 1.0F, 1.0F, false);
-		   
+	   
 		    AkazaEntity akaza = new AkazaEntity(NightSoulsEntityTypes.AKAZA.get(), worldIn);	
 			akaza.setPositionAndUpdate(pos.getX(), pos.getY() + 5, pos.getZ());
 			worldIn.addEntity(akaza);

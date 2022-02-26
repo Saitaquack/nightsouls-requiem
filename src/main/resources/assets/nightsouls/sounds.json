@@ -935,6 +935,30 @@
 		
 	},
 	
+	"boss_one": {
+		"category": "music",
+		"subtitle": "Boss 1 Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_one",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"boss_two": {
+		"category": "music",
+		"subtitle": "Boss 2 Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_two",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",

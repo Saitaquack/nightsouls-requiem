@@ -409,7 +409,7 @@ public class EyeOfCthulhuEntity extends MonsterEntity{
 	         }
 
 	         for(int i = 0; i < 3; ++i) {
-	            BlockPos blockpos1 = blockpos.add(EyeOfCthulhuEntity.this.rand.nextInt(8) - 7, EyeOfCthulhuEntity.this.rand.nextInt(6) - 5, EyeOfCthulhuEntity.this.rand.nextInt(8) - 7);  //NextInts changed
+	            BlockPos blockpos1 = blockpos.add(EyeOfCthulhuEntity.this.rand.nextInt(8) - 7, EyeOfCthulhuEntity.this.rand.nextInt(11) - 5, EyeOfCthulhuEntity.this.rand.nextInt(8) - 7);  //NextInts changed
 	            if (EyeOfCthulhuEntity.this.world.isAirBlock(blockpos1)) {
 	               EyeOfCthulhuEntity.this.moveController.setMoveTo((double)blockpos1.getX() + 0.5D, (double)blockpos1.getY() + 0.5D, (double)blockpos1.getZ() + 0.5D, 0.25D);
 	               if (EyeOfCthulhuEntity.this.getAttackTarget() == null) {
