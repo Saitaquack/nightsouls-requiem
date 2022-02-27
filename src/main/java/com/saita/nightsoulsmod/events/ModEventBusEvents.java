@@ -32,6 +32,7 @@ public class ModEventBusEvents {
         
         event.put(NightSoulsEntityTypes.AKAZA.get(), AkazaEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), EyeOfCthulhuEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.KING_CRIMSON.get(), KingCrimsonEntity.setCustomAttributes().create());
 
     }
 

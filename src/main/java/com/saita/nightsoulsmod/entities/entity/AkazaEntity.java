@@ -157,7 +157,6 @@ public class AkazaEntity extends MonsterEntity {
 	}
 	
 
-	
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
 		
@@ -234,9 +233,9 @@ public class AkazaEntity extends MonsterEntity {
 				HellfireServantEntity servant2 = new HellfireServantEntity(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), world);
 				HellfireServantEntity servant3 = new HellfireServantEntity(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), world);
 				
-				servant.setPositionAndUpdate(this.getPosX(), this.getPosY() + 5, this.getPosZ());
-				servant2.setPositionAndUpdate(this.getPosX(), this.getPosY() + 5, this.getPosZ());
-				servant3.setPositionAndUpdate(this.getPosX(), this.getPosY() + 5, this.getPosZ());
+				servant.setPositionAndUpdate(this.getPosX(), this.getPosY(), this.getPosZ());
+				servant2.setPositionAndUpdate(this.getPosX(), this.getPosY(), this.getPosZ());
+				servant3.setPositionAndUpdate(this.getPosX(), this.getPosY(), this.getPosZ());
 				
 				world.addEntity(servant);
 				world.addEntity(servant2);
@@ -317,8 +316,40 @@ public class AkazaEntity extends MonsterEntity {
 						 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ() - 5, 4.0F, true, Explosion.Mode.DESTROY);
 					 }
 				 }
-				
-			 }	
+			
+			 }
+			 
+			 if(this.isEntityInsideOpaqueBlock())
+			 {
+				  Random random = new Random();
+				  boolean randomTP = random.nextBoolean();
+				  if(randomTP)
+				  {
+                	  int randX = random.nextInt(5);
+                	  boolean boolX = random.nextBoolean();  
+                	
+                	  int randZ = random.nextInt(5);
+                	  boolean boolZ = random.nextBoolean();
+                	
+                   	  if(boolX)
+                	  {
+                		  randX = -randX;
+                	  }
+
+                   	  if(boolZ)
+                	  {
+                		  randZ = -randZ;
+                	  }
+                	  this.teleportKeepLoaded(this.getPosX() + randX, this.getPosY(), this.getPosZ() + randZ);
+				  }
+				  else
+				  {
+					 if(!world.isRemote)
+					 {
+					  world.createExplosion(null, this.getPosX() + 5, this.getPosY(), this.getPosZ(), 4.0F, Explosion.Mode.DESTROY); 
+					 }
+				 }
+			 }	 
 			 
 		 }		
 		super.livingTick();

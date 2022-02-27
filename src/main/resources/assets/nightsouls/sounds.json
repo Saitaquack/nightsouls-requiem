@@ -114,6 +114,10 @@
 			{
 				"name": "nightsouls:master/time_skip",
 				"stream": false
+			},
+			{
+				"name": "nightsouls:master/time_skip2",
+				"stream": false
 			}
 		]
 		
