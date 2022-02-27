@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "NMN",
-    "SPS",
+    "SBS",
     "NMN" 
   ],
   "key": {
   
-    "P": {
-      "item": "minecraft:ender_pearl"
+    "B": {
+      "item": "nightsouls:bloody_lens"
     },
     
     "S": {

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:suspicious_looking_eye",
+      "nightsouls:silent_watching_orb"
+    ]
+  },
+  "criteria": {
+    "has_bloody_lens": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bloody_lens"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_bloody_lens",
+    ]
+  ]
+}

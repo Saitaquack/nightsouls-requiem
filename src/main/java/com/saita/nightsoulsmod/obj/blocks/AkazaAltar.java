@@ -45,6 +45,11 @@ public class AkazaAltar extends Block {
 		    AkazaEntity akaza = new AkazaEntity(NightSoulsEntityTypes.AKAZA.get(), worldIn);	
 			akaza.setPositionAndUpdate(pos.getX(), pos.getY() + 5, pos.getZ());
 			worldIn.addEntity(akaza);
+			
+			if(worldIn.isRemote)
+			{
+	    		 player.sendMessage(new TranslationTextComponent("§4You sure look powerful. Fight me !!"), null);
+	    	}
 		
 		}
 		else

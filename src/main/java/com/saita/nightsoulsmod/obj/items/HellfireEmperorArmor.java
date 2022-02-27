@@ -44,7 +44,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 	
     if(Screen.hasShiftDown())
 	{
-		tooltip.add(new StringTextComponent("§4Full set bonus : §7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether or during nighttime. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime."));
+		tooltip.add(new StringTextComponent("§4Full set bonus : §7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime."));
 	}
 	else
 	{
@@ -116,8 +116,8 @@ public class HellfireEmperorArmor extends ArmorItem {
 		player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 0, false, false));
 		player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 0, false, false));
 				 	
-		//Speed Buffs in the Nether and at night.
-		if(player.world.getDimensionKey().getLocation().getPath() == "the_nether" || world.isNightTime())
+		//Speed Buffs in the Nether
+		if(player.world.getDimensionKey().getLocation().getPath() == "the_nether")
 		  {
 			 player.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 2, false, false));	
 			 player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 2, false, false));	
