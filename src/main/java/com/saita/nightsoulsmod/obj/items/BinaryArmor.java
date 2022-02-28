@@ -43,7 +43,7 @@ public class BinaryArmor extends ArmorItem {
     
     if(Screen.hasShiftDown())
    	{
-   		 tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration IV, Saturation and Resistance III. Automatically gives you nightsouls emeralds overtime."));	
+   		 tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration II, Saturation and Resistance II. Automatically gives you nightsouls emeralds overtime."));	
    	}
    	else
    	{
@@ -117,10 +117,10 @@ public class BinaryArmor extends ArmorItem {
 			{	
 			    if(world.getGameTime() % 60 == 0)
 				 {
-					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 3));						 
+					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 1));						 
 				 }
 			    
-			player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 2));	
+			player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1));	
 			player.addPotionEffect(new EffectInstance(Effects.SATURATION, 5, 0));	
 			
 		  }

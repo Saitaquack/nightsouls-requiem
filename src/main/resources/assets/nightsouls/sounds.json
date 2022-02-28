@@ -1529,6 +1529,38 @@
 			}
 		]
 		
+	},
+	
+	"king_crimson_ambient": {
+		"category": "entity",
+		"subtitle": "King Crimson Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/king_crimson_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/king_crimson_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/king_crimson_ambient3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"king_crimson_death": {
+		"category": "entity",
+		"subtitle": "King Crimson Defeated",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/masaka",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

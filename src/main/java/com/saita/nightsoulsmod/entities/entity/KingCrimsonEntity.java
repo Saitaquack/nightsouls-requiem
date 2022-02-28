@@ -125,13 +125,13 @@ public class KingCrimsonEntity extends MonsterEntity {
 	@Override
 	protected SoundEvent getAmbientSound() {
 		
-		return null;
+		return SoundInit.KING_CRIMSON_AMBIENT.get();
 	}
 	
 	@Override
 	protected SoundEvent getDeathSound() {
 		
-		return null;
+		return SoundInit.KING_CRIMSON_DEATH.get();
 	}
 	
 	@Override
@@ -189,7 +189,7 @@ public class KingCrimsonEntity extends MonsterEntity {
 	                	this.playSound(SoundInit.TIME_SKIP.get(), 1.0F, 1.0F);
 	                	teleportKC();
 	                	long getCurrentDayTime = world.getDayTime();
-	    				((ServerWorld) world).setDayTime(getCurrentDayTime + 300);
+	    				((ServerWorld) world).setDayTime(getCurrentDayTime + 200);
 
 	                }
 	                
@@ -210,8 +210,9 @@ public class KingCrimsonEntity extends MonsterEntity {
           {    
         	this.playSound(SoundInit.TIME_SKIP.get(), 1.0F, 1.0F);
           	teleportKC();
+          	this.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 30, 0));
           	long getCurrentDayTime = world.getDayTime();
-			((ServerWorld) world).setDayTime(getCurrentDayTime + 300);		
+			((ServerWorld) world).setDayTime(getCurrentDayTime + 200);		
 
           }
 		

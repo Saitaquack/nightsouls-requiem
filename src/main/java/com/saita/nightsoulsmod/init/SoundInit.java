@@ -223,6 +223,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> CTHULHU_SCREAM = SOUNDS.register("cthulhu_scream", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "cthulhu_scream")));
 	
+	public static final RegistryObject<SoundEvent> KING_CRIMSON_AMBIENT = SOUNDS.register("king_crimson_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "king_crimson_ambient")));
+	
+	public static final RegistryObject<SoundEvent> KING_CRIMSON_DEATH = SOUNDS.register("king_crimson_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "king_crimson_death")));
+	
 	
 	//Musiques
 	
