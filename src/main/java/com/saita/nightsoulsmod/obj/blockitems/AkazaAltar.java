@@ -29,6 +29,7 @@ public class AkazaAltar extends BlockItem {
     {
 
 		tooltip.set(0, new StringTextComponent("§4"+tooltip.get(0).getString()+"§r"));
+		tooltip.add(new StringTextComponent("§7Summons Akaza."));
 	    
 		super.addInformation(stack, worldIn, tooltip, flagIn);
     }  

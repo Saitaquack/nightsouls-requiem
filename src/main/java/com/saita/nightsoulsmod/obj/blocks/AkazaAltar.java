@@ -48,7 +48,7 @@ public class AkazaAltar extends Block {
 			
 			if(worldIn.isRemote)
 			{
-	    		 player.sendMessage(new TranslationTextComponent("§4You sure look powerful. Fight me !!"), null);
+	    		 player.sendMessage(new TranslationTextComponent("§4You sure look powerful. Fight me !"), null);
 	    	}
 		
 		}

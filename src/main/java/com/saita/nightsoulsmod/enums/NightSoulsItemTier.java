@@ -107,6 +107,10 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.THERENITE_INGOT.get()); 
 	}),
+	KING_CRIMSON_FIST(6, 4666, 14.0F, 22.0F, 22, ()-> 
+	{ 
+		return Ingredient.fromItems( Items.DIAMOND); 
+	}),
 	
 	//Dragonblade and Nanoblade
 	DRAGONBLADE(6, 3746, 16.0F, 13.5F, 22, ()-> //3122 x 1.2

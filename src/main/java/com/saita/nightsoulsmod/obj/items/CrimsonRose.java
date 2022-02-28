@@ -1,9 +1,8 @@
 package com.saita.nightsoulsmod.obj.items;
 
 import java.util.List;
-import java.util.Random;
 
-import com.saita.nightsoulsmod.entities.entity.EyeOfCthulhuEntity;
+import com.saita.nightsoulsmod.entities.entity.KingCrimsonEntity;
 import com.saita.nightsoulsmod.init.NightSoulsEntityTypes;
 import com.saita.nightsoulsmod.init.SoundInit;
 
@@ -21,9 +20,9 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
 
-public class SuspiciousLookingEye extends Item {
+public class CrimsonRose extends Item {
 
-	public SuspiciousLookingEye(Properties properties) {
+	public CrimsonRose(Properties properties) {
 		super(properties);
 
 	}
@@ -39,7 +38,7 @@ public class SuspiciousLookingEye extends Item {
     {
 
 		tooltip.set(0, new StringTextComponent("§4"+tooltip.get(0).getString()+"§r"));
-		tooltip.add(new StringTextComponent("§7Summons Eye of Cthulhu."));
+		tooltip.add(new StringTextComponent("§7Summons King Crimson."));
 	    
 		super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
@@ -49,35 +48,19 @@ public class SuspiciousLookingEye extends Item {
 		
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		itemstack.shrink(1);	
-		playerIn.getCooldownTracker().setCooldown(this, 600);
+		playerIn.getCooldownTracker().setCooldown(this, 1200);
 		
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.CTHULHU_SCREAM.get(), SoundCategory.MASTER, 1.0F, 1.0F);
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.BOSS_ONE.get(), SoundCategory.MASTER, 1.0F, 1.0F);
+    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.UNALTRA.get(), SoundCategory.MASTER, 1.0F, 1.0F);
+    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KING_CRIMSON_AMBIENT.get(), SoundCategory.MASTER, 1.0F, 1.0F);
     	
-    	 if(worldIn.isRemote)
-    	 {
-    		 playerIn.sendMessage(new TranslationTextComponent("§4You feel an evil presence watching you..."), null);
-    	 }
-    	
-    	Random rand = new Random();
-    	
-    	int randX = rand.nextInt(25);
-    	int randZ = rand.nextInt(25);
-    	boolean negX = random.nextBoolean();
-    	boolean negZ = random.nextBoolean();
-    	
-    	if(negX)
-    	{
-    		randX = -randX;
-    	}
-    	if(negZ)
-    	{
-    		randZ = -randZ;
+    	if(worldIn.isRemote)
+		{
+    		 playerIn.sendMessage(new TranslationTextComponent("§4Anyone who opposes me will be eliminated."), null);
     	}
     	
-    	EyeOfCthulhuEntity eoc = new EyeOfCthulhuEntity(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), worldIn);	
-		eoc.setPositionAndUpdate(playerIn.getPosX() + randX, playerIn.getPosY() + 20, playerIn.getPosZ() + randZ);
-		worldIn.addEntity(eoc);
+    	KingCrimsonEntity kc = new KingCrimsonEntity(NightSoulsEntityTypes.KING_CRIMSON.get(), worldIn);	
+		kc.setPositionAndUpdate(playerIn.getPosX(), playerIn.getPosY() + 2, playerIn.getPosZ());
+		worldIn.addEntity(kc);
 
 		
 		return super.onItemRightClick(worldIn, playerIn, handIn);

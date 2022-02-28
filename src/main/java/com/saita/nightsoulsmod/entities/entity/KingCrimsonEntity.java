@@ -47,7 +47,7 @@ public class KingCrimsonEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 900.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 800.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.38D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 16.0D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 60.0D)
@@ -171,7 +171,7 @@ public class KingCrimsonEntity extends MonsterEntity {
 	
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
-		
+					
 	     if (!super.attackEntityAsMob(entityIn)) {
 	         return false;
 	         
@@ -202,7 +202,8 @@ public class KingCrimsonEntity extends MonsterEntity {
 	
 	@Override
 	public void damageEntity(DamageSource damageSrc, float damageAmount) {
-		
+		if(this.isAlive())
+		{		
 		  Random random = new Random();
           int kingCrimsonTp = random.nextInt(4);
           
@@ -215,13 +216,21 @@ public class KingCrimsonEntity extends MonsterEntity {
 			((ServerWorld) world).setDayTime(getCurrentDayTime + 200);		
 
           }
+		}
 		
 		super.damageEntity(damageSrc, damageAmount);
 	}
 	
 	@Override
 	public void livingTick() {
-		 if(this.isAlive()) {			 
+		 if(this.isAlive()) {	
+			 
+			 if(world.getGameTime() % 150 == 0)
+			 {
+				 this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 0, false, false));
+			 }
+			 
+			 
 			 if(this.isEntityInsideOpaqueBlock())
 			 {
 				  Random random = new Random();

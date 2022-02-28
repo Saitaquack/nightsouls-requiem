@@ -207,7 +207,9 @@ public class ItemInit {
 	public static final RegistryObject<Item> STAR_PLATINUM = ITEMS.register("star_platinum", () -> new StarPlatinum(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
 	public static final RegistryObject<Item> PURIFICATION_GEM = ITEMS.register("purification_gem", () -> new PurificationGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> BLOODY_LENS = ITEMS.register("bloody_lens", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<SwordItem> KING_CRIMSON_FIST = ITEMS.register("king_crimson_fist", () -> new SwordItem(NightSoulsItemTier.KING_CRIMSON_FIST, 3, -3.2F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> SUSPICIOUS_LOOKING_EYE = ITEMS.register("suspicious_looking_eye", () -> new SuspiciousLookingEye(new Item.Properties().group(NightSoulsItemGroup.instance).maxDamage(1)));
+	public static final RegistryObject<Item> CRIMSON_ROSE = ITEMS.register("crimson_rose", () -> new CrimsonRose(new Item.Properties().group(NightSoulsItemGroup.instance).maxDamage(1)));
 
 	
 	public static final RegistryObject<Item> JUSTIN_BRIDOU = ITEMS.register("justin_bridou", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(1.0F).build())));
