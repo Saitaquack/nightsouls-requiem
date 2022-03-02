@@ -1155,6 +1155,18 @@
 		
 	},
 	
+	"crimson_punch": {
+		"category": "master",
+		"subtitle": "Crimson Punch",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/crimson_punch",
+				"stream": false
+			}
+		]
+		
+	},
+	
 	"reaper_ambient": {
 		"category": "entity",
 		"subtitle": "Reaper Nearby",

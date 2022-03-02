@@ -140,6 +140,9 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> DRAGONBLADE_SLASH = SOUNDS.register("dragonblade_slash", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "dragonblade_slash")));
 	
+	public static final RegistryObject<SoundEvent> CRISMON_PUNCH = SOUNDS.register("crimson_punch", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "crimson_punch")));
+	
 	//Mobs
 	
 	public static final RegistryObject<SoundEvent> REAPER_AMBIENT = SOUNDS.register("reaper_ambient", () -> new SoundEvent

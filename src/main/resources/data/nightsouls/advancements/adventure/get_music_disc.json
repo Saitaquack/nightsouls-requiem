@@ -112,17 +112,6 @@
       }
     },
     
-    "my_war_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:my_war_music_disc"
-          }
-        ]
-      }
-    },
-    
     "bowser_music_disc": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -608,7 +597,6 @@
       "infogrames_music_disc" ,
       "pyro_barbarian_music_disc",
       "fanta_music_disc",
-      "my_war_music_disc",
       "bowser_music_disc",
       "observatory_music_disc",
       "starship_music_disc",
