@@ -112,6 +112,56 @@
           ],
           "name": "nightsouls:true_night_soul"
         }
+      
+      ]
+    },
+   
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:hellfire_emperor_trident"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:soul_stealer"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:bow_ser"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:galactic_slayer"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:supernova"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:frostburn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:divine_sanction"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:java_fury"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:hexadecimator"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.33,
+          "looting_multiplier": 0.00
+        }
       ]
     }
   ]

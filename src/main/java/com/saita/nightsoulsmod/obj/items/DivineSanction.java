@@ -5,10 +5,7 @@ import java.util.List;
 import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
@@ -45,33 +42,6 @@ public class DivineSanction extends SwordItem {
 	tooltip.set(0, new StringTextComponent("§e"+tooltip.get(0).getString()+"§r"));	
     tooltip.add(new StringTextComponent("§7Shall purge the unholy and the unworthy. Sometimes grants you regeneration and strength."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
-    }
-	
-	@Override
-	public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {
-		
-		if(!stack.isEnchanted())		
-		 {
-			 stack.addEnchantment(Enchantments.SMITE, 5);
-		 }
-		
-		super.onCreated(stack, worldIn, playerIn);
-	}
-	
-	@Override
-	public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
-		
-		 if(entityIn instanceof PlayerEntity)
-	    	{
-	    		 PlayerEntity playerIn = (PlayerEntity)entityIn;	
-	    		 if(!stack.isEnchanted() && playerIn.isCreative())
-			
-	    		 {
-	    			 stack.addEnchantment(Enchantments.SMITE, 5);
-	    		 }
-		
-	    		 super.inventoryTick(stack, worldIn, entityIn, itemSlot, isSelected);
-	    	}
     }
 	
 	 @Override
