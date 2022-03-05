@@ -2,6 +2,8 @@ package com.saita.nightsoulsmod.obj.items;
 
 import java.util.List;
 
+import com.saita.nightsoulsmod.init.ItemInit;
+
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -38,22 +40,26 @@ public class MoonCharm extends Item {
 	
 	 @Override
 	 public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
-	    	
+
 	    if(entityIn instanceof PlayerEntity)
 	    	{
-	    		 PlayerEntity playerIn = (PlayerEntity)entityIn;	
+	    		 PlayerEntity playerIn = (PlayerEntity)entityIn;
 	    		 
-	    		 if(worldIn.isNightTime())
-	    		 {    			
-	    		    playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 1, false, false));
-	    		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 1, false, false));
-	    		    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 0, false, false));
-	    		    
-	    		    if(worldIn.getGameTime() % 180 == 0)
-					  {
-						 playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 400, 0, false, false));
-					  }
-	    		    
+	    		 if(!playerIn.inventory.hasItemStack(new ItemStack(ItemInit.UPPER_MOON_CHARM.get())))
+	    		 {
+	    		 
+		    		 if(worldIn.isNightTime())
+		    		 {    			
+		    		    playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 1, false, false));
+		    		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 1, false, false));
+		    		    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 0, false, false));
+		    		    
+		    		    if(worldIn.getGameTime() % 180 == 0)
+						  {
+							 playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 400, 0, false, false));
+						  }
+		    		    
+		    		 }
 	    		 }
 	    		   	
 	       }

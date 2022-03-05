@@ -41,6 +41,9 @@ public class ParagonicNightSoulsArmor extends ArmorItem {
 		if(!stack.isEnchanted())		
 		 {
 			 stack.addEnchantment(Enchantments.PROTECTION, 5);
+			 stack.addEnchantment(Enchantments.PROJECTILE_PROTECTION, 4);
+			 stack.addEnchantment(Enchantments.BLAST_PROTECTION, 4);
+			 stack.addEnchantment(Enchantments.FIRE_PROTECTION, 4);
 		 }
 		
 		super.onCreated(stack, worldIn, playerIn);
@@ -56,6 +59,9 @@ public class ParagonicNightSoulsArmor extends ArmorItem {
 			
 	    		 {
 	    			 stack.addEnchantment(Enchantments.PROTECTION, 5);
+	    			 stack.addEnchantment(Enchantments.PROJECTILE_PROTECTION, 4);
+	    			 stack.addEnchantment(Enchantments.BLAST_PROTECTION, 4);
+	    			 stack.addEnchantment(Enchantments.FIRE_PROTECTION, 4);
 	    		 }
 		
 	    		 super.inventoryTick(stack, worldIn, entityIn, itemSlot, isSelected);

@@ -15,6 +15,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "nightsouls:upper_moon_charm"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "function": "minecraft:set_count",

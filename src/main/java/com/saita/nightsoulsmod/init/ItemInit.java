@@ -81,7 +81,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> LIFE_CRYSTAL = ITEMS.register("life_crystal", () -> new LifeCrystal(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(10).food(new Food.Builder().hunger(3).saturation(0.3F).fastToEat().setAlwaysEdible().build())));
     public static final RegistryObject<ArmorItem> FANTA_GLASSES = ITEMS.register("fanta_glasses", () -> new FantaGlasses(NightSoulsArmorTier.FANTA_GLASSES, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> MAGIC_MIRROR = ITEMS.register("magic_mirror", () -> new MagicMirror(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	public static final RegistryObject<Item> TRUE_NIGHT_SOUL = ITEMS.register("true_night_soul", () -> new TrueNightSoul(new Item.Properties().group(NightSoulsItemGroup.instance)));	
+	public static final RegistryObject<Item> TRUE_NIGHT_SOUL = ITEMS.register("true_night_soul", () -> new TrueNightSoul(new Item.Properties().group(NightSoulsItemGroup.instance).isImmuneToFire()));	
 	public static final RegistryObject<Item> SAITASTONE_SEEDS = ITEMS.register("saitastone_seeds", () -> new SaitastoneSeeds(BlockInit.SAITASTONE_CROPS.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> MIIZEALITE_SEEDS = ITEMS.register("miizealite_seeds", () -> new MiizealiteSeeds(BlockInit.MIIZEALITE_CROPS.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> CRANITE_SEEDS = ITEMS.register("cranite_seeds", () -> new CraniteSeeds(BlockInit.CRANITE_CROPS.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -242,7 +242,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> SILENT_WATCHING_ORB = ITEMS.register("silent_watching_orb", () -> new SilentWatchingOrb(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> ALL_SEEING_ORB = ITEMS.register("all_seeing_orb", () -> new AllSeeingOrb(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> LIFE_BAND = ITEMS.register("life_band", () -> new LifeBand(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-
+	public static final RegistryObject<Item> UPPER_MOON_CHARM = ITEMS.register("upper_moon_charm", () -> new UpperMoonCharm(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).isImmuneToFire()));
 	
 	public static final RegistryObject<Item> REQUIEM_KEY = ITEMS.register("requiem_key", () -> new RequiemKey(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> REQUIEM_MEDALLION = ITEMS.register("requiem_medallion", () -> new RequiemMedallion(new Item.Properties().group(NightSoulsFinalsItemGroup.instance).maxStackSize(1)));

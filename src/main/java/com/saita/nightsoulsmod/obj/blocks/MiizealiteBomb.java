@@ -21,7 +21,7 @@ public class MiizealiteBomb extends Block {
 			 if(!worldIn.isRemote)
 	    	 {
 				 worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
-				 worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 90.0F, Explosion.Mode.DESTROY);
+				 worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 60.0F, Explosion.Mode.DESTROY);
 	    	 }
 		  }	      
 
@@ -33,7 +33,7 @@ public class MiizealiteBomb extends Block {
 		 if(!world.isRemote)
     	 {
 			 world.setBlockState(pos, Blocks.AIR.getDefaultState());
-			 world.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 90.0F, Explosion.Mode.DESTROY);
+			 world.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 60.0F, Explosion.Mode.DESTROY);
     	 }
 		
 		super.onBlockExploded(state, world, pos, explosion);

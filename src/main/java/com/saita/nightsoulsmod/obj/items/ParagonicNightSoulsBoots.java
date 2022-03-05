@@ -47,10 +47,10 @@ public class ParagonicNightSoulsBoots extends ParagonicNightSoulsArmor {
 			{	
 			    if(world.getGameTime() % 60 == 0)
 				 {
-					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 3));						 
+					player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 80, 2));						 
 				 }
 			    
-			player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 2));	
+			player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1));	
 			player.addPotionEffect(new EffectInstance(Effects.SATURATION, 5, 0));	
 			
 		  }

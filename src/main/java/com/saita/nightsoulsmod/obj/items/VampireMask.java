@@ -61,22 +61,24 @@ public class VampireMask extends ArmorItem {
 		 
 		 if(player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.VAMPIRE_MASK.get())
 		 {
-		 		 		 
-			 player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 3, false, false));
-			 player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1, false, false));
-			 player.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 2, false, false));
-		 	 player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 1, false, false));	
-		 	 player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));	
-		 	 
-		 	 if(world.getGameTime() % 180 == 0)
-			   {
-				  player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 400, 0, false, false));
-			   }
-		 	 
-		 	 if(world.getGameTime() % 100 == 0)
-			   {
-				  player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 1, false, false));
-			   }
+			 if(!player.inventory.hasItemStack(new ItemStack(ItemInit.UPPER_MOON_CHARM.get())))
+    		 {	 		 
+				 player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 3, false, false));
+				 player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1, false, false));
+				 player.addPotionEffect(new EffectInstance(Effects.SPEED, 5, 2, false, false));
+			 	 player.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 1, false, false));	
+			 	 player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 1, false, false));	
+			 	 
+			 	 if(world.getGameTime() % 180 == 0)
+				   {
+					  player.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 400, 0, false, false));
+				   }
+			 	 
+			 	 if(world.getGameTime() % 100 == 0)
+				   {
+					  player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 1, false, false));
+				   }
+    		 }
 
 		 	 if(world.isDaytime() && !world.isRemote)
 		 	 {
