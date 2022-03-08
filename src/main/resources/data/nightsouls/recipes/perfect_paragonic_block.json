@@ -5,8 +5,12 @@
   
     {"item": "nightsouls:paragonic_block"},
     {"item": "nightsouls:true_night_soul"},
-    {"item": "nightsouls:nightsouls_charm"},
-    {"item": "nightsouls:super_nightsouls_emerald_block"}
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:ender_dragon_essence"},
+    {"item": "nightsouls:wither_essence"},
+    {"item": "nightsouls:super_nightsouls_emerald_block"},
+    {"item": "nightsouls:upper_demon_blood"},
+    {"item": "nightsouls:upper_demon_blood"}
     
   ],
   
