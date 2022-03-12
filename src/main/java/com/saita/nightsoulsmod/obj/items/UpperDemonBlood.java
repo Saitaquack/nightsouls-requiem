@@ -24,6 +24,12 @@ public class UpperDemonBlood extends Item {
 	}
 	
 	@Override
+	public boolean hasEffect(ItemStack stack) {
+		
+		return true;
+	}
+	
+	@Override
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		

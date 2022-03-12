@@ -10,14 +10,12 @@
     "description": {
       "translate": "advancements.end.get_final_ingot.description"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "rewards": {
-    "experience": 750
-  },
+  
   "criteria": {
     "absolute_saitastone_ingot": {
       "trigger": "minecraft:inventory_changed",

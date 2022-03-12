@@ -92,7 +92,6 @@ public class NightSoulsMod
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), EyeOfCthulhuRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.KING_CRIMSON.get(), KingCrimsonRenderer::new);
 
-
     }
     
     @SubscribeEvent

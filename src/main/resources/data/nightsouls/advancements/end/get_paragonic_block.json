@@ -10,14 +10,12 @@
     "description": {
       "translate": "advancements.end.get_paragonic_block.description"
      },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "rewards": {
-    "experience": 1000
-  },
+
   "criteria": {
     "paragonic_block": {
       "trigger": "minecraft:inventory_changed",

@@ -10,14 +10,12 @@
     "description": {
       "translate": "advancements.adventure.get_nightsouls_armor.description"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "rewards": {
-    "experience": 500
-  },
+  
   "criteria": {
     "nightsouls_helmet": {
       "trigger": "minecraft:inventory_changed",

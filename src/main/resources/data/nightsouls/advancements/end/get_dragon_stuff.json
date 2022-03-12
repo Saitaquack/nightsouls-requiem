@@ -10,14 +10,12 @@
     "description": {
       "translate": "advancements.end.get_dragon_stuff.description"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "rewards": {
-    "experience": 500
-  },
+
   "criteria": {
     "dragon_sword": {
       "trigger": "minecraft:inventory_changed",

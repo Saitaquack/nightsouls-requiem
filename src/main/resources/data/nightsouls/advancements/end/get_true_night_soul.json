@@ -10,7 +10,7 @@
     "description": {
       "translate": "advancements.end.get_true_night_soul.description"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

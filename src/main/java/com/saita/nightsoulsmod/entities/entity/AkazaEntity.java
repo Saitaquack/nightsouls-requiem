@@ -53,7 +53,8 @@ public class AkazaEntity extends MonsterEntity {
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.42D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 26.0D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 60.0D)
-				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D); 
+				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D)
+				.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 2.0D); 
 	}
 	
 	@Override
@@ -66,9 +67,7 @@ public class AkazaEntity extends MonsterEntity {
 	     this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 	     this.goalSelector.addGoal(5, new LookAtGoal(this, MobEntity.class, 15.0F));
 	     
-	     this.applyEntityAI();
-
-		
+	     this.applyEntityAI();		
 	}
 	
 	protected void applyEntityAI() {
