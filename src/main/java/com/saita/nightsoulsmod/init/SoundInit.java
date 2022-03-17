@@ -223,6 +223,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> AKAZA_COMPASS = SOUNDS.register("akaza_compass", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_compass")));
 	
+	public static final RegistryObject<SoundEvent> AKAZA_DOKE = SOUNDS.register("akaza_doke", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_doke")));
+	
+	public static final RegistryObject<SoundEvent> AKAZA_EXCITED = SOUNDS.register("akaza_excited", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_excited")));
+	
 	public static final RegistryObject<SoundEvent> CTHULHU_SCREAM = SOUNDS.register("cthulhu_scream", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "cthulhu_scream")));
 	

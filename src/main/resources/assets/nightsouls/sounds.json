@@ -1525,7 +1525,31 @@
 		"sounds": [
 			{
 				"name": "nightsouls:entity/akaza_compass",
-				"stream": false
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza_doke": {
+		"category": "entity",
+		"subtitle": "Akaza Angry",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_doke",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza_excited": {
+		"category": "entity",
+		"subtitle": "Akaza Excited",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_excited",
+				"stream": true
 			}
 		]
 		
