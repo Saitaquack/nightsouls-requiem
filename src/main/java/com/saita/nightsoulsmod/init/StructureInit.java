@@ -67,6 +67,7 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> LUCKY_BLOCK = STRUCTURES.register("lucky_block", LuckyBlockStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> CELESTIAL_EMERALD = STRUCTURES.register("celestial_emerald", CelestialEmeraldStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> POWER_MOON = STRUCTURES.register("power_moon", PowerMoonStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> AKAZA_ARENA = STRUCTURES.register("akaza_arena", AkazaArenaStructure::new);
 
 
 
@@ -118,6 +119,7 @@ public class StructureInit {
         setupMapSpacingAndLand(LUCKY_BLOCK.get(), new StructureSeparationSettings(24, 8, 268435456), false);
         setupMapSpacingAndLand(CELESTIAL_EMERALD.get(), new StructureSeparationSettings(70, 20, 268435446), false);
         setupMapSpacingAndLand(POWER_MOON.get(), new StructureSeparationSettings(14, 3, 178509578), false);
+        setupMapSpacingAndLand(AKAZA_ARENA.get(), new StructureSeparationSettings(StructuresConstants.insaneMax, StructuresConstants.insaneMin, 88666666), true);
 
 
     }

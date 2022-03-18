@@ -208,8 +208,6 @@ public class ItemInit {
 	public static final RegistryObject<Item> PURIFICATION_GEM = ITEMS.register("purification_gem", () -> new PurificationGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> BLOODY_LENS = ITEMS.register("bloody_lens", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<SwordItem> CRIMSON_ARM = ITEMS.register("crimson_arm", () -> new CrimsonArm(NightSoulsItemTier.CRIMSON_ARM, 3, -3.2F, new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> SUSPICIOUS_LOOKING_EYE = ITEMS.register("suspicious_looking_eye", () -> new SuspiciousLookingEye(new Item.Properties().group(NightSoulsItemGroup.instance).maxDamage(1)));
-	public static final RegistryObject<Item> CRIMSON_ROSE = ITEMS.register("crimson_rose", () -> new CrimsonRose(new Item.Properties().group(NightSoulsItemGroup.instance).maxDamage(1)));
 
 	
 	public static final RegistryObject<Item> JUSTIN_BRIDOU = ITEMS.register("justin_bridou", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(1.0F).build())));
@@ -338,6 +336,12 @@ public class ItemInit {
 	public static final RegistryObject<Item> HELLFIRE_EMPEROR_FINAL_MUSIC_DISC = ITEMS.register("hellfire_emperor_final_music_disc", () -> new HellfireEmperorFinalMusicDisc(1, SoundInit.HELLFIRE_EMPEROR_FINAL_THEME.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<Item> HALLOWED_PALADIN_FINAL_MUSIC_DISC = ITEMS.register("hallowed_paladin_final_music_disc", () -> new HallowedPaladinFinalMusicDisc(1, SoundInit.HALLOWED_PALADIN_FINAL_THEME.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));
 	public static final RegistryObject<Item> REALITY_WARPER_FINAL_MUSIC_DISC = ITEMS.register("reality_warper_final_music_disc", () -> new RealityWarperFinalMusicDisc(1, SoundInit.REALITY_WARPER_FINAL_THEME.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));
+
+	
+	public static final RegistryObject<Item> SUSPICIOUS_LOOKING_EYE = ITEMS.register("suspicious_looking_eye", () -> new SuspiciousLookingEye(new Item.Properties().group(BossItemGroup.instance).maxDamage(1)));
+	public static final RegistryObject<Item> CRIMSON_ROSE = ITEMS.register("crimson_rose", () -> new CrimsonRose(new Item.Properties().group(BossItemGroup.instance).maxDamage(1)));
+	public static final RegistryObject<BlockItem> AKAZA_ALTAR  = ITEMS.register("akaza_altar", () -> new AkazaAltar(BlockInit.AKAZA_ALTAR.get(), new Item.Properties().group(BossItemGroup.instance)));
+	public static final RegistryObject<BlockItem> AKAZICE = ITEMS.register("akazice", () -> new BlockItem(BlockInit.AKAZICE.get(), new Item.Properties().group(BossItemGroup.instance)));
 	
 	
 	public static final RegistryObject<BlockItem> PARAGONIC_BLOCK = ITEMS.register("paragonic_block", () -> new ParagonicBlock(BlockInit.PARAGONIC_BLOCK.get(), new Item.Properties().group(ParagonItemGroup.instance).isImmuneToFire()));
@@ -406,8 +410,6 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> BACKROOMS_CEILING  = ITEMS.register("backrooms_ceiling", () -> new BlockItem(BlockInit.BACKROOMS_CEILING.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BACKROOMS_LIGHT  = ITEMS.register("backrooms_light", () -> new BlockItem(BlockInit.BACKROOMS_LIGHT.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> PURE_LIGHT_BLOCK  = ITEMS.register("pure_light_block", () -> new BlockItem(BlockInit.PURE_LIGHT_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> AKAZA_ALTAR  = ITEMS.register("akaza_altar", () -> new AkazaAltar(BlockInit.AKAZA_ALTAR.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> AKAZICE = ITEMS.register("akazice", () -> new BlockItem(BlockInit.AKAZICE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));

@@ -259,6 +259,11 @@ public class AkazaEntity extends MonsterEntity {
 			 
 			 this.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 5, 0, false, false));
 			 
+			 if(this.getHealth() <= this.getMaxHealth() / 2)
+			 {
+				 this.addPotionEffect(new EffectInstance(Effects.GLOWING, 5, 0, false, false));
+			 }
+			 
 			 if(world.getGameTime() % 150 == 0)
 			 {
 				 this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 4, false, false));
@@ -330,9 +335,9 @@ public class AkazaEntity extends MonsterEntity {
 				 placeAkazice(0, 10);
 				 placeAkazice(0, -10);
 				 
-				 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 5));
+				 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 6));
+				 this.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 1));
 				 this.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
-				 this.addPotionEffect(new EffectInstance(Effects.GLOWING, 240, 0));
 			 
 				 this.playSound(SoundInit.AKAZA_EXCITED.get(), 1.0F, 1.0F);
 				 this.playSound(SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, 1.0F, 1.0F);

@@ -144,6 +144,21 @@ public class NightSoulsMod
     	}
     }
     
+    public static class BossItemGroup extends ItemGroup
+    {
+    	public static final BossItemGroup instance = new BossItemGroup(ItemGroup.GROUPS.length, "BossTab");
+    	private BossItemGroup(int index, String label)
+    	{
+    		super(index, label);
+    	}
+    	
+    	@Override
+    	public ItemStack createIcon()
+    	{
+    		return new ItemStack(ItemInit.AKAZA_ALTAR.get());
+    	}
+    }
+    
     public static class ParagonItemGroup extends ItemGroup
     {
     	public static final ParagonItemGroup instance = new ParagonItemGroup(ItemGroup.GROUPS.length, "ParagonTab");

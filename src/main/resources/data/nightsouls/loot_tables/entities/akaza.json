@@ -182,6 +182,22 @@
           "looting_multiplier": 0.00
         }
       ]
+    },
+     {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:paragonic_block"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.25,
+          "looting_multiplier": 0.00
+        }
+      ]
     }
   ]
 }
