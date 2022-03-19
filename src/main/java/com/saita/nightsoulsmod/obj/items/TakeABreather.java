@@ -72,9 +72,13 @@ public class TakeABreather extends Item {
 		 {
 			 playerIn.getCooldownTracker().setCooldown(this, 320);
 		 }
-	    	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 60, 1));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.REGENERATION, 60, 3));
+	    
+		if(!worldIn.isRemote)
+		{
+		    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 60, 1));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.REGENERATION, 60, 3));
+		}
+		
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.TAKE_A_BREATHER.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);

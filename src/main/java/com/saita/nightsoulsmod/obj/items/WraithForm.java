@@ -78,19 +78,23 @@ public class WraithForm extends Item{
 		    playerIn.getCooldownTracker().setCooldown(this, 240);
 		}  	 
 		
-	    playerIn.removePotionEffect(Effects.SLOWNESS);
-		playerIn.removePotionEffect(Effects.NAUSEA);
-		playerIn.removePotionEffect(Effects.BLINDNESS);
-		playerIn.removePotionEffect(Effects.HUNGER);
-		playerIn.removePotionEffect(Effects.POISON);
-		playerIn.removePotionEffect(Effects.WITHER);
-		playerIn.extinguish();
-	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 60, 4));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 60, 2));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 60, 4));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, 60, 4));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 60, 0));
+		if(!worldIn.isRemote)
+		{
+		    playerIn.removePotionEffect(Effects.SLOWNESS);
+			playerIn.removePotionEffect(Effects.NAUSEA);
+			playerIn.removePotionEffect(Effects.BLINDNESS);
+			playerIn.removePotionEffect(Effects.HUNGER);
+			playerIn.removePotionEffect(Effects.POISON);
+			playerIn.removePotionEffect(Effects.WITHER);
+			playerIn.extinguish();
+		    
+		    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 60, 4));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 60, 2));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 60, 4));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, 60, 4));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 60, 0));
+		}
+		
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.WRAITH_FORM.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);

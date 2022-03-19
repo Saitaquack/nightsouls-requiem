@@ -54,7 +54,10 @@ public class DragonBlade extends SwordItem {
 	    itemstack.setDamage(1);
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.DRAGONBLADE_DASH.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 20, 7));
+    	if(!worldIn.isRemote)
+    	{
+    		playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 20, 7));
+    	}
 	    
 		return super.onItemRightClick(worldIn, playerIn, handIn);
 	}

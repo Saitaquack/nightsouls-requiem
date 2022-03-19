@@ -78,10 +78,14 @@ public class MoltenCore extends Item {
         	itemstack.shrink(1);
     	}
     	
-    	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 600, 9));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 600, 0));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 600, 3));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 600, 1));
+    	if(!worldIn.isRemote)
+    	{
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 600, 9));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 600, 0));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 600, 3));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 600, 1));
+    	}
+    	
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.MOLTEN_CORE.get(), SoundCategory.MASTER, 0.6F, 1.0F);
     	return super.onItemRightClick(worldIn, playerIn, handIn);
     }

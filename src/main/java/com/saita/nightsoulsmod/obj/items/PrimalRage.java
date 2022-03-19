@@ -53,10 +53,14 @@ public class PrimalRage extends Item {
 	    playerIn.getCooldownTracker().setCooldown(ItemInit.NANO_BOOST.get(), 2400);
 	    playerIn.getCooldownTracker().setCooldown(ItemInit.SOUND_BARRIER.get(), 2400);
 	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, 400, 9));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 400, 3));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 400, 9));
-	    playerIn.heal(60);
+	    if(!worldIn.isRemote)
+	    {
+		    playerIn.addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, 400, 9));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 400, 3));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 400, 9));
+		    playerIn.heal(60);
+	    }
+	    
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.PRIMAL_RAGE.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);

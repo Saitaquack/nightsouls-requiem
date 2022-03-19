@@ -46,7 +46,11 @@ public class CrazyDiamond extends Item {
 		      playerIn.getCooldownTracker().setCooldown(this, 60);
 		      itemstack.shrink(1);
 		    	
-		      playerIn.heal(40);
+		      if(!worldIn.isRemote)
+		      {
+		    	  playerIn.heal(40);
+		      }
+		      
 		      worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.LIFE_CRYSTAL.get(), SoundCategory.MASTER, 1.0F, 1.0F);    
 		 }
 			

@@ -84,14 +84,18 @@ public class SuperStar extends Item {
     	 }
     	 
     	playerIn.getCooldownTracker().setCooldown(ItemInit.STAR_PLATINUM.get(), 900);
-    	 
-    	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 4));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 240, 2));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 2));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 240, 2));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 240, 0));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 240, 0));
+    	
+    	if(!worldIn.isRemote)
+    	{
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 4));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 240, 2));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 2));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 240, 2));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 240, 0));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 240, 0));
+    	}
+    	
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.SUPER_STAR.get(), SoundCategory.MASTER, 1.0F, 1.0F);
     	
     	return super.onItemRightClick(worldIn, playerIn, handIn);

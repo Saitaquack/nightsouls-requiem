@@ -62,8 +62,12 @@ public class TimeClock extends Item {
 			}
 			
 			worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.TIME_SKIP.get(), SoundCategory.MASTER, 1.0F, 1.0F);
-			playerIn.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 60, 0, false, false));
-			playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 60, 4, false, false));
+			
+			if(!worldIn.isRemote)
+			{
+				playerIn.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 60, 0, false, false));
+				playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 60, 4, false, false));
+			}
 			
 		}
 		else

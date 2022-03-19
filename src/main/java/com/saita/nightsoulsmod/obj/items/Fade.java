@@ -74,21 +74,26 @@ public class Fade extends Item {
 			 playerIn.getCooldownTracker().setCooldown(this, 240);
 		 }
   	 
-	    playerIn.removePotionEffect(Effects.SLOWNESS);
-		playerIn.removePotionEffect(Effects.NAUSEA);
-		playerIn.removePotionEffect(Effects.BLINDNESS);
-		playerIn.removePotionEffect(Effects.HUNGER);
-		playerIn.removePotionEffect(Effects.POISON);
-		playerIn.removePotionEffect(Effects.WITHER);
-		playerIn.extinguish();
-	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 20, 4));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 20, 7));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20, 3));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 20, 4));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, 20, 4));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 20, 0));
-	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.FADE.get(), SoundCategory.MASTER, 1.0F, 1.0F);;
+		if(!worldIn.isRemote)
+		{
+		    playerIn.removePotionEffect(Effects.SLOWNESS);
+			playerIn.removePotionEffect(Effects.NAUSEA);
+			playerIn.removePotionEffect(Effects.BLINDNESS);
+			playerIn.removePotionEffect(Effects.HUNGER);
+			playerIn.removePotionEffect(Effects.POISON);
+			playerIn.removePotionEffect(Effects.WITHER);
+			playerIn.extinguish();
+		    
+		    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 20, 4));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 20, 7));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 20, 3));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 20, 4));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, 20, 4));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 20, 0));
+		}
+		
+		    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.FADE.get(), SoundCategory.MASTER, 1.0F, 1.0F);;
+		
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);
 	   }

@@ -73,11 +73,14 @@ public class Fortify extends Item {
 			 playerIn.getCooldownTracker().setCooldown(this, 320);
 		 }
   	 
-	    playerIn.removePotionEffect(Effects.SLOWNESS);
-		playerIn.removePotionEffect(Effects.NAUSEA);
+		if(!worldIn.isRemote)
+		{
+		    playerIn.removePotionEffect(Effects.SLOWNESS);
+			playerIn.removePotionEffect(Effects.NAUSEA);	    
+		    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 2));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 100, 0));
+		}
 	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 2));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 100, 0));
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.FORTIFY.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);

@@ -57,7 +57,10 @@ public class InstantHealingPotion extends Item {
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.CHAMPION_LEGGINGS.get() && 
 	    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.CHAMPION_BOOTS.get()))
 	    	{
-				playerIn.heal(8);
+				if(!worldIn.isRemote)
+				{
+					playerIn.heal(8);
+				}
 	    		Random ran = new Random();
 	    		int randomUse = ran.nextInt(2);
 	    		if(randomUse != 0)
@@ -70,7 +73,11 @@ public class InstantHealingPotion extends Item {
 	    	{
 	    		playerIn.getCooldownTracker().setCooldown(this, 60);
 	    		itemstack.shrink(1);
-	    		playerIn.heal(6);
+	    		
+	    		if(!worldIn.isRemote)
+	    		{
+	    			playerIn.heal(6);
+	    		}
 	    	} 				
 	        
 	        worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.INSTANT_POTION.get(), SoundCategory.MASTER, 1.0F, 1.0F);    

@@ -100,8 +100,10 @@ public class AdaptiveShield extends Item {
 	    	level = 5;
 	    }
 	    
-	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 160, level));
+	    if(!worldIn.isRemote)
+	    {
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 160, level));
+	    }
 
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.ADAPTIVE_SHIELD.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    

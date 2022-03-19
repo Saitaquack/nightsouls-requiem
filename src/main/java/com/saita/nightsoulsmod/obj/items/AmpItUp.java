@@ -73,10 +73,13 @@ public class AmpItUp extends Item {
 			 playerIn.getCooldownTracker().setCooldown(this, 320);
 		 }
 	    
-	    playerIn.removePotionEffect(Effects.SLOWNESS);
+		if(!worldIn.isRemote)
+		{
+		    playerIn.removePotionEffect(Effects.SLOWNESS);	    
+		    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 130, 3));
+		    playerIn.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 2));
+		}
 	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 130, 3));
-	    playerIn.addPotionEffect(new EffectInstance(Effects.REGENERATION, 100, 2));
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.AMP_IT_UP.get(), SoundCategory.MASTER, 0.6F, 1.0F);
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);

@@ -52,8 +52,11 @@ public class SaitastoneHeart extends Item {
         itemstack.shrink(1);
         playerIn.getCooldownTracker().setCooldown(this, 20);
   	 
-    	playerIn.addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, 14400, 1));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 14400, 1));
+        if(!worldIn.isRemote)
+        {
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, 14400, 1));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 14400, 1));
+        }
 
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.LIFE_CRYSTAL.get(), SoundCategory.MASTER, 1.0F, 1.0F);
     	

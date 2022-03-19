@@ -78,10 +78,14 @@ public class StarPlatinum extends Item {
 			playerIn.sendMessage(new TranslationTextComponent("§5Yare Yare Daze..."), null);
     	}
     	
-    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 620, 3));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 620, 6));
-    	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 620, 1));	
-    	playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 620, 0));	
+		if(!worldIn.isRemote)
+		{
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 620, 3));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 620, 6));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 620, 1));	
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 620, 0));	
+		}
+    	
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.STAR_PLATINUM.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 		
 		return super.onItemRightClick(worldIn, playerIn, handIn);

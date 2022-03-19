@@ -53,7 +53,11 @@ public class SoundBarrier extends Item {
 	    playerIn.getCooldownTracker().setCooldown(ItemInit.NANO_BOOST.get(), 2400);
 	    playerIn.getCooldownTracker().setCooldown(ItemInit.PRIMAL_RAGE.get(), 2400);
 	    
-	    playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 400, 19));
+	    if(!worldIn.isRemote)
+	    {
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 400, 19));
+	    }
+	    
 	    worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.SOUND_BARRIER.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 	    
 	    	return super.onItemRightClick(worldIn, playerIn, handIn);
