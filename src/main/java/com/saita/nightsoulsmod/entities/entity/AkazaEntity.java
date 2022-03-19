@@ -303,7 +303,12 @@ public class AkazaEntity extends MonsterEntity {
 				 {
 					 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 180, 3));
 					 this.addPotionEffect(new EffectInstance(Effects.SPEED, 180, 3));
-					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
+					 
+					 if(!world.isRemote)
+					 {
+						 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
+					 }
+					 
 					 this.playSound(SoundInit.AKAZA_COMPASS.get(), 1.0F, 1.0F);
 					 this.playSound(SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, 1.0F, 1.0F);
 					 
@@ -329,16 +334,20 @@ public class AkazaEntity extends MonsterEntity {
 			 
 			 if(world.getGameTime() % 1200 == 0 && this.getHealth() <= this.getMaxHealth() / 2) 
 			 {
-				 placeAkazice(0, 0);
-				 placeAkazice(10, 0);
-				 placeAkazice(-10, 0);
-				 placeAkazice(0, 10);
-				 placeAkazice(0, -10);
+				 if(!world.isRemote)
+				 {
+					 placeAkazice(0, 0);
+					 placeAkazice(10, 0);
+					 placeAkazice(-10, 0);
+					 placeAkazice(0, 10);
+					 placeAkazice(0, -10);
+					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
+				 }
 				 
 				 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 6));
 				 this.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 1));
 				 this.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
-			 
+			 				
 				 this.playSound(SoundInit.AKAZA_EXCITED.get(), 1.0F, 1.0F);
 				 this.playSound(SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, 1.0F, 1.0F);
 			 }
@@ -412,7 +421,11 @@ public class AkazaEntity extends MonsterEntity {
 	          if(backOff == 0)
 	          {
 				 this.playSound(SoundInit.AKAZA_DOKE.get(), 1.0F, 1.0F);
-				 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 7.0F, Explosion.Mode.DESTROY); 
+				 
+				 if(!world.isRemote)
+				 {
+					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 7.0F, Explosion.Mode.DESTROY); 
+				 }
 	          }
 		   }
 		}
