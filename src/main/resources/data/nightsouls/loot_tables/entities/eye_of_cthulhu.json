@@ -113,7 +113,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "nightsouls:reinhardt_hammer"
+          "name": "nightsouls:reinhardt_hammer",
+          "functions":
+           [
+          	 {
+          		 "function":"enchant_randomly",
+          		 "enchantments":["sweeping"]
+          	 }
+           ]
         },
         {
           "type": "minecraft:item",
