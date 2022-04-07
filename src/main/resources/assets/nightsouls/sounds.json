@@ -435,18 +435,6 @@
 		
 	},
 	
-	"my_war": {
-		"category": "music",
-		"subtitle": "My War Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/my_war",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"bowser": {
 		"category": "music",
 		"subtitle": "The Final Battle",

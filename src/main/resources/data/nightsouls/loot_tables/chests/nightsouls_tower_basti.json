@@ -16,7 +16,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 4.0,
+                "max": 3.0,
                 "type": "minecraft:uniform"
               }
             }
@@ -30,8 +30,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3.0,
-                "max": 6.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
@@ -54,7 +54,8 @@
           "name": "nightsouls:life_crystal"
          }
        ]
-     },    
+     },
+     
      {
       "rolls": 1,
       "entries": [
@@ -74,8 +75,8 @@
          "name": "nightsouls:nightsouls_essence"
           }
         ]         
-      },    
-       {
+      },
+      {
       "rolls": 1,
       "entries": [
          {
@@ -85,8 +86,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10.0,
-                "max": 25.0,
+                "min": 9.0,
+                "max": 20.0,
                 "type": "minecraft:uniform"
               }
             }

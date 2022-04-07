@@ -64,8 +64,8 @@ public class StructureGen {
 	            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
 	            structures.add(() -> StructureInit.SAITA_FLOATING_ISLAND.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-	            structures.add(() -> StructureInit.NIGHTSOULS_FINAL_CASTLE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-	            structures.add(() -> StructureInit.NIGHTSOULS_FINAL_CASTLE_ISLAND.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.NIGHTSOULS_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.NIGHTSOULS_TOWER_ISLAND.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.SKY_BASE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.NIGHTSOULS_ISLANDS.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.ODYSSEY_BOTTOM.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));

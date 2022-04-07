@@ -1,11 +1,11 @@
 {
-  "name": "nightsouls:nightsouls_final_castle_island",
+  "name": "nightsouls:nightsouls_tower_island",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
-        "location": "nightsouls:nightsouls_final_castle_island",
+        "location": "nightsouls:nightsouls_tower_island",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

@@ -25,8 +25,8 @@ import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.feature.template.TemplateManager;
 
 
-public class NightSoulsFinalCastleStructure extends Structure<NoFeatureConfig> {
-    public NightSoulsFinalCastleStructure() {
+public class NightSoulsTowerStructure extends Structure<NoFeatureConfig> {
+    public NightSoulsTowerStructure() {
         super(NoFeatureConfig.CODEC);
     }
 
@@ -51,7 +51,7 @@ public class NightSoulsFinalCastleStructure extends Structure<NoFeatureConfig> {
 
     @Override
     public IStartFactory<NoFeatureConfig> getStartFactory() {
-        return NightSoulsFinalCastleStructure.Start::new;
+        return NightSoulsTowerStructure.Start::new;
     }
 
     public static class Start extends StructureStart<NoFeatureConfig> {
@@ -73,7 +73,7 @@ public class NightSoulsFinalCastleStructure extends Structure<NoFeatureConfig> {
             
             JigsawManager.func_242837_a(dynamicRegistryManager,
                     new VillageConfig(() -> dynamicRegistryManager.getRegistry(Registry.JIGSAW_POOL_KEY)
-                            .getOrDefault(new ResourceLocation(NightSoulsMod.MOD_ID, "nightsouls_final_castle")),
+                            .getOrDefault(new ResourceLocation(NightSoulsMod.MOD_ID, "nightsouls_tower")),
                             10), AbstractVillagePiece::new, chunkGenerator, templateManagerIn,
                     blockpos, this.components, this.rand,false,true);
             

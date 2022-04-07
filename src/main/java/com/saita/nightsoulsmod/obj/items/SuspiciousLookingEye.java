@@ -51,8 +51,9 @@ public class SuspiciousLookingEye extends Item {
 		itemstack.shrink(1);	
 		playerIn.getCooldownTracker().setCooldown(this, 600);
 		
+		worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.BOSS_ONE.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.CTHULHU_SCREAM.get(), SoundCategory.MASTER, 1.0F, 1.0F);
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.BOSS_ONE.get(), SoundCategory.MASTER, 1.0F, 1.0F);
+    	
     	
     	 if(worldIn.isRemote)
     	 {

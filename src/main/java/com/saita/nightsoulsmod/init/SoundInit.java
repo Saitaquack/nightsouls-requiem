@@ -268,9 +268,6 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> MINECRAFT = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "minecraft")));
 	
-	public static final Lazy<SoundEvent> MY_WAR = Lazy.of(() -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "my_war")));
-	
 	public static final Lazy<SoundEvent> BOWSER = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "bowser")));
 	

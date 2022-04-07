@@ -33,8 +33,8 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> MIIZEAL_ALTAR = STRUCTURES.register("miizeal_altar", MiizealAltarStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> SAITA_FLOATING_ISLAND = STRUCTURES.register("saita_floating_island", SaitaFloatingIslandStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_TEMPLE = STRUCTURES.register("nightsouls_temple", NightSoulsTempleStructure::new);
-    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_FINAL_CASTLE = STRUCTURES.register("nightsouls_final_castle", NightSoulsFinalCastleStructure::new);
-    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_FINAL_CASTLE_ISLAND = STRUCTURES.register("nightsouls_final_castle_island", NightSoulsFinalCastleIslandStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_TOWER = STRUCTURES.register("nightsouls_tower", NightSoulsTowerStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_TOWER_ISLAND = STRUCTURES.register("nightsouls_tower_island", NightSoulsTowerIslandStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_BARN = STRUCTURES.register("nightsouls_barn", NightSoulsBarnStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_MANSION = STRUCTURES.register("nightsouls_mansion", NightSoulsMansionStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> SKY_BASE = STRUCTURES.register("sky_base", SkyBaseStructure::new);
@@ -85,8 +85,8 @@ public class StructureInit {
         setupMapSpacingAndLand(MIIZEAL_ALTAR.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 666666666), true);
         setupMapSpacingAndLand(SAITA_FLOATING_ISLAND.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 134217792), false);
         setupMapSpacingAndLand(NIGHTSOULS_TEMPLE.get(), new StructureSeparationSettings(StructuresConstants.insaneMax, StructuresConstants.insaneMin, 134327928), false);
-        setupMapSpacingAndLand(NIGHTSOULS_FINAL_CASTLE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, StructuresConstants.castleSeed), false);
-        setupMapSpacingAndLand(NIGHTSOULS_FINAL_CASTLE_ISLAND.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, StructuresConstants.castleSeed), false);
+        setupMapSpacingAndLand(NIGHTSOULS_TOWER.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, StructuresConstants.castleSeed), false);
+        setupMapSpacingAndLand(NIGHTSOULS_TOWER_ISLAND.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, StructuresConstants.castleSeed), false);
         setupMapSpacingAndLand(NIGHTSOULS_BARN.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 1344321928), true);
         setupMapSpacingAndLand(NIGHTSOULS_MANSION.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 143227728), false);
         setupMapSpacingAndLand(SKY_BASE.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 136328728), false);
