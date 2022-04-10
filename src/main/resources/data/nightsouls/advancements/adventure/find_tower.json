@@ -1,0 +1,33 @@
+{
+  "parent": "nightsouls:adventure/find_temple",
+  "display": {
+    "icon": {
+      "item": "nightsouls:night_soul"
+    },
+    "title": {
+      "translate": "advancements.adventure.find_tower.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.find_tower.description"
+    },
+  "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tower": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "nightsouls:nightsouls_tower"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tower"
+    ]
+  ]
+}

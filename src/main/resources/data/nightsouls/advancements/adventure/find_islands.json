@@ -1,0 +1,33 @@
+{
+  "parent": "nightsouls:adventure/find_temple",
+  "display": {
+    "icon": {
+      "item": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "advancements.adventure.find_islands.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.find_islands.description"
+    },
+  "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "islands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "nightsouls:nightsouls_islands"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "islands"
+    ]
+  ]
+}

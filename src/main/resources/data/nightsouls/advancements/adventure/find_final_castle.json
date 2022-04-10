@@ -1,0 +1,36 @@
+{
+  "parent": "nightsouls:adventure/find_tower",
+  "display": {
+    "icon": {
+      "item": "nightsouls:nightsouls_essence"
+    },
+    "title": {
+      "translate": "advancements.adventure.find_final_castle.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.find_final_castle.description"
+    },
+  "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 750
+  },
+  "criteria": {
+    "final_castle": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "nightsouls:nightsouls_final_castle"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "final_castle"
+    ]
+  ]
+}

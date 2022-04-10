@@ -57,6 +57,7 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> BACKROOMS = STRUCTURES.register("backrooms", BackroomsStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> UNDERGROUND_CITY = STRUCTURES.register("underground_city", UndergroundCityStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> PALADIN_HILL = STRUCTURES.register("paladin_hill", PaladinHillStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_FINAL_CASTLE = STRUCTURES.register("nightsouls_final_castle", NightSoulsFinalCastle::new);
 
     
     public static final RegistryObject<Structure<NoFeatureConfig>> PARAGONIC_CORE = STRUCTURES.register("paraconic_core", ParagonicCoreStructure::new);
@@ -109,6 +110,7 @@ public class StructureInit {
         setupMapSpacingAndLand(BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 752366482), false);
         setupMapSpacingAndLand(UNDERGROUND_CITY.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 972366482), false);
         setupMapSpacingAndLand(PALADIN_HILL.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 688386482), true);
+        setupMapSpacingAndLand(NIGHTSOULS_FINAL_CASTLE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax + 30, StructuresConstants.insanerMin + 30, 1237568882), false);
        
         
         setupMapSpacingAndLand(PARAGONIC_CORE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, 122377928), true);
