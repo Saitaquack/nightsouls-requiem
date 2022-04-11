@@ -127,6 +127,28 @@
           "name": "nightsouls:good_egg_galaxy_music_disc"
           }
         ]
+     },
+     
+     {
+     "rolls": {
+        "min": 0.0,
+        "max": 1.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+                "type": "minecraft:uniform"
+              }
+          ],
+          "name": "nightsouls:soupe_aux_choux_music_disc"
+          }
+        ]
      }
   ]
 }

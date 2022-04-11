@@ -540,6 +540,28 @@
         ]
       }
     },
+    
+    "soupe_aux_choux_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:soupe_aux_choux_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "burning_memory_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:burning_memory_music_disc"
+          }
+        ]
+      }
+    },
         
     "star_gatherer_final_music_disc": {
       "trigger": "minecraft:inventory_changed",
@@ -636,6 +658,8 @@
       "dragonhearted_music_disc",
       "boss_one_music_disc",
       "boss_two_music_disc",
+      "soupe_aux_choux_music_disc",
+      "burning_memory_music_disc",
       "star_gatherer_final_music_disc",
       "hellfire_emperor_final_music_disc",
       "hallowed_paladin_final_music_disc",

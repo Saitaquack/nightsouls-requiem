@@ -397,8 +397,24 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> BOSS_TWO = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "boss_two")));
 	
+	public static final Lazy<SoundEvent> SOUPE_AUX_CHOUX = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "soupe_aux_choux")));
+	
+	public static final Lazy<SoundEvent> BURNING_MEMORY = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "burning_memory")));
+	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));
+	
+	
+	public static final Lazy<SoundEvent> AKAZA_BOSS = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "akaza_boss")));
+	
+	public static final Lazy<SoundEvent> EOC_BOSS = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "eoc_boss")));
+	
+	public static final Lazy<SoundEvent> KC_BOSS = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "kc_boss")));
 	
 	
 	public static void register(IEventBus eventBus) {

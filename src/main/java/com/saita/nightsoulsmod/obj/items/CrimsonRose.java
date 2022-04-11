@@ -50,7 +50,7 @@ public class CrimsonRose extends Item {
 		itemstack.shrink(1);	
 		playerIn.getCooldownTracker().setCooldown(this, 1200);
 		
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.UNALTRA.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
+    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KC_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KING_CRIMSON_AMBIENT.get(), SoundCategory.MASTER, 1.0F, 1.0F);
     	
     	if(worldIn.isRemote)

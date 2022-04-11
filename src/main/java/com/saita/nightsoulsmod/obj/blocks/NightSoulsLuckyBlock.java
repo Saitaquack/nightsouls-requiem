@@ -476,8 +476,8 @@ public class NightSoulsLuckyBlock extends Block {
 		}
 		else if(randomPrice < 639)
 		{
-			int randomDisc = RANDOM.nextInt(33) + 1;
-			int randomDisc2 = RANDOM.nextInt(33) + 1;
+			int randomDisc = RANDOM.nextInt(29) + 1;
+			int randomDisc2 = RANDOM.nextInt(29) + 1;
 			
 		    ItemStack disc1 = new ItemStack(ItemInit.HOPES_AND_DREAMS_MUSIC_DISC.get());
 		    ItemStack disc2 = new ItemStack(ItemInit.TOTO_AFRICA_MUSIC_DISC.get());

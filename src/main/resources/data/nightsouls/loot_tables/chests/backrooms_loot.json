@@ -1,7 +1,31 @@
 {
   "type": "minecraft:chest",
   "pools": [
-    {
+  	{
+      "rolls": {
+        "min": 0.0,
+        "max": 1.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "nightsouls:burning_memory_music_disc"
+         }       
+        ]          
+      },
+      {
       "rolls": {
         "min": 1.0,
         "max": 2.0,

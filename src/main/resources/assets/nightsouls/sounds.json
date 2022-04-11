@@ -951,12 +951,72 @@
 		
 	},
 	
+	"soupe_aux_choux": {
+		"category": "music",
+		"subtitle": "Soupe aux Choux Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/soupe_aux_choux",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"burning_memory": {
+		"category": "music",
+		"subtitle": "Burning Memory Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/burning_memory",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",
 		"sounds": [
 			{
 				"name": "nightsouls:music/paragon",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza_boss": {
+		"category": "music",
+		"subtitle": "Akaza Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/akaza",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"eoc_boss": {
+		"category": "music",
+		"subtitle": "Eye of Cthulhu Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_one",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"kc_boss": {
+		"category": "music",
+		"subtitle": "King Crimson Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/unaltra",
 				"stream": true
 			}
 		]
