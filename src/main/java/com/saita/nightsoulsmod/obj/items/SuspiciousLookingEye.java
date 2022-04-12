@@ -18,6 +18,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
 
@@ -47,38 +48,49 @@ public class SuspiciousLookingEye extends Item {
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		
-		ItemStack itemstack = playerIn.getHeldItem(handIn);
-		itemstack.shrink(1);	
-		playerIn.getCooldownTracker().setCooldown(this, 600);
+		if(worldIn.getDifficulty() != Difficulty.PEACEFUL)
+		{
 		
-		worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.EOC_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.CTHULHU_SCREAM.get(), SoundCategory.MASTER, 1.0F, 1.0F);
-    	
-    	
-    	 if(worldIn.isRemote)
-    	 {
-    		 playerIn.sendMessage(new TranslationTextComponent("§4You feel an evil presence watching you..."), null);
-    	 }
-    	
-    	Random rand = new Random();
-    	
-    	int randX = rand.nextInt(25);
-    	int randZ = rand.nextInt(25);
-    	boolean negX = random.nextBoolean();
-    	boolean negZ = random.nextBoolean();
-    	
-    	if(negX)
-    	{
-    		randX = -randX;
-    	}
-    	if(negZ)
-    	{
-    		randZ = -randZ;
-    	}
-    	
-    	EyeOfCthulhuEntity eoc = new EyeOfCthulhuEntity(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), worldIn);	
-		eoc.setPositionAndUpdate(playerIn.getPosX() + randX, playerIn.getPosY() + 20, playerIn.getPosZ() + randZ);
-		worldIn.addEntity(eoc);
+			ItemStack itemstack = playerIn.getHeldItem(handIn);
+			itemstack.shrink(1);	
+			playerIn.getCooldownTracker().setCooldown(this, 600);
+			
+			worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.EOC_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
+	    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.CTHULHU_SCREAM.get(), SoundCategory.MASTER, 1.0F, 1.0F);
+	    	
+	    	
+	    	 if(worldIn.isRemote)
+	    	 {
+	    		 playerIn.sendMessage(new TranslationTextComponent("§4You feel an evil presence watching you..."), null);
+	    	 }
+	    	
+	    	Random rand = new Random();
+	    	
+	    	int randX = rand.nextInt(25);
+	    	int randZ = rand.nextInt(25);
+	    	boolean negX = random.nextBoolean();
+	    	boolean negZ = random.nextBoolean();
+	    	
+	    	if(negX)
+	    	{
+	    		randX = -randX;
+	    	}
+	    	if(negZ)
+	    	{
+	    		randZ = -randZ;
+	    	}
+	    	
+	    	EyeOfCthulhuEntity eoc = new EyeOfCthulhuEntity(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), worldIn);	
+			eoc.setPositionAndUpdate(playerIn.getPosX() + randX, playerIn.getPosY() + 20, playerIn.getPosZ() + randZ);
+			worldIn.addEntity(eoc);
+		}
+		else
+		{
+			if(worldIn.isRemote)
+			{
+				playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you can't summon the Eye of Cthulhu in peaceful mode."), null);
+	    	}
+		}
 
 		
 		return super.onItemRightClick(worldIn, playerIn, handIn);

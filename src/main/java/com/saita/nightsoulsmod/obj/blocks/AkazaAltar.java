@@ -15,6 +15,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
@@ -38,18 +39,28 @@ public class AkazaAltar extends Block {
 		
 		if(worldIn.getDayTime() >= RequiemKey.requiemConstant)
 		{
-			worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
-			worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 4.0F, Explosion.Mode.NONE);
-			worldIn.playSound(player, player.getPosition(), SoundInit.AKAZA_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
-	   
-		    AkazaEntity akaza = new AkazaEntity(NightSoulsEntityTypes.AKAZA.get(), worldIn);	
-			akaza.setPositionAndUpdate(pos.getX(), pos.getY() + 5, pos.getZ());
-			worldIn.addEntity(akaza);
-			
-			if(worldIn.isRemote)
+			if(worldIn.getDifficulty() != Difficulty.PEACEFUL)
 			{
-	    		 player.sendMessage(new TranslationTextComponent("§4You sure look powerful. Fight me !"), null);
-	    	}
+				worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
+				worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ(), 4.0F, Explosion.Mode.NONE);
+				worldIn.playSound(player, player.getPosition(), SoundInit.AKAZA_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
+		   
+			    AkazaEntity akaza = new AkazaEntity(NightSoulsEntityTypes.AKAZA.get(), worldIn);	
+				akaza.setPositionAndUpdate(pos.getX(), pos.getY() + 5, pos.getZ());
+				worldIn.addEntity(akaza);
+				
+				if(worldIn.isRemote)
+				{
+		    		 player.sendMessage(new TranslationTextComponent("§4You sure look powerful. Fight me !"), null);
+		    	}
+			}
+			else
+			{
+				if(worldIn.isRemote)
+				{
+					player.sendMessage(new TranslationTextComponent("§f"+player.getName().getString()+", you can't summon Akaza in peaceful mode."), null);
+		    	}
+			}
 		
 		}
 		else

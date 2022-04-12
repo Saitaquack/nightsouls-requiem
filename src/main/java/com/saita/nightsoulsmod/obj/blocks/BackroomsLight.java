@@ -27,7 +27,7 @@ public class BackroomsLight extends Block {
 	@Override
 	public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
 		
-        worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(), SoundInit.BACKROOMS_LIGHT.get(), SoundCategory.BLOCKS, 0.2F, 1.0F, false);
+        worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(), SoundInit.BACKROOMS_LIGHT.get(), SoundCategory.BLOCKS, 0.4F, 1.0F, false);
 		
 		super.animateTick(stateIn, worldIn, pos, rand);
 	}

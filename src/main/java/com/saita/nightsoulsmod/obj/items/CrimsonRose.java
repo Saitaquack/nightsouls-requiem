@@ -17,6 +17,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
 
@@ -46,21 +47,32 @@ public class CrimsonRose extends Item {
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		
-		ItemStack itemstack = playerIn.getHeldItem(handIn);
-		itemstack.shrink(1);	
-		playerIn.getCooldownTracker().setCooldown(this, 1200);
-		
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KC_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KING_CRIMSON_AMBIENT.get(), SoundCategory.MASTER, 1.0F, 1.0F);
-    	
-    	if(worldIn.isRemote)
+		if(worldIn.getDifficulty() != Difficulty.PEACEFUL)
 		{
-    		 playerIn.sendMessage(new TranslationTextComponent("§4Anyone who opposes me will be eliminated."), null);
-    	}
-    	
-    	KingCrimsonEntity kc = new KingCrimsonEntity(NightSoulsEntityTypes.KING_CRIMSON.get(), worldIn);	
-		kc.setPositionAndUpdate(playerIn.getPosX(), playerIn.getPosY() + 2, playerIn.getPosZ());
-		worldIn.addEntity(kc);
+		
+			ItemStack itemstack = playerIn.getHeldItem(handIn);
+			itemstack.shrink(1);	
+			playerIn.getCooldownTracker().setCooldown(this, 1200);
+			
+	    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KC_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
+	    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.KING_CRIMSON_AMBIENT.get(), SoundCategory.MASTER, 1.0F, 1.0F);
+	    	
+	    	if(worldIn.isRemote)
+			{
+	    		 playerIn.sendMessage(new TranslationTextComponent("§4Anyone who opposes me will be eliminated."), null);
+	    	}
+	    	
+	    	KingCrimsonEntity kc = new KingCrimsonEntity(NightSoulsEntityTypes.KING_CRIMSON.get(), worldIn);	
+			kc.setPositionAndUpdate(playerIn.getPosX(), playerIn.getPosY() + 2, playerIn.getPosZ());
+			worldIn.addEntity(kc);
+		}
+		else
+		{
+			if(worldIn.isRemote)
+			{
+				playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you can't summon King Crimson in peaceful mode."), null);
+	    	}
+		}
 
 		
 		return super.onItemRightClick(worldIn, playerIn, handIn);
