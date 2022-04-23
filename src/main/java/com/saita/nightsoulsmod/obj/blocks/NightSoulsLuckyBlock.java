@@ -128,19 +128,10 @@ public class NightSoulsLuckyBlock extends Block {
 		}
 		else if(randomPrice < 180)
 		{
-			boolean isStarItem = RANDOM.nextBoolean();
-			if(isStarItem)
-			{
-				 ItemStack superStar = new ItemStack(ItemInit.SUPER_STAR.get(), 1);
-				 spawnAsEntity(worldIn, pos, superStar);
-
-			}
-			else
-			{
-				ItemStack moltenCore = new ItemStack(ItemInit.MOLTEN_CORE.get(), 1);
-				spawnAsEntity(worldIn, pos, moltenCore);
-			}
 			
+			 ItemStack superStar = new ItemStack(ItemInit.SUPER_STAR.get(), 1);
+			 spawnAsEntity(worldIn, pos, superStar);
+		
 		}
 		else if(randomPrice < 195)
 		{

@@ -17,9 +17,6 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> SUPER_STAR = SOUNDS.register("super_star", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "super_star")));
 	
-	public static final RegistryObject<SoundEvent> MOLTEN_CORE = SOUNDS.register("molten_core", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "molten_core")));
-	
 	public static final RegistryObject<SoundEvent> WRAITH_FORM = SOUNDS.register("wraith_form", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "wraith_form")));
 	

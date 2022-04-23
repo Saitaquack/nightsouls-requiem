@@ -11,18 +11,6 @@
 		
 	},
 	
-	"molten_core": {
-		"category": "master",
-		"subtitle": "Molten Core Used",
-		"sounds": [
-			{
-				"name": "nightsouls:master/molten_core",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"wraith_form": {
 		"category": "master",
 		"subtitle": "Wraith Form Used",

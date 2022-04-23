@@ -73,7 +73,6 @@ public class ItemInit {
     public static final RegistryObject<PickaxeItem> NIGHT_SOUL_PICKAXE = ITEMS.register("night_soul_pickaxe", () -> new NightSoulPickaxe(NightSoulsItemTier.NIGHTSOULPICK, 1, -2.8F, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> BLOODZEAL = ITEMS.register("bloodzeal", () -> new BloodZeal(NightSoulsItemTier.BLOODZEAL, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> SUPER_STAR = ITEMS.register("super_star", () -> new SuperStar(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
-	public static final RegistryObject<Item> MOLTEN_CORE = ITEMS.register("molten_core", () -> new MoltenCore(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
     public static final RegistryObject<PickaxeItem> INSTA_PICKAXE = ITEMS.register("insta_pickaxe", () -> new InstaPickaxe(NightSoulsItemTier.INSTAPICK, 1, -2.8F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> MIIZEALITE_BOW = ITEMS.register("miizealite_bow", () -> new MiizealiteBow(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(847).isImmuneToFire())); //385 x 2.2
     public static final RegistryObject<SwordItem> REINHARDT_HAMMER = ITEMS.register("reinhardt_hammer", () -> new ReinhardtHammer(NightSoulsItemTier.REINHARDT_HAMMER, 3, -2.6F, new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -198,7 +197,6 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> BLOODY_BOOTS = ITEMS.register("bloody_boots", () -> new BloodyArmor(NightSoulsArmorTier.BLOODY, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> MANDELA_CATALOGUE = ITEMS.register("mandela_catalogue", () -> new MandelaCatalogue(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> POISON_MIIZEALITE_DAGGER = ITEMS.register("poison_miizealite_dagger", () -> new PoisonMiizealiteDagger(NightSoulsItemTier.POISON_MIIZEALITE_DAGGER, 3, -2.0F, new Item.Properties().group(NightSoulsItemGroup.instance).isImmuneToFire()));
-	public static final RegistryObject<Item> SAITASTONE_HEART = ITEMS.register("saitastone_heart", () -> new SaitastoneHeart(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(8)));
 	public static final RegistryObject<Item> ALTERNATE_INGOT = ITEMS.register("alternate_ingot", () -> new AlternateIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<ArmorItem> ALTERNATE_HELMET = ITEMS.register("alternate_helmet", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<ArmorItem> ALTERNATE_CHESTPLATE = ITEMS.register("alternate_chestplate", () -> new AlternateArmor(NightSoulsArmorTier.ALTERNATE, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
