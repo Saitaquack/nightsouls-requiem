@@ -86,7 +86,7 @@
       ]
     },
     {
-     "rolls": {
+      "rolls": {
         "min": 0.0,
         "max": 1.0,
         "type": "minecraft:uniform"
@@ -98,14 +98,17 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1,
+              "count": {
+                "min": 0.0,
+                "max": 1.0,
                 "type": "minecraft:uniform"
               }
+            }
           ],
           "name": "nightsouls:super_star"
-          }
-        ]
-     },    
+          }       
+        ]          
+      },
      
       {
       "rolls": 1,

@@ -119,8 +119,8 @@ public class StructureInit {
         setupMapSpacingAndLand(CRANE_LOOT_ROOM.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 366656), false);
         setupMapSpacingAndLand(BASTI_LOOT_ROOM.get(), new StructureSeparationSettings(StructuresConstants.commonMax, StructuresConstants.commonMin, 466656), false);
         setupMapSpacingAndLand(LUCKY_BLOCK.get(), new StructureSeparationSettings(24, 8, 268435456), false);
-        setupMapSpacingAndLand(CELESTIAL_EMERALD.get(), new StructureSeparationSettings(70, 20, 268435446), false);
-        setupMapSpacingAndLand(POWER_MOON.get(), new StructureSeparationSettings(14, 3, 178509578), false);
+        setupMapSpacingAndLand(CELESTIAL_EMERALD.get(), new StructureSeparationSettings(45, 10, 268435446), false);
+        setupMapSpacingAndLand(POWER_MOON.get(), new StructureSeparationSettings(16, 5, 178509578), false);
         setupMapSpacingAndLand(AKAZA_ARENA.get(), new StructureSeparationSettings(StructuresConstants.insaneMax, StructuresConstants.insaneMin, 88666666), true);
 
 

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "minecraft:compass"},
+    {"item": "nightsouls:celestial_emerald"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:pure_saitastone_ingot"},
+    {"item": "nightsouls:pure_miizealite_ingot"},
+    {"item": "nightsouls:pure_cranite_ingot"},
+    {"item": "nightsouls:pure_bastirite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "playertrackingcompass:tracking_compass"
+  }
+
+}

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GDG",
-    "SBS",
-    "GDG" 
+    "GGG",
+    "DED",
+    "GGG" 
   ],
   "key": {
     "G": {
@@ -14,13 +14,10 @@
       "item": "minecraft:diamond"
     },
     
-    "S": {
-      "item": "nightsouls:saitastone_ingot"
-    },
-    
-    "B": {
-      "item": "minecraft:gold_block"
+    "E": {
+      "item": "nightsouls:celestial_emerald"
     }
+
     
   },
   "result": {

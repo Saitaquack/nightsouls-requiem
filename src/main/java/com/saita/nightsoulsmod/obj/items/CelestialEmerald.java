@@ -34,7 +34,6 @@ public class CelestialEmerald extends Item {
     {
 
 	tooltip.set(0, new StringTextComponent("§2"+tooltip.get(0).getString()+"§r"));
-    tooltip.add(new StringTextComponent("§7Can be converted to emeralds. Can also duplicate NightSouls ores ingots and Life crystals."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

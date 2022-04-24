@@ -1,33 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BOB",
-    "NDN",
-    "SVS"
+    "DSD",
+    "NEN",
+    "VBV"
   ],
   "key": {
+  
+  	"E": {
+      "item": "nightsouls:celestial_emerald"
+    },
+  
     "N": {
       "item": "nightsouls:night_soul"
     },
     
-    "B": {
-      "item": "nightsouls:pure_bastirite_ingot"
-    },
-    
-    "S": {
-      "item": "nightsouls:pure_saitastone_ingot"
+    "D": {
+      "item": "nightsouls:saitastone_ingot"
     },
     
     "V": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "B": {
       "item": "nightsouls:bastirite_pickaxe"
     },
     
-    "D": {
+    "S": {
       "item": "nightsouls:saitastone_pickaxe"
-    },
-    
-     "O": {
-      "item": "minecraft:diamond_block"
     }
     
   },

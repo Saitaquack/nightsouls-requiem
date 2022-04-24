@@ -2,16 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:saitastone_ingot_from_celestial_emerald",
-      "nightsouls:miizealite_ingot_from_celestial_emerald",
-      "nightsouls:cranite_ingot_from_celestial_emerald",
-      "nightsouls:bastirite_ingot_from_celestial_emerald",
-      "nightsouls:primium_ingot_from_celestial_emerald",
-      "nightsouls:rowequite_ingot_from_celestial_emerald",
-      "nightsouls:therenite_ingot_from_celestial_emerald",
-      "nightsouls:life_crystal_from_celestial_emerald",
       "nightsouls:emerald_from_celestial_emerald",
-      "nightsouls:star_platinum"
+      "nightsouls:super_star",
+      "nightsouls:star_platinum",
+      "nightsouls:wealth_digger",
+      "playertrackingcompass:tracking_compass"
     ]
   },
   "criteria": {

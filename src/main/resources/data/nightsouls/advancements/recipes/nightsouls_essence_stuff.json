@@ -17,7 +17,8 @@
       "nightsouls:nightsouls_charm",
       "nightsouls:nightsouls_bow",
       "nightsouls:nightsouls_cake_slice",
-      "nightsouls:crimson_rose"
+      "nightsouls:crimson_rose",
+      "playertrackingcompass:tracking_compass"
     ]
   },
   "criteria": {

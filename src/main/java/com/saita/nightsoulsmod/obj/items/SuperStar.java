@@ -87,13 +87,13 @@ public class SuperStar extends Item {
     	
     	if(!worldIn.isRemote)
     	{
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 4));
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 240, 2));
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 2));
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 240, 2));
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 240, 0));
-	    	playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 240, 0));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 300, 4));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.SPEED, 300, 3));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 300, 2));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.STRENGTH, 300, 2));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 300, 2));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, 300, 0));
+	    	playerIn.addPotionEffect(new EffectInstance(Effects.GLOWING, 300, 0));
     	}
     	
     	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.SUPER_STAR.get(), SoundCategory.MASTER, 1.0F, 1.0F);
