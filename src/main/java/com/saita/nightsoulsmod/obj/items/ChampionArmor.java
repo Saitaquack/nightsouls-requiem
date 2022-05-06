@@ -57,10 +57,10 @@ public class ChampionArmor extends ArmorItem {
 				 player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 0, false, false));			
 
 				 
-				 if(world.getGameTime() % 200 == 0)
+				 if(world.getGameTime() % 400 == 0)
 				 	{
-				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));
-				 	   player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 100, 0, false, false));	
+				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 200, 0, false, false));
+				 	   player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 200, 0, false, false));	
 				 	}					 
 				 	
 			 	}	 	 

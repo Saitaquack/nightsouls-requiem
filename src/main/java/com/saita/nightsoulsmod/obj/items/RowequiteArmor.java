@@ -27,7 +27,7 @@ public class RowequiteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§6Full set bonus : §7Resistance I and Absorption I every 10 seconds for 5 seconds."));			
+	tooltip.add(new StringTextComponent("§6Full set bonus : §7Resistance I and Absorption I every 20 seconds for 10 seconds."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }
@@ -41,10 +41,10 @@ public class RowequiteArmor extends ArmorItem {
 			    player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ROWEQUITE_BOOTS.get())	
 			    {
 				 
-				 if(world.getGameTime() % 200 == 0)
+				 if(world.getGameTime() % 400 == 0)
 				 	{
-				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));	
-				 	   player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 100, 0, false, false));	
+				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 200, 0, false, false));	
+				 	   player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 200, 0, false, false));	
 				 	}							 			
 			 	}	 	 
 			 
