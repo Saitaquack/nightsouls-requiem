@@ -32,7 +32,7 @@ public class ChampionArmor extends ArmorItem {
     	
 	if(Screen.hasShiftDown())
 	{
-		 tooltip.add(new StringTextComponent("§6Full set bonus : §7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Reduced Molten Core and Super Star cooldowns. Instant Healing Potion has no cooldown and heals more. You have a chance to not consume any of these items."));	
+		 tooltip.add(new StringTextComponent("§6Full set bonus : §7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Instant Healing Potion has no cooldown and heals more."));	
 	}
 	else
 	{
@@ -52,12 +52,15 @@ public class ChampionArmor extends ArmorItem {
 			    {
 				 
 				 player.addPotionEffect(new EffectInstance(Effects.HERO_OF_THE_VILLAGE, 5, 0, false, false));
+				 player.addPotionEffect(new EffectInstance(Effects.LUCK, 5, 0, false, false));
+				 player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 0, false, false));
 				 player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 0, false, false));			
 
 				 
 				 if(world.getGameTime() % 200 == 0)
 				 	{
-				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));					
+				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));
+				 	   player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 100, 0, false, false));	
 				 	}					 
 				 	
 			 	}	 	 

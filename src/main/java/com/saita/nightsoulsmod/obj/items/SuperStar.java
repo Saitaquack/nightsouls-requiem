@@ -1,14 +1,12 @@
 package com.saita.nightsoulsmod.obj.items;
 
 import java.util.List;
-import java.util.Random;
 
 import com.saita.nightsoulsmod.init.ItemInit;
 import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
@@ -53,37 +51,17 @@ public class SuperStar extends Item {
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
     	
     	ItemStack itemstack = playerIn.getHeldItem(handIn);
-    	
-    	if((playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.ROWEQUITE_HELMET.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.ROWEQUITE_CHESTPLATE.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.ROWEQUITE_LEGGINGS.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ROWEQUITE_BOOTS.get()) || 
-    				 
-    		   (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.CHAMPION_HELMET.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.CHAMPION_CHESTPLATE.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.CHAMPION_LEGGINGS.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.CHAMPION_BOOTS.get()))
-    	{
-    		playerIn.getCooldownTracker().setCooldown(this, 500);
-    		Random ran = new Random();
-    		int randomUse = ran.nextInt(2);
-    		if(randomUse != 0)
-    		{
-    			itemstack.shrink(1);
-    		}
-    	}
-    	else
-    	{
-    		playerIn.getCooldownTracker().setCooldown(this, 900);
-        	itemstack.shrink(1);
-    	} 	
-    	
-    	 if(worldIn.isRemote)
+    	playerIn.getCooldownTracker().setCooldown(this, 900);
+        itemstack.shrink(1);
+        
+        playerIn.getCooldownTracker().setCooldown(ItemInit.STAR_PLATINUM.get(), 900);
+    	 		
+    	if(worldIn.isRemote)
     	 {
- 	     playerIn.sendMessage(new TranslationTextComponent("§dTATATATATATATATA TATATATATATATATA TATATATATATATATA !"), null);
+    		playerIn.sendMessage(new TranslationTextComponent("§dTATATATATATATATA TATATATATATATATA TATATATATATATATA !"), null);
     	 }
     	 
-    	playerIn.getCooldownTracker().setCooldown(ItemInit.STAR_PLATINUM.get(), 900);
+    	
     	
     	if(!worldIn.isRemote)
     	{

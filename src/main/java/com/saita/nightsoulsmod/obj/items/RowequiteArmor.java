@@ -27,7 +27,7 @@ public class RowequiteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§6Full set bonus : §7Resistance I every 10 seconds for 5 seconds. Reduced Super Star cooldown, and you have a chance to not consume it."));			
+	tooltip.add(new StringTextComponent("§6Full set bonus : §7Resistance I and Absorption I every 10 seconds for 5 seconds."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }
@@ -43,7 +43,8 @@ public class RowequiteArmor extends ArmorItem {
 				 
 				 if(world.getGameTime() % 200 == 0)
 				 	{
-				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));					
+				 	   player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 100, 0, false, false));	
+				 	   player.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 100, 0, false, false));	
 				 	}							 			
 			 	}	 	 
 			 

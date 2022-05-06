@@ -7,7 +7,6 @@ import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
@@ -56,22 +55,8 @@ public class StarPlatinum extends Item {
 		playerIn.getCooldownTracker().setCooldown(this, 900);
 		itemstack.shrink(1);
 		
-		if((playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.ROWEQUITE_HELMET.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.ROWEQUITE_CHESTPLATE.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.ROWEQUITE_LEGGINGS.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ROWEQUITE_BOOTS.get()) || 
-    				 
-    		   (playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.CHAMPION_HELMET.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.CHAMPION_CHESTPLATE.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.CHAMPION_LEGGINGS.get() && 
-    			playerIn.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.CHAMPION_BOOTS.get()))
-    	{
-	    	playerIn.getCooldownTracker().setCooldown(ItemInit.SUPER_STAR.get(), 500);
-    	}
-		else
-		{
-			playerIn.getCooldownTracker().setCooldown(ItemInit.SUPER_STAR.get(), 900);
-		}
+		playerIn.getCooldownTracker().setCooldown(ItemInit.SUPER_STAR.get(), 900);
+		
 		
 		if(worldIn.isRemote)
     	{

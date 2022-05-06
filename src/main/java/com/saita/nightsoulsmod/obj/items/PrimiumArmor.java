@@ -28,7 +28,7 @@ public class PrimiumArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Hero of the Village. Reduced Molten Core cooldown, and you have a chance to not consume it."));			
+	tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste I, Hero of the Village and Luck."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }
@@ -43,6 +43,8 @@ public class PrimiumArmor extends ArmorItem {
 				 
 			 	{			
 					 player.addPotionEffect(new EffectInstance(Effects.HERO_OF_THE_VILLAGE, 5, 0, false, false));			
+					 player.addPotionEffect(new EffectInstance(Effects.LUCK, 5, 0, false, false));	
+					 player.addPotionEffect(new EffectInstance(Effects.HASTE, 5, 0, false, false));	
 			 	}
 		 	 
 		super.onArmorTick(stack, world, player);
