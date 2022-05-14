@@ -448,8 +448,6 @@
    "advancements.story.get_bastirite.description": "Trouvez de la bastirite.",
    "advancements.story.get_life_crystal.title": "Va t'acheter une vie",
    "advancements.story.get_life_crystal.description": "Obtenez un cristal de vie.",
-   "advancements.story.get_super_star.title": "TATATATATATA",
-   "advancements.story.get_super_star.description": "Obtenez une super étoile.",
    "advancements.story.get_amp_it_up.title": "Wouuuh, écoutez ça !",
    "advancements.story.get_amp_it_up.description": "Obtenez Volume Max.",
    "advancements.story.get_take_a_breather.title": "Sans forcer",
@@ -525,6 +523,8 @@
    "advancements.adventure.find_tower.description" : "Trouvez la tour NightSouls.",
    "advancements.adventure.find_final_castle.title" : "L'habitation finale",
    "advancements.adventure.find_final_castle.description" : "Trouvez le château final.",
+   "advancements.adventure.get_super_star.title": "TATATATATATA",
+   "advancements.adventure.get_super_star.description": "Obtenez une super étoile.",
    
    "advancements.nether.get_necro_armor.title": "Désossé",
    "advancements.nether.get_necro_armor.description": "Obtenez une piece de l'armure nécro.",
