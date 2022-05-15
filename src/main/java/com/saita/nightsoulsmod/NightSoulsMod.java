@@ -1,7 +1,5 @@
 package com.saita.nightsoulsmod;
 
-import net.minecraft.client.renderer.ItemRenderer;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.RangedAttribute;
 import net.minecraft.item.ItemGroup;
@@ -91,12 +89,6 @@ public class NightSoulsMod
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.AKAZA.get(), AkazaRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), EyeOfCthulhuRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.KING_CRIMSON.get(), KingCrimsonRenderer::new);
-    	  
-    	  ItemRenderer renderer = event.getMinecraftSupplier().get().getItemRenderer();
-
-  		  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.TECHNO_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
-  		  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.EMERALD_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
-
 
     }
     

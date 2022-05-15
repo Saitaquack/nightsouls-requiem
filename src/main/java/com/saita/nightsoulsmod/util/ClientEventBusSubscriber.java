@@ -2,11 +2,15 @@ package com.saita.nightsoulsmod.util;
 
 import com.saita.nightsoulsmod.NightSoulsMod;
 import com.saita.nightsoulsmod.init.BlockInit;
+import com.saita.nightsoulsmod.init.NightSoulsEntityTypes;
 
+import net.minecraft.client.renderer.ItemRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -30,6 +34,12 @@ public class ClientEventBusSubscriber {
 		RenderTypeLookup.setRenderLayer(BlockInit.BLUE_POWER_MOON_BLOCK.get(), RenderType.getCutout());
 		
 		RenderTypeLookup.setRenderLayer(BlockInit.NIGHTSOULS_FORCEFIELD.get(), RenderType.getTranslucent());
+		
+				
+		ItemRenderer renderer = event.getMinecraftSupplier().get().getItemRenderer();
+
+ 		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.TECHNO_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
+ 		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.EMERALD_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
 		
 	}
 		
