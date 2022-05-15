@@ -2,6 +2,8 @@ package com.saita.nightsoulsmod.init;
 
 import com.saita.nightsoulsmod.NightSoulsMod;
 import com.saita.nightsoulsmod.entities.entity.*;
+import com.saita.nightsoulsmod.entities.entity.projectiles.EmeraldProjEntity;
+import com.saita.nightsoulsmod.entities.entity.projectiles.TechnoProjEntity;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -94,6 +96,14 @@ public class NightSoulsEntityTypes {
 	          ENTITY_TYPES.register("king_crimson", () -> EntityType.Builder
 	            	.create(KingCrimsonEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "king_crimson").toString())); 
+	 
+	 
+	 
+	 public static final RegistryObject<EntityType<TechnoProjEntity>> TECHNO_PROJ = ENTITY_TYPES.register("techno_proj", 
+				() -> EntityType.Builder.<TechnoProjEntity>create(TechnoProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("techno_proj"));
+	 
+	 public static final RegistryObject<EntityType<EmeraldProjEntity>> EMERALD_PROJ = ENTITY_TYPES.register("emerald_proj", 
+				() -> EntityType.Builder.<EmeraldProjEntity>create(EmeraldProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("emerald_proj"));
 	 
 
 	 

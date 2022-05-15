@@ -89,6 +89,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> BACKROOMS_LIGHT = SOUNDS.register("backrooms_light", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "backrooms_light")));
 	
+	public static final RegistryObject<SoundEvent> TECHNO_GUN = SOUNDS.register("techno_gun", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "techno_gun")));
+	
+	public static final RegistryObject<SoundEvent> EMERALD_SPLASH = SOUNDS.register("emerald_splash", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "emerald_splash")));
+	
 	
 	//Armes 
 	

@@ -315,6 +315,38 @@
 		
 	},
 	
+	"techno_gun": {
+		"category": "master",
+		"subtitle": "Pew Pew Pew",
+		"sounds": [
+			{
+				"name": "nightsouls:master/techno_gun1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/techno_gun2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/techno_gun3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"emerald_splash": {
+		"category": "master",
+		"subtitle": "EMERALDO SPLASH",
+		"sounds": [
+			{
+				"name": "nightsouls:master/emerald_splash",
+				"stream": false
+			}
+		]
+		
+	},
+	
 	"mario_galaxy_sky_station": {
 		"category": "music",
 		"subtitle": "Mario Galaxy Sky Station Music",

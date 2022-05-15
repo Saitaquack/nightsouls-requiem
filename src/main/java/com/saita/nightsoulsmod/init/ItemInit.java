@@ -206,7 +206,11 @@ public class ItemInit {
 	public static final RegistryObject<Item> PURIFICATION_GEM = ITEMS.register("purification_gem", () -> new PurificationGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> BLOODY_LENS = ITEMS.register("bloody_lens", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<SwordItem> CRIMSON_ARM = ITEMS.register("crimson_arm", () -> new CrimsonArm(NightSoulsItemTier.CRIMSON_ARM, 3, -3.2F, new Item.Properties().group(NightSoulsItemGroup.instance)));
-
+	public static final RegistryObject<Item> TECHNO_GUN = ITEMS.register("techno_gun", () -> new TechnoGun(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1041)));
+	public static final RegistryObject<Item> TECHNO_PROJECTILE = ITEMS.register("techno_projectile", () -> new Item(new Item.Properties()));
+	public static final RegistryObject<Item> EMERALD_SPLASH = ITEMS.register("emerald_splash", () -> new EmeraldSplash(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1241)));
+	public static final RegistryObject<Item> EMERALD_PROJECTILE = ITEMS.register("emerald_projectile", () -> new Item(new Item.Properties()));
+	
 	
 	public static final RegistryObject<Item> JUSTIN_BRIDOU = ITEMS.register("justin_bridou", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(1.0F).build())));
 	public static final RegistryObject<Item> GELATIN_CRYSTAL = ITEMS.register("gelatin_crystal", () -> new GelatinCrystal(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(8).saturation(0.9F).setAlwaysEdible().build())));

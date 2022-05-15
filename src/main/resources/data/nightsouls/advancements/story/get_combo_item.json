@@ -86,6 +86,16 @@
           }
         ]
       }
+    },
+     "techno_gun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:techno_gun"
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -96,7 +106,8 @@
       "pyro_barbarian_waraxe",
       "wealth_digger",
       "coolfire_blade",
-      "silent_watching_orb"
+      "silent_watching_orb",
+      "techno_gun"
     ]
   ]
 }
