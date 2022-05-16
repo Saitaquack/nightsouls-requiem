@@ -48,7 +48,7 @@ public class NightSoulsMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-    	LOGGER.info("Hello from NightSouls Mod Requiem 4.2!");
+    	LOGGER.info("Hello from NightSouls Mod Requiem 5.0!");
     	LOGGER.info("Loading Star Gatherer's powers...");
     	LOGGER.info("Loading Hellfire Emperor's reign...");
     	LOGGER.info("Loading Hallowed Paladin's might...");
