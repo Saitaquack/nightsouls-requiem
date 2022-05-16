@@ -50,9 +50,6 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> ADAPTIVE_SHIELD = SOUNDS.register("adaptive_shield", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "adaptive_shield")));
 	
-	public static final RegistryObject<SoundEvent> TAGUEULE = SOUNDS.register("tagueule", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "tagueule")));
-	
 	public static final RegistryObject<SoundEvent> SOUND_BARRIER = SOUNDS.register("sound_barrier", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "sound_barrier")));
 	
@@ -333,9 +330,6 @@ public class SoundInit {
 	
 	public static final Lazy<SoundEvent> DIAVOLO = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "diavolo")));
-	
-	public static final Lazy<SoundEvent> REDACTED = Lazy.of(() -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "redacted")));
 	
 	public static final Lazy<SoundEvent> GIORNO = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "giorno")));

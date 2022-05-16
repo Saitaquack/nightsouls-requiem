@@ -147,18 +147,6 @@
 		
 	},
 	
-	"tagueule": {
-		"category": "master",
-		"subtitle": "TA GUEULE !",
-		"sounds": [
-			{
-				"name": "nightsouls:master/tagueule",
-				"stream": false
-			}
-		]
-		
-	},
-	
 	"sound_barrier": {
 		"category": "master",
 		"subtitle": "Dropped the Beat",
@@ -701,18 +689,6 @@
 		"sounds": [
 			{
 				"name": "nightsouls:music/diavolo",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"redacted": {
-		"category": "music",
-		"subtitle": ":D",
-		"sounds": [
-			{
-				"name": "nightsouls:music/redacted",
 				"stream": true
 			}
 		]

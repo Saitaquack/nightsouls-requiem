@@ -299,17 +299,6 @@
       }
     },
     
-    "redacted_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:redacted_music_disc"
-          }
-        ]
-      }
-    },
-    
     "giorno_music_disc": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -636,7 +625,6 @@
       "jevil_music_disc",
       "burning_colosseum_music_disc",
       "diavolo_music_disc",
-      "redacted_music_disc",
       "giorno_music_disc",
       "jotaro_music_disc",
       "josuke_music_disc",

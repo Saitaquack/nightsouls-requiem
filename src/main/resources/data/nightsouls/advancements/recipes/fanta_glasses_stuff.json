@@ -2,8 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:fanta_music_disc",
-      "nightsouls:bitcoin"
+      "nightsouls:fanta_music_disc"
     ]
   },
   "criteria": {

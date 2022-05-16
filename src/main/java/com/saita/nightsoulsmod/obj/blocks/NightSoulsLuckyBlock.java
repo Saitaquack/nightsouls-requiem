@@ -495,19 +495,18 @@ public class NightSoulsLuckyBlock extends Block {
 		    ItemStack disc14 = new ItemStack(ItemInit.MICKIE_KRAUSE_MUSIC_DISC.get());
 		    ItemStack disc15 = new ItemStack(ItemInit.JEVIL_MUSIC_DISC.get());
 		    ItemStack disc16 = new ItemStack(ItemInit.BURNING_COLOSSEUM_MUSIC_DISC.get());
-		    ItemStack disc17 = new ItemStack(ItemInit.REDACTED_MUSIC_DISC.get());
-		    ItemStack disc18 = new ItemStack(ItemInit.GIORNO_MUSIC_DISC.get());
-		    ItemStack disc19 = new ItemStack(ItemInit.JOTARO_MUSIC_DISC.get());
-		    ItemStack disc20 = new ItemStack(ItemInit.JOSUKE_MUSIC_DISC.get());
-		    ItemStack disc21 = new ItemStack(ItemInit.PRIME_MUSIC_DISC.get());
-		    ItemStack disc22 = new ItemStack(ItemInit.EQUILA_MUSIC_DISC.get());
-		    ItemStack disc23 = new ItemStack(ItemInit.THEROX_MUSIC_DISC.get());
-		    ItemStack disc24 = new ItemStack(ItemInit.MAGASIN_MUSIC_DISC.get());
-		    ItemStack disc25 = new ItemStack(ItemInit.HELIKOPTER_MUSIC_DISC.get());
-		    ItemStack disc26 = new ItemStack(ItemInit.FOSSIL_FALLS_MUSIC_DISC.get());
-		    ItemStack disc27 = new ItemStack(ItemInit.TANJIRO_MUSIC_DISC.get());
-		    ItemStack disc28 = new ItemStack(ItemInit.MHWI_MUSIC_DISC.get());
-		    ItemStack disc29 = new ItemStack(ItemInit.MUZAN_MUSIC_DISC.get());
+		    ItemStack disc17 = new ItemStack(ItemInit.GIORNO_MUSIC_DISC.get());
+		    ItemStack disc18 = new ItemStack(ItemInit.JOTARO_MUSIC_DISC.get());
+		    ItemStack disc19 = new ItemStack(ItemInit.JOSUKE_MUSIC_DISC.get());
+		    ItemStack disc20 = new ItemStack(ItemInit.PRIME_MUSIC_DISC.get());
+		    ItemStack disc21 = new ItemStack(ItemInit.EQUILA_MUSIC_DISC.get());
+		    ItemStack disc22 = new ItemStack(ItemInit.THEROX_MUSIC_DISC.get());
+		    ItemStack disc23 = new ItemStack(ItemInit.MAGASIN_MUSIC_DISC.get());
+		    ItemStack disc24 = new ItemStack(ItemInit.HELIKOPTER_MUSIC_DISC.get());
+		    ItemStack disc25 = new ItemStack(ItemInit.FOSSIL_FALLS_MUSIC_DISC.get());
+		    ItemStack disc26 = new ItemStack(ItemInit.TANJIRO_MUSIC_DISC.get());
+		    ItemStack disc27 = new ItemStack(ItemInit.MHWI_MUSIC_DISC.get());
+		    ItemStack disc28 = new ItemStack(ItemInit.MUZAN_MUSIC_DISC.get());
 
 		    
 		    if(randomDisc == 1 || randomDisc2 == 1)
@@ -648,11 +647,6 @@ public class NightSoulsLuckyBlock extends Block {
 		    if(randomDisc == 28 || randomDisc2 == 28)
 		    {
 		    	spawnAsEntity(worldIn, pos, disc28);
-		    }
-		    
-		    if(randomDisc == 29 || randomDisc2 == 29)
-		    {
-		    	spawnAsEntity(worldIn, pos, disc29);
 		    }
 		    		    
 		}
