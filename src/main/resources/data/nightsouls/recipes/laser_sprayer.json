@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "NPN",
+    "C C"
+  ],
+  "key": {
+  
+    "S": {
+      "item": "nightsouls:saitastone_ingot"
+    },
+  
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    
+    "C": {
+      "item": "nightsouls:crazy_diamond"
+    },
+    
+    "P": {
+      "item": "minecraft:blaze_powder"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:laser_sprayer"
+  }
+}

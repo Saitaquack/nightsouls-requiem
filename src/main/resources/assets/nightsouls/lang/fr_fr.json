@@ -248,7 +248,13 @@
    "item.nightsouls.techno_projectile": "Projectile techno",
    "item.nightsouls.emerald_splash": "Splash émeraude",
    "item.nightsouls.emerald_projectile": "Projectile émeraude",
-   
+   "item.nightsouls.laser_sprayer": "Pulvérisateur laser",
+   "item.nightsouls.laser_projectile": "Projectile laser",
+   "item.nightsouls.plasma_sprayer": "Pulvérisateur plasma",
+   "item.nightsouls.plasma_projectile": "Projectile plasma",
+   "item.nightsouls.sun_avatar": "Avatar du soleil",
+   "item.nightsouls.sun_projectile": "Projectile du soleil",
+ 
    
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Disque",
    "item.nightsouls.mario_galaxy_sky_station_music_disc.desc": "Super Mario Galaxy 2 - Sky Station Galaxy",
@@ -516,7 +522,7 @@
    "advancements.adventure.find_backrooms.description" : "Trouvez les backrooms.",
    "advancements.adventure.get_time_skip.title": "Roi du temps",
    "advancements.adventure.get_time_skip.description": "Obtenez l'horloge du temps.",
-   "advancements.adventure.find_temple.title" : "Un ancient temple",
+   "advancements.adventure.find_temple.title" : "Un ancien temple",
    "advancements.adventure.find_temple.description" : "Trouvez le temple NightSouls.",
    "advancements.adventure.find_islands.title" : "Les îles légendaires",
    "advancements.adventure.find_islands.description" : "Trouvez les îles NightSouls.",

@@ -335,6 +335,42 @@
 		
 	},
 	
+	"laser": {
+		"category": "master",
+		"subtitle": "Laser shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/laser",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"plasma": {
+		"category": "master",
+		"subtitle": "Plasma shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/plasma",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"sun": {
+		"category": "master",
+		"subtitle": "Sun shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/sun",
+				"stream": false
+			}
+		]
+		
+	},
+	
 	"mario_galaxy_sky_station": {
 		"category": "music",
 		"subtitle": "Mario Galaxy Sky Station Music",

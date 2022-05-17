@@ -92,6 +92,15 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> EMERALD_SPLASH = SOUNDS.register("emerald_splash", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "emerald_splash")));
 	
+	public static final RegistryObject<SoundEvent> LASER = SOUNDS.register("laser", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "laser")));
+	
+	public static final RegistryObject<SoundEvent> PLASMA = SOUNDS.register("plasma", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "plasma")));
+	
+	public static final RegistryObject<SoundEvent> SUN = SOUNDS.register("sun", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "sun")));
+	
 	
 	//Armes 
 	

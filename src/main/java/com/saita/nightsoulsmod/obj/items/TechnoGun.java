@@ -44,27 +44,32 @@ public class TechnoGun extends Item {
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		
 		ItemStack stack = playerIn.getHeldItem(handIn);
-		stack.damageItem(1, playerIn, null);
-    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.TECHNO_GUN.get(), SoundCategory.MASTER, 1.0F, 1.0F);	
-		playerIn.getCooldownTracker().setCooldown(this, 15);
 		
-		if(!worldIn.isRemote) {
+		if(stack.getMaxDamage() - stack.getDamage() > 0)
+		{
+			stack.damageItem(1, playerIn, null);
+	    	worldIn.playSound(playerIn, playerIn.getPosition(), SoundInit.TECHNO_GUN.get(), SoundCategory.MASTER, 1.0F, 1.0F);	
+			playerIn.getCooldownTracker().setCooldown(this, 15);
 			
-			TechnoProjEntity proj = new TechnoProjEntity(playerIn, worldIn);
-			TechnoProjEntity proj2 = new TechnoProjEntity(playerIn, worldIn);
-			TechnoProjEntity proj3= new TechnoProjEntity(playerIn, worldIn);
-			TechnoProjEntity proj4 = new TechnoProjEntity(playerIn, worldIn);
-			
-		    proj.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 4.0F, 0.0F);
-		    proj2.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 3.0F, 0.0F);
-		    proj3.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 2.0F, 0.0F);
-		    proj4.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 0.0F);
-		    
-			worldIn.addEntity(proj);
-			worldIn.addEntity(proj2);
-			worldIn.addEntity(proj3);
-			worldIn.addEntity(proj4);
+			if(!worldIn.isRemote) {
+				
+				TechnoProjEntity proj = new TechnoProjEntity(playerIn, worldIn);
+				TechnoProjEntity proj2 = new TechnoProjEntity(playerIn, worldIn);
+				TechnoProjEntity proj3= new TechnoProjEntity(playerIn, worldIn);
+				TechnoProjEntity proj4 = new TechnoProjEntity(playerIn, worldIn);
+				
+			    proj.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 4.0F, 0.0F);
+			    proj2.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 3.0F, 0.0F);
+			    proj3.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 2.0F, 0.0F);
+			    proj4.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 0.0F);
+			    
+				worldIn.addEntity(proj);
+				worldIn.addEntity(proj2);
+				worldIn.addEntity(proj3);
+				worldIn.addEntity(proj4);
+			}
 		}
+		
 		
 		return ActionResult.resultSuccess(stack);
 	}

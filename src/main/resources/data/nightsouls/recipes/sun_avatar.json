@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST",
+    " P ",
+    "TCT" 
+  ],
+  "key": {
+  
+    "P": {
+      "item": "nightsouls:plasma_sprayer"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+    
+    "S": {
+      "item": "nightsouls:absolute_saitastone_ingot"
+    },
+    
+    "C": {
+      "item": "nightsouls:ultimate_cranite_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:sun_avatar"
+  }
+}

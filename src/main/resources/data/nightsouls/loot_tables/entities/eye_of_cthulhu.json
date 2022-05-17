@@ -125,6 +125,10 @@
         {
           "type": "minecraft:item",
           "name": "nightsouls:pyro_barbarian_waraxe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:techno_gun"
         }
       ]
     }        

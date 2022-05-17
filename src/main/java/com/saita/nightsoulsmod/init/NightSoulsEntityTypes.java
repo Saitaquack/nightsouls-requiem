@@ -2,8 +2,7 @@ package com.saita.nightsoulsmod.init;
 
 import com.saita.nightsoulsmod.NightSoulsMod;
 import com.saita.nightsoulsmod.entities.entity.*;
-import com.saita.nightsoulsmod.entities.entity.projectiles.EmeraldProjEntity;
-import com.saita.nightsoulsmod.entities.entity.projectiles.TechnoProjEntity;
+import com.saita.nightsoulsmod.entities.entity.projectiles.*;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -104,6 +103,15 @@ public class NightSoulsEntityTypes {
 	 
 	 public static final RegistryObject<EntityType<EmeraldProjEntity>> EMERALD_PROJ = ENTITY_TYPES.register("emerald_proj", 
 				() -> EntityType.Builder.<EmeraldProjEntity>create(EmeraldProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("emerald_proj"));
+	 
+	 public static final RegistryObject<EntityType<LaserProjEntity>> LASER_PROJ = ENTITY_TYPES.register("laser_proj", 
+				() -> EntityType.Builder.<LaserProjEntity>create(LaserProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("laser_proj"));
+	 
+	 public static final RegistryObject<EntityType<PlasmaProjEntity>> PLASMA_PROJ = ENTITY_TYPES.register("plasma_proj", 
+				() -> EntityType.Builder.<PlasmaProjEntity>create(PlasmaProjEntity::new, EntityClassification.MISC).size(0.30F, 0.30F).build("plasma_proj"));
+	 
+	 public static final RegistryObject<EntityType<SunProjEntity>> SUN_PROJ = ENTITY_TYPES.register("sun_proj", 
+				() -> EntityType.Builder.<SunProjEntity>create(SunProjEntity::new, EntityClassification.MISC).size(0.30F, 0.30F).build("sun_proj"));
 	 
 
 	 

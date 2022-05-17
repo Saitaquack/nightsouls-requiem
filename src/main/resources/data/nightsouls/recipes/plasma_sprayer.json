@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NLN",
+    "NNN" 
+  ],
+  "key": {
+  
+    "N": {
+      "item": "nightsouls:nightsouls_essence"
+    },
+    
+    "L": {
+      "item": "nightsouls:laser_sprayer"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:plasma_sprayer"
+  }
+}

@@ -40,6 +40,9 @@ public class ClientEventBusSubscriber {
 
  		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.TECHNO_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
  		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.EMERALD_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
+ 		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.LASER_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
+ 		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.PLASMA_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
+ 		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.SUN_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
 		
 	}
 		
