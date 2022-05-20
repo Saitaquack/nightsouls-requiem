@@ -207,16 +207,18 @@ public class ItemInit {
 	public static final RegistryObject<SwordItem> CRIMSON_ARM = ITEMS.register("crimson_arm", () -> new CrimsonArm(NightSoulsItemTier.CRIMSON_ARM, 3, -3.2F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> TECHNO_GUN = ITEMS.register("techno_gun", () -> new TechnoGun(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1041)));
 	public static final RegistryObject<Item> TECHNO_PROJECTILE = ITEMS.register("techno_projectile", () -> new Item(new Item.Properties()));
-	public static final RegistryObject<Item> EMERALD_SPLASH = ITEMS.register("emerald_splash", () -> new EmeraldSplash(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1241)));
+	public static final RegistryObject<Item> EMERALD_SPLASH = ITEMS.register("emerald_splash", () -> new EmeraldSplash(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1145)));
 	public static final RegistryObject<Item> EMERALD_PROJECTILE = ITEMS.register("emerald_projectile", () -> new Item(new Item.Properties()));
-	public static final RegistryObject<Item> LASER_SPRAYER = ITEMS.register("laser_sprayer", () -> new LaserSprayer(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1500)));
+	public static final RegistryObject<Item> LASER_SPRAYER = ITEMS.register("laser_sprayer", () -> new LaserSprayer(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(1802)));
 	public static final RegistryObject<Item> LASER_PROJECTILE = ITEMS.register("laser_projectile", () -> new Item(new Item.Properties()));
-	public static final RegistryObject<Item> PLASMA_SPRAYER = ITEMS.register("plasma_sprayer", () -> new PlasmaSprayer(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(3960)));
+	public static final RegistryObject<Item> PLASMA_SPRAYER = ITEMS.register("plasma_sprayer", () -> new PlasmaSprayer(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(4505)));
 	public static final RegistryObject<Item> PLASMA_PROJECTILE = ITEMS.register("plasma_projectile", () -> new Item(new Item.Properties()));
-	public static final RegistryObject<Item> SUN_AVATAR = ITEMS.register("sun_avatar", () -> new SunAvatar(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(11840)));
+	public static final RegistryObject<Item> SUN_AVATAR = ITEMS.register("sun_avatar", () -> new SunAvatar(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(12388)));
 	public static final RegistryObject<Item> SUN_PROJECTILE = ITEMS.register("sun_projectile", () -> new Item(new Item.Properties()));
-	
-	
+	public static final RegistryObject<Item> CYBER_SHURIKEN = ITEMS.register("cyber_shuriken", () -> new CyberShuriken(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> METEOR_STAFF = ITEMS.register("meteor_staff", () -> new MeteorStaff(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(9666)));
+	public static final RegistryObject<Item> METEOR_PROJECTILE = ITEMS.register("meteor_projectile", () -> new Item(new Item.Properties()));
+
 	
 	public static final RegistryObject<Item> JUSTIN_BRIDOU = ITEMS.register("justin_bridou", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(1.0F).build())));
 	public static final RegistryObject<Item> GELATIN_CRYSTAL = ITEMS.register("gelatin_crystal", () -> new GelatinCrystal(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(8).saturation(0.9F).setAlwaysEdible().build())));

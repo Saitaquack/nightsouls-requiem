@@ -371,6 +371,38 @@
 		
 	},
 	
+	"shuriken": {
+		"category": "master",
+		"subtitle": "Shurikens shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/cyber_shuriken1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/cyber_shuriken2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/cyber_shuriken3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"meteor": {
+		"category": "master",
+		"subtitle": "Meteors shower",
+		"sounds": [
+			{
+				"name": "nightsouls:master/meteor",
+				"stream": false
+			}
+		]
+		
+	},
+	
 	"mario_galaxy_sky_station": {
 		"category": "music",
 		"subtitle": "Mario Galaxy Sky Station Music",

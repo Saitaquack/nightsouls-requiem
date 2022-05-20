@@ -101,6 +101,12 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> SUN = SOUNDS.register("sun", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "sun")));
 	
+	public static final RegistryObject<SoundEvent> SHURIKEN = SOUNDS.register("shuriken", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "shuriken")));
+	
+	public static final RegistryObject<SoundEvent> METEOR = SOUNDS.register("meteor", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "meteor")));
+	
 	
 	//Armes 
 	

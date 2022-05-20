@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SPS",
+    "RPR",
     "NPN",
     "C C"
   ],
   "key": {
   
-    "S": {
-      "item": "nightsouls:saitastone_ingot"
+    "R": {
+      "item": "nightsouls:rowequite_ingot"
     },
   
     "N": {
