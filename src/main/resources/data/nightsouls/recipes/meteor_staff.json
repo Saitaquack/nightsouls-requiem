@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TMT",
+    "HHH",
+    "TST" 
+  ],
+  "key": {
+  
+    "H": {
+      "item": "nightsouls:hellstone"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+    
+    "S": {
+      "item": "nightsouls:absolute_saitastone_ingot"
+    },
+    
+    "M": {
+      "item": "nightsouls:calamitous_miizealite_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:meteor_staff"
+  }
+}

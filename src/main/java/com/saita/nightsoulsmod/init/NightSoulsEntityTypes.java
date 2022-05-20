@@ -99,25 +99,25 @@ public class NightSoulsEntityTypes {
 	 
 	 
 	 public static final RegistryObject<EntityType<TechnoProjEntity>> TECHNO_PROJ = ENTITY_TYPES.register("techno_proj", 
-				() -> EntityType.Builder.<TechnoProjEntity>create(TechnoProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("techno_proj"));
+				() -> EntityType.Builder.<TechnoProjEntity>create(TechnoProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("techno_proj"));
 	 
 	 public static final RegistryObject<EntityType<EmeraldProjEntity>> EMERALD_PROJ = ENTITY_TYPES.register("emerald_proj", 
-				() -> EntityType.Builder.<EmeraldProjEntity>create(EmeraldProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("emerald_proj"));
+				() -> EntityType.Builder.<EmeraldProjEntity>create(EmeraldProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("emerald_proj"));
 	 
 	 public static final RegistryObject<EntityType<LaserProjEntity>> LASER_PROJ = ENTITY_TYPES.register("laser_proj", 
-				() -> EntityType.Builder.<LaserProjEntity>create(LaserProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("laser_proj"));
+				() -> EntityType.Builder.<LaserProjEntity>create(LaserProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("laser_proj"));
 	 
 	 public static final RegistryObject<EntityType<PlasmaProjEntity>> PLASMA_PROJ = ENTITY_TYPES.register("plasma_proj", 
-				() -> EntityType.Builder.<PlasmaProjEntity>create(PlasmaProjEntity::new, EntityClassification.MISC).size(0.30F, 0.30F).build("plasma_proj"));
+				() -> EntityType.Builder.<PlasmaProjEntity>create(PlasmaProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("plasma_proj"));
 	 
 	 public static final RegistryObject<EntityType<SunProjEntity>> SUN_PROJ = ENTITY_TYPES.register("sun_proj", 
-				() -> EntityType.Builder.<SunProjEntity>create(SunProjEntity::new, EntityClassification.MISC).size(0.30F, 0.30F).build("sun_proj"));
+				() -> EntityType.Builder.<SunProjEntity>create(SunProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("sun_proj"));
 	 
 	 public static final RegistryObject<EntityType<CyberShurikenProjEntity>> CYBER_SHURIKEN_PROJ = ENTITY_TYPES.register("cyber_shuriken_proj", 
-				() -> EntityType.Builder.<CyberShurikenProjEntity>create(CyberShurikenProjEntity::new, EntityClassification.MISC).size(0.25F, 0.25F).build("cyber_shuriken_proj"));
+				() -> EntityType.Builder.<CyberShurikenProjEntity>create(CyberShurikenProjEntity::new, EntityClassification.MISC).size(0.35F, 0.35F).build("cyber_shuriken_proj"));
 	 
 	 public static final RegistryObject<EntityType<MeteorProjEntity>> METEOR_PROJ = ENTITY_TYPES.register("meteor_proj", 
-				() -> EntityType.Builder.<MeteorProjEntity>create(MeteorProjEntity::new, EntityClassification.MISC).size(5.00F, 5.00F).build("meteor_proj"));
+				() -> EntityType.Builder.<MeteorProjEntity>create(MeteorProjEntity::new, EntityClassification.MISC).size(1.00F, 1.00F).build("meteor_proj"));
 	 
 
 	 

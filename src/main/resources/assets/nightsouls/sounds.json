@@ -393,7 +393,7 @@
 	
 	"meteor": {
 		"category": "master",
-		"subtitle": "Meteors shower",
+		"subtitle": "Meteor shower",
 		"sounds": [
 			{
 				"name": "nightsouls:master/meteor",
