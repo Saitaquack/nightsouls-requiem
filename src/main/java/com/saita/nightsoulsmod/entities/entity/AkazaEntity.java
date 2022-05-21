@@ -201,7 +201,6 @@ public class AkazaEntity extends MonsterEntity {
 		 world.setBlockState(new BlockPos(this.getPosX() + 3 + positionX ,this.getPosY() - 1, this.getPosZ() - 3 + positionZ), BlockInit.AKAZICE.get().getDefaultState());
 		 world.setBlockState(new BlockPos(this.getPosX() - 3 + positionX ,this.getPosY() - 1, this.getPosZ() + 3 + positionZ), BlockInit.AKAZICE.get().getDefaultState());
 	}
-	
 
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {

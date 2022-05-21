@@ -2,16 +2,20 @@ package com.saita.nightsoulsmod.obj.items;
 
 import java.util.List;
 
+import com.saita.nightsoulsmod.entities.entity.projectiles.ParagonicProjEntity;
 import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.SwordItem;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
@@ -44,6 +48,26 @@ public class ParagonicZenith extends SwordItem {
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }
+	
+	@Override
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
+		
+		ItemStack stack = playerIn.getHeldItem(handIn);
+		
+		stack.damageItem(1, playerIn, null);
+		playerIn.getCooldownTracker().setCooldown(this, 20);
+		
+		ParagonicProjEntity proj = new ParagonicProjEntity(playerIn, worldIn);	
+	    proj.setDirectionAndMovement(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 3.5F, 0.0F);
+		worldIn.addEntity(proj);
+		
+		playerIn.playSound(SoundInit.HELLFIRE_EMPEROR_TRIDENT.get(), 1.0F, 1.0F);
+		playerIn.playSound(SoundInit.GALACTIC_SLAYER.get(), 1.0F, 1.0F);
+		playerIn.playSound(SoundInit.DIVINE_SANCTION.get(), 1.0F, 1.0F);
+		playerIn.playSound(SoundInit.JAVA_FURY.get(), 1.0F, 1.0F);
+
+		return super.onItemRightClick(worldIn, playerIn, handIn);
+	}
 	
 	@Override
 	public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {

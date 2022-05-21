@@ -117,7 +117,10 @@ public class NightSoulsEntityTypes {
 				() -> EntityType.Builder.<CyberShurikenProjEntity>create(CyberShurikenProjEntity::new, EntityClassification.MISC).size(0.35F, 0.35F).build("cyber_shuriken_proj"));
 	 
 	 public static final RegistryObject<EntityType<MeteorProjEntity>> METEOR_PROJ = ENTITY_TYPES.register("meteor_proj", 
-				() -> EntityType.Builder.<MeteorProjEntity>create(MeteorProjEntity::new, EntityClassification.MISC).size(1.00F, 1.00F).build("meteor_proj"));
+				() -> EntityType.Builder.<MeteorProjEntity>create(MeteorProjEntity::new, EntityClassification.MISC).size(2.00F, 2.00F).build("meteor_proj"));
+	 
+	 public static final RegistryObject<EntityType<ParagonicProjEntity>> PARAGONIC_PROJ = ENTITY_TYPES.register("paragonic_proj", 
+				() -> EntityType.Builder.<ParagonicProjEntity>create(ParagonicProjEntity::new, EntityClassification.MISC).size(2.00F, 2.00F).build("paragonic_proj"));
 	 
 
 	 
