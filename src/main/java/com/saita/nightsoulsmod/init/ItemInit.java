@@ -212,7 +212,10 @@ public class ItemInit {
 	public static final RegistryObject<Item> SUN_AVATAR = ITEMS.register("sun_avatar", () -> new SunAvatar(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(12388)));
 	public static final RegistryObject<Item> CYBER_SHURIKEN = ITEMS.register("cyber_shuriken", () -> new CyberShuriken(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> METEOR_STAFF = ITEMS.register("meteor_staff", () -> new MeteorStaff(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(9666)));
-	
+	public static final RegistryObject<Item> GIANT_PEA = ITEMS.register("giant_pea", () -> new GiantPea(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> GIANT_FROZEN_PEA = ITEMS.register("giant_frozen_pea", () -> new GiantFrozenPea(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> GIANT_BURNING_PEA = ITEMS.register("giant_burning_pea", () -> new GiantBurningPea(new Item.Properties().group(NightSoulsItemGroup.instance)));
+
 	
 	public static final RegistryObject<Item> TECHNO_PROJECTILE = ITEMS.register("techno_projectile", () -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> EMERALD_PROJECTILE = ITEMS.register("emerald_projectile", () -> new Item(new Item.Properties()));
@@ -229,7 +232,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> BEER = ITEMS.register("beer", () -> new Beer(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(6).saturation(0.4F).setAlwaysEdible().build())));
 	public static final RegistryObject<Item> WINE = ITEMS.register("wine", () -> new Wine(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(5).saturation(0.4F).setAlwaysEdible().build())));
 	public static final RegistryObject<Item> PIZZA_SLICE = ITEMS.register("pizza_slice", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(11).saturation(1.6F).build())));
-	public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Banana(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(7).saturation(0.6F).build())));
+	public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(7).saturation(0.6F).build())));
 	public static final RegistryObject<Item> NIGHTSOULS_CAKE_SLICE = ITEMS.register("nightsouls_cake_slice", () -> new NightSoulsCakeSlice(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(0.9F).setAlwaysEdible().build())));   
 	public static final RegistryObject<Item> UPPER_DEMON_BLOOD = ITEMS.register("upper_demon_blood", () -> new UpperDemonBlood(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16).food(new Food.Builder().hunger(16).saturation(2.0F).setAlwaysEdible().build()).isImmuneToFire()));
 

@@ -122,6 +122,15 @@ public class NightSoulsEntityTypes {
 	 public static final RegistryObject<EntityType<ParagonicProjEntity>> PARAGONIC_PROJ = ENTITY_TYPES.register("paragonic_proj", 
 				() -> EntityType.Builder.<ParagonicProjEntity>create(ParagonicProjEntity::new, EntityClassification.MISC).size(2.00F, 2.00F).build("paragonic_proj"));
 	 
+	 public static final RegistryObject<EntityType<GiantPeaProjEntity>> GIANT_PEA_PROJ = ENTITY_TYPES.register("giant_pea_proj", 
+				() -> EntityType.Builder.<GiantPeaProjEntity>create(GiantPeaProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("giant_pea_proj"));
+	 
+	 public static final RegistryObject<EntityType<GiantFrozenPeaProjEntity>> GIANT_FROZEN_PEA_PROJ = ENTITY_TYPES.register("giant_frozen_pea_proj", 
+				() -> EntityType.Builder.<GiantFrozenPeaProjEntity>create(GiantFrozenPeaProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("giant_frozen_pea_proj"));
+	 
+	 public static final RegistryObject<EntityType<GiantBurningPeaProjEntity>> GIANT_BURNING_PEA_PROJ = ENTITY_TYPES.register("giant_burning_pea_proj", 
+				() -> EntityType.Builder.<GiantBurningPeaProjEntity>create(GiantBurningPeaProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("giant_burning_pea_proj"));
+	 
 
 	 
 	 

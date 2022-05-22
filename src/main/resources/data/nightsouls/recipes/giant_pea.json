@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WGW",
+    "WWW"
+  ],
+  "key": {
+  
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    
+     "G": {
+      "item": "nightsouls:gelatin_crystal"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:giant_pea",
+    "count": 16
+  }
+}

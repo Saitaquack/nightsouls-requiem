@@ -63,7 +63,7 @@ public class MeteorStaff extends Item {
 				playerIn.getCooldownTracker().setCooldown(this, 10);			
 		        
 		        int distance = 30;
-				int height = 30;
+				int height = 40;
 				float playerX = (float) playerIn.getPosX();
 			    float playerY = (float) playerIn.getPosY();
 			    float playerZ = (float) playerIn.getPosZ();

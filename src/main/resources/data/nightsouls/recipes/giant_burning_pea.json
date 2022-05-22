@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PFP",
+    "PPP"
+  ],
+  "key": {
+  
+    "P": {
+      "item": "nightsouls:giant_pea"
+    },
+    
+     "F": {
+      "item": "minecraft:fire_charge"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:giant_burning_pea",
+    "count": 8
+  }
+}
