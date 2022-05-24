@@ -403,6 +403,18 @@
 		
 	},
 	
+	"magic": {
+		"category": "master",
+		"subtitle": "Magic stuff",
+		"sounds": [
+			{
+				"name": "nightsouls:master/magic",
+				"stream": false
+			}
+		]
+		
+	},
+	
 	"mario_galaxy_sky_station": {
 		"category": "music",
 		"subtitle": "Mario Galaxy Sky Station Music",

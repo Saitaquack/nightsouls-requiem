@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:plasma_sprayer"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:nightsouls_essence"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:plasma_sprayer"
+  }
+}

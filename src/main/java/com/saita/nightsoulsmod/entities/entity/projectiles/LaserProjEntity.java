@@ -48,7 +48,7 @@ public class LaserProjEntity extends ProjectileItemEntity {
 			Entity entity = ((EntityRayTraceResult)result).getEntity();
 			entity.setFire(2);
 
-			entity.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getShooter()), 7.0F);
+			entity.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getShooter()), 8.0F);
 			
 
 			if(!world.isRemote) {

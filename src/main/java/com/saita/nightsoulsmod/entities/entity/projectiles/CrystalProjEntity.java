@@ -9,32 +9,30 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ProjectileItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.network.IPacket;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-public class GiantFrozenPeaProjEntity extends ProjectileItemEntity {
+public class CrystalProjEntity extends ProjectileItemEntity {
 
 
-	public GiantFrozenPeaProjEntity(EntityType<GiantFrozenPeaProjEntity> type, World world) {
+	public CrystalProjEntity(EntityType<CrystalProjEntity> type, World world) {
 		super(type, world);
 	}
 	
-	public GiantFrozenPeaProjEntity(LivingEntity entity, World world) {
-		super(NightSoulsEntityTypes.GIANT_FROZEN_PEA_PROJ.get(), entity, world);
+	public CrystalProjEntity(LivingEntity entity, World world) {
+		super(NightSoulsEntityTypes.CRYSTAL_PROJ.get(), entity, world);
 	}
 	
-	public GiantFrozenPeaProjEntity(double x, double y, double z, World world) {
-		super(NightSoulsEntityTypes.GIANT_FROZEN_PEA_PROJ.get(), x, y, z, world);
+	public CrystalProjEntity(double x, double y, double z, World world) {
+		super(NightSoulsEntityTypes.CRYSTAL_PROJ.get(), x, y, z, world);
 	}
 
 	@Override
 	protected Item getDefaultItem() {
-		return ItemInit.GIANT_FROZEN_PEA.get().asItem();
+		return ItemInit.CRYSTAL_PROJECTILE.get().asItem();
 	}
 
 	@Override
@@ -48,17 +46,8 @@ public class GiantFrozenPeaProjEntity extends ProjectileItemEntity {
 		if(result.getType() == RayTraceResult.Type.ENTITY) {
 
 			Entity entity = ((EntityRayTraceResult)result).getEntity();
-			
-			if(entity instanceof LivingEntity)
-			{
-				if(!world.isRemote)
-				{
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, 100, 1));
-				}
-				entity.extinguish();
-			}
 
-			entity.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getShooter()), 6.0F);
+			entity.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getShooter()), 7.0F);
 			
 
 			if(!world.isRemote) {

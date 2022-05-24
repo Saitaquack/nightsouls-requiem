@@ -107,6 +107,9 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> METEOR = SOUNDS.register("meteor", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "meteor")));
 	
+	public static final RegistryObject<SoundEvent> MAGIC = SOUNDS.register("magic", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "magic")));
+	
 	
 	//Armes 
 	

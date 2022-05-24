@@ -131,6 +131,9 @@ public class NightSoulsEntityTypes {
 	 public static final RegistryObject<EntityType<GiantBurningPeaProjEntity>> GIANT_BURNING_PEA_PROJ = ENTITY_TYPES.register("giant_burning_pea_proj", 
 				() -> EntityType.Builder.<GiantBurningPeaProjEntity>create(GiantBurningPeaProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("giant_burning_pea_proj"));
 	 
+	 public static final RegistryObject<EntityType<CrystalProjEntity>> CRYSTAL_PROJ = ENTITY_TYPES.register("crystal_proj", 
+				() -> EntityType.Builder.<CrystalProjEntity>create(CrystalProjEntity::new, EntityClassification.MISC).size(0.3F, 0.3F).build("crystal_proj"));
+	 
 
 	 
 	 

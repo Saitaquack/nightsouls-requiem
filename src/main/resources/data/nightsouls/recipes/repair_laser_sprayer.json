@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:laser_sprayer"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"},
+    {"item": "minecraft:blaze_powder"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:laser_sprayer"
+  }
+}

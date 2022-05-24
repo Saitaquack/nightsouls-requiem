@@ -2,7 +2,8 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:sun_avatar"
+      "nightsouls:sun_avatar",
+      "nightsouls:repair_plasma_sprayer"
       
     ]
   },

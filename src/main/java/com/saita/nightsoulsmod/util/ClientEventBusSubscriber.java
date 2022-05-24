@@ -49,6 +49,7 @@ public class ClientEventBusSubscriber {
  		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.GIANT_PEA_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
  		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.GIANT_FROZEN_PEA_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
  		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.GIANT_BURNING_PEA_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
+ 		RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.CRYSTAL_PROJ.get(), (renderManager) -> new SpriteRenderer<>(renderManager, renderer));
 		
 	}
 		

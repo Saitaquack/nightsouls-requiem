@@ -2,17 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:plasma_sprayer",
-      "nightsouls:repair_laser_sprayer"
+      "nightsouls:repair_emerald_splash"
     ]
   },
   "criteria": {
-    "has_laser_sprayer": {
+    "has_weapon": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "nightsouls:laser_sprayer"
+            "item": "nightsouls:emerald_splash"
           }
         ]
       }
@@ -22,7 +21,7 @@
  },
  "requirements": [
     [
-      "has_laser_sprayer",
+      "has_weapon",
     ]
   ]
 }
