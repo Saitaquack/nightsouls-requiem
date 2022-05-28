@@ -450,6 +450,7 @@
    "block.nightsouls.pure_light_block": "Pure Light Block",
    "block.nightsouls.akaza_altar": "Akaza Altar",
    "block.nightsouls.akazice": "Akazice",
+   "block.nightsouls.death_eyes": "Death Eyes",
    
    
    "advancements.story.get_night_soul_pickaxe.title": "Time To Really Mine !",
@@ -584,6 +585,7 @@
    "item.nightsouls.hellfire_servant_spawn_egg": "Hellfire Servant Spawn Egg", 
    "item.nightsouls.paladin_spawn_egg": "Paladin Spawn Egg", 
    "item.nightsouls.reality_walker_spawn_egg": "Reality Walker Spawn Egg", 
+   "item.nightsouls.titan_spawn_egg": "Titan Spawn Egg", 
       
    "entity.nightsouls.reaper": "Reaper",   
    "entity.nightsouls.werewolf": "Werewolf",
@@ -599,6 +601,7 @@
    "entity.nightsouls.akaza": "Akaza",
    "entity.nightsouls.eye_of_cthulhu": "Eye of Cthulhu",
    "entity.nightsouls.king_crimson": "King Crimson",
+   "entity.nightsouls.titan": "Titan",
    
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",

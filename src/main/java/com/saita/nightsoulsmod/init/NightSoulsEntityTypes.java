@@ -78,6 +78,11 @@ public class NightSoulsEntityTypes {
 	            	.create(RealityWalkerEntity::new, EntityClassification.MONSTER).size(0.6F, 1.95F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "reality_walker").toString()));
 	 
+	 public static final RegistryObject<EntityType<TitanEntity>> TITAN =
+	          ENTITY_TYPES.register("titan", () -> EntityType.Builder
+	            	.create(TitanEntity::new, EntityClassification.MONSTER).size(1.45F, 7.8F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "titan").toString()));
+	 
 	 
 	 
 	 public static final RegistryObject<EntityType<AkazaEntity>> AKAZA =

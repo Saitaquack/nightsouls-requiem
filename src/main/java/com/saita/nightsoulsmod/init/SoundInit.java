@@ -256,6 +256,15 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> KING_CRIMSON_DEATH = SOUNDS.register("king_crimson_death", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "king_crimson_death")));
 	
+	public static final RegistryObject<SoundEvent> TITAN_AMBIENT = SOUNDS.register("titan_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "titan_ambient")));
+	
+	public static final RegistryObject<SoundEvent> TITAN_DEATH = SOUNDS.register("titan_death", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "titan_death")));
+	
+	public static final RegistryObject<SoundEvent> TITAN_STEP = SOUNDS.register("titan_step", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "titan_step")));
+	
 	
 	//Musiques
 	

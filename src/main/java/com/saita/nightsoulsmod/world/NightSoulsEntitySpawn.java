@@ -31,6 +31,7 @@ public class NightSoulsEntitySpawn {
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 4, 1, 4);
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PALADIN.get(), 4, 1, 4); 
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.REALITY_WALKER.get(), 4, 1, 4);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.TITAN.get(), 1, 1, 1);
 			
 		  
 		  }	  

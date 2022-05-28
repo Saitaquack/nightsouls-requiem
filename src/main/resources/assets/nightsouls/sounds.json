@@ -293,7 +293,7 @@
 	
 	"backrooms_light": {
 		"category": "master",
-		"subtitle": "Backrooms lights",
+		"subtitle": "Backrooms Lights",
 		"sounds": [
 			{
 				"name": "nightsouls:master/backrooms_light",
@@ -337,7 +337,7 @@
 	
 	"laser": {
 		"category": "master",
-		"subtitle": "Laser shots",
+		"subtitle": "Laser Shots",
 		"sounds": [
 			{
 				"name": "nightsouls:master/laser",
@@ -349,7 +349,7 @@
 	
 	"plasma": {
 		"category": "master",
-		"subtitle": "Plasma shots",
+		"subtitle": "Plasma Shots",
 		"sounds": [
 			{
 				"name": "nightsouls:master/plasma",
@@ -361,7 +361,7 @@
 	
 	"sun": {
 		"category": "master",
-		"subtitle": "Sun shots",
+		"subtitle": "Sun Shots",
 		"sounds": [
 			{
 				"name": "nightsouls:master/sun",
@@ -373,7 +373,7 @@
 	
 	"shuriken": {
 		"category": "master",
-		"subtitle": "Shurikens shots",
+		"subtitle": "Shurikens Shots",
 		"sounds": [
 			{
 				"name": "nightsouls:master/cyber_shuriken1",
@@ -393,7 +393,7 @@
 	
 	"meteor": {
 		"category": "master",
-		"subtitle": "Meteor shower",
+		"subtitle": "Meteor Shower",
 		"sounds": [
 			{
 				"name": "nightsouls:master/meteor",
@@ -405,7 +405,7 @@
 	
 	"magic": {
 		"category": "master",
-		"subtitle": "Magic stuff",
+		"subtitle": "Magic Stuff",
 		"sounds": [
 			{
 				"name": "nightsouls:master/magic",
@@ -1626,6 +1626,14 @@
 			{
 				"name": "nightsouls:entity/akaza_ambient5",
 				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient6",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient7",
+				"stream": false
 			}
 		]
 		
@@ -1717,6 +1725,58 @@
 		"sounds": [
 			{
 				"name": "nightsouls:entity/masaka",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"titan_ambient": {
+		"category": "entity",
+		"subtitle": "Titan Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/titan_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"titan_death": {
+		"category": "entity",
+		"subtitle": "Titan Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/titan_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"titan_step": {
+		"category": "entity",
+		"subtitle": "Titan Step",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/titan_step",
 				"stream": false
 			}
 		]

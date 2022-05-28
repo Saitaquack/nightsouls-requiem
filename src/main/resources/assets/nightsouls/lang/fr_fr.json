@@ -450,6 +450,7 @@
    "block.nightsouls.pure_light_block": "Bloc de lumière pure",
    "block.nightsouls.akaza_altar": "Autel d'Akaza",
    "block.nightsouls.akazice": "Akaglace",
+   "block.nightsouls.death_eyes": "Yeux de la mort",
       
    
    "advancements.story.get_night_soul_pickaxe.title": "Il est temps de vraiment miner !",
@@ -584,6 +585,7 @@
    "item.nightsouls.hellfire_servant_spawn_egg": "Oeuf d'apparition de Servant infernal", 
    "item.nightsouls.paladin_spawn_egg": "Oeuf d'apparition de Paladin", 
    "item.nightsouls.reality_walker_spawn_egg": "Oeuf d'apparition de Marcheur de la réalité", 
+   "item.nightsouls.titan_spawn_egg": "Oeuf d'apparition de titan", 
    
    "entity.nightsouls.reaper": "Faucheuse",
    "entity.nightsouls.werewolf": "Loup-garou",
@@ -599,6 +601,7 @@
    "entity.nightsouls.akaza": "Akaza",
    "entity.nightsouls.eye_of_cthulhu": "Oeil de Cthulhu",
    "entity.nightsouls.king_crimson": "King Crimson",
+   "entity.nightsouls.titan": "Titan",
      
    "itemGroup.NightSoulsTab": "Mod NightSouls",
    "itemGroup.NightSoulsFinalsTab": "Stuff final de NightSouls",

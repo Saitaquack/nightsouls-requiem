@@ -34,6 +34,7 @@ public class ClientEventBusSubscriber {
 		RenderTypeLookup.setRenderLayer(BlockInit.BLUE_POWER_MOON_BLOCK.get(), RenderType.getCutout());
 		
 		RenderTypeLookup.setRenderLayer(BlockInit.NIGHTSOULS_FORCEFIELD.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(BlockInit.DEATH_EYES.get(), RenderType.getTranslucent());
 		
 				
 		ItemRenderer renderer = event.getMinecraftSupplier().get().getItemRenderer();

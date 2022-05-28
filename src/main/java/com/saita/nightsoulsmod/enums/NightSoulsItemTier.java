@@ -144,35 +144,35 @@ public enum NightSoulsItemTier implements IItemTier
 	
 	//End game weapons
 	
-	HELLFIRE_EMPEROR_TRIDENT(6, 18732, 32.0F, 32.0F, 25, ()->  //6244 x 3
+	HELLFIRE_EMPEROR_TRIDENT(6, 18732, 32.0F, 34.0F, 25, ()->  //6244 x 3
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	SOUL_STEALER(6, 18732, 32.0F, 24.0F, 25, ()-> //Same for all the other end game weapons
+	SOUL_STEALER(6, 18732, 32.0F, 25.0F, 25, ()-> //Same for all the other end game weapons
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	FROSTBURN(6, 18732, 32.0F, 30.0F, 30, ()->  
+	FROSTBURN(6, 18732, 32.0F, 32.0F, 30, ()->  
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	DIVINE_SANCTION(6, 18732, 32.0F, 33.0F, 30, ()->  
+	DIVINE_SANCTION(6, 18732, 32.0F, 35.0F, 30, ()->  
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	GALACTIC_SLAYER(6, 18732, 32.0F, 36.0F, 30, ()->  
+	GALACTIC_SLAYER(6, 18732, 32.0F, 38.0F, 30, ()->  
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	JAVA_FURY(6, 18732, 32.0F, 26.0F, 30, ()->  
+	JAVA_FURY(6, 18732, 32.0F, 28.0F, 30, ()->  
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	SUPERNOVA(6, 18732, 32.0F, 30.0F, 30, ()->  
+	SUPERNOVA(6, 18732, 32.0F, 32.0F, 30, ()->  
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
-	HEXADECIMATOR(6, 18732, 32.0F, 30.0F, 30, ()->  
+	HEXADECIMATOR(6, 18732, 32.0F, 32.0F, 30, ()->  
 	{ 
 		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),

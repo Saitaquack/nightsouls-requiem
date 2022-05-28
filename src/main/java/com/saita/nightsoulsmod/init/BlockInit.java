@@ -89,6 +89,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> PURE_LIGHT_BLOCK = BLOCKS.register("pure_light_block", () -> new PureLightBlock(Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(1.5F, 6.0F).harvestTool(ToolType.PICKAXE).harvestLevel(0).sound(SoundType.GLASS).setRequiresTool()));
 	public static final RegistryObject<Block> AKAZA_ALTAR = BLOCKS.register("akaza_altar", () -> new AkazaAltar(Block.Properties.create(Material.ROCK, MaterialColor.RED).hardnessAndResistance(-1.0F, 3600000.0F).sound(SoundType.STONE).noDrops()));
 	public static final RegistryObject<Block> AKAZICE = BLOCKS.register("akazice", () -> new Akazice(Block.Properties.create(Material.PACKED_ICE, MaterialColor.RED).hardnessAndResistance(50.0F, 1200.0F).harvestTool(ToolType.PICKAXE).harvestLevel(5).sound(SoundType.GLASS).noDrops().setRequiresTool()));
+	public static final RegistryObject<Block> DEATH_EYES = BLOCKS.register("death_eyes", () -> new DeathEyes(Block.Properties.create(Material.AIR, MaterialColor.BLACK).hardnessAndResistance(-1.0F, 3600000.0F).noDrops()));
 
 
 	public static final RegistryObject<Block> PETRIFIED_HELLSTONE = BLOCKS.register("petrified_hellstone", () -> new PetrifiedHellstone(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F).harvestTool(ToolType.PICKAXE).harvestLevel(0).sound(SoundType.STONE).setRequiresTool()));

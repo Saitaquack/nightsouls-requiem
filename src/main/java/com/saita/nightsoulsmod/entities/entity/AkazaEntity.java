@@ -19,9 +19,7 @@ import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
-import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.potion.EffectInstance;
@@ -74,9 +72,10 @@ public class AkazaEntity extends MonsterEntity {
 		  
 		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
-	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, AbstractVillagerEntity.class, false));
-	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, PaladinEntity.class, true));
-	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, IronGolemEntity.class, true));
+	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, PaladinEntity.class, true));
+	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, LivingEntity.class, true));
+	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, HellfireServantEntity.class, true));
+	      this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, DemonEyeEntity.class, true));
   
 	   }
 	 
@@ -201,6 +200,32 @@ public class AkazaEntity extends MonsterEntity {
 		 world.setBlockState(new BlockPos(this.getPosX() + 3 + positionX ,this.getPosY() - 1, this.getPosZ() - 3 + positionZ), BlockInit.AKAZICE.get().getDefaultState());
 		 world.setBlockState(new BlockPos(this.getPosX() - 3 + positionX ,this.getPosY() - 1, this.getPosZ() + 3 + positionZ), BlockInit.AKAZICE.get().getDefaultState());
 	}
+	
+	public void placeEyes()
+	{
+		this.playSound(SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, 1.0F, 1.0F);
+		Random random = new Random();
+		for(int i = 0; i < 15; i++)
+		{
+			int randX = random.nextInt(3);
+			int randZ = random.nextInt(3);
+			int randY = random.nextInt(3);
+			
+			boolean negX = random.nextBoolean();
+			boolean negZ = random.nextBoolean();
+			if(negX)
+			{
+				randX = -randX;
+			}
+			if(negZ)
+			{
+				randZ = -randZ;
+			}
+
+			world.setBlockState(new BlockPos(this.getPosX() + randX ,this.getPosY() + randY, this.getPosZ() + randZ), BlockInit.DEATH_EYES.get().getDefaultState());
+		}
+
+	}
 
 	@Override
 	public boolean attackEntityAsMob(Entity entityIn) {
@@ -212,30 +237,15 @@ public class AkazaEntity extends MonsterEntity {
 	        	
 	            if (entityIn instanceof LivingEntity) {
 	                Random random = new Random();
-	                int randomTeleport = random.nextInt(4);
+	                int randomEyes = random.nextInt(12);
 	                int randomDeadlyExplosion = random.nextInt(8);
-	                if(randomTeleport == 0)
+	                
+	                if(randomEyes == 0)
 	                {
-	                	((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.BLINDNESS, 60, 0));
-	                	int randX = random.nextInt(3);
-	                	boolean boolX = random.nextBoolean();
-	                	
-	                	int randY = random.nextInt(3);
-	                	
-	                	int randZ = random.nextInt(3);
-	                	boolean boolZ = random.nextBoolean();
-	                	
-	                   	if(boolX)
-	                	{
-	                		randX = -randX;
-	                	}
-
-	                   	if(boolZ)
-	                	{
-	                		randZ = -randZ;
-	                	}
-	                	this.teleportKeepLoaded(this.getPosX() + randX, this.getPosY() + randY, this.getPosZ() + randZ);
+	                	placeEyes();
 	                }
+	              
+
 	                if(randomDeadlyExplosion == 0)
 	                {
 	                	 if(!world.isRemote)
@@ -244,7 +254,7 @@ public class AkazaEntity extends MonsterEntity {
 							 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
 
 						 }
-	                }
+	                }	               
 	               
 	            }
 	            return true;
@@ -265,7 +275,7 @@ public class AkazaEntity extends MonsterEntity {
 			 
 			 if(world.getGameTime() % 150 == 0)
 			 {
-				 this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 4, false, false));
+				 this.addPotionEffect(new EffectInstance(Effects.REGENERATION, 200, 4, false, false));          
 				 
 				 Random random = new Random();
 				 int randomBoom = random.nextInt(2);
@@ -340,12 +350,16 @@ public class AkazaEntity extends MonsterEntity {
 					 placeAkazice(-10, 0);
 					 placeAkazice(0, 10);
 					 placeAkazice(0, -10);
-					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ(), 5.0F, Explosion.Mode.NONE);
+					 world.createExplosion(null, this.getPosX() + 5, this.getPosY(), this.getPosZ(), 4.0F, true, Explosion.Mode.DESTROY);
+					 world.createExplosion(null, this.getPosX() - 5, this.getPosY(), this.getPosZ(), 4.0F, true, Explosion.Mode.DESTROY);
+					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ() + 5, 4.0F, true, Explosion.Mode.DESTROY);
+					 world.createExplosion(null, this.getPosX(), this.getPosY(), this.getPosZ() - 5, 4.0F, true, Explosion.Mode.DESTROY);
+				 
 				 }
 				 
 				 this.addPotionEffect(new EffectInstance(Effects.STRENGTH, 240, 6));
 				 this.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 240, 1));
-				 this.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 3));
+				 this.addPotionEffect(new EffectInstance(Effects.SPEED, 240, 4));
 			 				
 				 this.playSound(SoundInit.AKAZA_EXCITED.get(), 1.0F, 1.0F);
 				 this.playSound(SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, 1.0F, 1.0F);
@@ -388,33 +402,25 @@ public class AkazaEntity extends MonsterEntity {
 	}
 	
 	@Override
-	public void damageEntity(DamageSource damageSrc, float damageAmount) {
+	public void damageEntity(DamageSource damageSrc, float damageAmount) 
+	{		
 		if(this.isAlive())
 		{		
+
 		  if(this.getHealth() <= this.getMaxHealth() / 2)
 		  {
 			  Random random = new Random();
-	          int attackTP = random.nextInt(6);
+			  int randomSpeed = random.nextInt(5);
+	          int eyesAttack = random.nextInt(12);
 	          int backOff = random.nextInt(12);
+	          if(randomSpeed == 0)
+	          {
+	        	  this.addPotionEffect(new EffectInstance(Effects.SPEED, 60, 3));
+	          }
 	          
-	          if(attackTP == 0)
+	          if(eyesAttack == 0)
 	          {    
-	        	  int randX = random.nextInt(6);
-	        	  boolean boolX = random.nextBoolean();  
-	        	
-	        	  int randZ = random.nextInt(6);
-	        	  boolean boolZ = random.nextBoolean();
-	        	
-	           	  if(boolX)
-	        	  {
-	        		  randX = -randX;
-	        	  }
-	
-	           	  if(boolZ)
-	        	  {
-	        		  randZ = -randZ;
-	        	  }
-	        	  this.teleportKeepLoaded(this.getPosX() + randX, this.getPosY(), this.getPosZ() + randZ);
+	        	  placeEyes();
 	          }
 	          
 	          if(backOff == 0)

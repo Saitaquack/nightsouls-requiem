@@ -448,6 +448,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> HELLFIRE_SERVANT_SPAWN_EGG = ITEMS.register("hellfire_servant_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.HELLFIRE_SERVANT, 0x070402, 0xFF2F00, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> PALADIN_SPAWN_EGG = ITEMS.register("paladin_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.PALADIN, 0xD5ECF5, 0xE3D056, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> REALITY_WALKER_SPAWN_EGG = ITEMS.register("reality_walker_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.REALITY_WALKER, 0x000000, 0x06FF06, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> TITAN_SPAWN_EGG = ITEMS.register("titan_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.TITAN, 0xB77565, 0xF2E2C8, new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	

@@ -85,6 +85,7 @@ public class NightSoulsMod
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), HellfireServantRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.PALADIN.get(), PaladinRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.REALITY_WALKER.get(), RealityWalkerRenderer::new);
+    	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.TITAN.get(), TitanRenderer::new);
     	  
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.AKAZA.get(), AkazaRenderer::new);
     	  RenderingRegistry.registerEntityRenderingHandler(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), EyeOfCthulhuRenderer::new);
