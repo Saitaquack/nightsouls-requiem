@@ -234,7 +234,6 @@ public class ItemInit {
 	public static final RegistryObject<Item> BEER = ITEMS.register("beer", () -> new Beer(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(6).saturation(0.4F).setAlwaysEdible().build())));
 	public static final RegistryObject<Item> WINE = ITEMS.register("wine", () -> new Wine(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(5).saturation(0.4F).setAlwaysEdible().build())));
 	public static final RegistryObject<Item> PIZZA_SLICE = ITEMS.register("pizza_slice", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(11).saturation(1.6F).build())));
-	public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(7).saturation(0.6F).build())));
 	public static final RegistryObject<Item> NIGHTSOULS_CAKE_SLICE = ITEMS.register("nightsouls_cake_slice", () -> new NightSoulsCakeSlice(new Item.Properties().group(NightSoulsItemGroup.instance).food(new Food.Builder().hunger(9).saturation(0.9F).setAlwaysEdible().build())));   
 	public static final RegistryObject<Item> UPPER_DEMON_BLOOD = ITEMS.register("upper_demon_blood", () -> new UpperDemonBlood(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16).food(new Food.Builder().hunger(16).saturation(2.0F).setAlwaysEdible().build()).isImmuneToFire()));
 
@@ -448,7 +447,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> HELLFIRE_SERVANT_SPAWN_EGG = ITEMS.register("hellfire_servant_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.HELLFIRE_SERVANT, 0x070402, 0xFF2F00, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> PALADIN_SPAWN_EGG = ITEMS.register("paladin_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.PALADIN, 0xD5ECF5, 0xE3D056, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> REALITY_WALKER_SPAWN_EGG = ITEMS.register("reality_walker_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.REALITY_WALKER, 0x000000, 0x06FF06, new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> TITAN_SPAWN_EGG = ITEMS.register("titan_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.TITAN, 0xB77565, 0xF2E2C8, new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> TITAN_SPAWN_EGG = ITEMS.register("titan_spawn_egg", () -> new RequiemSpawnEggItem(NightSoulsEntityTypes.TITAN, 0xE5C0A3, 0xF2E3D0, new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	

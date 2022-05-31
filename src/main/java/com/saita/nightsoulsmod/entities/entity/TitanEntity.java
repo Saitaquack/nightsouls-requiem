@@ -91,7 +91,7 @@ public class TitanEntity extends MonsterEntity {
 	@Override
 	protected void playStepSound(BlockPos pos, BlockState blockIn) {
 		
-		this.playSound(SoundInit.TITAN_STEP.get(), 0.20F, 0.5F);
+		this.playSound(SoundInit.TITAN_STEP.get(), 0.50F, 1.0F);
 	 }
 	
 	

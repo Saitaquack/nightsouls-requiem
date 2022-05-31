@@ -76,12 +76,12 @@ public class TitanModel <T extends TitanEntity> extends EntityModel<T> {
 		rightLeg.setTextureOffset(64, 192).addBox(-8.0F, -1.0F, -8.0F, 16.0F, 48.0F, 16.0F, 0.0F, true);
 
 		head = new ModelRenderer(this);
-		head.setRotationPoint(0.0F, -95.0F, 0.0F);
+		head.setRotationPoint(0.0F, -100.0F, 6.0F);
 		Body.addChild(head);
 		
 
 		head_r1 = new ModelRenderer(this);
-		head_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+		head_r1.setRotationPoint(0.0F, 5.0F, -6.0F);
 		head.addChild(head_r1);
 		setRotationAngle(head_r1, 0.1309F, 0.0F, 0.0F);
 		head_r1.setTextureOffset(0, 0).addBox(-16.0F, -31.0F, -9.0F, 32.0F, 32.0F, 32.0F, 0.0F, false);
@@ -107,8 +107,8 @@ public class TitanModel <T extends TitanEntity> extends EntityModel<T> {
 		
 		this.head.rotateAngleX = headPitch * ((float)Math.PI / 180F);
         this.head.rotateAngleY = netHeadYaw * ((float)Math.PI / 180F);
-        this.rightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
-        this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+        this.rightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 0.7F * limbSwingAmount;
+        this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.7F * limbSwingAmount;
         
 	}
 	

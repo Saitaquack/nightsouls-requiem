@@ -703,9 +703,10 @@ public class NightSoulsLuckyBlock extends Block {
 		}
 		else if(randomPrice < 700)
 		{
-		    ItemStack banana = new ItemStack(ItemInit.BANANA.get(), RANDOM.nextInt(15) + 10);
-		    spawnAsEntity(worldIn, pos, banana);
-		    player.sendMessage(new TranslationTextComponent("MONKE !"), null);
+		    ItemStack beef = new ItemStack(Items.COOKED_BEEF, RANDOM.nextInt(17) + 15);
+		    ItemStack pork = new ItemStack(Items.COOKED_PORKCHOP, RANDOM.nextInt(17) + 15);
+		    spawnAsEntity(worldIn, pos, beef);
+		    spawnAsEntity(worldIn, pos, pork);
 	
 		}
 		else if(randomPrice < 720)

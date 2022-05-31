@@ -43,7 +43,7 @@ public class RequiemKey extends Item {
 		
 	if(Screen.hasShiftDown())
 	{
-		tooltip.add(new StringTextComponent("§7In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, NightSouls forcefields will disappear, allowing you to get paragonic blocks. Stargazers, Hellfire Servants, Paladins and Reality Walkers will appear in the world, so be prepared !"));
+		tooltip.add(new StringTextComponent("§7In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, NightSouls forcefields will disappear, allowing you to get paragonic blocks. Stargazers, Hellfire Servants, Paladins, Reality Walkers and Titans will appear in the world, so be prepared ! If you're crazy, you can also summon §4Akaza§7 in his arena."));
 	}
 	else
 	{
