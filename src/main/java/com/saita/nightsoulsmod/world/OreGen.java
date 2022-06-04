@@ -83,6 +83,9 @@ public class OreGen {
 				
 				generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER,
 						BlockInit.NETHER_MIIZEALITE_ORE.get().getDefaultState(), 8, 1, 128, 3);
+				
+				generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER,
+						BlockInit.NETHER_NIGHTSOULS_EMERALD_ORE.get().getDefaultState(), 8, 1, 128, 3);
 			
 			}
 			

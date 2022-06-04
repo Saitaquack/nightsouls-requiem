@@ -434,6 +434,7 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> BACKROOMS_CEILING  = ITEMS.register("backrooms_ceiling", () -> new BlockItem(BlockInit.BACKROOMS_CEILING.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BACKROOMS_LIGHT  = ITEMS.register("backrooms_light", () -> new BlockItem(BlockInit.BACKROOMS_LIGHT.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> PURE_LIGHT_BLOCK  = ITEMS.register("pure_light_block", () -> new BlockItem(BlockInit.PURE_LIGHT_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> NETHER_NIGHTSOULS_EMERALD_ORE  = ITEMS.register("nether_nightsouls_emerald_ore", () -> new BlockItem(BlockInit.NETHER_NIGHTSOULS_EMERALD_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));
