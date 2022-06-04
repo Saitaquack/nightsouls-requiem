@@ -28,10 +28,10 @@ public class ItemInit {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, NightSoulsMod.MOD_ID);
 	
-	public static final RegistryObject<Item> SAITASTONE_INGOT = ITEMS.register("saitastone_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> SAITASTONE_INGOT = ITEMS.register("saitastone_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> MIIZEALITE_INGOT = ITEMS.register("miizealite_ingot", () -> new MiizealiteIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> CRANITE_INGOT = ITEMS.register("cranite_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> BASTIRITE_INGOT = ITEMS.register("bastirite_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> CRANITE_INGOT = ITEMS.register("cranite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> BASTIRITE_INGOT = ITEMS.register("bastirite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> NIGHT_SOUL = ITEMS.register("night_soul", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> SAITASTONE_SWORD = ITEMS.register("saitastone_sword", () -> new SwordItem(NightSoulsItemTier.SAITASTONE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<PickaxeItem> SAITASTONE_PICKAXE = ITEMS.register("saitastone_pickaxe", () -> new NightSoulsOrePickaxe(NightSoulsItemTier.SAITASTONE, 1, -2.8F, new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -151,9 +151,9 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> WITHER_BLADE = ITEMS.register("wither_blade", () -> new WitherBlade(NightSoulsItemTier.WITHER, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> CRAZY_DIAMOND = ITEMS.register("crazy_diamond", () -> new CrazyDiamond(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> CRAZY_DIAMOND_SWORD = ITEMS.register("crazy_diamond_sword", () -> new CrazyDiamondSword(NightSoulsItemTier.CRAZY_DIAMOND, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> PRIMIUM_INGOT = ITEMS.register("primium_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> ROWEQUITE_INGOT = ITEMS.register("rowequite_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> THERENITE_INGOT = ITEMS.register("therenite_ingot", () -> new NightSoulsOreIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> PRIMIUM_INGOT = ITEMS.register("primium_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> ROWEQUITE_INGOT = ITEMS.register("rowequite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> THERENITE_INGOT = ITEMS.register("therenite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<SwordItem> PRIMIUM_SWORD = ITEMS.register("primium_sword", () -> new SwordItem(NightSoulsItemTier.PRIMIUM, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<PickaxeItem> PRIMIUM_PICKAXE = ITEMS.register("primium_pickaxe", () -> new NightSoulsOrePickaxe(NightSoulsItemTier.PRIMIUM, 1, -2.8F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<AxeItem> PRIMIUM_AXE = ITEMS.register("primium_axe", () -> new AxeItem(NightSoulsItemTier.PRIMIUM, 5, -3.0F, new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -379,16 +379,16 @@ public class ItemInit {
 	public static final RegistryObject<Item> PARAGONIC_MUSIC_DISC = ITEMS.register("paragonic_music_disc", () -> new ParagonicMusicDisc(1, SoundInit.PARAGON.get(), new Item.Properties().maxStackSize(1).group(ParagonItemGroup.instance).isImmuneToFire()));
 
 
-	public static final RegistryObject<BlockItem> SAITASTONE_BLOCK = ITEMS.register("saitastone_block", () -> new NightSoulsOreBlock(BlockInit.SAITASTONE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> MIIZEALITE_BLOCK = ITEMS.register("miizealite_block", () -> new NightSoulsOreBlock(BlockInit.MIIZEALITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> CRANITE_BLOCK = ITEMS.register("cranite_block", () -> new NightSoulsOreBlock(BlockInit.CRANITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> BASTIRITE_BLOCK = ITEMS.register("bastirite_block", () -> new NightSoulsOreBlock(BlockInit.BASTIRITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> SAITASTONE_ORE = ITEMS.register("saitastone_ore", () -> new NightSoulsOre(BlockInit.SAITASTONE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> MIIZEALITE_ORE = ITEMS.register("miizealite_ore", () -> new NightSoulsOre(BlockInit.MIIZEALITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> NETHER_MIIZEALITE_ORE = ITEMS.register("nether_miizealite_ore", () -> new NightSoulsOre(BlockInit.NETHER_MIIZEALITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> CRANITE_ORE = ITEMS.register("cranite_ore", () -> new NightSoulsOre(BlockInit.CRANITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> BASTIRITE_ORE = ITEMS.register("bastirite_ore", () -> new NightSoulsOre(BlockInit.BASTIRITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> UNDERGROUND_HEART_CRYSTAL = ITEMS.register("underground_heart_crystal", () -> new NightSoulsOre(BlockInit.UNDERGROUND_HEART_CRYSTAL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> SAITASTONE_BLOCK = ITEMS.register("saitastone_block", () -> new BlockItem(BlockInit.SAITASTONE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> MIIZEALITE_BLOCK = ITEMS.register("miizealite_block", () -> new BlockItem(BlockInit.MIIZEALITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> CRANITE_BLOCK = ITEMS.register("cranite_block", () -> new BlockItem(BlockInit.CRANITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> BASTIRITE_BLOCK = ITEMS.register("bastirite_block", () -> new BlockItem(BlockInit.BASTIRITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> SAITASTONE_ORE = ITEMS.register("saitastone_ore", () -> new BlockItem(BlockInit.SAITASTONE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> MIIZEALITE_ORE = ITEMS.register("miizealite_ore", () -> new BlockItem(BlockInit.MIIZEALITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> NETHER_MIIZEALITE_ORE = ITEMS.register("nether_miizealite_ore", () -> new BlockItem(BlockInit.NETHER_MIIZEALITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> CRANITE_ORE = ITEMS.register("cranite_ore", () -> new BlockItem(BlockInit.CRANITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> BASTIRITE_ORE = ITEMS.register("bastirite_ore", () -> new BlockItem(BlockInit.BASTIRITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> UNDERGROUND_HEART_CRYSTAL = ITEMS.register("underground_heart_crystal", () -> new BlockItem(BlockInit.UNDERGROUND_HEART_CRYSTAL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> TRAPPED_TRUE_NIGHT_SOUL = ITEMS.register("trapped_true_night_soul", () -> new TrappedTrueNightSoul(BlockInit.TRAPPED_TRUE_NIGHT_SOUL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> NIGHTSOULS_LUCKY_BLOCK = ITEMS.register("nightsouls_lucky_block", () -> new BlockItem(BlockInit.NIGHTSOULS_LUCKY_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> CELESTIAL_EMERALD_BLOCK = ITEMS.register("celestial_emerald_block", () -> new CelestialEmeraldBlockItem(BlockInit.CELESTIAL_EMERALD_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -397,7 +397,7 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> CRYSTAL_SLAB = ITEMS.register("crystal_slab", () -> new BlockItem(BlockInit.CRYSTAL_SLAB.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> SPEEDING_MIXER = ITEMS.register("speeding_mixer", () -> new SpeedingMixer(BlockInit.SPEEDING_MIXER.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> HEALING_MIXER = ITEMS.register("healing_mixer", () -> new HealingMixer(BlockInit.HEALING_MIXER.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> ENDER_HEART_CRYSTAL = ITEMS.register("ender_heart_crystal", () -> new NightSoulsOre(BlockInit.ENDER_HEART_CRYSTAL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> ENDER_HEART_CRYSTAL = ITEMS.register("ender_heart_crystal", () -> new BlockItem(BlockInit.ENDER_HEART_CRYSTAL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> COMPRESSED_COBBLESTONE = ITEMS.register("compressed_cobblestone", () -> new BlockItem(BlockInit.COMPRESSED_COBBLESTONE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> SUPER_COMPRESSED_COBBLESTONE = ITEMS.register("super_compressed_cobblestone", () -> new BlockItem(BlockInit.SUPER_COMPRESSED_COBBLESTONE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> RED_POWER_MOON_BLOCK = ITEMS.register("red_power_moon_block", () -> new RedPowerMoonBlockItem(BlockInit.RED_POWER_MOON_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -420,15 +420,15 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> CRANITE_TILES_SLAB = ITEMS.register("cranite_tiles_slab", () -> new BlockItem(BlockInit.CRANITE_TILES_SLAB.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BASTIRITE_TILES_STAIRS = ITEMS.register("bastirite_tiles_stairs", () -> new BlockItem(BlockInit.BASTIRITE_TILES_STAIRS.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BASTIRITE_TILES_SLAB = ITEMS.register("bastirite_tiles_slab", () -> new BlockItem(BlockInit.BASTIRITE_TILES_SLAB.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> CRAZY_DIAMOND_ORE = ITEMS.register("crazy_diamond_ore", () -> new NightSoulsOre(BlockInit.CRAZY_DIAMOND_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> CRAZY_DIAMOND_ORE = ITEMS.register("crazy_diamond_ore", () -> new BlockItem(BlockInit.CRAZY_DIAMOND_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> CRAZY_DIAMOND_BLOCK = ITEMS.register("crazy_diamond_block", () -> new CrazyDiamondBlock(BlockInit.CRAZY_DIAMOND_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> NIGHTSOULS_FORCEFIELD = ITEMS.register("nightsouls_forcefield", () -> new NightSoulsForcefield(BlockInit.NIGHTSOULS_FORCEFIELD.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> PRIMIUM_BLOCK = ITEMS.register("primium_block", () -> new NightSoulsOreBlock(BlockInit.PRIMIUM_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> ROWEQUITE_BLOCK = ITEMS.register("rowequite_block", () -> new NightSoulsOreBlock(BlockInit.ROWEQUITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> THERENITE_BLOCK = ITEMS.register("therenite_block", () -> new NightSoulsOreBlock(BlockInit.THERENITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> PRIMIUM_ORE = ITEMS.register("primium_ore", () -> new NightSoulsOre(BlockInit.PRIMIUM_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> ROWEQUITE_ORE = ITEMS.register("rowequite_ore", () -> new NightSoulsOre(BlockInit.ROWEQUITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> THERENITE_ORE  = ITEMS.register("therenite_ore", () -> new NightSoulsOre(BlockInit.THERENITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> PRIMIUM_BLOCK = ITEMS.register("primium_block", () -> new BlockItem(BlockInit.PRIMIUM_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> ROWEQUITE_BLOCK = ITEMS.register("rowequite_block", () -> new BlockItem(BlockInit.ROWEQUITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> THERENITE_BLOCK = ITEMS.register("therenite_block", () -> new BlockItem(BlockInit.THERENITE_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> PRIMIUM_ORE = ITEMS.register("primium_ore", () -> new BlockItem(BlockInit.PRIMIUM_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> ROWEQUITE_ORE = ITEMS.register("rowequite_ore", () -> new BlockItem(BlockInit.ROWEQUITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> THERENITE_ORE  = ITEMS.register("therenite_ore", () -> new BlockItem(BlockInit.THERENITE_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> PITCH_BLACK_BLOCK  = ITEMS.register("pitch_black_block", () -> new BlockItem(BlockInit.PITCH_BLACK_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BACKROOMS_WALL  = ITEMS.register("backrooms_wall", () -> new BlockItem(BlockInit.BACKROOMS_WALL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> BACKROOMS_CARPET  = ITEMS.register("backrooms_carpet", () -> new BlockItem(BlockInit.BACKROOMS_CARPET.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));

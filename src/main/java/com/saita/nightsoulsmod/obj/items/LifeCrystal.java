@@ -36,7 +36,7 @@ public class LifeCrystal extends Item {
 	@Override
 	public Rarity getRarity(ItemStack stack) {
 		
-		return Rarity.RARE;
+		return Rarity.UNCOMMON;
 	}
 	
 	@Override

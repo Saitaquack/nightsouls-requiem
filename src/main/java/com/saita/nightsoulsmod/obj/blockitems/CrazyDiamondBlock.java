@@ -6,7 +6,6 @@ import net.minecraft.block.Block;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Rarity;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
@@ -16,12 +15,6 @@ public class CrazyDiamondBlock extends BlockItem {
 	public CrazyDiamondBlock(Block blockIn, Properties builder) {
 		super(blockIn, builder);
 
-	}
-	
-	@Override
-	public Rarity getRarity(ItemStack stack) {
-
-		return Rarity.RARE;
 	}
 	
 	@Override

@@ -8,7 +8,6 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Rarity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
@@ -30,12 +29,6 @@ public class CrazyDiamond extends Item {
     tooltip.add(new StringTextComponent("§7Can be converted to normal diamonds and craft even more stuff. Can also be consumed to instantly heal 20 hearts."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
-	
-	@Override
-	public Rarity getRarity(ItemStack stack) {
-
-		return Rarity.UNCOMMON;
-	}
 	
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {

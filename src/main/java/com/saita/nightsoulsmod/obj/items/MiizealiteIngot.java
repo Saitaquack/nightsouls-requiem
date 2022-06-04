@@ -3,13 +3,14 @@ package com.saita.nightsoulsmod.obj.items;
 import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class MiizealiteIngot extends NightSoulsOreIngot {
+public class MiizealiteIngot extends Item {
 
 	public MiizealiteIngot(Properties properties) {
 		super(properties);
