@@ -66,8 +66,8 @@ public class SuspiciousLookingEye extends Item {
 	    	
 	    	Random rand = new Random();
 	    	
-	    	int randX = rand.nextInt(25);
-	    	int randZ = rand.nextInt(25);
+	    	int randX = rand.nextInt(15);
+	    	int randZ = rand.nextInt(15);
 	    	boolean negX = random.nextBoolean();
 	    	boolean negZ = random.nextBoolean();
 	    	
@@ -81,7 +81,7 @@ public class SuspiciousLookingEye extends Item {
 	    	}
 	    	
 	    	EyeOfCthulhuEntity eoc = new EyeOfCthulhuEntity(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), worldIn);	
-			eoc.setPositionAndUpdate(playerIn.getPosX() + randX, playerIn.getPosY() + 20, playerIn.getPosZ() + randZ);
+			eoc.setPositionAndUpdate(playerIn.getPosX() + randX, playerIn.getPosY() + 15, playerIn.getPosZ() + randZ);
 			worldIn.addEntity(eoc);
 		}
 		else

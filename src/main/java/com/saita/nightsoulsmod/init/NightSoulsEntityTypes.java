@@ -80,7 +80,7 @@ public class NightSoulsEntityTypes {
 	 
 	 public static final RegistryObject<EntityType<TitanEntity>> TITAN =
 	          ENTITY_TYPES.register("titan", () -> EntityType.Builder
-	            	.create(TitanEntity::new, EntityClassification.MONSTER).size(1.45F, 7.8F)
+	            	.create(TitanEntity::new, EntityClassification.MONSTER).size(2.2F, 11.7F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "titan").toString()));
 	 
 	 

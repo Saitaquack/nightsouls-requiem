@@ -46,7 +46,7 @@ public class AkazaAltar extends Block {
 				worldIn.playSound(player, player.getPosition(), SoundInit.AKAZA_BOSS.get(), SoundCategory.RECORDS, 1.0F, 1.0F);
 		   
 			    AkazaEntity akaza = new AkazaEntity(NightSoulsEntityTypes.AKAZA.get(), worldIn);	
-				akaza.setPositionAndUpdate(pos.getX(), pos.getY() + 5, pos.getZ());
+				akaza.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
 				worldIn.addEntity(akaza);
 				
 				if(worldIn.isRemote)

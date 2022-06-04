@@ -427,6 +427,21 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> BURNING_MEMORY = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "burning_memory")));
 	
+	public static final Lazy<SoundEvent> DOOPLISS = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "doopliss")));
+	
+	public static final Lazy<SoundEvent> KAKYOIN = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "kakyoin")));
+	
+	public static final Lazy<SoundEvent> MALZENO = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "malzeno")));
+	
+	public static final Lazy<SoundEvent> DAVY_JONES = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "davy_jones")));
+	
+	public static final Lazy<SoundEvent> GIGACHAD = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "gigachad")));
+	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));
 	

@@ -37,9 +37,9 @@ public class TitanEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 280.0D)
+				.createMutableAttribute(Attributes.MAX_HEALTH, 380.0D)
 				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.28D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 22.0D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 23.0D) 
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 45.0D)
 				.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 4.0D); 
@@ -73,7 +73,7 @@ public class TitanEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 90;
+		 return 100;
 	 }
 	 
 	@Override

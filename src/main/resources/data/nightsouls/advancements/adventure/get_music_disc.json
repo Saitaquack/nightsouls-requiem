@@ -551,6 +551,61 @@
         ]
       }
     },
+    
+    "doopliss_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:doopliss_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "kakyoin_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:kakyoin_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "malzeno_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:malzeno_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "davy_jones_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:davy_jones_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "gigachad_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:gigachad_music_disc"
+          }
+        ]
+      }
+    },
         
     "star_gatherer_final_music_disc": {
       "trigger": "minecraft:inventory_changed",
@@ -648,6 +703,11 @@
       "boss_two_music_disc",
       "soupe_aux_choux_music_disc",
       "burning_memory_music_disc",
+      "doopliss_music_disc",
+      "kakyoin_music_disc",
+      "malzeno_music_disc",
+      "davy_jones_music_disc",
+      "gigachad_music_disc",
       "star_gatherer_final_music_disc",
       "hellfire_emperor_final_music_disc",
       "hallowed_paladin_final_music_disc",

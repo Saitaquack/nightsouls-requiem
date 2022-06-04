@@ -336,50 +336,6 @@
      
      {
      "rolls": {
-        "min": 0.0,
-        "max": 1.0,
-        "type": "minecraft:uniform"
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-                "type": "minecraft:uniform"
-              }
-          ],
-          "name": "nightsouls:ashes_on_the_fire_music_disc"
-          }
-        ]
-     },
-     
-     {
-     "rolls": {
-        "min": 0.0,
-        "max": 1.0,
-        "type": "minecraft:uniform"
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-                "type": "minecraft:uniform"
-              }
-          ],
-          "name": "nightsouls:youseebiggirl_music_disc"
-          }
-        ]
-     },
-     
-     {
-     "rolls": {
         "min": 1.0,
         "max": 2.0,
         "type": "minecraft:uniform"

@@ -14,7 +14,7 @@ public class TitanRenderer extends MobRenderer<TitanEntity, TitanModel<TitanEnti
             new ResourceLocation(NightSoulsMod.MOD_ID, "textures/entity/titan.png");
 
     public TitanRenderer(EntityRendererManager renderManagerIn) {
-        super(renderManagerIn, new TitanModel<>(), 2.0F);
+        super(renderManagerIn, new TitanModel<>(), 3.0F);
     }
 
     @Override

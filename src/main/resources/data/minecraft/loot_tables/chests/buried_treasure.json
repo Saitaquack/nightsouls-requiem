@@ -10,6 +10,15 @@
         }
       ]
     },
+     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:davy_jones_music_disc"
+        }
+      ]
+    },
     {
       "rolls": {
         "min": 5.0,

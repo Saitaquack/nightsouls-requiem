@@ -1051,6 +1051,66 @@
 		
 	},
 	
+	"doopliss": {
+		"category": "music",
+		"subtitle": "Doopliss Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/doopliss",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"kakyoin": {
+		"category": "music",
+		"subtitle": "Kakyoin Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/kakyoin",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"malzeno": {
+		"category": "music",
+		"subtitle": "Malzeno Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/malzeno",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"davy_jones": {
+		"category": "music",
+		"subtitle": "Davy Jones Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/davy_jones",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"gigachad": {
+		"category": "music",
+		"subtitle": "Average NightSouls Enjoyer",
+		"sounds": [
+			{
+				"name": "nightsouls:music/gigachad",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"paragon": {
 		"category": "music",
 		"subtitle": "You are the ultimate being",
@@ -1465,6 +1525,10 @@
 			},			
 			{
 				"name": "nightsouls:entity/alternate_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_ambient5",
 				"stream": false
 			}
 		]
