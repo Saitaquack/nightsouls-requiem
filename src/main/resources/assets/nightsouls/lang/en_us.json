@@ -262,8 +262,9 @@
    "item.nightsouls.giant_burning_pea": "Giant Burning Pea",
    "item.nightsouls.crystal_storm": "Crystal Storm",
    "item.nightsouls.crystal_projectile": "Crystal Projectile",
-     
+   "item.nightsouls.hellfire_coal": "Hellfire Coal",
    
+      
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Music Disc",
    "item.nightsouls.mario_galaxy_sky_station_music_disc.desc": "Super Mario Galaxy 2 - Sky Station Galaxy",
    "item.nightsouls.mario_galaxy_credits_music_disc": "Music Disc",
@@ -461,6 +462,8 @@
    "block.nightsouls.akazice": "Akazice",
    "block.nightsouls.death_eyes": "Death Eyes",
    "block.nightsouls.nether_nightsouls_emerald_ore": "Nether NightSouls Emerald Ore",
+   "block.nightsouls.hellfire_coal_ore": "Hellfire Coal Ore",
+   "block.nightsouls.hellfire_coal_block": "Block of Hellfire Coal",
    
    
    "advancements.story.get_night_soul_pickaxe.title": "Time To Really Mine !",

@@ -19,7 +19,12 @@
           ],
           "name": "nightsouls:nightsouls_emerald"
         }
-       ]
+        ],
+        "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
      },
     
      {

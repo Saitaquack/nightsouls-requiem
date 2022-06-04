@@ -216,6 +216,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> GIANT_FROZEN_PEA = ITEMS.register("giant_frozen_pea", () -> new GiantFrozenPea(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> GIANT_BURNING_PEA = ITEMS.register("giant_burning_pea", () -> new GiantBurningPea(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> CRYSTAL_STORM = ITEMS.register("crystal_storm", () -> new CrystalStorm(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(500)));
+	public static final RegistryObject<Item> HELLFIRE_COAL = ITEMS.register("hellfire_coal", () -> new HellfireCoal(new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 	
 	public static final RegistryObject<Item> TECHNO_PROJECTILE = ITEMS.register("techno_projectile", () -> new Item(new Item.Properties()));
@@ -435,6 +436,8 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> BACKROOMS_LIGHT  = ITEMS.register("backrooms_light", () -> new BlockItem(BlockInit.BACKROOMS_LIGHT.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> PURE_LIGHT_BLOCK  = ITEMS.register("pure_light_block", () -> new BlockItem(BlockInit.PURE_LIGHT_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> NETHER_NIGHTSOULS_EMERALD_ORE  = ITEMS.register("nether_nightsouls_emerald_ore", () -> new BlockItem(BlockInit.NETHER_NIGHTSOULS_EMERALD_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> HELLFIRE_COAL_ORE  = ITEMS.register("hellfire_coal_ore", () -> new BlockItem(BlockInit.HELLFIRE_COAL_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> HELLFIRE_COAL_BLOCK  = ITEMS.register("hellfire_coal_block", () -> new HellfireCoalBlock(BlockInit.HELLFIRE_COAL_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));

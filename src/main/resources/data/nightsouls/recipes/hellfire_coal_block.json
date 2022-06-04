@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:hellfire_coal"
+    }
+  },
+  "result": {
+    "item": "nightsouls:hellfire_coal_block"
+  }
+}
