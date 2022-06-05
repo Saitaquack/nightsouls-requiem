@@ -93,7 +93,7 @@ public class NightSoulsEntityTypes {
 	 
 	 public static final RegistryObject<EntityType<EyeOfCthulhuEntity>> EYE_OF_CTHULHU =
 	          ENTITY_TYPES.register("eye_of_cthulhu", () -> EntityType.Builder
-	            	.create(EyeOfCthulhuEntity::new, EntityClassification.MONSTER).size(1.5F, 2.0F)
+	            	.create(EyeOfCthulhuEntity::new, EntityClassification.MONSTER).size(2.25F, 3.0F) // Old values : 1.5F | 2.0F
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "eye_of_cthulhu").toString()));
 	 
 	 public static final RegistryObject<EntityType<KingCrimsonEntity>> KING_CRIMSON =
