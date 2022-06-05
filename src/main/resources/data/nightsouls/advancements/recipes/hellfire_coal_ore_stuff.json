@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:hellfire_coal_from_smelting",
+      "nightsouls:hellfire_coal_from_blasting"
+    ]
+  },
+  "criteria": {
+    "has_hellfire_coal_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_coal_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_hellfire_coal_ore",
+    ]
+  ]
+}

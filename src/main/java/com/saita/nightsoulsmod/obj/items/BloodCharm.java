@@ -24,7 +24,7 @@ public class BloodCharm extends Item {
 	@Override
     public Rarity getRarity(ItemStack stack) {
     	
-    	return Rarity.RARE;
+    	return Rarity.UNCOMMON;
     }
 	
 	

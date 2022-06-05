@@ -32,7 +32,7 @@ public class SpeedingMixer extends Block {
 	@Override
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 	    	
-		player.addPotionEffect(new EffectInstance(Effects.SPEED, 200, 2));
+		player.addPotionEffect(new EffectInstance(Effects.SPEED, 300, 2));
     	worldIn.playSound(player, player.getPosition(), SoundInit.SPEEDING.get(), SoundCategory.MASTER, 1.0F, 1.0F);
 		
 	   return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);

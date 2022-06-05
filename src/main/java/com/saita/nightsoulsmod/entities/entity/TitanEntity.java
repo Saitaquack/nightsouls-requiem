@@ -92,9 +92,14 @@ public class TitanEntity extends MonsterEntity {
 	protected void playStepSound(BlockPos pos, BlockState blockIn) {
 		
 		this.playSound(SoundInit.TITAN_STEP.get(), 0.50F, 1.0F);
-	 }
+	}
 	
-	
+	//Negates fall damage
+	@Override
+	protected int calculateFallDamage(float p_225508_1_, float p_225508_2_) {
+				
+		return 0;
+	}	
 	
 	@Override
 	public boolean canSpawn(IWorld worldIn, SpawnReason spawnReasonIn) {

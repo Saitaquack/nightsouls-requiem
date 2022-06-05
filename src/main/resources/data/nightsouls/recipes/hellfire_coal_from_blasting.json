@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "nightsouls:hellfire_coal_ore"
+  },
+  
+  "result": "nightsouls:hellfire_coal",
+  "experience": 0.2,
+  "cookingtime": 100
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_laser_sprayer",
+  "display": {
+    "icon": {
+      "item": "nightsouls:plasma_sprayer"
+    },
+    "title": {
+      "translate": "advancements.story.get_plasma_sprayer.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_plasma_sprayer.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "plasma_sprayer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:plasma_sprayer"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "plasma_sprayer"
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_winners_ore",
+  "display": {
+    "icon": {
+      "item": "nightsouls:laser_sprayer"
+    },
+    "title": {
+      "translate": "advancements.story.get_laser_sprayer.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_laser_sprayer.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "laser_sprayer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:laser_sprayer"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "laser_sprayer"
+    ]
+  ]
+}

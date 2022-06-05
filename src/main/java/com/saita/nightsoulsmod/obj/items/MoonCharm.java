@@ -26,7 +26,7 @@ public class MoonCharm extends Item {
 	@Override
     public Rarity getRarity(ItemStack stack) {
     	
-    	return Rarity.RARE;
+    	return Rarity.UNCOMMON;
     }
 	
 	

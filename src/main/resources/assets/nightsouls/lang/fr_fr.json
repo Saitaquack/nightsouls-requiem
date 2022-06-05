@@ -504,6 +504,10 @@
    "advancements.story.get_winners_ore.description": "Trouvez soit de la primium, de la rowequite ou de la therenite.",
    "advancements.story.get_magic_mirror.title": "Miroir, miroir",
    "advancements.story.get_magic_mirror.description": "Obtenez un miroir magique.",
+   "advancements.story.get_laser_sprayer.title": "Piou piou piou",
+   "advancements.story.get_laser_sprayer.description": "Obtenez un pulvérisateur laser.",
+   "advancements.story.get_plasma_sprayer.title": "PIOU PIOU PIOU PIOU",
+   "advancements.story.get_plasma_sprayer.description": "Obtenez un pulvérisateur plasma.",
    
    "advancements.adventure.get_celestial_emerald.title": "Etoile gagnée !",
    "advancements.adventure.get_celestial_emerald.description": "Trouvez et ramassez une émeraude céleste.",
@@ -555,6 +559,8 @@
    "advancements.adventure.find_final_castle.description" : "Trouvez le château final.",
    "advancements.adventure.get_super_star.title": "TATATATATATA",
    "advancements.adventure.get_super_star.description": "Obtenez une super étoile.",
+   "advancements.adventure.kill_titan.title" : "L'attaque des titans",
+   "advancements.adventure.kill_titan.description" : "Tuez un titan.",
    
    "advancements.nether.get_necro_armor.title": "Désossé",
    "advancements.nether.get_necro_armor.description": "Obtenez une piece de l'armure nécro.",
@@ -586,6 +592,10 @@
    "advancements.end.get_paragonic_stuff.description": "Obtenez un des objets paragoniques.",
    "advancements.end.get_true_combo.title": "That's a Lot of Damage !",
    "advancements.end.get_true_combo.description": "Obtenez une des armes de l'end avec des âme de la nuit véritables, ou alors une nano-lame.",
+   "advancements.end.get_sun_avatar.title": "Dieu du soleil",
+   "advancements.end.get_sun_avatar.description": "Obtenez un avatar du soleil.",
+   "advancements.end.get_meteor_staff.title": "Ciel de feu",
+   "advancements.end.get_meteor_staff.description": "Obtenez un sceptre de météore.",
    
    "item.nightsouls.reaper_spawn_egg": "Oeuf d'apparition de Faucheuse",
    "item.nightsouls.werewolf_spawn_egg": "Oeuf d'apparition de Loup-garou",

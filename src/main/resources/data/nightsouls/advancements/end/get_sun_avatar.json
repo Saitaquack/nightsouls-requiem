@@ -1,0 +1,36 @@
+{
+  "parent": "nightsouls:end/get_true_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:sun_avatar"
+    },
+    "title": {
+      "translate": "advancements.end.get_sun_avatar.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_sun_avatar.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  
+  "criteria": {
+    "sun_avatar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:sun_avatar"
+          }
+         ]
+       }
+     }
+   },
+  "requirements": [
+    [
+      "sun_avatar"
+    ]
+  ]
+}
