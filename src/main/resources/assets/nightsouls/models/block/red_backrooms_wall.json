@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "nightsouls:blocks/red_backrooms_wall"
+    }
+}

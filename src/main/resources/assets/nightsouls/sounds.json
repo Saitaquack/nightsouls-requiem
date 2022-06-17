@@ -415,6 +415,22 @@
 		
 	},
 	
+	"run": {
+		"category": "master",
+		"subtitle": "!!!!!",
+		"sounds": [
+			{
+				"name": "nightsouls:master/run1",
+				"stream": true
+			},
+			{
+				"name": "nightsouls:master/run2",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	"mario_galaxy_sky_station": {
 		"category": "music",
 		"subtitle": "Mario Galaxy Sky Station Music",

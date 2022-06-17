@@ -464,6 +464,9 @@
    "block.nightsouls.nether_nightsouls_emerald_ore": "Nether NightSouls Emerald Ore",
    "block.nightsouls.hellfire_coal_ore": "Hellfire Coal Ore",
    "block.nightsouls.hellfire_coal_block": "Block of Hellfire Coal",
+   "block.nightsouls.red_backrooms_wall": "Red Backrooms Wall",
+   "block.nightsouls.red_backrooms_ceiling": "Red Backrooms Ceiling",
+   "block.nightsouls.red_backrooms_light": "Red Backrooms Light",
    
    
    "advancements.story.get_night_soul_pickaxe.title": "Time To Really Mine !",

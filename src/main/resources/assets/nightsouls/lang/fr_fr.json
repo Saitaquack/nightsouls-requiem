@@ -464,6 +464,9 @@
    "block.nightsouls.nether_nightsouls_emerald_ore": "Minerai d'émeraude de NightSouls du Nether",
    "block.nightsouls.hellfire_coal_ore": "Minerai de charbon infernal",
    "block.nightsouls.hellfire_coal_block": "Bloc de charbon infernal",
+   "block.nightsouls.red_backrooms_wall": "Mur des backrooms rouge",
+   "block.nightsouls.red_backrooms_ceiling": "Plafond des backrooms rouge",
+   "block.nightsouls.red_backrooms_light": "Lampe des backrooms rouge",
       
    
    "advancements.story.get_night_soul_pickaxe.title": "Il est temps de vraiment miner !",

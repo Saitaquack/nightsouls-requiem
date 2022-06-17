@@ -438,6 +438,9 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> NETHER_NIGHTSOULS_EMERALD_ORE  = ITEMS.register("nether_nightsouls_emerald_ore", () -> new BlockItem(BlockInit.NETHER_NIGHTSOULS_EMERALD_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> HELLFIRE_COAL_ORE  = ITEMS.register("hellfire_coal_ore", () -> new BlockItem(BlockInit.HELLFIRE_COAL_ORE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> HELLFIRE_COAL_BLOCK  = ITEMS.register("hellfire_coal_block", () -> new HellfireCoalBlock(BlockInit.HELLFIRE_COAL_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> RED_BACKROOMS_WALL  = ITEMS.register("red_backrooms_wall", () -> new BlockItem(BlockInit.RED_BACKROOMS_WALL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> RED_BACKROOMS_CEILING  = ITEMS.register("red_backrooms_ceiling", () -> new BlockItem(BlockInit.RED_BACKROOMS_CEILING.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<BlockItem> RED_BACKROOMS_LIGHT  = ITEMS.register("red_backrooms_light", () -> new BlockItem(BlockInit.RED_BACKROOMS_LIGHT.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 
 
 	public static final RegistryObject<BlockItem> PETRIFIED_HELLSTONE = ITEMS.register("petrified_hellstone", () -> new BlockItem(BlockInit.PETRIFIED_HELLSTONE.get(), new Item.Properties()));
