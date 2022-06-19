@@ -24,12 +24,15 @@ public class ModEventBusEvents {
         event.put(NightSoulsEntityTypes.HELLBORN.get(), HellbornEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.DEMON_EYE.get(), DemonEyeEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.ALTERNATE.get(), AlternateEntity.setCustomAttributes().create());
+        event.put(NightSoulsEntityTypes.PARTYGOER.get(), PartygoerEntity.setCustomAttributes().create());
+
         
         event.put(NightSoulsEntityTypes.STARGAZER.get(), StargazerEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), HellfireServantEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.PALADIN.get(), PaladinEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.REALITY_WALKER.get(), RealityWalkerEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.TITAN.get(), TitanEntity.setCustomAttributes().create());
+        
         
         event.put(NightSoulsEntityTypes.AKAZA.get(), AkazaEntity.setCustomAttributes().create());
         event.put(NightSoulsEntityTypes.EYE_OF_CTHULHU.get(), EyeOfCthulhuEntity.setCustomAttributes().create());

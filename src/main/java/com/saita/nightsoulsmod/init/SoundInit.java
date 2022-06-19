@@ -268,6 +268,9 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> TITAN_STEP = SOUNDS.register("titan_step", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "titan_step")));
 	
+	public static final RegistryObject<SoundEvent> PARTYGOER_AMBIENT = SOUNDS.register("partygoer_ambient", () -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "partygoer_ambient")));
+	
 	
 	//Musiques
 	

@@ -56,6 +56,11 @@ public class NightSoulsEntityTypes {
 	            	.create(AlternateEntity::new, EntityClassification.MONSTER).size(1.2F, 4.95F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "alternate").toString()));
 	 
+	 public static final RegistryObject<EntityType<PartygoerEntity>> PARTYGOER =
+	          ENTITY_TYPES.register("partygoer", () -> EntityType.Builder
+	            	.create(PartygoerEntity::new, EntityClassification.MONSTER).size(0.9F, 3.0F)
+	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "partygoer").toString()));
+	 
 	 
 	 
 	 public static final RegistryObject<EntityType<StargazerEntity>> STARGAZER =
@@ -93,7 +98,7 @@ public class NightSoulsEntityTypes {
 	 
 	 public static final RegistryObject<EntityType<EyeOfCthulhuEntity>> EYE_OF_CTHULHU =
 	          ENTITY_TYPES.register("eye_of_cthulhu", () -> EntityType.Builder
-	            	.create(EyeOfCthulhuEntity::new, EntityClassification.MONSTER).size(2.25F, 3.0F) // Old values : 1.5F | 2.0F
+	            	.create(EyeOfCthulhuEntity::new, EntityClassification.MONSTER).size(2.25F, 3.0F)
 	                .build(new ResourceLocation(NightSoulsMod.MOD_ID, "eye_of_cthulhu").toString()));
 	 
 	 public static final RegistryObject<EntityType<KingCrimsonEntity>> KING_CRIMSON =

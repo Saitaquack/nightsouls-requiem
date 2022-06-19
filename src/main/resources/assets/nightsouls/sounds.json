@@ -1861,6 +1861,34 @@
 			}
 		]
 		
+	},
+	
+	"partygoer_ambient": {
+		"category": "entity",
+		"subtitle": "=)",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/partygoer_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient5",
+				"stream": false
+			}
+		]
+		
 	}
 	
 }

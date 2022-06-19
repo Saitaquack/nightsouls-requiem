@@ -558,7 +558,7 @@
    "advancements.adventure.find_islands.description" : "Find The NightSouls Islands.",
    "advancements.adventure.find_tower.title" : "Tower of Gods",
    "advancements.adventure.find_tower.description" : "Find The NightSouls Tower.",
-   "advancements.adventure.find_final_castle.title" : "The Final Home",
+   "advancements.adventure.find_final_castle.title" : "Welcome Home",
    "advancements.adventure.find_final_castle.description" : "Find The NightSouls Final Castle.",
    "advancements.adventure.get_super_star.title": "TATATATATATA",
    "advancements.adventure.get_super_star.description": "Get a super star.",
@@ -612,7 +612,8 @@
    "item.nightsouls.paladin_spawn_egg": "Paladin Spawn Egg", 
    "item.nightsouls.reality_walker_spawn_egg": "Reality Walker Spawn Egg", 
    "item.nightsouls.titan_spawn_egg": "Titan Spawn Egg", 
-      
+   "item.nightsouls.partygoer_spawn_egg": "Partygoer Spawn Egg", 
+         
    "entity.nightsouls.reaper": "Reaper",   
    "entity.nightsouls.werewolf": "Werewolf",
    "entity.nightsouls.psycho": "Psycho",
@@ -628,6 +629,7 @@
    "entity.nightsouls.eye_of_cthulhu": "Eye of Cthulhu",
    "entity.nightsouls.king_crimson": "King Crimson",
    "entity.nightsouls.titan": "Titan",
+   "entity.nightsouls.partygoer": "Partygoer",
    
    "itemGroup.NightSoulsTab": "NightSouls Mod",
    "itemGroup.NightSoulsFinalsTab": "Final NightSouls Stuff",

@@ -70,6 +70,7 @@ public class PaladinEntity extends MonsterEntity {
 	      
 	      
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, AlternateEntity.class, true));
+	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, PartygoerEntity.class, true));
 	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, TitanEntity.class, true));
 	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, WerewolfEntity.class, true));
 	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, ReaperEntity.class, true));
