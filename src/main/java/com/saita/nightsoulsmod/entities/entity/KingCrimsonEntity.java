@@ -81,7 +81,7 @@ public class KingCrimsonEntity extends MonsterEntity {
     @Override
 	protected int getExperiencePoints(PlayerEntity player)
 	{
-		return 1500;
+		return 800;
 	}
 	 
 	@Override

@@ -39,7 +39,7 @@ public class DemonEyeEntity extends PhantomEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 10;
+		 return 6;
 	 }
 	 
 	@Override

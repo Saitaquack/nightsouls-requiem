@@ -72,7 +72,7 @@ public class PsychoEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 12;
+		 return 6;
 	 }
 	 
 	@Override

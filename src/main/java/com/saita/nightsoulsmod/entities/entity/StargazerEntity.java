@@ -73,7 +73,7 @@ public class StargazerEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 45;
+		 return 20;
 	 }
 	 
 	@Override

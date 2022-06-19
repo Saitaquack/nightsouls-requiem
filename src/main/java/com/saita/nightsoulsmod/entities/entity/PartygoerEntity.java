@@ -38,9 +38,9 @@ public class PartygoerEntity extends MonsterEntity {
 	
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
-				.createMutableAttribute(Attributes.MAX_HEALTH, 55.0D)
-				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.60D) 
-				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.0D) 
+				.createMutableAttribute(Attributes.MAX_HEALTH, 65.0D)
+				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.50D) 
+				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.5D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D)
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.3D); 
 	}
@@ -72,7 +72,7 @@ public class PartygoerEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 10;
+		 return 12;
 	 }
 	 
 	@Override

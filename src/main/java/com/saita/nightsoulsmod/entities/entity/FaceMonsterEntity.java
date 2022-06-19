@@ -76,7 +76,7 @@ public class FaceMonsterEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 8;
+		 return 6;
 	 }
 	 
 	@Override

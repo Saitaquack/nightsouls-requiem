@@ -71,7 +71,7 @@ public class HellbornEntity extends MonsterEntity {
 	 @Override
 	 protected int getExperiencePoints(PlayerEntity player)
 	 {
-		 return 8;
+		 return 6;
 	 }
 	 
 	@Override

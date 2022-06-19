@@ -74,7 +74,7 @@ public class EyeOfCthulhuEntity extends MonsterEntity{
     @Override
     protected int getExperiencePoints(PlayerEntity player)
     {
-        return 1000;
+        return 500;
     }
 
     @Override

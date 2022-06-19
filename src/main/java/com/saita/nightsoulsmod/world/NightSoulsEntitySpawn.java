@@ -25,7 +25,8 @@ public class NightSoulsEntitySpawn {
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PSYCHO.get(), 4, 1, 4);			  
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.DEMON_EYE.get(), 4, 1, 4);
 			  
-			  addEntity(event.getSpawns(), NightSoulsEntityTypes.ALTERNATE.get(), 2, 1, 1);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.ALTERNATE.get(), 1, 1, 1);
+			  addEntity(event.getSpawns(), NightSoulsEntityTypes.PARTYGOER.get(), 2, 1, 3);
 			  
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.STARGAZER.get(), 4, 1, 4); 
 			  addEntity(event.getSpawns(), NightSoulsEntityTypes.HELLFIRE_SERVANT.get(), 4, 1, 4);
