@@ -1,5 +1,5 @@
 {
-  "parent": "nightsouls:end/get_requiem_key",
+  "parent": "nightsouls:end/get_broken_requiem_key",
   "display": {
     "icon": {
       "item": "nightsouls:paragonic_block"

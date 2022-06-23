@@ -266,6 +266,7 @@
    "item.nightsouls.yellow_liminal_gem": "Yellow Liminal Gem",
    "item.nightsouls.red_liminal_gem": "Red Liminal Gem",
    "item.nightsouls.blue_liminal_gem": "Blue Liminal Gem",
+   "item.nightsouls.broken_requiem_key": "Broken Requiem Key",
    
       
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Music Disc",
@@ -589,8 +590,8 @@
    "advancements.end.get_ultimate.description": "Obtain any ultimate ability.",
    "advancements.end.get_final_ingot.title": "The Final Step",
    "advancements.end.get_final_ingot.description": "Obtain one of the ultimate ingots.",
-   "advancements.end.get_requiem_key.title": "The Key to Requiem",
-   "advancements.end.get_requiem_key.description": "Find a Requiem key.",
+   "advancements.end.get_broken_requiem_key.title": "The Key to Requiem",
+   "advancements.end.get_broken_requiem_key.description": "Find a Broken Requiem key.",
    "advancements.end.get_paragonic_block.title": "The True Final Step",
    "advancements.end.get_paragonic_block.description": "Obtain a paragonic block.",
    "advancements.end.get_perfect_paragonic_block.title": "Overpowered",

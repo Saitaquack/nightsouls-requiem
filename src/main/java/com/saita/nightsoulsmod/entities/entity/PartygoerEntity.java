@@ -35,7 +35,7 @@ public class PartygoerEntity extends MonsterEntity {
 
 	public PartygoerEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
 		super(type, worldIn);
-
+		
 		this.stepHeight = 1.0F;
 	
 	}
@@ -43,7 +43,7 @@ public class PartygoerEntity extends MonsterEntity {
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.func_233666_p_()
 				.createMutableAttribute(Attributes.MAX_HEALTH, 65.0D)
-				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.50D) 
+				.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.45D) 
 				.createMutableAttribute(Attributes.ATTACK_DAMAGE, 10.5D) 
 				.createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D)
 				.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.3D); 

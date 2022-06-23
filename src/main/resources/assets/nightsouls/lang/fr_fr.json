@@ -218,7 +218,7 @@
    "item.nightsouls.super_blink": "Super transfert",       
    "item.nightsouls.dragonblade": "Lame du dragon",
    "item.nightsouls.nanoblade": "Nano-lame",
-   "item.nightsouls.broken_dragonblade": "Lame du dragon cassé",
+   "item.nightsouls.broken_dragonblade": "Lame du dragon cassée",
    "item.nightsouls.blood_sample": "Echantillon sanguin",
    "item.nightsouls.jason_mask": "Masque de Jason",
    "item.nightsouls.bloody_helmet": "Casque sanglant",
@@ -266,6 +266,7 @@
    "item.nightsouls.yellow_liminal_gem": "Gemme liminale jaune",
    "item.nightsouls.red_liminal_gem": "Gemme liminale rouge",
    "item.nightsouls.blue_liminal_gem": "Gemme liminale bleue",
+   "item.nightsouls.broken_requiem_key": "Clé Requiem cassée",
  
    
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Disque",
@@ -589,8 +590,8 @@
    "advancements.end.get_ultimate.description": "Obtenez un des ultis.",
    "advancements.end.get_final_ingot.title": "L'étape ultime",
    "advancements.end.get_final_ingot.description": "Obtenez un des lingots finals.",
-   "advancements.end.get_requiem_key.title": "La clé vers le Requiem",
-   "advancements.end.get_requiem_key.description": "Trouvez une clé Requiem.",
+   "advancements.end.get_broken_requiem_key.title": "La clé vers le Requiem",
+   "advancements.end.get_broken_requiem_key.description": "Trouvez une clé Requiem cassée.",
    "advancements.end.get_paragonic_block.title": "La véritable étape ultime",
    "advancements.end.get_paragonic_block.description": "Obtenez un bloc parangonique.",
    "advancements.end.get_perfect_paragonic_block.title": "Surpuissant",

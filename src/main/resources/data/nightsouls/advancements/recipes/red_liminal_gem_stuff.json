@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:requiem_key"
+    ]
+  },
+  "criteria": {
+    "has_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:red_liminal_gem"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_gem",
+    ]
+  ]
+}

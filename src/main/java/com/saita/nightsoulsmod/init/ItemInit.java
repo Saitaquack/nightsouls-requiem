@@ -217,10 +217,11 @@ public class ItemInit {
 	public static final RegistryObject<Item> GIANT_BURNING_PEA = ITEMS.register("giant_burning_pea", () -> new GiantBurningPea(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> CRYSTAL_STORM = ITEMS.register("crystal_storm", () -> new CrystalStorm(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1).maxDamage(500)));
 	public static final RegistryObject<Item> HELLFIRE_COAL = ITEMS.register("hellfire_coal", () -> new HellfireCoal(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> YELLOW_LIMINAL_GEM = ITEMS.register("yellow_liminal_gem", () -> new LiminalGem(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> RED_LIMINAL_GEM = ITEMS.register("red_liminal_gem", () -> new LiminalGem(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> BLUE_LIMINAL_GEM = ITEMS.register("blue_liminal_gem", () -> new LiminalGem(new Item.Properties().group(NightSoulsItemGroup.instance)));
-
+	public static final RegistryObject<Item> YELLOW_LIMINAL_GEM = ITEMS.register("yellow_liminal_gem", () -> new LiminalGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
+	public static final RegistryObject<Item> RED_LIMINAL_GEM = ITEMS.register("red_liminal_gem", () -> new LiminalGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
+	public static final RegistryObject<Item> BLUE_LIMINAL_GEM = ITEMS.register("blue_liminal_gem", () -> new LiminalGem(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
+	public static final RegistryObject<Item> BROKEN_REQUIEM_KEY = ITEMS.register("broken_requiem_key", () -> new BrokenRequiemKey(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
+	
 	
 	public static final RegistryObject<Item> TECHNO_PROJECTILE = ITEMS.register("techno_projectile", () -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> EMERALD_PROJECTILE = ITEMS.register("emerald_projectile", () -> new Item(new Item.Properties()));

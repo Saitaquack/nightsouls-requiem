@@ -113,6 +113,20 @@
           }
         ]
       }
+    },
+    "partygoer": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:partygoer"
+            },
+            "entity": "this"
+          }
+        ]
+      }
     } 
   },
   "requirements": [
@@ -123,7 +137,8 @@
       "face_monster",
       "hellborn",
       "demon_eye",
-      "alternate"
+      "alternate",
+      "partygoer"
     ]
   ]
 }
