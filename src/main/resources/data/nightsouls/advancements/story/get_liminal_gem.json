@@ -1,0 +1,57 @@
+{
+  "parent": "nightsouls:story/get_combo_item",
+  "display": {
+    "icon": {
+      "item": "nightsouls:yellow_liminal_gem"
+    },
+    "title": {
+      "translate": "advancements.story.get_liminal_gem.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_liminal_gem.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yellow_liminal_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:yellow_liminal_gem"
+          }
+        ]
+      }
+    },
+    "red_liminal_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:red_liminal_gem"
+          }
+        ]
+      }
+    },
+    "blue_liminal_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:blue_liminal_gem"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "yellow_liminal_gem",
+      "red_liminal_gem",
+      "blue_liminal_gem"
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "nightsouls:adventure/get_power_moon",
+  "display": {
+    "icon": {
+      "item": "nightsouls:red_backrooms_wall"
+    },
+    "title": {
+      "translate": "advancements.adventure.find_red_backrooms.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.find_red_backrooms.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "red_backrooms": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "nightsouls:red_backrooms"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_backrooms"
+    ]
+  ]
+}
