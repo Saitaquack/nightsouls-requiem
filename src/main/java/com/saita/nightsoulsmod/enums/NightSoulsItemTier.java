@@ -107,7 +107,7 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.THERENITE_INGOT.get()); 
 	}),
-	CRIMSON_ARM(6, 4666, 14.0F, 22.0F, 22, ()-> 
+	CRIMSON_ARM(6, 4666, 14.0F, 24.0F, 22, ()-> 
 	{ 
 		return Ingredient.fromItems( Items.DIAMOND); 
 	}),
