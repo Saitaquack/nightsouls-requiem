@@ -263,6 +263,9 @@
    "item.nightsouls.crystal_storm": "Crystal Storm",
    "item.nightsouls.crystal_projectile": "Crystal Projectile",
    "item.nightsouls.hellfire_coal": "Hellfire Coal",
+   "item.nightsouls.yellow_liminal_gem": "Yellow Liminal Gem",
+   "item.nightsouls.red_liminal_gem": "Red Liminal Gem",
+   "item.nightsouls.blue_liminal_gem": "Blue Liminal Gem",
    
       
    "item.nightsouls.mario_galaxy_sky_station_music_disc": "Music Disc",
@@ -467,6 +470,7 @@
    "block.nightsouls.red_backrooms_wall": "Red Backrooms Wall",
    "block.nightsouls.red_backrooms_ceiling": "Red Backrooms Ceiling",
    "block.nightsouls.red_backrooms_light": "Red Backrooms Light",
+   "block.nightsouls.liminal_pool_tiles": "Liminal Pool Tiles",
    
    
    "advancements.story.get_night_soul_pickaxe.title": "Time To Really Mine !",

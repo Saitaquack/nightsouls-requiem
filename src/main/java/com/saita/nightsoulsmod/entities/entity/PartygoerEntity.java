@@ -4,7 +4,9 @@ import com.saita.nightsoulsmod.init.SoundInit;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -20,6 +22,8 @@ import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -98,6 +102,25 @@ public class PartygoerEntity extends MonsterEntity {
 		
 		this.playSound(SoundEvents.ENTITY_ZOMBIE_STEP, 0.20F, 0.5F);
 	}
+	
+	@Override
+	public boolean attackEntityAsMob(Entity entityIn) {
+		
+	     if (!super.attackEntityAsMob(entityIn)) {
+	         return false;
+	         
+	        } else {
+	        	
+	            if (entityIn instanceof LivingEntity) {
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.NAUSEA, 200, 0));
+	            	 ((LivingEntity) entityIn).addPotionEffect(new EffectInstance(Effects.POISON, 100, 0));
+	            	 
+	            	 this.playSound(SoundInit.PARTYGOER_AMBIENT.get(), 1.0F, 1.0F);
+           }
+	            return true;
+	        }
+	        
+	  }
 
 	
 	@Override

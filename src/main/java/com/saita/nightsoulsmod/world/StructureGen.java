@@ -51,6 +51,7 @@ public class StructureGen {
 	            structures.add(() -> StructureInit.PALADIN_HILL.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.NIGHTSOULS_FINAL_CASTLE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));         
 	            structures.add(() -> StructureInit.RED_BACKROOMS.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+	            structures.add(() -> StructureInit.POOLROOMS.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 
 
 	            structures.add(() -> StructureInit.PARAGONIC_CORE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));

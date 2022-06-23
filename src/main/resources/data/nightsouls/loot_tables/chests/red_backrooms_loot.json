@@ -30,7 +30,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nightsouls:yellow_liminal_gem"
+          "name": "nightsouls:red_liminal_gem"
          }
        ]
      },
@@ -48,13 +48,37 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 8.0,
+                "max": 16.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "nightsouls:backrooms_wall"
+          "name": "nightsouls:red_backrooms_wall"
+         }       
+        ]          
+      },
+      {
+      "rolls": {
+        "min": 1.0,
+        "max": 2.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8.0,
+                "max": 16.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "nightsouls:red_backrooms_ceiling"
          }       
         ]          
       },
@@ -78,16 +102,12 @@
               }
             }
           ],
-          "name": "nightsouls:backrooms_carpet"
+          "name": "nightsouls:red_backrooms_light"
          }       
         ]          
       },
       {
-      "rolls": {
-        "min": 1.0,
-        "max": 2.0,
-        "type": "minecraft:uniform"
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -95,40 +115,36 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
+             "count": {
+                "min": 2.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+         "name": "nightsouls:nightsouls_essence"
+          }
+        ]         
+      },
+       {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+             "count": {
                 "min": 4.0,
                 "max": 8.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "nightsouls:backrooms_ceiling"
-         }       
-        ]          
-      },
-      {
-      "rolls": {
-        "min": 1.0,
-        "max": 2.0,
-        "type": "minecraft:uniform"
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3.0,
-                "max": 5.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "nightsouls:backrooms_light"
-         }       
-        ]          
+         "name": "nightsouls:night_soul"
+          }
+        ]         
       },
       {
       "rolls": 2,
@@ -140,8 +156,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
@@ -153,82 +169,82 @@
       {
       "rolls": 1,
       "entries": [
-        {
+         {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "nightsouls:saitastone_ingot"
-         }       
-        ]          
+          }         
+        ]         
       },
-      {
+       {
       "rolls": 1,
       "entries": [
-        {
+         {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "nightsouls:miizealite_ingot"
-         }       
-        ]          
+          }         
+        ]         
       },
-      {
+       {
       "rolls": 1,
       "entries": [
-        {
+         {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "nightsouls:cranite_ingot"
-         }       
-        ]          
+          }         
+        ]         
       },
       {
       "rolls": 1,
       "entries": [
-        {
+         {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "nightsouls:bastirite_ingot"
-         }       
-        ]          
+          }         
+        ]         
       }
    ]
 }
