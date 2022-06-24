@@ -60,8 +60,13 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> NIGHTSOULS_FINAL_CASTLE = STRUCTURES.register("nightsouls_final_castle", NightSoulsFinalCastle::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> RED_BACKROOMS = STRUCTURES.register("red_backrooms", RedBackroomsStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> POOLROOMS = STRUCTURES.register("poolrooms", PoolroomsStructure::new);
-
     
+    
+    public static final RegistryObject<Structure<NoFeatureConfig>> BACKROOMS_LANDMARK = STRUCTURES.register("backrooms_landmark", BackroomsLandmarkStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> RED_BACKROOMS_LANDMARK = STRUCTURES.register("red_backrooms_landmark", RedBackroomsLandmarkStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> POOLROOMS_LANDMARK = STRUCTURES.register("poolrooms_landmark", PoolroomsLandmarkStructure::new);
+
+  
     public static final RegistryObject<Structure<NoFeatureConfig>> PARAGONIC_CORE = STRUCTURES.register("paraconic_core", ParagonicCoreStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> SAITA_LOOT_ROOM = STRUCTURES.register("saita_loot_room", SaitaLootRoomStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> MIIZEAL_LOOT_ROOM = STRUCTURES.register("miizeal_loot_room", MiizealLootRoomStructure::new);
@@ -109,12 +114,17 @@ public class StructureInit {
         setupMapSpacingAndLand(ODYSSEY_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.odysseySeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_TOP.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
         setupMapSpacingAndLand(DRAGON_STATUE_BOTTOM.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, StructuresConstants.dragonStatueSeed), false);
-        setupMapSpacingAndLand(BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.mediumMax, StructuresConstants.mediumMin, 752366482), false);
         setupMapSpacingAndLand(UNDERGROUND_CITY.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 972366482), false);
         setupMapSpacingAndLand(PALADIN_HILL.get(), new StructureSeparationSettings(StructuresConstants.rarerMax, StructuresConstants.rarerMin, 688386482), true);
         setupMapSpacingAndLand(NIGHTSOULS_FINAL_CASTLE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax + 30, StructuresConstants.insanerMin + 30, 1237568882), false);   
-        setupMapSpacingAndLand(RED_BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 1323871482), false);
-        setupMapSpacingAndLand(POOLROOMS.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, 1323875584), false);
+        setupMapSpacingAndLand(BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, StructuresConstants.backroomsSeed), false);
+        setupMapSpacingAndLand(RED_BACKROOMS.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, StructuresConstants.redBackroomsSeed), false);
+        setupMapSpacingAndLand(POOLROOMS.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, StructuresConstants.poolroomsSeed), false);
+        
+        
+        setupMapSpacingAndLand(BACKROOMS_LANDMARK.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, StructuresConstants.backroomsSeed), false);
+        setupMapSpacingAndLand(RED_BACKROOMS_LANDMARK.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, StructuresConstants.redBackroomsSeed), false);
+        setupMapSpacingAndLand(POOLROOMS_LANDMARK.get(), new StructureSeparationSettings(StructuresConstants.rareMax, StructuresConstants.rareMin, StructuresConstants.poolroomsSeed), false);
     
         
         setupMapSpacingAndLand(PARAGONIC_CORE.get(), new StructureSeparationSettings(StructuresConstants.insanerMax, StructuresConstants.insanerMin, 122377928), true);
