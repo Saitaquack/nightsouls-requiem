@@ -9,6 +9,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.merchant.villager.VillagerEntity;
+import net.minecraft.entity.monster.CaveSpiderEntity;
 import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.monster.RavagerEntity;
 import net.minecraft.entity.monster.VexEntity;
@@ -345,12 +346,19 @@ public class NightSoulsLuckyBlock extends Block {
 		
 		else if(randomPrice < 485)
 		{
-			worldIn.setBlockState(pos, Blocks.COBBLESTONE.getDefaultState());
-			worldIn.setBlockState(pos.add(1, 0, 0), Blocks.COBBLESTONE.getDefaultState());
-			worldIn.setBlockState(pos.add(-1, 0, 0), Blocks.COBBLESTONE.getDefaultState());
-			worldIn.setBlockState(pos.add(0, 1, 0), Blocks.COBBLESTONE.getDefaultState());
-			worldIn.setBlockState(pos.add(0, 2, 0), Blocks.COBBLESTONE.getDefaultState());
-			worldIn.setBlockState(pos.add(0, 3, 0), Blocks.COBWEB.getDefaultState());
+			CaveSpiderEntity caveSpider1 = new CaveSpiderEntity(EntityType.CAVE_SPIDER, worldIn);
+			CaveSpiderEntity caveSpider2 = new CaveSpiderEntity(EntityType.CAVE_SPIDER, worldIn);
+			CaveSpiderEntity caveSpider3 = new CaveSpiderEntity(EntityType.CAVE_SPIDER, worldIn);
+			CaveSpiderEntity caveSpider4 = new CaveSpiderEntity(EntityType.CAVE_SPIDER, worldIn);
+			caveSpider1.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
+			caveSpider2.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
+			caveSpider3.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
+			caveSpider4.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
+			worldIn.addEntity(caveSpider1);
+			worldIn.addEntity(caveSpider2);
+			worldIn.addEntity(caveSpider3);
+			worldIn.addEntity(caveSpider4);
+			
 		}
 		else if(randomPrice < 500)
 		{
