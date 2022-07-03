@@ -16,6 +16,7 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.Rarity;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.SoundCategory;
@@ -78,6 +79,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 		 if(entityIn instanceof PlayerEntity)
 	    	{
 	    		 PlayerEntity playerIn = (PlayerEntity)entityIn;	
+	   		 
 	    		 if(!stack.isEnchanted() && playerIn.isCreative())
 			
 	    		 {
@@ -103,7 +105,37 @@ public class HellfireEmperorArmor extends ArmorItem {
 	   player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.HELLFIRE_EMPEROR_LEGGINGS.get() && 
 	   player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.HELLFIRE_EMPEROR_BOOTS.get())
 							    	 
-		{		 
+		{		
+		
+		//Particle Maker
+		
+		double particleChance = random.nextInt(6);
+		if(particleChance == 0)
+		{	
+			boolean negX = random.nextBoolean();
+			boolean negY = random.nextBoolean();
+			boolean negZ = random.nextBoolean();
+			
+			double randX = random.nextDouble() * 0.25D;
+			double randY = random.nextDouble() * 0.25D;
+			double randZ = random.nextDouble() * 0.25D;
+			double randHeight = random.nextDouble();
+			
+			if(negX)
+			{
+				randX = -randX;
+			}
+			if(negY)
+			{
+				randY = -randY;
+			}
+			if(negZ)
+			{
+				randZ = -randZ;
+			}
+			
+		    world.addParticle(ParticleTypes.FLAME, player.getPosX(), player.getPosY() + randHeight, player.getPosZ(), randX, randY, randZ);
+		}
 
 				 
         //Global debuffs removals

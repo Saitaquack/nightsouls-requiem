@@ -11,6 +11,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.SoundCategory;
@@ -70,6 +71,37 @@ public class ParagonicNightSoulsArmor extends ArmorItem {
 	
 	@Override
 	public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
+		
+		//Particle Maker
+		
+		double particleChance = random.nextInt(5);
+		if(particleChance == 0)
+		{	
+			boolean negX = random.nextBoolean();
+			boolean negY = random.nextBoolean();
+			boolean negZ = random.nextBoolean();
+			
+			double randX = random.nextDouble() * 0.25D;
+			double randY = random.nextDouble() * 0.25D;
+			double randZ = random.nextDouble() * 0.25D;
+			double randHeight = random.nextDouble();
+			
+			if(negX)
+			{
+				randX = -randX;
+			}
+			if(negY)
+			{
+				randY = -randY;
+			}
+			if(negZ)
+			{
+				randZ = -randZ;
+			}
+			
+		    world.addParticle(ParticleTypes.PORTAL, player.getPosX(), player.getPosY() + randHeight, player.getPosZ(), randX, randY, randZ);
+		    world.addParticle(ParticleTypes.DRAGON_BREATH, player.getPosX(), player.getPosY() + randHeight, player.getPosZ(), randX, randY, randZ);
+		}
 		
 		// Donne des NightSouls Emeralds
 		if(world.getGameTime() % 3000 == 0)

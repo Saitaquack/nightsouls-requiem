@@ -15,6 +15,7 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.Rarity;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.SoundCategory;
@@ -96,6 +97,36 @@ public class BinaryArmor extends ArmorItem {
 	   player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.BINARY_BOOTS.get())
 													    	 
 	   {
+		
+		//Particle Maker
+		
+		double particleChance = random.nextInt(5);
+		if(particleChance == 0)
+		{	
+			boolean negX = random.nextBoolean();
+			boolean negY = random.nextBoolean();
+			boolean negZ = random.nextBoolean();
+			
+			double randX = random.nextDouble() * 0.5D;
+			double randY = random.nextDouble() * 0.5D;
+			double randZ = random.nextDouble() * 0.5D;
+			double randHeight = random.nextDouble();
+			
+			if(negX)
+			{
+				randX = -randX;
+			}
+			if(negY)
+			{
+				randY = -randY;
+			}
+			if(negZ)
+			{
+				randZ = -randZ;
+			}
+			
+		    world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, player.getPosX(), player.getPosY() + randHeight, player.getPosZ(), randX, randY, randZ);
+		}
 		 		 		 		 
 		player.removePotionEffect(Effects.POISON);
 		player.removePotionEffect(Effects.WITHER);

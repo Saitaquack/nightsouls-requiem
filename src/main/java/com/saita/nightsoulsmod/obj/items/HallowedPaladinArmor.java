@@ -15,6 +15,7 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.Rarity;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.SoundCategory;
@@ -97,6 +98,41 @@ public class HallowedPaladinArmor extends ArmorItem {
 	    player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.HALLOWED_PALADIN_BOOTS.get())
 										    	 
 		{	
+		 
+		//Particle Maker
+
+		 world.addParticle(ParticleTypes.END_ROD, player.getPosX(), player.getPosY() + 2.25D, player.getPosZ() + 0.25D, 0.0D, 0.0D, 0.0D);
+		 world.addParticle(ParticleTypes.END_ROD, player.getPosX(), player.getPosY() + 2.25D, player.getPosZ() - 0.25D, 0.0D, 0.0D, 0.0D);
+		 world.addParticle(ParticleTypes.END_ROD, player.getPosX() + 0.25D, player.getPosY() + 2.25D, player.getPosZ(), 0.0D, 0.0D, 0.0D);
+		 world.addParticle(ParticleTypes.END_ROD, player.getPosX() - 0.25F, player.getPosY() + 2.25D, player.getPosZ(), 0.0D, 0.0D, 0.0D);
+
+		double particleChance = random.nextInt(15);
+		if(particleChance == 0)
+		{	
+			boolean negX = random.nextBoolean();
+			boolean negY = random.nextBoolean();
+			boolean negZ = random.nextBoolean();
+			
+			double randX = random.nextDouble() * 0.25D;
+			double randY = random.nextDouble() * 0.25D;
+			double randZ = random.nextDouble() * 0.25D;
+			double randHeight = random.nextDouble();
+			
+			if(negX)
+			{
+				randX = -randX;
+			}
+			if(negY)
+			{
+				randY = -randY;
+			}
+			if(negZ)
+			{
+				randZ = -randZ;
+			}
+			
+		    world.addParticle(ParticleTypes.END_ROD, player.getPosX(), player.getPosY() + randHeight, player.getPosZ(), randX, randY, randZ);
+		}
 		 			 
 		player.removePotionEffect(Effects.POISON);
 		player.removePotionEffect(Effects.WITHER);

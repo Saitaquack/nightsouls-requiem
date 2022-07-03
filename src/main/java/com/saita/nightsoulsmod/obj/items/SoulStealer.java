@@ -41,7 +41,7 @@ public class SoulStealer extends SwordItem {
 		
 		return Rarity.EPIC;
 	}
-	
+
 	@Override
 	public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		
