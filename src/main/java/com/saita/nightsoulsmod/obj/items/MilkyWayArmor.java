@@ -85,6 +85,20 @@ public class MilkyWayArmor extends ArmorItem {
 	 @Override
 	 public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
 		 
+	 if(world.getGameTime() % 3000 == 0)
+	    {
+		 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 1);
+		 	player.dropItem(nsEmerald, false).setNoPickupDelay();
+		 	world.playSound(player, player.getPosition(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.MASTER, 0.5F, 1.0F);
+        }
+		 
+	 if(player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.MILKY_WAY_HELMET.get() && 
+	   (player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.MILKY_WAY_CHESTPLATE.get() || player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.ELYTRA) && 
+		player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.MILKY_WAY_LEGGINGS.get() && 
+		player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.MILKY_WAY_BOOTS.get())
+				    	 
+		 {		
+		 
 		//Particle Maker
 			
 		double particleChance = random.nextInt(6);
@@ -114,20 +128,6 @@ public class MilkyWayArmor extends ArmorItem {
 			
 		    world.addParticle(ParticleTypes.FIREWORK, player.getPosX(), player.getPosY() + randHeight, player.getPosZ(), randX, randY, randZ);
 		}
-		 
-		 if(world.getGameTime() % 3000 == 0)
-		    {
-			 	ItemStack nsEmerald = new ItemStack(ItemInit.NIGHTSOULS_EMERALD.get(), 1);
-			 	player.dropItem(nsEmerald, false).setNoPickupDelay();
-			 	world.playSound(player, player.getPosition(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.MASTER, 0.5F, 1.0F);
-            }
-		 
-	 if(player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.MILKY_WAY_HELMET.get() && 
-	   (player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ItemInit.MILKY_WAY_CHESTPLATE.get() || player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.ELYTRA) && 
-		player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == ItemInit.MILKY_WAY_LEGGINGS.get() && 
-		player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.MILKY_WAY_BOOTS.get())
-				    	 
-		 {		 
 
 		 player.removePotionEffect(Effects.POISON);
 		 player.removePotionEffect(Effects.WITHER);

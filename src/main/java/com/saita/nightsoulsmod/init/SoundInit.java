@@ -448,6 +448,12 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> GIGACHAD = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "gigachad")));
 	
+	public static final Lazy<SoundEvent> PLANTERA = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "plantera")));
+	
+	public static final Lazy<SoundEvent> LIGHTER_ATMOSPHERE = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "lighter_atmosphere")));
+	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));
 	

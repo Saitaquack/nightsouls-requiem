@@ -606,6 +606,28 @@
         ]
       }
     },
+    
+    "plantera_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:plantera_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "lighter_atmosphere_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:lighter_atmosphere_music_disc"
+          }
+        ]
+      }
+    },
         
     "star_gatherer_final_music_disc": {
       "trigger": "minecraft:inventory_changed",
@@ -708,6 +730,8 @@
       "malzeno_music_disc",
       "davy_jones_music_disc",
       "gigachad_music_disc",
+      "plantera_music_disc",
+      "lighter_atmosphere_music_disc",
       "star_gatherer_final_music_disc",
       "hellfire_emperor_final_music_disc",
       "hallowed_paladin_final_music_disc",

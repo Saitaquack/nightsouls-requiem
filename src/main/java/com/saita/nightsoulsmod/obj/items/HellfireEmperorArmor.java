@@ -177,7 +177,7 @@ public class HellfireEmperorArmor extends ArmorItem {
 			    }
 				 		
 			}
-			else if(player.world.getDimensionKey().getLocation().getPath() == "the_nether" || world.isNightTime())
+			else if(player.world.getDimensionKey().getLocation().getPath() == "the_nether")
 			{
 				player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 5, 2, false, false));
 				player.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5, 1, false, false));
