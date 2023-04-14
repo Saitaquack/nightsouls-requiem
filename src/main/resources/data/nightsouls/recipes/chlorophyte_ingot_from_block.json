@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:chlorophyte_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:chlorophyte_ingot",
+    "count": 9
+  }
+}

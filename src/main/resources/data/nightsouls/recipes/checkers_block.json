@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WB",
+    "BW"
+    
+  ],
+  "key": {
+    "W": {
+      "item": "nightsouls:pure_light_block"
+    },
+    
+    "B": {
+      "item": "nightsouls:pitch_black_block"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:checkers_block",
+    "count": 4
+  }
+}

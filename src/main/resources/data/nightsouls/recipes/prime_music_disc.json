@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:primium_ingot"},
+    {"item": "nightsouls:primium_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:prime_music_disc"
+  }
+
+}

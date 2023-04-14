@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_saitastone",
+  "display": {
+    "icon": {
+      "item": "nightsouls:take_a_breather"
+    },
+    "title": {
+      "translate": "advancements.story.get_take_a_breather.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_take_a_breather.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "take_a_breather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:take_a_breather"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "take_a_breather"
+    ]
+  ]
+}

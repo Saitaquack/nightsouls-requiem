@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "nightsouls:blocks/crystal_block",
+        "top": "nightsouls:blocks/crystal_block",
+        "side": "nightsouls:blocks/crystal_block"
+    }
+}

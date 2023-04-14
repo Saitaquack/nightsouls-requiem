@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "nightsouls:blocks/bastirite_tiles",
+        "top": "nightsouls:blocks/bastirite_tiles",
+        "side": "nightsouls:blocks/bastirite_tiles"
+    }
+}

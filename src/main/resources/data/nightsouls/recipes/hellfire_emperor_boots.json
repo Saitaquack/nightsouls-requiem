@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W W",
+    "TAT",
+    "OMO"
+  ],
+  "key": {
+  
+    "A": {
+      "item": "nightsouls:chlorophyte_boots"
+    },
+    
+    "M": {
+      "item": "nightsouls:calamitous_miizealite_ingot"
+    },
+    
+    "W": {
+      "item": "nightsouls:wither_essence"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+    
+    "O": {
+      "item": "nightsouls:hellstone"
+    }
+  },
+  "result": {
+    "item": "nightsouls:hellfire_emperor_boots"
+  }
+}

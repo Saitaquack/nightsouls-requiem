@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:heroic_shield_charm"},
+    {"item": "nightsouls:blood_charm"},
+    {"item": "nightsouls:cranite_ingot"},
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:saitastone_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:berserker_shield"
+  }
+}

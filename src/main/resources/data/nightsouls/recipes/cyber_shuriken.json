@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:saitastone_ingot"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:primium_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:cyber_shuriken",
+    "count": 16
+  }
+}

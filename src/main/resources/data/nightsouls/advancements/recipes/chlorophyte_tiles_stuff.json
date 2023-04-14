@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:chlorophyte_tiles_stairs",
+      "nightsouls:chlorophyte_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_chlorophyte_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:chlorophyte_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_chlorophyte_tiles",
+    ]
+  ]
+}

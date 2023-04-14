@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:crystal_seeds"},
+    {"item": "nightsouls:true_night_soul"},
+    {"item": "nightsouls:suspicious_blue_powder"},
+    {"item": "nightsouls:chlorophyte_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:pure_blue_crystal_seeds",
+    "count": 2
+  }
+}

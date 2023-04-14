@@ -1,0 +1,113 @@
+{
+  "parent": "nightsouls:story/get_night_soul_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nightsouls:bloodzeal"
+    },
+    "title": {
+      "translate": "advancements.story.get_combo_item.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_combo_item.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bloodzeal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bloodzeal"
+          }
+        ]
+      }
+    },
+    "insta_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:insta_pickaxe"
+          }
+        ]
+      }
+    },
+    
+    "reinhardt_hammer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:reinhardt_hammer"
+          }
+        ]
+      }
+    },   
+    "pyro_barbarian_waraxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:pyro_barbarian_waraxe"
+          }
+        ]
+      }
+    },    
+    "wealth_digger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:wealth_digger"
+          }
+        ]
+      }
+    },
+     "coolfire_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:coolfire_blade"
+          }
+        ]
+      }
+    },
+    "silent_watching_orb": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:silent_watching_orb"
+          }
+        ]
+      }
+    },
+     "techno_gun": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:techno_gun"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bloodzeal",
+      "insta_pickaxe",
+      "reinhardt_hammer",
+      "pyro_barbarian_waraxe",
+      "wealth_digger",
+      "coolfire_blade",
+      "silent_watching_orb",
+      "techno_gun"
+    ]
+  ]
+}

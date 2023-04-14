@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:saitastone_block",
+      "nightsouls:saitastone_sword",
+      "nightsouls:saitastone_pickaxe",
+      "nightsouls:saitastone_axe",
+      "nightsouls:saitastone_shovel",
+      "nightsouls:saitastone_hoe",
+      "nightsouls:saitastone_katana",
+      "nightsouls:saitastone_helmet",
+      "nightsouls:saitastone_chestplate",
+      "nightsouls:saitastone_leggings",
+      "nightsouls:saitastone_boots",
+      "nightsouls:bloodzeal",
+      "nightsouls:take_a_breather",     
+      "nightsouls:reinhardt_hammer",
+      "nightsouls:magic_mirror",
+      "nightsouls:hopes_and_dreams_music_disc",
+      "nightsouls:wealth_digger",
+      "nightsouls:infogrames_music_disc",
+      "nightsouls:awaken_music_disc",
+      "nightsouls:fade",
+      "nightsouls:ashes_on_the_fire_music_disc",
+      "nightsouls:burning_colosseum_music_disc",
+      "nightsouls:saitastone_tiles",
+      "nightsouls:helikopter_music_disc",
+      "nightsouls:cyber_shuriken"
+    ]
+  },
+  "criteria": {
+    "has_saitastone_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_saitastone_ingot",
+    ]
+  ]
+}

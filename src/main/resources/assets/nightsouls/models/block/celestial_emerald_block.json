@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "nightsouls:blocks/celestial_emerald_block"
+    }
+}

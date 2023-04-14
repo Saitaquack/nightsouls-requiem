@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "nightsouls:items/bow-ser_pulling_0"
+  }
+}

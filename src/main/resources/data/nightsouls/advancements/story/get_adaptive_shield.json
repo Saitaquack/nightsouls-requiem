@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_cranite",
+  "display": {
+    "icon": {
+      "item": "nightsouls:adaptive_shield"
+    },
+    "title": {
+      "translate": "advancements.story.get_adaptive_shield.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_adaptive_shield.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adaptive_shield": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:adaptive_shield"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "adaptive_shield"
+    ]
+  ]
+}

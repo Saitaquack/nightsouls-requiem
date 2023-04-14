@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SBS",
+    "SSS" 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:blank_music_disc"
+    },
+    
+    "S": {
+      "item": "nightsouls:star_bit"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:mario_galaxy_credits_music_disc"
+  }
+}

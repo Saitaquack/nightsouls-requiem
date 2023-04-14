@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:chlorophyte_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:chlorophyte_tiles",
+    "count": 32
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:cranite_block",
+      "nightsouls:cranite_sword",
+      "nightsouls:cranite_pickaxe",
+      "nightsouls:cranite_axe",
+      "nightsouls:cranite_shovel",
+      "nightsouls:cranite_hoe",
+      "nightsouls:cranite_waraxe",
+      "nightsouls:cranite_helmet",
+      "nightsouls:cranite_chestplate",
+      "nightsouls:cranite_leggings",
+      "nightsouls:cranite_boots",
+      "nightsouls:amp_it_up",
+      "nightsouls:reinhardt_hammer",
+      "nightsouls:pyro_barbarian_waraxe",
+      "nightsouls:toto_africa_music_disc",
+      "nightsouls:kira_music_disc",
+      "nightsouls:infogrames_music_disc",
+      "nightsouls:awaken_music_disc",
+      "nightsouls:pyro_barbarian_music_disc",
+      "nightsouls:adaptive_shield",
+      "nightsouls:bowser_music_disc",
+      "nightsouls:speeding_mixer",
+      "nightsouls:pure_cranite_ingot",
+      "nightsouls:burning_colosseum_music_disc",
+      "nightsouls:cranite_tiles",
+      "nightsouls:heroic_shield_charm",
+      "nightsouls:helikopter_music_disc",
+      "nightsouls:pure_light_block",
+      "nightsouls:techno_gun"
+    ]
+  },
+  "criteria": {
+    "has_cranite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_cranite_ingot",
+    ]
+  ]
+}

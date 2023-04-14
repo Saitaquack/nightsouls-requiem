@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "CJC",
+    " C " 
+  ],
+  "key": {
+    "J": {
+      "item": "minecraft:jukebox"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:speeding_mixer"
+  }
+}

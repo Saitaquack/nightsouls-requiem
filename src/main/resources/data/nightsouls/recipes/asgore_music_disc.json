@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:life_crystal"},
+    {"item": "nightsouls:night_soul"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:asgore_music_disc"
+  }
+
+}

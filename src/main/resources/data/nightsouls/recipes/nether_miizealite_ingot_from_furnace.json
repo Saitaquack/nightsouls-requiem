@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nightsouls:nether_miizealite_ore"
+  },
+  
+  "result": "nightsouls:miizealite_ingot",
+  "experience": 2,
+  "cookingtime": 200
+}

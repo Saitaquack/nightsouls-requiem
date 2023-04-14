@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:adventure/get_power_moon",
+  "display": {
+    "icon": {
+      "item": "nightsouls:suspicious_blue_powder"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_blue_powder.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_blue_powder.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "suspicious_blue_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:suspicious_blue_powder"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "suspicious_blue_powder"
+    ]
+  ]
+}

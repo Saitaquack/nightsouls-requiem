@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:mama_lauda_music_disc"
+  }
+
+}

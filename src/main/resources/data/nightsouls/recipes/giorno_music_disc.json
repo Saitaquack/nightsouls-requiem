@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"}
+  ],
+  
+  "result": {
+    "item": "nightsouls:giorno_music_disc"
+  }
+
+}

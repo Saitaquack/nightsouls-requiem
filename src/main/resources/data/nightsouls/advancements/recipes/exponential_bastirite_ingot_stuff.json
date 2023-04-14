@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:java_fury",
+      "nightsouls:hexadecimator",
+      "nightsouls:binary_helmet",
+      "nightsouls:binary_chestplate",
+      "nightsouls:binary_leggings",
+      "nightsouls:binary_boots",
+      "nightsouls:reality_warper_final_music_disc"
+    ]
+  },
+  "criteria": {
+    "has_exponential_bastirite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:exponential_bastirite_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_expnential_bastirite_ingot",
+    ]
+  ]
+}

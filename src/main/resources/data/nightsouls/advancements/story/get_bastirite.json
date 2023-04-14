@@ -1,0 +1,46 @@
+{
+  "parent": "nightsouls:story/get_night_soul_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    "title": {
+      "translate": "advancements.story.get_bastirite.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_bastirite.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bastirite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_ingot"
+          }
+        ]
+      }
+    },
+     "bastirite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_ore"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bastirite_ingot",
+      "bastirite_ore"
+    ]
+  ]
+}

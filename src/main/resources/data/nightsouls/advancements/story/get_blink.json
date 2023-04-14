@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_bastirite",
+  "display": {
+    "icon": {
+      "item": "nightsouls:blink"
+    },
+    "title": {
+      "translate": "advancements.story.get_blink.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_blink.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blink": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:blink"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blink"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:nether_miizealite_ore"
+        
+        }
+      ],
+      
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }    
+      ]
+    }
+  ]
+}

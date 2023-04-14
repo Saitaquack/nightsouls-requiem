@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS" 
+  ],
+  "key": {
+  
+    "S": {
+      "item": "minecraft:stone"
+    },
+    
+    "D": {
+      "item": "minecraft:diamond"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:stone_mask"
+  }
+}

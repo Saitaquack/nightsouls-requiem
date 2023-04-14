@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BLB",
+    "BBB" 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:necromantic_bone"
+    },
+    
+    "L": {
+      "item": "nightsouls:villager_blood"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:wither_skeleton_skull"
+  }
+}

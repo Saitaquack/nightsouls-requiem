@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:miizealite_block",
+      "nightsouls:miizealite_sword",
+      "nightsouls:miizealite_pickaxe",
+      "nightsouls:miizealite_axe",
+      "nightsouls:miizealite_shovel",
+      "nightsouls:miizealite_hoe",
+      "nightsouls:miizealite_cutlass",
+      "nightsouls:miizealite_helmet",
+      "nightsouls:miizealite_chestplate",
+      "nightsouls:miizealite_leggings",
+      "nightsouls:miizealite_boots",
+      "nightsouls:bloodzeal",
+      "nightsouls:wraith_form",
+      "nightsouls:insta_pickaxe",
+      "nightsouls:miizealite_bow",
+      "nightsouls:pyro_barbarian_waraxe",
+      "nightsouls:hopes_and_dreams_music_disc",
+      "nightsouls:infogrames_music_disc",
+      "nightsouls:pyro_barbarian_music_disc",
+      "nightsouls:bowser_music_disc",
+      "nightsouls:tnt_from_miizealite",
+      "nightsouls:pure_miizealite_ingot",
+      "nightsouls:miizealite_tiles",
+      "nightsouls:miizealite_bomb",
+      "nightsouls:helikopter_music_disc"
+    ]
+  },
+  "criteria": {
+    "has_miizealite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_miizealite_ingot",
+    ]
+  ]
+}

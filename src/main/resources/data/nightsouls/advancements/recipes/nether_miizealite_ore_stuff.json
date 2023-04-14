@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:nether_miizealite_ingot_from_blasting",
+      "nightsouls:nether_miizealite_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_nether_miizealite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nether_miizealite_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_nether_miizealite_ore",
+    ]
+  ]
+}

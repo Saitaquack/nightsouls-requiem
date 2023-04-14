@@ -1,0 +1,68 @@
+{
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "display": {
+    "icon": {
+      "item": "nightsouls:red_power_moon"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_power_moon.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_power_moon.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "red_power_moon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:red_power_moon"
+          }
+        ]
+      }
+    },
+    "purple_power_moon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:purple_power_moon"
+          }
+        ]
+      }
+    },
+    "white_power_moon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:white_power_moon"
+          }
+        ]
+      }
+    },
+    "blue_power_moon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:blue_power_moon"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_power_moon",
+      "purple_power_moon",
+      "white_power_moon",
+      "blue_power_moon"
+    ]
+  ]
+}

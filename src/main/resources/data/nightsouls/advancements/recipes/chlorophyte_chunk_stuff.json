@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:chlorophyte_ingot",
+      "nightsouls:chloromud",
+      "nightsouls:chloromud2"
+            
+    ]
+  },
+  "criteria": {
+    "has_chlorophyte_chunk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:chlorophyte_chunk"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_chlorophyte_chunk",
+    ]
+  ]
+}

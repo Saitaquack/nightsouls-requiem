@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NMN",
+    "SBS",
+    "NMN" 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:bloody_lens"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_ingot"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    
+    "N": {
+      "item": "nightsouls:night_soul"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:silent_watching_orb"
+  }
+}

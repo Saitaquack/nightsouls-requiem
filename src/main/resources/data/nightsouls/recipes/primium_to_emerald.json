@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:primium_ingot"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"}
+    
+  ],
+  
+  "result": {
+    "item": "minecraft:emerald",
+    "count": 3
+  }
+}

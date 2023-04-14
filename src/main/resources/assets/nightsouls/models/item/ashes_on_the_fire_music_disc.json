@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+        "layer0": "nightsouls:items/ashes_on_the_fire_music_disc" 
+        }
+}

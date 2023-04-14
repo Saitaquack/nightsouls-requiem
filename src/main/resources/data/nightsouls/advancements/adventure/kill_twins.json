@@ -1,0 +1,59 @@
+{
+  "parent": "nightsouls:adventure/kill_requiem_mob",
+  "display": {
+    "icon": {
+      "item": "nightsouls:mechanical_eye"
+    },
+  	"title": {
+      "translate": "advancements.adventure.kill_twins.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.kill_twins.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 750
+  },
+  "criteria": {
+    "nightsouls:spazmatism": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:spazmatism"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "nightsouls:retinazer": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:retinazer"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nightsouls:spazmatism"
+    ],
+    [
+      "nightsouls:retinazer"
+    ]
+  ]
+}

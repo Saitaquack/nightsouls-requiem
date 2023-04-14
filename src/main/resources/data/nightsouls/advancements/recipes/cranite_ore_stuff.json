@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:cranite_ingot_from_blasting",
+      "nightsouls:cranite_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_cranite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_cranite_ore",
+    ]
+  ]
+}

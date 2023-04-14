@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:therenite_ingot_from_blasting",
+      "nightsouls:therenite_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_therenite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_therenite_ore",
+    ]
+  ]
+}

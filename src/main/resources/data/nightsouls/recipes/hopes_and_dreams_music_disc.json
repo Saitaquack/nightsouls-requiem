@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:saitastone_ingot"},
+    {"item": "nightsouls:miizealite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:hopes_and_dreams_music_disc"
+  }
+
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:fire_blade",
+      "nightsouls:cat_a_clysm"
+    ]
+  },
+  "criteria": {
+    "has_miizealite_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_sword"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_miizealite_sword",
+    ]
+  ]
+}

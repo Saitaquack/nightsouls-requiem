@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSP",
+    "TRT",
+    "ISI"
+  ],
+  "key": {
+  
+    "R": {
+      "item": "nightsouls:blood_edge"
+    },
+    
+    "S": {
+      "item": "nightsouls:absolute_saitastone_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:red_power_moon"
+    },
+    
+    "I": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:galactic_slayer"
+  }
+}

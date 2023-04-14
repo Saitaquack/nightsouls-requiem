@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:instant_healing_potion_from_life_crystal",
+      "nightsouls:asgore_music_disc",
+      "nightsouls:biotic_blade",
+      "nightsouls:life_band",
+      "nightsouls:aether_music_disc"
+    ]
+  },
+  "criteria": {
+    "has_life_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:life_crystal"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_life_crystal",
+    ]
+  ]
+}

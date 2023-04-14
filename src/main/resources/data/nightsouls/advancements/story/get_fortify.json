@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_bastirite",
+  "display": {
+    "icon": {
+      "item": "nightsouls:fortify"
+    },
+    "title": {
+      "translate": "advancements.story.get_fortify.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_fortify.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fortify": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fortify"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fortify"
+    ]
+  ]
+}

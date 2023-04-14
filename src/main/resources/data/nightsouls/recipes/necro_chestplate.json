@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CMC",
+    "NSN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "nightsouls:necromantic_bone"
+    },
+    
+    "S": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:necro_chestplate"
+  }
+}

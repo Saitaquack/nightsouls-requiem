@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BPB",
+    "PCP",
+    "BPB"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    
+    "P": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:shulker_shell",
+    "count": 2
+  }
+}

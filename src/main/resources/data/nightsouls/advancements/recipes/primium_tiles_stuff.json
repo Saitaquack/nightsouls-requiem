@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:primium_tiles_stairs",
+      "nightsouls:primium_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_primium_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_primium_tiles",
+    ]
+  ]
+}

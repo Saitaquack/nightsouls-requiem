@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DCD",
+    "DDD"
+  ],
+  "key": {
+  
+    "D": {
+      "item": "minecraft:coarse_dirt"
+    },
+    "C": {
+      "item": "nightsouls:chlorophyte_chunk"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:chloromud",
+    "count": 16
+  }
+}

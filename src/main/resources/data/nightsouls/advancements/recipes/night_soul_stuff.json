@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:night_soul_pickaxe",
+      "nightsouls:night_soul_pickaxe_from_netherite_pickaxe",
+      "nightsouls:bloodzeal",
+      "nightsouls:insta_pickaxe",
+      "nightsouls:reinhardt_hammer",
+      "nightsouls:pyro_barbarian_waraxe",
+      "nightsouls:magic_mirror",
+      "nightsouls:nightsouls_lucky_block",
+      "nightsouls:wealth_digger",
+      "nightsouls:coolfire_blade",
+      "nightsouls:asgore_music_disc",
+      "nightsouls:nightsouls_emerald",
+      "nightsouls:silent_watching_orb",
+      "nightsouls:techno_gun",
+      "nightsouls:emerald_splash"
+    ]
+  },
+  "criteria": {
+    "has_night_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:night_soul"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_night_soul",
+    ]
+  ]
+}

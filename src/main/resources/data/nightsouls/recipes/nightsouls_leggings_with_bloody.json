@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:bloody_leggings"},
+    {"item": "nightsouls:miizealite_leggings"},
+    {"item": "nightsouls:cranite_leggings"},
+    {"item": "nightsouls:bastirite_leggings"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:nightsouls_essence"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:nightsouls_leggings"
+    }
+}

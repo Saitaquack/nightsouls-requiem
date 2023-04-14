@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:rowequite_ingot"},
+    {"item": "nightsouls:rowequite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:equila_music_disc"
+  }
+
+}

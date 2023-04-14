@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "nightsouls:blocks/miizealite_tiles",
+        "top": "nightsouls:blocks/miizealite_tiles",
+        "side": "nightsouls:blocks/miizealite_tiles"
+    }
+}

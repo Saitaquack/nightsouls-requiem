@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ESE",
+    "STS",
+    "DSD"
+  ],
+  "key": {
+  
+    "S": {
+      "item": "nightsouls:saitastone_block"
+    },
+    
+    "E": {
+      "item": "nightsouls:spacestone"
+    },
+    
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:absolute_saitastone_ingot"
+  }
+}

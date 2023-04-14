@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "FBF",
+    "FBF" 
+  ],
+  "key": {
+  
+    "F": {
+      "item": "minecraft:rotten_flesh"
+    },
+    
+    "B": {
+      "item": "nightsouls:villager_blood"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:zombie_head"
+  }
+}

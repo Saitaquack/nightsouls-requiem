@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ECE",
+    "CTC",
+    "DCD"
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:cranite_block"
+    },
+    
+    "E": {
+      "item": "nightsouls:heavenstone"
+    },
+    
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:ultimate_cranite_ingot"
+  }
+}

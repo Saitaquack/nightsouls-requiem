@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:pack_of_four_torches"}
+    
+  ],
+  
+  "result": {
+    "item": "minecraft:torch",
+    "count": 4
+  }
+}

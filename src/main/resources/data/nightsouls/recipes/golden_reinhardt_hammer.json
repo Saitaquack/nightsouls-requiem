@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SGS",
+    "TRT",
+    "CGC"
+  ],
+  "key": {
+  
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+  
+    "R": {
+      "item": "nightsouls:reinhardt_hammer"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_block"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_block"
+    },
+    
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+    
+    
+  },
+  "result": {
+    "item": "nightsouls:golden_reinhardt_hammer"
+  }
+}

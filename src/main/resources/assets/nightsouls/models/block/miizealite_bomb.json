@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "particle": "nightsouls:blocks/miizealite_bomb_side",
+       "up": "nightsouls:blocks/miizealite_bomb_bottop",
+       "down": "nightsouls:blocks/miizealite_bomb_bottop",
+       "south": "nightsouls:blocks/miizealite_bomb_side",
+       "north": "nightsouls:blocks/miizealite_bomb_side",
+       "west": "nightsouls:blocks/miizealite_bomb_side",
+       "east": "nightsouls:blocks/miizealite_bomb_side"
+   }
+}

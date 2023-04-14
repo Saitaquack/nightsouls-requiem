@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:instant_healing_potion",
+      "nightsouls:crystal_block",
+      "nightsouls:enchanted_golden_apple",
+      "nightsouls:observatory_music_disc",
+      "nightsouls:starship_music_disc",
+      "nightsouls:crystal_storm",
+      "nightsouls:cranite_to_miizealite",
+      "nightsouls:miizealite_to_cranite",
+      "nightsouls:saitastone_to_bastirite",
+      "nightsouls:bastirite_to_saitastone",
+      "nightsouls:primium_to_emerald",
+      "nightsouls:rowequite_to_gold",
+      "nightsouls:therenite_to_diamond",
+      "nightsouls:primium_to_saitastone",
+      "nightsouls:primium_to_miizealite",
+      "nightsouls:primium_to_cranite",
+      "nightsouls:primium_to_bastirite",
+      "nightsouls:rowequite_to_saitastone",
+      "nightsouls:rowequite_to_miizealite",
+      "nightsouls:rowequite_to_cranite",
+      "nightsouls:rowequite_to_bastirite",
+      "nightsouls:therenite_to_saitastone",
+      "nightsouls:therenite_to_miizealite",
+      "nightsouls:therenite_to_cranite",
+      "nightsouls:therenite_to_bastirite"
+    ]
+  },
+  "criteria": {
+    "has_crystal_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:crystal_shard"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_crystal_shard",
+    ]
+  ]
+}

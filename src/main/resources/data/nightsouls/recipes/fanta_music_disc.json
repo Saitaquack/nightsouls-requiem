@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "FBF",
+    " F " 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:blank_music_disc"
+    },
+    
+    "F": {
+      "item": "nightsouls:fanta_glasses"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:fanta_music_disc"
+  }
+}

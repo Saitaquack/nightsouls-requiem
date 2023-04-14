@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:bastirite_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:bastirite_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LTL",
+    "TST",
+    "NTN" 
+  ],
+  "key": {
+  
+   "L": {
+      "item": "nightsouls:bloody_lens"
+   },
+   
+   "N": {
+      "item": "nightsouls:nightsouls_essence"
+   },
+  
+   "S": {
+      "item": "nightsouls:suspicious_looking_eye"
+   },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:mechanical_eye"
+  }
+}

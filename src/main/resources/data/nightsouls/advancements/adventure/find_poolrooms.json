@@ -1,0 +1,33 @@
+{
+  "parent": "nightsouls:adventure/get_power_moon",
+  "display": {
+    "icon": {
+      "item": "nightsouls:liminal_pool_tiles"
+    },
+    "title": {
+      "translate": "advancements.adventure.find_poolrooms.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.find_poolrooms.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "poolrooms": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "nightsouls:poolrooms"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "poolrooms"
+    ]
+  ]
+}

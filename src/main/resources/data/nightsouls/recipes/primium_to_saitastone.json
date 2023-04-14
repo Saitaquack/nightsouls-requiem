@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:primium_ingot"},
+    {"item": "nightsouls:saitastone_ingot"},
+    {"item": "nightsouls:crystal_shard"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:saitastone_ingot",
+    "count": 2
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_miizealite",
+  "display": {
+    "icon": {
+      "item": "nightsouls:wraith_form"
+    },
+    "title": {
+      "translate": "advancements.story.get_wraith_form.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_wraith_form.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wraith_form": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:wraith_form"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wraith_form"
+    ]
+  ]
+}

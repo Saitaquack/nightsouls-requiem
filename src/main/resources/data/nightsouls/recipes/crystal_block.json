@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "key": {
+    
+    "C": {
+      "item": "nightsouls:crystal_shard"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:crystal_block",
+    "count": 2
+  }
+}

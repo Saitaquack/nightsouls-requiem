@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SIS",
+    "G G"
+  ],
+  
+  "key": {
+  
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    
+    "S": {
+      "item": "minecraft:stick"
+    },
+    
+    "G": {
+      "item": "minecraft:glass_pane"
+    }
+    
+   },
+  "result": {
+    "item": "nightsouls:fanta_glasses"
+  }
+}

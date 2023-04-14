@@ -1,0 +1,15 @@
+{
+  "name": "nightsouls:freddy_fazbear_pizza",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "nightsouls:freddy_fazbear_pizza",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

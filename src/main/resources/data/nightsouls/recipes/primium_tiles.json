@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:primium_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:primium_tiles",
+    "count": 8
+  }
+}

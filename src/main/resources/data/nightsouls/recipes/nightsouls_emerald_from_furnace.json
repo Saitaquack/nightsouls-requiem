@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nightsouls:nightsouls_emerald_ore"
+  },
+  
+  "result": "nightsouls:nightsouls_emerald",
+  "experience": 1.5,
+  "cookingtime": 200
+}

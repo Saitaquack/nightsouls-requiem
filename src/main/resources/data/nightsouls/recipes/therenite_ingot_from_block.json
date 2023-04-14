@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:therenite_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:therenite_ingot",
+    "count": 9
+  }
+}

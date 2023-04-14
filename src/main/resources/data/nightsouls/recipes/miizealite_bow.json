@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "MBM",
+    " M "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bow"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:miizealite_bow"
+  }
+}

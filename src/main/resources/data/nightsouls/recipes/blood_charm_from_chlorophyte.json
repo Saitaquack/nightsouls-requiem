@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC" 
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:blood_sample"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:blood_charm"
+  }
+}

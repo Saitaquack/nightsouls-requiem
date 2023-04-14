@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BTB",
+    "BBB" 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:bastirite_seeds",
+    "count": 2
+  }
+}

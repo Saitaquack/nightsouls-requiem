@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PBP",
+    "TFT",
+    "IBI"
+  ],
+  "key": {
+  
+    "F": {
+      "item": "nightsouls:biotic_blade"
+    },
+    
+    "B": {
+      "item": "nightsouls:exponential_bastirite_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:blue_power_moon"
+    },
+    
+    "I": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:java_fury"
+  }
+}

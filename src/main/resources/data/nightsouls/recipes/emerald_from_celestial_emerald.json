@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:celestial_emerald"}
+    
+  ],
+  
+  "result": {
+    "item": "minecraft:emerald",
+    "count": 16
+  }
+}

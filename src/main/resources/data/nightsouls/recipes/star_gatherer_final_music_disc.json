@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:absolute_saitastone_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:star_gatherer_final_music_disc"
+  }
+}

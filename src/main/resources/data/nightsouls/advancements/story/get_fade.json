@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_saitastone",
+  "display": {
+    "icon": {
+      "item": "nightsouls:fade"
+    },
+    "title": {
+      "translate": "advancements.story.get_fade.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_fade.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fade"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fade"
+    ]
+  ]
+}

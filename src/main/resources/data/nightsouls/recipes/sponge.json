@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WBW",
+    " W " 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "W": {
+      "tag": "minecraft:wool"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:sponge",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:hellfire_emperor_leggings"},
+    {"item": "nightsouls:hallowed_paladin_leggings"},
+    {"item": "nightsouls:milky_way_leggings"},
+    {"item": "nightsouls:binary_leggings"},
+    {"item": "nightsouls:perfect_paragonic_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:paragonic_nightsouls_leggings"
+  }
+}

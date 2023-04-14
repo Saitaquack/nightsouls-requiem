@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:exponential_bastirite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:reality_warper_final_music_disc"
+  }
+}

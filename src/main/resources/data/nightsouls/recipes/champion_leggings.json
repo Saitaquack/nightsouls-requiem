@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:primium_leggings"},
+    {"item": "nightsouls:rowequite_leggings"},
+    {"item": "nightsouls:therenite_leggings"},
+    {"item": "nightsouls:primium_ingot"},
+    {"item": "nightsouls:rowequite_ingot"},
+    {"item": "nightsouls:therenite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:champion_leggings"
+  }
+}

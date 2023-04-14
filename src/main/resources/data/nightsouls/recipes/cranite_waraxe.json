@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NCC",
+    " #C",
+    "# N"
+  ],
+  "key": {
+  
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    "N": {
+      "item": "nightsouls:night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:cranite_waraxe"
+  }
+}

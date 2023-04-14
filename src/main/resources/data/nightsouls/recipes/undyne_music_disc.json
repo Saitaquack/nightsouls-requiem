@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "minecraft:diamond"},
+    {"item": "minecraft:diamond"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:undyne_music_disc"
+  }
+
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TBT",
+    "BPB",
+    "TBT"
+  ],
+  "key": {
+  
+    "P": {
+      "item": "nightsouls:paragonic_block"
+    },
+    
+    "B": {
+      "item": "nightsouls:upper_demon_blood"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:akaza_altar"
+  }
+}

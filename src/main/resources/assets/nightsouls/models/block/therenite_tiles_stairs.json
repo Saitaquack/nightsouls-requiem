@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "nightsouls:blocks/therenite_tiles",
+        "top": "nightsouls:blocks/therenite_tiles",
+        "side": "nightsouls:blocks/therenite_tiles"
+    }
+}

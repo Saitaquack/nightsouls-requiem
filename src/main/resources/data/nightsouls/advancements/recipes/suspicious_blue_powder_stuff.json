@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:pure_blue_crystal_seeds"
+    ]
+  },
+  "criteria": {
+    "has_suspicious_blue_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:suspicious_blue_powder"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_suspicious_blue_powder",
+    ]
+  ]
+}

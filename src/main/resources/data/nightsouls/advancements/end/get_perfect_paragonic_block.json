@@ -1,0 +1,38 @@
+{
+  "parent": "nightsouls:end/get_paragonic_block",
+  "display": {
+    "icon": {
+      "item": "nightsouls:perfect_paragonic_block"
+    },
+    "title": {
+      "translate": "advancements.end.get_perfect_paragonic_block.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_perfect_paragonic_block.description"
+     },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "perfect_paragonic_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:perfect_paragonic_block"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "perfect_paragonic_block"
+    ]
+  ]
+}

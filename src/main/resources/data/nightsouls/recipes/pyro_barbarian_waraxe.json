@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CPC",
+    "NWN",
+    "MFM"
+  ],
+  "key": {
+  
+    "W": {
+      "item": "nightsouls:cranite_waraxe"
+    },
+    
+    "N": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    
+    "F": {
+      "item": "minecraft:flint_and_steel"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:pure_miizealite_ingot"
+    }
+       
+  },
+  "result": {
+    "item": "nightsouls:pyro_barbarian_waraxe"
+  }
+}

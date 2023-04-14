@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:story/mine_stone",
+  "display": {
+    "icon": {
+      "item": "nightsouls:night_soul"
+    },
+    "title": {
+      "translate": "advancements.story.get_night_soul.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_night_soul.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "night_soul": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:night_soul"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "night_soul"
+    ]
+  ]
+}

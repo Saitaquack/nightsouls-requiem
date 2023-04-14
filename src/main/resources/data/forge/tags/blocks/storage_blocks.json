@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "nightsouls:saitastone_block",
+    "nightsouls:miizealite_block",
+    "nightsouls:cranite_block",
+    "nightsouls:bastirite_block",
+    "nightsouls:nightsouls_emerald_block",
+    "nightsouls:super_nightsouls_emerald_block",
+    "nightsouls:crazy_diamond_block",
+    "nightsouls:primium_block",
+    "nightsouls:rowequite_block",
+    "nightsouls:therenite_block",
+    "nightsouls:hellfire_coal_block",
+    "nightsouls:chlorophyte_block"        
+  ]
+}

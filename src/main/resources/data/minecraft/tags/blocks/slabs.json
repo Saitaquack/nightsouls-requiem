@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"nightsouls:crystal_slab",
+		"nightsouls:saitastone_tiles_slab",
+		"nightsouls:miizealite_tiles_slab",
+		"nightsouls:cranite_tiles_slab",
+		"nightsouls:bastirite_tiles_slab",
+		"nightsouls:primium_tiles_slab",
+		"nightsouls:rowequite_tiles_slab",
+		"nightsouls:therenite_tiles_slab",
+		"nightsouls:chlorophyte_tiles_slab"
+	]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "nightsouls:adventure/get_power_moon",
+  "display": {
+    "icon": {
+      "item": "nightsouls:requiem_medallion"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_requiem.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_requiem.description"
+    },
+   "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "requiem_medallion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:requiem_medallion"
+          }
+        ]
+      }
+    }   
+  },
+  "requirements": [
+    [
+      "requiem_medallion"
+    ]
+  ]
+}

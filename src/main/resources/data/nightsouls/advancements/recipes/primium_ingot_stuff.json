@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:primium_block",
+      "nightsouls:primium_sword",
+      "nightsouls:primium_pickaxe",
+      "nightsouls:primium_axe",
+      "nightsouls:primium_shovel",
+      "nightsouls:primium_hoe",
+      "nightsouls:primium_helmet",
+      "nightsouls:primium_chestplate",
+      "nightsouls:primium_leggings",
+      "nightsouls:primium_boots",
+      "nightsouls:prime_music_disc",
+      "nightsouls:champion_helmet",
+      "nightsouls:champion_chestplate",
+      "nightsouls:champion_leggings",
+      "nightsouls:champion_boots",
+      "nightsouls:fortify",
+      "nightsouls:blink",
+      "nightsouls:helikopter_music_disc",
+      "nightsouls:cyber_shuriken",
+      "nightsouls:primium_tiles"
+    ]
+  },
+  "criteria": {
+    "has_primium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_primium_ingot",
+    ]
+  ]
+}

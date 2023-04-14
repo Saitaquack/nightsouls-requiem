@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+   {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
+            }
+           
+          ],
+          "name": "nightsouls:nightsouls_emerald"
+        }
+        ],
+        "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+     },
+    
+     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:true_night_soul"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.2,
+          "looting_multiplier": 0.05
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    },
+    
+      {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:exponential_bastirite_ingot"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.025,
+          "looting_multiplier": 0.01
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    },
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:reality_warper_final_music_disc"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.025,
+          "looting_multiplier": 0.01
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:mechanical_eye"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.0075,
+          "looting_multiplier": 0.005
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:adventure/get_music_disc",
+  "display": {
+    "icon": {
+      "item": "nightsouls:nightsouls_bow"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_nightsouls_bow.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_nightsouls_bow.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }, 
+  "criteria": {
+    "nightsouls_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_bow"
+          }
+        ]
+      }
+    } 
+  },
+  "requirements": [
+    [
+      "nightsouls_bow"
+    ]
+  ]
+}

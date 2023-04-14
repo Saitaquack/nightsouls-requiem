@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:rowequite_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:rowequite_ingot",
+    "count": 9
+  }
+}

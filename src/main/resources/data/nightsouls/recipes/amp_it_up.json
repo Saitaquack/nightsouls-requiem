@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CJC",
+    "CBC" 
+  ],
+  "key": {
+    "J": {
+      "item": "minecraft:jukebox"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:cranite_block"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:amp_it_up"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:crystal_storm"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:crystal_storm"
+  }
+}

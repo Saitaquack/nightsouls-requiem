@@ -1,0 +1,42 @@
+{
+  "parent": "nightsouls:adventure/kill_requiem_mob",
+  "display": {
+    "icon": {
+      "item": "nightsouls:akaza_altar"
+    },
+    "title": {
+      "translate": "advancements.adventure.kill_akaza.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.kill_akaza.description"
+    },
+   "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "akaza": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:akaza"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    } 
+  },
+  "requirements": [
+    [
+      "akaza"
+    ]
+  ]
+}

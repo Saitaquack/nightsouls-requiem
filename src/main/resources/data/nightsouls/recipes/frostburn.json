@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PUP",
+    "TCT",
+    "IUI"
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:coolfire_blade"
+    },
+    
+    "U": {
+      "item": "nightsouls:ultimate_cranite_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:white_power_moon"
+    },
+    
+    "I": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:frostburn"
+  }
+}

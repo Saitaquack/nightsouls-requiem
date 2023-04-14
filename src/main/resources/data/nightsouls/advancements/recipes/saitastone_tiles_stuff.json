@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:saitastone_tiles_stairs",
+      "nightsouls:saitastone_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_saitastone_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_saitastone_tiles",
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FDF",
+    "DMD",
+    "FDF"
+  ],
+  "key": {
+  
+    "M": {
+      "item": "nightsouls:miizealite_sword"
+    },
+    
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    
+    "F": {
+      "item": "minecraft:cod"
+    }
+  },
+  "result": {
+    "item": "nightsouls:cat_a_clysm"
+  }
+}

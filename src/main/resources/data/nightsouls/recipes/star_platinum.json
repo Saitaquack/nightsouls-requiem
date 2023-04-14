@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "DED",
+    "III" 
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    
+    "E": {
+      "item": "nightsouls:celestial_emerald"
+    }
+
+    
+  },
+  "result": {
+    "item": "nightsouls:star_platinum"
+  }
+}

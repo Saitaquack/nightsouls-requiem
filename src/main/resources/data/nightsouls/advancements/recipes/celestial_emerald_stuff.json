@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:emerald_from_celestial_emerald",
+      "nightsouls:super_star",
+      "nightsouls:star_platinum",
+      "nightsouls:wealth_digger"
+    ]
+  },
+  "criteria": {
+    "has_celestial_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:celestial_emerald"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_celestial_emerald",
+    ]
+  ]
+}

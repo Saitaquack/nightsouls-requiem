@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:hellfire_emperor_trident"},
+    {"item": "nightsouls:soul_stealer"},
+    {"item": "nightsouls:galactic_slayer"},
+    {"item": "nightsouls:supernova"},
+    {"item": "nightsouls:frostburn"},
+    {"item": "nightsouls:divine_sanction"},
+    {"item": "nightsouls:java_fury"},
+    {"item": "nightsouls:hexadecimator"},
+    {"item": "nightsouls:perfect_paragonic_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:paragonic_zenith"
+  }
+}

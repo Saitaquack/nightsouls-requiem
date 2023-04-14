@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "RGG",
+    "CBC"
+  ],
+  
+  "key": {
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    
+    "G": {
+      "item": "minecraft:gunpowder"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:biotic_rifle"
+  }
+}

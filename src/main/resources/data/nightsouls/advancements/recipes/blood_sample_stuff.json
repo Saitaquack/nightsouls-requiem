@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:bloody_helmet",
+      "nightsouls:bloody_chestplate",
+      "nightsouls:bloody_leggings",
+      "nightsouls:bloody_boots"       
+      ]
+  },
+  "criteria": {
+    "has_blood_sample": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:blood_sample"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_blood_sample",
+    ]
+  ]
+}

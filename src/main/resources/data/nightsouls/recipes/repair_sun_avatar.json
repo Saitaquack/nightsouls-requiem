@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:sun_avatar"},
+    {"item": "nightsouls:true_night_soul"},
+    {"item": "nightsouls:true_night_soul"},
+    {"item": "nightsouls:true_night_soul"},
+    {"item": "nightsouls:true_night_soul"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:sun_avatar"
+  }
+}

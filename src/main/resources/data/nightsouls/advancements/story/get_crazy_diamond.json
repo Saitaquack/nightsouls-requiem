@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:story/mine_diamond",
+  "display": {
+    "icon": {
+      "item": "nightsouls:crazy_diamond"
+    },
+    "title": {
+      "translate": "advancements.story.get_crazy_diamond.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_crazy_diamond.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crazy_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:crazy_diamond"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crazy_diamond"
+    ]
+  ]
+}

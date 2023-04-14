@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BMB",
+    "BBB" 
+  ],
+  "key": {
+  
+    "M": {
+      "item": "nightsouls:blank_music_disc"
+    },
+    
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:tanjiro_music_disc"
+  }
+}

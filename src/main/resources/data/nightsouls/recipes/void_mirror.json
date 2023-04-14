@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SES",
+    "EME",
+    "CEC"
+  ],
+  "key": {
+  
+    "M": {
+      "item": "nightsouls:magic_mirror"
+    },
+    
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    
+    "S": {
+      "item": "minecraft:end_stone"
+    },
+    
+    "C": {
+      "item": "minecraft:chorus_fruit"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:void_mirror"
+  }
+}

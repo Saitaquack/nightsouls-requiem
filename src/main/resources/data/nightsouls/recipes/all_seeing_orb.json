@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST"
+  ],
+  "key": {
+  
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+    
+    "S": {
+      "item": "nightsouls:silent_watching_orb"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:all_seeing_orb"
+  }
+}

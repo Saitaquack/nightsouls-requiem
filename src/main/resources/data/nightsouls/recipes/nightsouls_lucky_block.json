@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "NDN",
+    "EEE"
+  ],
+  "key": {
+  
+    "D": {
+      "item": "minecraft:dropper"
+    },
+    
+    "E": {
+      "item": "nightsouls:nightsouls_emerald"
+    },
+    
+    "N": {
+      "item": "nightsouls:night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:nightsouls_lucky_block"
+  }
+}

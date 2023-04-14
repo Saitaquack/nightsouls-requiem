@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "nightsouls:blocks/miizealite_crops_stage1"
+    }
+}

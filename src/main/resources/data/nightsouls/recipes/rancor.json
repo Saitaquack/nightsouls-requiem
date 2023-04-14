@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MPM",
+    "TWT",
+    "CPC"
+  ],
+  "key": {
+  
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+  
+    "W": {
+      "item": "nightsouls:pyro_barbarian_waraxe"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_block"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_block"
+    },
+    
+    "P": {
+      "item": "minecraft:blaze_powder"
+    }
+    
+    
+  },
+  "result": {
+    "item": "nightsouls:rancor"
+  }
+}

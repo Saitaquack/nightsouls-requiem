@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:mama_lauda_music_disc",
+      "nightsouls:mickie_krause_music_disc"
+    ]
+  },
+  "criteria": {
+    "has_beer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:beer"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_beer",
+    ]
+  ]
+}

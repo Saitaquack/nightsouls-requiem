@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nightsouls:crazy_diamond_ore"
+  },
+  
+  "result": "nightsouls:crazy_diamond",
+  "experience": 3,
+  "cookingtime": 200
+}

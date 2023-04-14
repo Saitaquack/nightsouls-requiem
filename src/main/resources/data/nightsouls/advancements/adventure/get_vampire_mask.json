@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:adventure/get_villager_blood",
+  "display": {
+    "icon": {
+      "item": "nightsouls:vampire_mask"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_vampire_mask.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_vampire_mask.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "vampire_mask": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:vampire_mask"
+          }
+        ]
+      }
+    }  
+  },
+  "requirements": [
+    [
+      "vampire_mask"     
+    ]
+  ]
+}

@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+        "layer0": "nightsouls:items/final_castle_structure_radar" 
+        }
+}

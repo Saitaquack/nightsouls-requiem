@@ -1,0 +1,36 @@
+{
+  "parent": "nightsouls:end/get_true_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:meteor_staff"
+    },
+    "title": {
+      "translate": "advancements.end.get_meteor_staff.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_meteor_staff.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  
+  "criteria": {
+    "meteor_staff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:meteor_staff"
+          }
+         ]
+       }
+     }
+   },
+  "requirements": [
+    [
+      "meteor_staff"
+    ]
+  ]
+}

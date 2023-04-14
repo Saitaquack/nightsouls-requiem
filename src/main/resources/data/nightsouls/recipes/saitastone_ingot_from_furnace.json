@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nightsouls:saitastone_ore"
+  },
+  
+  "result": "nightsouls:saitastone_ingot",
+  "experience": 2,
+  "cookingtime": 200
+}

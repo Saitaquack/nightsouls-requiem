@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:saitastone_ingot"},
+    {"item": "nightsouls:cranite_ingot"},
+    {"item": "minecraft:flint_and_steel"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:burning_colosseum_music_disc"
+  }
+
+}

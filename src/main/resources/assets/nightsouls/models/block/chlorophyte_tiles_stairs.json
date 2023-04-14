@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "nightsouls:blocks/chlorophyte_tiles",
+        "top": "nightsouls:blocks/chlorophyte_tiles",
+        "side": "nightsouls:blocks/chlorophyte_tiles"
+    }
+}

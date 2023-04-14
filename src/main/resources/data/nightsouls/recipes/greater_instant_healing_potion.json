@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:instant_healing_potion"},
+    {"item": "nightsouls:pure_blue_gelatin_crystal"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:greater_instant_healing_potion"
+  }
+}

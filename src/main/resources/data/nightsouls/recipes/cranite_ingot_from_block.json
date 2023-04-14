@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:cranite_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:cranite_ingot",
+    "count": 9
+  }
+}

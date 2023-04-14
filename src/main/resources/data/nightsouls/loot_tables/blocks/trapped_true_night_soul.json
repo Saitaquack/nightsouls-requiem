@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:true_night_soul"
+        
+        }
+      ],
+      
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }    
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:mandela_catalogue"
+        }        
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }     
+      	]
+    },   
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 32.0,
+                "max": 64.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 8.0,
+                "max": 16.0
+              }
+            }
+          ],
+          "name": "nightsouls:pitch_black_block"
+        }
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]
+    },
+   
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 6.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 1.0,
+                "max": 2.0
+              }
+            }
+          ],
+          "name": "nightsouls:night_soul"
+        }
+        ],
+         	"conditions": [
+	        {
+	          "condition": "minecraft:killed_by_player"
+	        }          	
+     	]     
+    },       
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:crystal_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.1,
+          "looting_multiplier": 0.05
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    },
+    
+    {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:broken_dragonblade"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.05,
+          "looting_multiplier": 0.02
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    },
+    
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:nightsouls_essence"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.5,
+          "looting_multiplier": 0.1
+        },
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    },
+     {
+    "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "nightsouls:suspicious_looking_eye"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.0075,
+          "looting_multiplier": 0.005
+        }
+      ]
+    }
+  ]    
+}

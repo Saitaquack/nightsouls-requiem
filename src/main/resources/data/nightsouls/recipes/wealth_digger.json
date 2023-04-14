@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DSD",
+    "NEN",
+    "VBV"
+  ],
+  "key": {
+  
+  	"E": {
+      "item": "nightsouls:celestial_emerald"
+    },
+  
+    "N": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "D": {
+      "item": "nightsouls:saitastone_ingot"
+    },
+    
+    "V": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_pickaxe"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_pickaxe"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:wealth_digger"
+  }
+}

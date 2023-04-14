@@ -1,0 +1,52 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:bastirite_block",
+      "nightsouls:bastirite_sword",
+      "nightsouls:bastirite_pickaxe",
+      "nightsouls:bastirite_axe",
+      "nightsouls:bastirite_shovel",
+      "nightsouls:bastirite_hoe",
+      "nightsouls:bastirite_bat",
+      "nightsouls:bastirite_helmet",
+      "nightsouls:bastirite_chestplate",
+      "nightsouls:bastirite_leggings",
+      "nightsouls:bastirite_boots",
+      "nightsouls:insta_pickaxe",
+      "nightsouls:justin_bridou",
+      "nightsouls:shulker_shell",
+      "nightsouls:magic_mirror",
+      "nightsouls:wealth_digger",
+      "nightsouls:infogrames_music_disc",
+      "nightsouls:sponge",
+      "nightsouls:fortify",
+      "nightsouls:mama_lauda_music_disc",
+      "nightsouls:pure_bastirite_ingot",
+      "nightsouls:blink",
+      "nightsouls:bastirite_tiles",
+      "nightsouls:helikopter_music_disc",
+      "nightsouls:techno_gun",
+      "nightsouls:cyber_shuriken"
+    ]
+  },
+  "criteria": {
+    "has_bastirite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_bastirite_ingot",
+    ]
+  ]
+}

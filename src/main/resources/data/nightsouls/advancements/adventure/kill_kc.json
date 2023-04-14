@@ -1,0 +1,42 @@
+{
+  "parent": "nightsouls:adventure/kill_eoc",
+  "display": {
+    "icon": {
+      "item": "nightsouls:crimson_rose"
+    },
+    "title": {
+      "translate": "advancements.adventure.kill_kc.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.kill_kc.description"
+    },
+   "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 750
+  },
+  "criteria": {
+    "kc": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:king_crimson"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    } 
+  },
+  "requirements": [
+    [
+      "kc"
+    ]
+  ]
+}

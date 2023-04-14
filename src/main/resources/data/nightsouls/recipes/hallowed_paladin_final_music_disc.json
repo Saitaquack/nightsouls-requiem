@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:ultimate_cranite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:hallowed_paladin_final_music_disc"
+  }
+}

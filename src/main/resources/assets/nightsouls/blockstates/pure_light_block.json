@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "nightsouls:block/pure_light_block" }
+    }
+}

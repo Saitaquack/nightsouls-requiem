@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:moon_charm"},
+    {"item": "nightsouls:hellfire_charm"},
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:miizealite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:hellfire_moon_charm"
+  }
+}

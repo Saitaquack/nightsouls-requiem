@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:therenite_tiles_stairs",
+      "nightsouls:therenite_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_therenite_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_therenite_tiles",
+    ]
+  ]
+}

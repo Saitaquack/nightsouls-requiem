@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "minecraft:glass_bottle"},
+    {"item": "nightsouls:crystal_shard"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:instant_healing_potion"
+  }
+}

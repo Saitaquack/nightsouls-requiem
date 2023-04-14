@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:plasma_sprayer",
+      "nightsouls:repair_laser_sprayer"
+    ]
+  },
+  "criteria": {
+    "has_laser_sprayer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:laser_sprayer"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_laser_sprayer",
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:end/kill_dragon",
+  "display": {
+    "icon": {
+      "item": "nightsouls:broken_requiem_key"
+    },
+    "title": {
+      "translate": "advancements.end.get_broken_requiem_key.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_broken_requiem_key.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "broken_requiem_key": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:broken_requiem_key"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "broken_requiem_key"
+    ]
+  ]
+}

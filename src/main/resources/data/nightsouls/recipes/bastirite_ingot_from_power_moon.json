@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blue_power_moon"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:bastirite_ingot",
+    "count": 2
+  }
+}

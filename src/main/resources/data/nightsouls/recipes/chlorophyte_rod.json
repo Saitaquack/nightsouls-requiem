@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C"
+  ],
+  "key": {
+    
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:chlorophyte_rod",
+    "count": 6
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EBE",
+    "BTB",
+    "DBD"
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:bastirite_block"
+    },
+    
+    "E": {
+      "item": "nightsouls:antistone"
+    },
+    
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:exponential_bastirite_ingot"
+  }
+}

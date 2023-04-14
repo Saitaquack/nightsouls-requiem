@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SBS" 
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:saitastone_block"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:fade"
+  }
+}

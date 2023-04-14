@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "nightsouls:blocks/saitastone_crops_stage0"
+    }
+}

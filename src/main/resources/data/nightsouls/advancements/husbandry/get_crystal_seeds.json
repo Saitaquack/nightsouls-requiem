@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "display": {
+    "icon": {
+      "item": "nightsouls:crystal_seeds"
+    },
+    "title": {
+      "translate": "advancements.husbandry.get_crystal_seeds.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.get_crystal_seeds.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crystal_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:crystal_seeds"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "crystal_seeds"
+    ]
+  ]
+}

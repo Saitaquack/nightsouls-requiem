@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:alternate_helmet",
+      "nightsouls:alternate_chestplate",
+      "nightsouls:alternate_leggings",
+      "nightsouls:alternate_boots"
+    ]
+  },
+  "criteria": {
+    "has_alternate_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:alternate_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_alternate_ingot",
+    ]
+  ]
+}

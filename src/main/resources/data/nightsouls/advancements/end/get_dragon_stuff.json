@@ -1,0 +1,80 @@
+{
+  "parent": "minecraft:end/dragon_breath",
+  "display": {
+    "icon": {
+      "item": "nightsouls:dragon_sword"
+    },
+    "title": {
+      "translate": "advancements.end.get_dragon_stuff.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_dragon_stuff.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+
+  "criteria": {
+    "dragon_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:dragon_sword"
+          }
+        ]
+      }
+    },
+     "dragon_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:dragon_helmet"
+          }
+        ]
+      }
+    },
+     "dragon_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:dragon_chestplate"
+          }
+        ]
+      }
+    },
+     "dragon_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:dragon_leggings"
+          }
+        ]
+      }
+    },
+     "dragon_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:dragon_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dragon_sword",
+      "dragon_helmet",
+      "dragon_chestplate",
+      "dragon_leggings",
+      "dragon_boots"
+    ]
+  ]
+}

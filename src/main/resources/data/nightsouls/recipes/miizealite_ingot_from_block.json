@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:miizealite_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:miizealite_ingot",
+    "count": 9
+  }
+}

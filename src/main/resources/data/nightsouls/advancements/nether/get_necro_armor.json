@@ -1,0 +1,68 @@
+{
+  "parent": "minecraft:nether/find_fortress",
+  "display": {
+    "icon": {
+      "item": "nightsouls:necro_helmet"
+    },
+    "title": {
+      "translate": "advancements.nether.get_necro_armor.title"
+    },
+    "description": {
+      "translate": "advancements.nether.get_necro_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "necro_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:necro_helmet"
+          }
+        ]
+      }
+    },
+     "necro_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:necro_chestplate"
+          }
+        ]
+      }
+    },
+    "necro_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:necro_leggings"
+          }
+        ]
+      }
+    },
+    "necro_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:necro_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "necro_helmet",
+      "necro_chestplate",
+      "necro_leggings",
+      "necro_boots"
+    ]
+  ]
+}

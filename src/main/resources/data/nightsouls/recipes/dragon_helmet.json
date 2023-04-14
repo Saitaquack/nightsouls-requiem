@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XEX",
+    "XXX"
+  ],
+  "key": {
+  
+    "X": {
+      "item": "nightsouls:ender_dragon_essence"
+    },
+    
+    "E": {
+      "item": "nightsouls:nightsouls_helmet"
+    }
+  },
+  "result": {
+    "item": "nightsouls:dragon_helmet"
+  }
+}

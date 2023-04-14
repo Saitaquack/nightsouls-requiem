@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "nightsouls:blocks/cranite_crops_stage3"
+    }
+}

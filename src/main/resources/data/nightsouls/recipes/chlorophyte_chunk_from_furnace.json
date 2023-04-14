@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nightsouls:chlorophyte_ore"
+  },
+  
+  "result": "nightsouls:chlorophyte_chunk",
+  "experience": 2,
+  "cookingtime": 200
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:miizealite_tiles_stairs",
+      "nightsouls:miizealite_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_miizealite_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_miizealite_tiles",
+    ]
+  ]
+}

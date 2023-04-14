@@ -1,0 +1,134 @@
+{
+  "parent": "nightsouls:story/get_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:night_soul_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.story.get_night_soul_pickaxe.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_night_soul_pickaxe.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "night_soul_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:night_soul_pickaxe"
+          }
+        ]
+      }
+    },
+    "saitastone_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_pickaxe"
+          }
+        ]
+      }
+    },
+    "miizealite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_pickaxe"
+          }
+        ]
+      }
+    },
+    "cranite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_pickaxe"
+          }
+        ]
+      }
+    },
+    "bastirite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_pickaxe"
+          }
+        ]
+      }
+    },
+    "primium_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_pickaxe"
+          }
+        ]
+      }
+    },
+    "rowequite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_pickaxe"
+          }
+        ]
+      }
+    },
+    "therenite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_pickaxe"
+          }
+        ]
+      }
+    },
+    "insta_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:insta_pickaxe"
+          }
+        ]
+      }
+    },
+    "wealth_digger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:wealth_digger"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "night_soul_pickaxe",
+      "saitastone_pickaxe",
+      "miizealite_pickaxe",
+      "cranite_pickaxe",
+      "bastirite_pickaxe",
+      "primium_pickaxe",
+      "rowequite_pickaxe",
+      "therenite_pickaxe",
+      "insta_pickaxe",
+      "wealth_digger"
+    ]
+  ]
+}

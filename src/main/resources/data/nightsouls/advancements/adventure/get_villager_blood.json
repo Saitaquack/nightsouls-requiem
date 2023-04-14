@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "display": {
+    "icon": {
+      "item": "nightsouls:villager_blood"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_villager_blood.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_villager_blood.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "villager_blood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:villager_blood"
+          }
+        ]
+      }
+    }  
+  },
+  "requirements": [
+    [
+      "villager_blood"     
+    ]
+  ]
+}

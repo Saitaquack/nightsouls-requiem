@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"},
+    {"item": "nightsouls:beer"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:mickie_krause_music_disc"
+  }
+
+}

@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:therenite_block",
+      "nightsouls:therenite_sword",
+      "nightsouls:therenite_pickaxe",
+      "nightsouls:therenite_axe",
+      "nightsouls:therenite_shovel",
+      "nightsouls:therenite_hoe",
+      "nightsouls:therenite_helmet",
+      "nightsouls:therenite_chestplate",
+      "nightsouls:therenite_leggings",
+      "nightsouls:therenite_boots",
+      "nightsouls:therox_music_disc",
+      "nightsouls:champion_helmet",
+      "nightsouls:champion_chestplate",
+      "nightsouls:champion_leggings",
+      "nightsouls:champion_boots",
+      "nightsouls:fortify",
+      "nightsouls:blink",
+      "nightsouls:helikopter_music_disc",
+      "nightsouls:therenite_tiles"
+    ]
+  },
+  "criteria": {
+    "has_therenite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_therenite_ingot",
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:giant_frozen_pea",
+     "nightsouls:giant_burning_pea"
+    ]
+  },
+  "criteria": {
+    "has_giant_pea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:giant_pea"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_giant_pea",
+    ]
+  ]
+}

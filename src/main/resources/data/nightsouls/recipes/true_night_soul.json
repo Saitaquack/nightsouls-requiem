@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:true_night_soul"},
+    {"item": "nightsouls:chlorophyte_ingot"},
+    {"item": "nightsouls:chlorophyte_ingot"},
+    {"item": "nightsouls:chlorophyte_ingot"},
+    {"item": "nightsouls:chlorophyte_ingot"}
+  ],
+  
+  "result": {
+    "item": "nightsouls:true_night_soul",
+    "count": 5
+  }
+}

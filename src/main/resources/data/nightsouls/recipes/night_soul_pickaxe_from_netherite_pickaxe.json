@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "minecraft:netherite_pickaxe"},
+    {"item": "nightsouls:night_soul"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:night_soul_pickaxe"
+  }
+}

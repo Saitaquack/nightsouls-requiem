@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "TET",
+    "PBP" 
+  ],
+  "key": {
+  
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    
+    "R": {
+      "item": "nightsouls:rowequite_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:primium_ingot"
+    },
+    
+    "T": {
+      "item": "nightsouls:therenite_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_block"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:fortify"
+  }
+}

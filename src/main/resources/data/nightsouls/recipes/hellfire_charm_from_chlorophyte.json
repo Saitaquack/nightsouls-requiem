@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC" 
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:hellfire_charm"
+  }
+}

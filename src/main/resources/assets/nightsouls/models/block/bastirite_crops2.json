@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "nightsouls:blocks/bastirite_crops_stage2"
+    }
+}

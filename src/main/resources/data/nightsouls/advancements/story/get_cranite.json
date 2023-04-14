@@ -1,0 +1,46 @@
+{
+  "parent": "nightsouls:story/get_night_soul_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    "title": {
+      "translate": "advancements.story.get_cranite.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_cranite.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cranite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_ingot"
+          }
+        ]
+      }
+    },
+     "cranite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_ore"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cranite_ingot",
+      "cranite_ore"
+    ]
+  ]
+}

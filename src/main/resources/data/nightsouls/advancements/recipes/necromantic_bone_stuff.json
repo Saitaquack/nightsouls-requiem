@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:necro_helmet",
+      "nightsouls:necro_chestplate",
+      "nightsouls:necro_leggings",
+      "nightsouls:necro_boots"
+    ]
+  },
+  "criteria": {
+    "has_necromantic_bone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:necromantic_bone"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_necromantic_bone",
+    ]
+  ]
+}

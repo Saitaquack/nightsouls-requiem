@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC",
+    "CC" 
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:chlorophyte_chunk"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:chlorophyte_ingot"
+  }
+}

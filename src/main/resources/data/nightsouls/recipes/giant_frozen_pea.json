@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PIP",
+    "PPP"
+  ],
+  "key": {
+  
+    "P": {
+      "item": "nightsouls:giant_pea"
+    },
+    
+     "I": {
+      "item": "minecraft:ice"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:giant_frozen_pea",
+    "count": 8
+  }
+}

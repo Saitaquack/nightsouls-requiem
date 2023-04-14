@@ -1,0 +1,203 @@
+{
+  "parent": "nightsouls:end/get_final_ingot",
+  "display": {
+    "icon": {
+      "item": "nightsouls:hallowed_paladin_helmet"
+    },
+    "title": {
+      "translate": "advancements.end.get_final_armor.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_final_armor.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "armor1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_emperor_helmet"
+          }
+        ]
+      }
+    },
+     "armor2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_emperor_chestplate"
+          }
+        ]
+      }
+    },
+    "armor3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_emperor_leggings"
+          }
+        ]
+      }
+    },
+    "armor4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_emperor_boots"
+          }
+        ]
+      }
+    },
+     "armor5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:milky_way_helmet"
+          }
+        ]
+      }
+    },
+     "armor6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:milky_way_chestplate"
+          }
+        ]
+      }
+    },
+     "armor7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:milky_way_leggings"
+          }
+        ]
+      }
+    },
+    "armor8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:milky_way_boots"
+          }
+        ]
+      }
+    },
+    "armor9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hallowed_paladin_helmet"
+          }
+        ]
+      }
+    },
+    "armor10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hallowed_paladin_chestplate"
+          }
+        ]
+      }
+    },
+    "armor11": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hallowed_paladin_leggings"
+          }
+        ]
+      }
+    },
+    "armor12": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hallowed_paladin_boots"
+          }
+        ]
+      }
+    },
+    "armor13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:binary_helmet"
+          }
+        ]
+      }
+    },
+    "armor14": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:binary_chestplate"
+          }
+        ]
+      }
+    },
+    "armor15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:binary_leggings"
+          }
+        ]
+      }
+    },
+    "armor16": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:binary_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "armor1",
+      "armor2",
+      "armor3",
+      "armor4",
+      "armor5",
+      "armor6",
+      "armor7",
+      "armor8",
+      "armor9",
+      "armor10",
+      "armor11",
+      "armor12",
+      "armor13",
+      "armor14",
+      "armor15",
+      "armor16"
+    ]
+  ]
+}

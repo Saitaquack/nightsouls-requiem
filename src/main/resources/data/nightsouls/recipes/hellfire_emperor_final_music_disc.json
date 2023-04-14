@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:calamitous_miizealite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:hellfire_emperor_final_music_disc"
+  }
+}

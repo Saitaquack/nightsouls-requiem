@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "nightsouls:blocks/purple_power_moon_block"
+    }
+}

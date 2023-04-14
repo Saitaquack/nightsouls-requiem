@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EME",
+    "MTM",
+    "DMD"
+  ],
+  "key": {
+  
+    "M": {
+      "item": "nightsouls:miizealite_block"
+    },
+    
+    "E": {
+      "item": "nightsouls:hellstone"
+    },
+    
+    "D": {
+      "item": "nightsouls:ender_dragon_essence"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:calamitous_miizealite_ingot"
+  }
+}

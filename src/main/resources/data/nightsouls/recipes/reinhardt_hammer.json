@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "NAN",
+    "CQC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:anvil"
+    },
+    
+    "N": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_ingot"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:pure_saitastone_ingot"
+    },
+    
+    "Q": {
+      "item": "nightsouls:pure_cranite_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:reinhardt_hammer"
+  }
+}

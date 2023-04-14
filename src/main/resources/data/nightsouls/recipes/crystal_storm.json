@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "CBC",
+    "CEC" 
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:crystal_shard"
+    },
+    
+    "B": {
+      "item": "minecraft:book"
+    },
+    
+    "S": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "E": {
+      "item": "nightsouls:nightsouls_essence"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:crystal_storm"
+  }
+}

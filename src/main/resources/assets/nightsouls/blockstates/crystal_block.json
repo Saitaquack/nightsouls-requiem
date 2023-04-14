@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "nightsouls:block/crystal_block" }
+    }
+}

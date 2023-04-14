@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:techno_gun"},
+    {"item": "nightsouls:cranite_ingot"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:night_soul"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:techno_gun"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " NS",
+    "NS ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "nightsouls:saitastone_ingot"
+    },
+    "N": {
+      "item": "nightsouls:night_soul"
+    }
+  },
+  "result": {
+    "item": "nightsouls:saitastone_katana"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "parent": "nightsouls:adventure/kill_demon_eye",
+  "display": {
+    "icon": {
+      "item": "nightsouls:suspicious_looking_eye"
+    },
+    "title": {
+      "translate": "advancements.adventure.kill_eoc.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.kill_eoc.description"
+    },
+   "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "criteria": {
+    "eoc": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:eye_of_cthulhu"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    } 
+  },
+  "requirements": [
+    [
+      "eoc"
+    ]
+  ]
+}

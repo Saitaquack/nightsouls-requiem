@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "display": {
+    "icon": {
+      "item": "nightsouls:celestial_emerald"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_celestial_emerald.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_celestial_emerald.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "celestial_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:celestial_emerald"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "celestial_emerald"
+    ]
+  ]
+}

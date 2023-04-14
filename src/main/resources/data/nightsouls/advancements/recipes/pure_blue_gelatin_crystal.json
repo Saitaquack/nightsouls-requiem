@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:greater_instant_healing_potion",
+      "nightsouls:crystal_shard_from_furnace_blue",
+      "nightsouls:crystal_shard_from_blasting_blue"
+    ]
+  },
+  "criteria": {
+    "has_pure_blue_gelatin_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:pure_blue_gelatin_crystal"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_pure_blue_gelatin_crystal",
+    ]
+  ]
+}

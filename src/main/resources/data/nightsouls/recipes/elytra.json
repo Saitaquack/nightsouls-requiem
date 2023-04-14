@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TCT",
+    "BMB",
+    "BSB"
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+    
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:elytra"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:healing_mixer"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:speeding_mixer"
+  }
+}

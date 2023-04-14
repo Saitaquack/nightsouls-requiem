@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:hellfire_coal_block",
+   	  "nightsouls:coal_from_hellfire_coal",
+      "nightsouls:torch_with_hellfire_coal",
+      "nightsouls:soul_torch_with_hellfire_coal",
+      "nightsouls:fire_charge_with_hellfire_coal",
+      "nightsouls:campfire_with_hellfire_coal"
+    ]
+  },
+  "criteria": {
+    "has_hellfire_coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_coal"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_hellfire_coal",
+    ]
+  ]
+}

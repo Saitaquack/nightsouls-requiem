@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SMS",
+    "MTM",
+    "SMS" 
+  ],
+  "key": {
+  
+  	"T": {
+      "item": "minecraft:tnt"
+    },
+  
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    
+    "S": {
+      "item": "nightsouls:night_soul"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:miizealite_bomb"
+  }
+}

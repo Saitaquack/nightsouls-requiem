@@ -1,0 +1,54 @@
+modLoader="javafml" 
+
+loaderVersion="[36,)" 
+
+license="All rights reserved"
+
+[[mods]] 
+
+modId="nightsouls" 
+version="9.0"
+displayName="NightSouls Mod Requiem"
+
+logoFile="icon.png" 
+
+credits="Merci à Miizeal, Krahne, Basti_io, et à toi, qui a téléchargé NightSouls :D . Un grand merci à Krunchy pour le modèle du loup-garou. - Thanks to Miizeal, Krahne and Basti_io, and you, who downloaded NightSouls :D . A big thanks to Krunchy for the werewolf model." 
+
+authors="Mod créé par Saitaquack. Structures par Miizeal et Krahne. - Mod created by Saitaquack. Structures by Miizeal and Krahne."
+
+description='''
+There was once a time where the world was ruled and centered around 4 ancient legends.
+The 4 legends were once human, but eventually defeated so many foes and gained so much power that they became close to gods.
+
+One was the Hallowed Paladin, the servant of God himself, who has been blessed with a holy power. He never lost a single battle.
+The other was called the Star Gatherer, once a scientist obsessed with space. Using knowledge and magic, and managed to harvest the power of stars and to gain an incredible power.
+Another was called the Hellfire Emperor, an evil entity and current ruler of hell after defeating Satan. Cruel and powerful, his power is completely overwhelming.
+And the last one was the Reality Warper, a brilliant inventor, who managed to gain control over space and time itself. His power knows no limits.
+
+NightSouls Mod is probably one of the craziest mods you'll ever see. It started as a private joke with friends, but evolved into something so much bigger.
+There are over 350 items and blocks, over 40 structures, 20 new armor sets, a LOT of weapons, a bunch of new ores, 13 new mobs, and 67 new musics from Video Games, Animes, and more... 
+
+The mod also adds 4 new bosses : The Eye of Cthulhu, King Crimson, The Twins and Akaza. Can you defeat them all ?
+
+There are so many references that I cannot count them all. I really just went all out with NightSouls Mod, and I hope you will enjoy it as much as I had fun making it.
+'''
+
+
+[[dependencies.examplemod]]
+
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+
+    versionRange="[36,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"

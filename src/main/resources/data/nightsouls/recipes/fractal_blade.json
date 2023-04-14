@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SES",
+    "TWT",
+    "BEB"
+  ],
+  "key": {
+  
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+  
+    "W": {
+      "item": "nightsouls:bastirite_sword"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_block"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_block"
+    },
+    
+    "E": {
+      "item": "minecraft:emerald"
+    }
+    
+    
+  },
+  "result": {
+    "item": "nightsouls:fractal_blade"
+  }
+}

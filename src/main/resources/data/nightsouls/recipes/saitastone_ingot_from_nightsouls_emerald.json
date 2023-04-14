@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NIN",
+    "NNN" 
+  ],
+  "key": {
+  
+    "N": {
+      "item": "nightsouls:nightsouls_emerald"
+    },
+    
+    "I": {
+      "item": "nightsouls:saitastone_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:saitastone_ingot",
+    "count": 4
+  }
+}

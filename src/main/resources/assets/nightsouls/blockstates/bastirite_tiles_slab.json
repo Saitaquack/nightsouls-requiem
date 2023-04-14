@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nightsouls:block/bastirite_tiles_slab" },
+        "type=top": { "model": "nightsouls:block/bastirite_tiles_slab_top" },
+        "type=double": { "model": "nightsouls:block/bastirite_tiles" }
+    }
+}

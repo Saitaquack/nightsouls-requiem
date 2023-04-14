@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SNS",
+    "TBT",
+    "MNM"
+  ],
+  "key": {
+  
+    "T": {
+      "item": "nightsouls:true_night_soul"
+    },
+  
+    "B": {
+      "item": "nightsouls:bloodzeal"
+    },
+    
+    "S": {
+      "item": "nightsouls:saitastone_block"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_block"
+    },
+    
+    "N": {
+      "item": "nightsouls:night_soul"
+    }
+    
+    
+  },
+  "result": {
+    "item": "nightsouls:blood_edge"
+  }
+}

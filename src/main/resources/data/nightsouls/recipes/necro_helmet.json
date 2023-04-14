@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NMN",
+    "NSN"
+  ],
+  "key": {
+    "N": {
+      "item": "nightsouls:necromantic_bone"
+    },
+    
+    "S": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:necro_helmet"
+  }
+}

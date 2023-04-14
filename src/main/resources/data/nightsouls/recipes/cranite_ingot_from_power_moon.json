@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:white_power_moon"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:cranite_ingot",
+    "count": 2
+  }
+}

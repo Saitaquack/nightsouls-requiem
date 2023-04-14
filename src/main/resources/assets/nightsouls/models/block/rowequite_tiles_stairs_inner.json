@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "nightsouls:blocks/rowequite_tiles",
+        "top": "nightsouls:blocks/rowequite_tiles",
+        "side": "nightsouls:blocks/rowequite_tiles"
+    }
+}

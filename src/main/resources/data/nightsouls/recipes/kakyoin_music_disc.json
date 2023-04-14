@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "minecraft:emerald_block"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:kakyoin_music_disc"
+  }
+
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+  
+    "#": {
+      "item": "nightsouls:compressed_cobblestone"
+    }
+  },
+  "result": {
+    "item": "nightsouls:super_compressed_cobblestone"
+  }
+}

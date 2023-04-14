@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "nightsouls:saitastone_ingot",
+    "nightsouls:miizealite_ingot",
+    "nightsouls:cranite_ingot",
+    "nightsouls:bastirite_ingot",
+    "nightsouls:primium_ingot",
+    "nightsouls:rowequite_ingot",
+    "nightsouls:therenite_ingot",
+    "nightsouls:pure_saitastone_ingot",
+    "nightsouls:pure_miizealite_ingot",
+    "nightsouls:pure_cranite_ingot",
+    "nightsouls:pure_bastirite_ingot",
+    "nightsouls:absolute_saitastone_ingot",
+    "nightsouls:calamitous_miizealite_ingot",
+    "nightsouls:ultimate_cranite_ingot",
+    "nightsouls:exponential_bastirite_ingot",
+    "nightsouls:alternate_ingot",
+    "nightsouls:chlorophyte_ingot"
+    ]
+}

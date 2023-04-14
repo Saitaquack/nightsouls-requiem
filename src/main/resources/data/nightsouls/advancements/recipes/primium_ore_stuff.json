@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:primium_ingot_from_blasting",
+      "nightsouls:primium_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_primium_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_primium_ore",
+    ]
+  ]
+}

@@ -1,0 +1,2152 @@
+{
+	"super_star": {
+		"category": "master",
+		"subtitle": "Super Star Used",
+		"sounds": [
+			{
+				"name": "nightsouls:master/super_star",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"wraith_form": {
+		"category": "master",
+		"subtitle": "Wraith Form Used",
+		"sounds": [
+			{
+				"name": "nightsouls:master/wraith_form",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"take_a_breather": {
+		"category": "master",
+		"subtitle": "Took a Breather",
+		"sounds": [
+			{
+				"name": "nightsouls:master/take_a_breather",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"amp_it_up": {
+		"category": "master",
+		"subtitle": "Volume Raised",
+		"sounds": [
+			{
+				"name": "nightsouls:master/amp_it_up",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"life_crystal": {
+		"category": "master",
+		"subtitle": "Life Crystal Consumed",
+		"sounds": [
+			{
+				"name": "nightsouls:master/life_crystal",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"salut": {
+		"category": "master",
+		"subtitle": "Salut Fanta",
+		"sounds": [
+			{
+				"name": "nightsouls:master/salut",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"magic_mirror": {
+		"category": "master",
+		"subtitle": "Magic Mirror Used",
+		"sounds": [
+			{
+				"name": "nightsouls:master/magic_mirror",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"star_bit": {
+		"category": "master",
+		"subtitle": "Ding !",
+		"sounds": [
+			{
+				"name": "nightsouls:master/star_bit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"time_skip": {
+		"category": "master",
+		"subtitle": "Time Skipped",
+		"sounds": [
+			{
+				"name": "nightsouls:master/time_skip",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/time_skip2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"instant_potion": {
+		"category": "master",
+		"subtitle": "Instant Potion Consumed",
+		"sounds": [
+			{
+				"name": "nightsouls:master/instant_potion",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"fade": {
+		"category": "master",
+		"subtitle": "Fade Used",
+		"sounds": [
+			{
+				"name": "nightsouls:master/fade",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"adaptive_shield": {
+		"category": "master",
+		"subtitle": "Shield Engaged",
+		"sounds": [
+			{
+				"name": "nightsouls:master/adaptive_shield",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"sound_barrier": {
+		"category": "master",
+		"subtitle": "Dropped the Beat",
+		"sounds": [
+			{
+				"name": "nightsouls:master/sound_barrier",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"nano_boost": {
+		"category": "master",
+		"subtitle": "Nano Boosted",
+		"sounds": [
+			{
+				"name": "nightsouls:master/nano_boost",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"primal_rage": {
+		"category": "master",
+		"subtitle": "Angry Monkey",
+		"sounds": [
+			{
+				"name": "nightsouls:master/primal_rage",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"speeding": {
+		"category": "master",
+		"subtitle": "Speed Boost Music",
+		"sounds": [
+			{
+				"name": "nightsouls:master/speeding",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"healing": {
+		"category": "master",
+		"subtitle": "Healing Music",
+		"sounds": [
+			{
+				"name": "nightsouls:master/healing",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"fortify": {
+		"category": "master",
+		"subtitle": "Fortify Used",
+		"sounds": [
+			{
+				"name": "nightsouls:master/fortify",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"blink": {
+		"category": "master",
+		"subtitle": "Blink Used",
+		"sounds": [
+			{
+				"name": "nightsouls:master/blink1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/blink2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/blink3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"requiem": {
+		"category": "master",
+		"subtitle": "This world is now a NightSouls Requiem World",
+		"sounds": [
+			{
+				"name": "nightsouls:master/requiem",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"doppio": {
+		"category": "master",
+		"subtitle": "Tu turururururu",
+		"sounds": [
+			{
+				"name": "nightsouls:master/doppio1",
+				"stream": true
+			},
+			{
+				"name": "nightsouls:master/doppio2",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"star_platinum": {
+		"category": "master",
+		"subtitle": "ORA ORA ORA ORA ORA",
+		"sounds": [
+			{
+				"name": "nightsouls:master/star_platinum",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"backrooms_light": {
+		"category": "master",
+		"subtitle": "Backrooms Lights",
+		"sounds": [
+			{
+				"name": "nightsouls:master/backrooms_light",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"techno_gun": {
+		"category": "master",
+		"subtitle": "Pew Pew Pew",
+		"sounds": [
+			{
+				"name": "nightsouls:master/techno_gun1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/techno_gun2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/techno_gun3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"emerald_splash": {
+		"category": "master",
+		"subtitle": "EMERALDO SPLASH",
+		"sounds": [
+			{
+				"name": "nightsouls:master/emerald_splash",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"laser": {
+		"category": "master",
+		"subtitle": "Laser Shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/laser",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"plasma": {
+		"category": "master",
+		"subtitle": "Plasma Shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/plasma",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"sun": {
+		"category": "master",
+		"subtitle": "Sun Shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/sun",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"shuriken": {
+		"category": "master",
+		"subtitle": "Shurikens Shots",
+		"sounds": [
+			{
+				"name": "nightsouls:master/cyber_shuriken1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/cyber_shuriken2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/cyber_shuriken3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"meteor": {
+		"category": "master",
+		"subtitle": "Meteor Shower",
+		"sounds": [
+			{
+				"name": "nightsouls:master/meteor",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"magic": {
+		"category": "master",
+		"subtitle": "Magic Stuff",
+		"sounds": [
+			{
+				"name": "nightsouls:master/magic",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"run": {
+		"category": "master",
+		"subtitle": "!!!!!",
+		"sounds": [
+			{
+				"name": "nightsouls:master/run1",
+				"stream": true
+			},
+			{
+				"name": "nightsouls:master/run2",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"retinazer_shot": {
+		"category": "master",
+		"subtitle": "Retinazer attacks",
+		"sounds": [
+			{
+				"name": "nightsouls:master/laser",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"spazmatism_shot": {
+		"category": "master",
+		"subtitle": "Spazmatism attacks",
+		"sounds": [
+			{
+				"name": "nightsouls:master/fire_shot",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"biotic_rifle_shot": {
+		"category": "master",
+		"subtitle": "Biotic Rifle Shot",
+		"sounds": [
+			{
+				"name": "nightsouls:master/biotic_rifle_shot",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"biotic_rifle_damage": {
+		"category": "master",
+		"subtitle": "Biotic Rifle Damage",
+		"sounds": [
+			{
+				"name": "nightsouls:master/biotic_rifle_damage",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"biotic_rifle_heal": {
+		"category": "master",
+		"subtitle": "Biotic Rifle Heal",
+		"sounds": [
+			{
+				"name": "nightsouls:master/biotic_rifle_heal",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"snore": {
+		"category": "master",
+		"subtitle": "AUUUUUUGH",
+		"sounds": [
+			{
+				"name": "nightsouls:master/snore1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:master/snore2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"bruh": {
+		"category": "master",
+		"subtitle": "Bruh",
+		"sounds": [
+			{
+				"name": "nightsouls:master/bruh",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"boom": {
+		"category": "master",
+		"subtitle": "BOOM",
+		"sounds": [
+			{
+				"name": "nightsouls:master/boom",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"mario_galaxy_sky_station": {
+		"category": "music",
+		"subtitle": "Mario Galaxy Sky Station Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/mario_galaxy_sky_station",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"mario_galaxy_credits": {
+		"category": "music",
+		"subtitle": "Mario Galaxy Credits Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/mario_galaxy_credits",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"hopes_and_dreams": {
+		"category": "music",
+		"subtitle": "Hopes and Dreams Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/hopes_and_dreams",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"toto_africa": {
+		"category": "music",
+		"subtitle": "Toto Africa Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/toto_africa",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"kira": {
+		"category": "music",
+		"subtitle": "Kira Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/kira",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"awaken": {
+		"category": "music",
+		"subtitle": "AWAKEN MY MASTERS !",
+		"sounds": [
+			{
+				"name": "nightsouls:music/awaken",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"infogrames": {
+		"category": "music",
+		"subtitle": "Infogrames is consuming your soul",
+		"sounds": [
+			{
+				"name": "nightsouls:music/infogrames",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"pyro_barbare": {
+		"category": "music",
+		"subtitle": "Pyro-Barbarian Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/pyro_barbare",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"minecraft": {
+		"category": "music",
+		"subtitle": "MINECRAFT",
+		"sounds": [
+			{
+				"name": "nightsouls:music/minecraft",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"bowser": {
+		"category": "music",
+		"subtitle": "The Final Battle",
+		"sounds": [
+			{
+				"name": "nightsouls:music/bowser",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"observatory": {
+		"category": "music",
+		"subtitle": "Observatory Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/observatory",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"starship": {
+		"category": "music",
+		"subtitle": "Starship Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/starship",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"gusty_garden": {
+		"category": "music",
+		"subtitle": "Gusty Garden Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/gusty_garden",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"good_egg_galaxy": {
+		"category": "music",
+		"subtitle": "Good Egg Galaxy Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/good_egg_galaxy",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"star_gatherer_final_theme": {
+		"category": "music",
+		"subtitle": "Star Gatherer Final Theme",
+		"sounds": [
+			{
+				"name": "nightsouls:music/star_gatherer_final_theme",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"hellfire_emperor_final_theme": {
+		"category": "music",
+		"subtitle": "Hellfire Emperor Final Theme",
+		"sounds": [
+			{
+				"name": "nightsouls:music/hellfire_emperor_final_theme",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"hallowed_paladin_final_theme": {
+		"category": "music",
+		"subtitle": "Hallowed Paladin Final Theme",
+		"sounds": [
+			{
+				"name": "nightsouls:music/hallowed_paladin_final_theme",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"reality_warper_final_theme": {
+		"category": "music",
+		"subtitle": "Reality Warper Final Theme",
+		"sounds": [
+			{
+				"name": "nightsouls:music/reality_warper_final_theme",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"fnaf_one": {
+		"category": "music",
+		"subtitle": "FNAF 1 Theme",
+		"sounds": [
+			{
+				"name": "nightsouls:music/fnaf1",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"fnaf_two": {
+		"category": "music",
+		"subtitle": "FNAF 2 Theme",
+		"sounds": [
+			{
+				"name": "nightsouls:music/fnaf2",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"undyne": {
+		"category": "music",
+		"subtitle": "A True Hero is Coming",
+		"sounds": [
+			{
+				"name": "nightsouls:music/undyne",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"asgore": {
+		"category": "music",
+		"subtitle": "You are filled with determination",
+		"sounds": [
+			{
+				"name": "nightsouls:music/asgore",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"mama_lauda": {
+		"category": "music",
+		"subtitle": "MAMA LAUDA",
+		"sounds": [
+			{
+				"name": "nightsouls:music/mama_lauda",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"ashes_on_the_fire": {
+		"category": "music",
+		"subtitle": "Ashes on The Fire Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/ashes_on_the_fire",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"megalovania": {
+		"category": "music",
+		"subtitle": "Someone is gonna have a bad time...",
+		"sounds": [
+			{
+				"name": "nightsouls:music/megalovania",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"mickie_krause": {
+		"category": "music",
+		"subtitle": "Pourquoi j'ai ajoute ca",
+		"sounds": [
+			{
+				"name": "nightsouls:music/mickie_krause",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"revenge": {
+		"category": "music",
+		"subtitle": "Creeper ? Aww man",
+		"sounds": [
+			{
+				"name": "nightsouls:music/revenge",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"jevil": {
+		"category": "music",
+		"subtitle": "I CAN DO ANYTHING",
+		"sounds": [
+			{
+				"name": "nightsouls:music/jevil",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"burning_colosseum": {
+		"category": "music",
+		"subtitle": "DIVINE SANDSTORM",
+		"sounds": [
+			{
+				"name": "nightsouls:music/burning_colosseum",
+				"stream": true
+			}
+		]
+		
+	},
+		
+	"diavolo": {
+		"category": "music",
+		"subtitle": "King Crimson...",
+		"sounds": [
+			{
+				"name": "nightsouls:music/diavolo",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"giorno": {
+		"category": "music",
+		"subtitle": "GIOGIOOO",
+		"sounds": [
+			{
+				"name": "nightsouls:music/giorno",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"jotaro": {
+		"category": "music",
+		"subtitle": "Yare Yare Daze...",
+		"sounds": [
+			{
+				"name": "nightsouls:music/jotaro",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"josuke": {
+		"category": "music",
+		"subtitle": "Break down break down",
+		"sounds": [
+			{
+				"name": "nightsouls:music/josuke",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"unaltra": {
+		"category": "music",
+		"subtitle": "BOSU",
+		"sounds": [
+			{
+				"name": "nightsouls:music/unaltra",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"night_town": {
+		"category": "music",
+		"subtitle": "^^",
+		"sounds": [
+			{
+				"name": "nightsouls:music/night_town",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"prime": {
+		"category": "music",
+		"subtitle": "Prime Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/prime",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"equila": {
+		"category": "music",
+		"subtitle": "Equila Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/equila",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"therox": {
+		"category": "music",
+		"subtitle": "Therox Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/therox",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"koro": {
+		"category": "music",
+		"subtitle": "Au revoir, professeur Koro.",
+		"sounds": [
+			{
+				"name": "nightsouls:music/koro",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza": {
+		"category": "music",
+		"subtitle": "Akaza VS Rengoku",
+		"sounds": [
+			{
+				"name": "nightsouls:music/akaza",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"youseebiggirl": {
+		"category": "music",
+		"subtitle": "You See Big Girl Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/youseebiggirl",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"death_note": {
+		"category": "music",
+		"subtitle": "Death Note Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/death_note",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"helikopter": {
+		"category": "music",
+		"subtitle": "Helikopter Helikopter",
+		"sounds": [
+			{
+				"name": "nightsouls:music/helikopter",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"fossil_falls": {
+		"category": "music",
+		"subtitle": "Fossil Falls Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/fossil_falls",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"tanjiro": {
+		"category": "music",
+		"subtitle": "Tanjiro VS Rui Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/tanjiro",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"mhwi": {
+		"category": "music",
+		"subtitle": "MHWI Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/mhwi",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"muzan": {
+		"category": "music",
+		"subtitle": "Muzan Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/muzan",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"dragonhearted": {
+		"category": "music",
+		"subtitle": "Dragonhearted Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/dragonhearted",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"boss_one": {
+		"category": "music",
+		"subtitle": "Boss 1 Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_one",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"boss_two": {
+		"category": "music",
+		"subtitle": "Boss 2 Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_two",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"soupe_aux_choux": {
+		"category": "music",
+		"subtitle": "Soupe aux Choux Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/soupe_aux_choux",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"burning_memory": {
+		"category": "music",
+		"subtitle": "Burning Memory Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/burning_memory",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"doopliss": {
+		"category": "music",
+		"subtitle": "Doopliss Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/doopliss",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"kakyoin": {
+		"category": "music",
+		"subtitle": "Kakyoin Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/kakyoin",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"malzeno": {
+		"category": "music",
+		"subtitle": "Malzeno Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/malzeno",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"davy_jones": {
+		"category": "music",
+		"subtitle": "Davy Jones Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/davy_jones",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"gigachad": {
+		"category": "music",
+		"subtitle": "Average NightSouls Enjoyer",
+		"sounds": [
+			{
+				"name": "nightsouls:music/gigachad",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"plantera": {
+		"category": "music",
+		"subtitle": "Plantera Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/plantera",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"lighter_atmosphere": {
+		"category": "music",
+		"subtitle": "Lighter Atmosphere Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/lighter_atmosphere",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"breaking_bad": {
+		"category": "music",
+		"subtitle": "JESSE, JESSE",
+		"sounds": [
+			{
+				"name": "nightsouls:music/breaking_bad",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"lotta_feroce": {
+		"category": "music",
+		"subtitle": "Lotta Feroce Music",
+		"sounds": [
+			{
+				"name": "nightsouls:music/lotta_feroce",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"hero": {
+		"category": "music",
+		"subtitle": "I need a hero",
+		"sounds": [
+			{
+				"name": "nightsouls:music/hero",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"aether": {
+		"category": "music",
+		"subtitle": "Aether Music Disc",
+		"sounds": [
+			{
+				"name": "nightsouls:music/aether",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"imagine_dragons": {
+		"category": "music",
+		"subtitle": "OH THE MISERY",
+		"sounds": [
+			{
+				"name": "nightsouls:music/imagine_dragons",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"pucci": {
+		"category": "music",
+		"subtitle": "Too late Jotaro...",
+		"sounds": [
+			{
+				"name": "nightsouls:music/pucci",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"jonathan": {
+		"category": "music",
+		"subtitle": "Jonathan Music Disc",
+		"sounds": [
+			{
+				"name": "nightsouls:music/jonathan",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	
+	"paragon": {
+		"category": "music",
+		"subtitle": "You are the ultimate being",
+		"sounds": [
+			{
+				"name": "nightsouls:music/paragon",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza_boss": {
+		"category": "music",
+		"subtitle": "Akaza Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/akaza",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"eoc_boss": {
+		"category": "music",
+		"subtitle": "Eye of Cthulhu Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_one",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"kc_boss": {
+		"category": "music",
+		"subtitle": "King Crimson Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/lotta_feroce",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"twins_boss": {
+		"category": "music",
+		"subtitle": "The Twins Boss Fight",
+		"sounds": [
+			{
+				"name": "nightsouls:music/boss_two",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"hammer": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/hammer",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"waraxe": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/waraxe",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"hellfire_emperor_trident": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/hellfire_emperor_trident",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"soul_stealer": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/soul_stealer",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"frostburn": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/frostburn",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"galactic_slayer": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/galactic_slayer",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"java_fury": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/java_fury",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"bow_ser": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/bow_ser",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"bowser_laugh": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/bowser_laugh",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"bloodzeal": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/bloodzeal",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"supernova": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/supernova",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"hexadecimator": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/hexadecimator",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"divine_sanction": {
+		"category": "master",
+		"subtitle": "NightSouls Weapon",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/divine_sanction",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"dragonblade_dash": {
+		"category": "master",
+		"subtitle": "Dashin",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/dragonblade_dash",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"dragonblade_slash": {
+		"category": "master",
+		"subtitle": "Slashin",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/dragonblade_slash",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"crimson_punch": {
+		"category": "master",
+		"subtitle": "Crimson Punch",
+		"sounds": [
+			{
+				"name": "nightsouls:weapons/crimson_punch",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_ambient": {
+		"category": "entity",
+		"subtitle": "Reaper Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reaper_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/reaper_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/reaper_ambient3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_hit": {
+		"category": "entity",
+		"subtitle": "Reaper Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reaper_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_death": {
+		"category": "entity",
+		"subtitle": "Reaper Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reaper_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_ambient": {
+		"category": "entity",
+		"subtitle": "Werewolf Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/werewolf_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/werewolf_ambient2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_hit": {
+		"category": "entity",
+		"subtitle": "Werewolf Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/werewolf_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_death": {
+		"category": "entity",
+		"subtitle": "Werewolf Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/werewolf_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"psycho_ambient": {
+		"category": "entity",
+		"subtitle": "...",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/psycho_ambient",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"face_monster_ambient": {
+		"category": "entity",
+		"subtitle": "Face Monster Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/face_monster_ambient",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"face_monster_hit": {
+		"category": "entity",
+		"subtitle": "Face Monster Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/face_monster_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"face_monster_death": {
+		"category": "entity",
+		"subtitle": "Face Monster Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/face_monster_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"eye_hit": {
+		"category": "entity",
+		"subtitle": "Eye Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/eye_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"eye_death": {
+		"category": "entity",
+		"subtitle": "Eye Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/eye_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_ambient": {
+		"category": "entity",
+		"subtitle": "Run...",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_ambient3",
+				"stream": false
+			},			
+			{
+				"name": "nightsouls:entity/alternate_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_hit": {
+		"category": "entity",
+		"subtitle": "Alternate Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_hit1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_hit2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_death": {
+		"category": "entity",
+		"subtitle": ":)))))))",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_attack": {
+		"category": "entity",
+		"subtitle": "Just accept your fate.",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_attack",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_step": {
+		"category": "entity",
+		"subtitle": "Alternate Running",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/alternate_step1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/alternate_step2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"requiem_death": {
+		"category": "entity",
+		"subtitle": "Requiem Mob Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/requiem_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"stargazer_hit": {
+		"category": "entity",
+		"subtitle": "Stargazer Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/stargazer_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"paladin_hit": {
+		"category": "entity",
+		"subtitle": "Paladin Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/paladin_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"paladin_ambient": {
+		"category": "entity",
+		"subtitle": "Paladin Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/paladin_ambient",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reality_walker_hit": {
+		"category": "entity",
+		"subtitle": "Reality Walker Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reality_walker_hit",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reality_walker_ambient": {
+		"category": "entity",
+		"subtitle": "Reality Walker Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/reality_walker_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/reality_walker_ambient2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"akaza_ambient": {
+		"category": "entity",
+		"subtitle": "Akaza Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient5",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient6",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/akaza_ambient7",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"akaza_death": {
+		"category": "entity",
+		"subtitle": "Akaza Defeated",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"akaza_compass": {
+		"category": "entity",
+		"subtitle": "Akaza Compass",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_compass",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza_doke": {
+		"category": "entity",
+		"subtitle": "Akaza Angry",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_doke",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"akaza_excited": {
+		"category": "entity",
+		"subtitle": "Akaza Excited",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/akaza_excited",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"cthulhu_scream": {
+		"category": "entity",
+		"subtitle": "Eye of Cthulhu screams",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/cthulhu_scream",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"king_crimson_ambient": {
+		"category": "entity",
+		"subtitle": "King Crimson Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/king_crimson_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/king_crimson_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/king_crimson_ambient3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"king_crimson_death": {
+		"category": "entity",
+		"subtitle": "King Crimson Defeated",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/masaka",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"titan_ambient": {
+		"category": "entity",
+		"subtitle": "Titan Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/titan_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/titan_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"titan_death": {
+		"category": "entity",
+		"subtitle": "Titan Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/titan_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"titan_step": {
+		"category": "entity",
+		"subtitle": "Titan Step",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/titan_step",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"partygoer_ambient": {
+		"category": "entity",
+		"subtitle": "=)",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/partygoer_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/partygoer_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"windigo_ambient": {
+		"category": "entity",
+		"subtitle": "Windigo Nearby",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/windigo_ambient1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/windigo_ambient2",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/windigo_ambient3",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/windigo_ambient4",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/windigo_ambient5",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/windigo_ambient6",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"windigo_hit": {
+		"category": "entity",
+		"subtitle": "Windigo Attacked",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/windigo_hit1",
+				"stream": false
+			},
+			{
+				"name": "nightsouls:entity/windigo_hit2",
+				"stream": false
+			}
+			
+		]
+		
+	},
+	
+	"windigo_death": {
+		"category": "entity",
+		"subtitle": "Windigo Death",
+		"sounds": [
+			{
+				"name": "nightsouls:entity/windigo_death",
+				"stream": false
+			}
+		]
+		
+	}
+	
+}

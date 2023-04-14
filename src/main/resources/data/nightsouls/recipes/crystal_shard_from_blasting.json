@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "nightsouls:gelatin_crystal"
+  },
+  
+  "result": "nightsouls:crystal_shard",
+  "experience": 0.7,
+  "cookingtime": 100
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:night_soul"}
+  ],
+  
+  "result": {
+    "item": "nightsouls:pure_miizealite_ingot"
+  }
+}

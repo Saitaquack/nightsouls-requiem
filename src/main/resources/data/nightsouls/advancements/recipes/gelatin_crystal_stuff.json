@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:crystal_shard_from_furnace",
+      "nightsouls:crystal_shard_from_blasting",
+      "nightsouls:giant_pea"
+    ]
+  },
+  "criteria": {
+    "has_gelatin_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:gelatin_crystal"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_gelatin_crystal",
+    ]
+  ]
+}

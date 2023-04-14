@@ -1,0 +1,90 @@
+{
+  "parent": "nightsouls:story/get_night_soul_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nightsouls:rowequite_ingot"
+    },
+    "title": {
+      "translate": "advancements.story.get_winners_ore.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_winners_ore.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ingot1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_ingot"
+          }
+        ]
+      }
+    },
+     "ore1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_ore"
+          }
+        ]
+      }
+    },
+    "ingot2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_ingot"
+          }
+        ]
+      }
+    },
+    "ore2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_ore"
+          }
+        ]
+      }
+    },
+    "ingot3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_ingot"
+          }
+        ]
+      }
+    },
+    "ore3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_ore"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ingot1",
+      "ore1",
+      "ingot2",
+      "ore2",
+      "ingot3",
+      "ore3"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:super_compressed_cobblestone"}
+    
+  ],
+  
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 16
+  }
+}

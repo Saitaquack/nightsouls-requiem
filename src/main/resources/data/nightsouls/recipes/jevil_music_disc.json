@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:gold_block"},
+    {"item": "minecraft:purple_dye"},
+    {"item": "minecraft:purple_dye"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:jevil_music_disc"
+  }
+
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:paragonic_zenith",
+      "nightsouls:paragonic_nightsouls_helmet",
+      "nightsouls:paragonic_nightsouls_helmet_from_crown",
+      "nightsouls:paragonic_nightsouls_chestplate",
+      "nightsouls:paragonic_nightsouls_leggings",
+      "nightsouls:paragonic_nightsouls_boots"
+    ]
+  },
+  "criteria": {
+    "has_perfect_paragonic_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:perfect_paragonic_block"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_perfect_paragonic_block",
+    ]
+  ]
+}

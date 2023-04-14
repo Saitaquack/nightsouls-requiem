@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CAC",
+    "CBC" 
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:anvil"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    
+    "B": {
+      "item": "nightsouls:cranite_block"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:adaptive_shield"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:primium_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:primium_ingot",
+    "count": 9
+  }
+}

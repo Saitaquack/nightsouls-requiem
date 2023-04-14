@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:primium_tiles"
+    }
+  },
+  "result": {
+    "item": "nightsouls:primium_tiles_slab",
+    "count": 6
+  }
+}

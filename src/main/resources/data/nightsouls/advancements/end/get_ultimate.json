@@ -1,0 +1,68 @@
+{
+  "parent": "nightsouls:end/get_true_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:sound_barrier"
+    },
+    "title": {
+      "translate": "advancements.end.get_ultimate.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_ultimate.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sound_barrier": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:sound_barrier"
+          }
+        ]
+      }
+    },
+    "nano_boost": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nano_boost"
+          }
+        ]
+      }
+    },
+    "primal_rage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primal_rage"
+          }
+        ]
+      }
+    },
+    "super_blink": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:super_blink"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sound_barrier",
+      "nano_boost",
+      "primal_rage",
+      "super_blink"
+    ]
+  ]
+}

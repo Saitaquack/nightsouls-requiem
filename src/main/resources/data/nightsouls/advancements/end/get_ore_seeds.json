@@ -1,0 +1,68 @@
+{
+  "parent": "nightsouls:end/get_true_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:bastirite_seeds"
+    },
+    "title": {
+      "translate": "advancements.end.get_ore_seeds.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_ore_seeds.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "saitastone_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_seeds"
+          }
+        ]
+      }
+    },
+     "miizealite_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_seeds"
+          }
+        ]
+      }
+    },
+    "cranite_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_seeds"
+          }
+        ]
+      }
+    },
+    "bastirite_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_seeds"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "saitastone_seeds",
+      "miizealite_seeds",
+      "cranite_seeds",
+      "bastirite_seeds"
+    ]
+  ]
+}

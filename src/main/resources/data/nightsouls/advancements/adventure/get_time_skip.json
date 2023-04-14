@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:adventure/kill_kc",
+  "display": {
+    "icon": {
+      "item": "nightsouls:time_clock"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_time_skip.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_time_skip.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "time_clock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:time_clock"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "time_clock"
+    ]
+  ]
+}

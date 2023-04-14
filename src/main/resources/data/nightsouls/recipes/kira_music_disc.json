@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:cranite_ingot"},
+    {"item": "minecraft:tnt"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:kira_music_disc"
+  }
+
+}

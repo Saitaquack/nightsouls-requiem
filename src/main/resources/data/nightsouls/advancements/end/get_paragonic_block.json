@@ -1,0 +1,36 @@
+{
+  "parent": "nightsouls:end/get_broken_requiem_key",
+  "display": {
+    "icon": {
+      "item": "nightsouls:paragonic_block"
+    },
+    "title": {
+      "translate": "advancements.end.get_paragonic_block.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_paragonic_block.description"
+     },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+
+  "criteria": {
+    "paragonic_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_block"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "paragonic_block"
+    ]
+  ]
+}

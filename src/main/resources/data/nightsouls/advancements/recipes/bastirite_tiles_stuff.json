@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:bastirite_tiles_stairs",
+      "nightsouls:bastirite_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_bastirite_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_bastirite_tiles",
+    ]
+  ]
+}

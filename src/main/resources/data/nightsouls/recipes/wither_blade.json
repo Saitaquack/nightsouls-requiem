@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EDE",
+    "EEE" 
+  ],
+  "key": {
+  
+    "E": {
+      "item": "nightsouls:wither_essence"
+    },
+    
+    "D": {
+      "item": "minecraft:diamond_sword"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:wither_blade"
+    }
+}

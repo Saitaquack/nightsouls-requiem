@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:broken_requiem_key"},
+    {"item": "nightsouls:yellow_liminal_gem"},
+    {"item": "nightsouls:red_liminal_gem"},
+    {"item": "nightsouls:blue_liminal_gem"},
+    {"item": "nightsouls:ender_dragon_essence"},
+    {"item": "nightsouls:wither_essence"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:requiem_key"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  
+  "ingredient": {
+    "item": "nightsouls:crystal_block"
+  },
+  
+  "result": "nightsouls:crystal_stairs",
+  "count": 1
+}

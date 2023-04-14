@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  C",
+    "PL ",
+    "PP " 
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "P": {
+      "item": "minecraft:paper"
+    },
+    
+    "L": {
+      "item": "minecraft:leather"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:name_tag"
+  }
+}

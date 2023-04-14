@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:crystal_stairs",
+      "nightsouls:crystal_slab",
+      "nightsouls:crystal_stairs_from_stonecutting",
+      "nightsouls:crystal_slab_from_stonecutting"
+    ]
+  },
+  "criteria": {
+    "has_crystal_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:crystal_block"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_crystal_block",
+    ]
+  ]
+}

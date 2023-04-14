@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:nightsouls_helmet",
+      "nightsouls:nightsouls_chestplate",
+      "nightsouls:nightsouls_leggings",
+      "nightsouls:nightsouls_boots",
+      "nightsouls:nightsouls_helmet_with_bloody",
+      "nightsouls:nightsouls_chestplate_with_bloody",
+      "nightsouls:nightsouls_leggings_with_bloody",
+      "nightsouls:nightsouls_boots_with_bloody",
+      "nightsouls:nightsouls_helmet_with_alternate",
+      "nightsouls:nightsouls_chestplate_with_alternate",
+      "nightsouls:nightsouls_leggings_with_alternate",
+      "nightsouls:nightsouls_boots_with_alternate",
+      "nightsouls:nightsouls_bow",
+      "nightsouls:nightsouls_cake_slice",
+      "nightsouls:crimson_rose",
+      "nightsouls:plasma_sprayer",
+      "nightsouls:gigachad_music_disc",
+      "nightsouls:vampire_mask"
+    ]
+  },
+  "criteria": {
+    "has_nightsouls_essence": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_essence"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_nightsouls_essence",
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:rowequite_tiles_stairs",
+      "nightsouls:rowequite_tiles_slab"
+    ]
+  },
+  "criteria": {
+    "has_rowequite_tiles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_tiles"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_rowequite_tiles",
+    ]
+  ]
+}

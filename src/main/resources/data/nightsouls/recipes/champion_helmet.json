@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:primium_helmet"},
+    {"item": "nightsouls:rowequite_helmet"},
+    {"item": "nightsouls:therenite_helmet"},
+    {"item": "nightsouls:primium_ingot"},
+    {"item": "nightsouls:rowequite_ingot"},
+    {"item": "nightsouls:therenite_ingot"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:champion_helmet"
+  }
+}

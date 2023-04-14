@@ -1,0 +1,69 @@
+{
+  "parent": "nightsouls:end/get_true_night_soul",
+  "display": {
+    "icon": {
+      "item": "nightsouls:absolute_saitastone_ingot"
+    },
+    "title": {
+      "translate": "advancements.end.get_final_ingot.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_final_ingot.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  
+  "criteria": {
+    "absolute_saitastone_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:absolute_saitastone_ingot"
+          }
+        ]
+      }
+    },
+     "calamitous_miizealite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:calamitous_miizealite_ingot"
+          }
+        ]
+      }
+    },
+    "ultimate_cranite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:ultimate_cranite_ingot"
+          }
+        ]
+      }
+    },
+    "exponential_bastirite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:exponential_bastirite_ingot"
+          }
+         ]
+       }
+     }
+   },
+  "requirements": [
+    [
+      "absolute_saitastone_ingot",
+      "calamitous_miizealite_ingot",
+      "ultimate_cranite_ingot",
+      "exponential_bastirite_ingot"
+    ]
+  ]
+}

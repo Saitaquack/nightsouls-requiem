@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "minecraft:glass_bottle"},
+    {"item": "nightsouls:villager_blood"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:blood_bottle"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "parent": "nightsouls:adventure/kill_demon_eye",
+  "display": {
+    "icon": {
+      "item": "nightsouls:nightsouls_emerald_block"
+    },
+    "title": {
+      "translate": "advancements.adventure.kill_requiem_mob.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.kill_requiem_mob.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stargazer": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:stargazer"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "hellfire_servant": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:hellfire_servant"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "paladin": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:paladin"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "reality_walker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:reality_walker"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+      "titan": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "nightsouls:titan"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    } 
+  },
+  "requirements": [
+    [
+      "stargazer",
+      "hellfire_servant",
+      "paladin",
+      "reality_walker",
+      "titan"
+    ]
+  ]
+}

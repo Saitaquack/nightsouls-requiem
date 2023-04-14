@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BPB",
+    "NSN",
+    "MIM"
+  ],
+  "key": {
+    "N": {
+      "item": "nightsouls:night_soul"
+    },
+    
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "P": {
+      "item": "nightsouls:pure_bastirite_ingot"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    
+    "S": {
+      "item": "nightsouls:miizealite_pickaxe"
+    },
+    
+    "I": {
+      "item": "nightsouls:bastirite_pickaxe"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:insta_pickaxe"
+  }
+}

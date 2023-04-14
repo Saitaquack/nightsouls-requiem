@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "nightsouls:blocks/saitastone_tiles",
+        "top": "nightsouls:blocks/saitastone_tiles",
+        "side": "nightsouls:blocks/saitastone_tiles"
+    }
+}

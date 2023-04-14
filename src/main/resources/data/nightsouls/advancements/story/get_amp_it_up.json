@@ -1,0 +1,35 @@
+{
+  "parent": "nightsouls:story/get_cranite",
+  "display": {
+    "icon": {
+      "item": "nightsouls:amp_it_up"
+    },
+    "title": {
+      "translate": "advancements.story.get_amp_it_up.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_amp_it_up.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "amp_it_up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:amp_it_up"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amp_it_up"
+    ]
+  ]
+}

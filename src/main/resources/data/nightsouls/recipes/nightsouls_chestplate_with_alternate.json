@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:saitastone_chestplate"},
+    {"item": "nightsouls:miizealite_chestplate"},
+    {"item": "nightsouls:cranite_chestplate"},
+    {"item": "nightsouls:alternate_chestplate"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:nightsouls_essence"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:nightsouls_chestplate"
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:crazy_diamond_block",
+      "nightsouls:crazy_diamond_sword",
+      "nightsouls:diamonds_from_crazy_diamond",
+      "nightsouls:instant_healing_potion_from_crazy_diamond",
+      "nightsouls:josuke_music_disc"
+      
+    ]
+  },
+  "criteria": {
+    "has_crazy_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:crazy_diamond"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_crazy_diamond",
+    ]
+  ]
+}

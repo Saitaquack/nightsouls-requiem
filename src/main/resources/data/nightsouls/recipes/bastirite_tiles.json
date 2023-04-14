@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:bastirite_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:bastirite_tiles",
+    "count": 8
+  }
+}

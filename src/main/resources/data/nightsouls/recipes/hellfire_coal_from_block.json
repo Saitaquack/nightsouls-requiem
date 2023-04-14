@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:hellfire_coal_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:hellfire_coal",
+    "count": 9
+  }
+}

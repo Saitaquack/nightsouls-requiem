@@ -1,0 +1,57 @@
+{
+  "parent": "minecraft:story/enter_the_end",
+  "display": {
+    "icon": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    "title": {
+      "translate": "advancements.story.get_chlorophyte.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_chlorophyte.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chlorophyte_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:chlorophyte_ingot"
+          }
+        ]
+      }
+    },
+     "chlorophyte_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:chlorophyte_ore"
+          }
+        ]
+      }
+    },
+    "chlorophyte_chunk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:chlorophyte_chunk"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chlorophyte_ingot",
+      "chlorophyte_ore",
+      "chlorophyte_chunk"
+    ]
+  ]
+}

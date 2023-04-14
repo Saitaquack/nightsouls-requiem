@@ -1,0 +1,813 @@
+{
+  "parent": "minecraft:adventure/sleep_in_bed",
+  "display": {
+    "icon": {
+      "item": "nightsouls:mario_galaxy_sky_station_music_disc"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_music_disc.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_music_disc.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  
+  "criteria": {
+    "mario_galaxy_sky_station_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:mario_galaxy_sky_station_music_disc"
+          }
+        ]
+      }
+    }, 
+    "mario_galaxy_credits_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:mario_galaxy_credits_music_disc"
+          }
+        ]
+      }
+    },
+    "hopes_and_dreams_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hopes_and_dreams_music_disc"
+          }
+        ]
+      }
+    },
+    "toto_africa_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:toto_africa_music_disc"
+          }
+        ]
+      }
+    },
+    "kira_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:kira_music_disc"
+          }
+        ]
+      }
+    },
+    
+     "awaken_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:awaken_music_disc"
+          }
+        ]
+      }
+    },
+    
+     "infogrames_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:infogrames_music_disc"
+          }
+        ]
+      }
+    },
+    
+     "pyro_barbarian_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:pyro_barbarian_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "fanta_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fanta_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "bowser_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bowser_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "observatory_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:observatory_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "starship_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:starship_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "gusty_garden_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:gusty_garden_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "good_egg_galaxy_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:good_egg_galaxy_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "fnaf_one_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fnaf_one_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "fnaf_two_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fnaf_two_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "undyne_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:undyne_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "asgore_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:asgore_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "mama_lauda_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:mama_lauda_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "ashes_on_the_fire_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:ashes_on_the_fire_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "megalovania_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:megalovania_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "mickie_krause_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:mickie_krause_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "revenge_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:revenge_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "jevil_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:jevil_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "burning_colosseum_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:burning_colosseum_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "diavolo_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:diavolo_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "giorno_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:giorno_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "jotaro_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:jotaro_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "josuke_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:josuke_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "unaltra_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:unaltra_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "night_town_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:night_town_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "prime_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:prime_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "equila_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:equila_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "therox_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therox_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "koro_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:koro_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "akaza_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:akaza_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "youseebiggirl_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:youseebiggirl_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "death_note_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:death_note_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "helikopter_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:helikopter_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "fossil_falls_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:fossil_falls_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "tanjiro_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:tanjiro_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "mhwi_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:mhwi_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "muzan_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:muzan_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "dragonhearted_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:dragonhearted_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "boss_one_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:boss_one_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "boss_two_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:boss_two_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "soupe_aux_choux_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:soupe_aux_choux_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "burning_memory_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:burning_memory_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "doopliss_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:doopliss_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "kakyoin_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:kakyoin_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "malzeno_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:malzeno_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "davy_jones_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:davy_jones_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "gigachad_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:gigachad_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "plantera_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:plantera_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "lighter_atmosphere_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:lighter_atmosphere_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "breaking_bad_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:breaking_bad_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "lotta_feroce_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:lotta_feroce_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "hero_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hero_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "aether_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:aether_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "imagine_dragons_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:imagine_dragons_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "pucci_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:pucci_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "jonathan_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:jonathan_music_disc"
+          }
+        ]
+      }
+    },
+        
+    "star_gatherer_final_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:star_gatherer_final_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "hellfire_emperor_final_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hellfire_emperor_final_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "hallowed_paladin_final_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:hallowed_paladin_final_music_disc"
+          }
+        ]
+      }
+    },
+    
+    "reality_warper_final_music_disc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:reality_warper_final_music_disc"
+          }
+        ]
+      }
+    }
+    
+  },
+  "requirements": [
+    [
+      "mario_galaxy_sky_station_music_disc",
+      "mario_galaxy_credits_music_disc",
+      "hopes_and_dreams_music_disc",
+      "toto_africa_music_disc",
+      "kira_music_disc",
+      "awaken_music_disc" ,
+      "infogrames_music_disc" ,
+      "pyro_barbarian_music_disc",
+      "fanta_music_disc",
+      "bowser_music_disc",
+      "observatory_music_disc",
+      "starship_music_disc",
+      "gusty_garden_music_disc",
+      "good_egg_galaxy_music_disc",
+      "fnaf_one_music_disc",
+      "fnaf_two_music_disc",
+      "undyne_music_disc",
+      "asgore_music_disc",
+      "mama_lauda_music_disc",
+      "ashes_on_the_fire_music_disc",
+      "megalovania_music_disc",
+      "mickie_krause_music_disc",
+      "revenge_music_disc",
+      "jevil_music_disc",
+      "burning_colosseum_music_disc",
+      "diavolo_music_disc",
+      "giorno_music_disc",
+      "jotaro_music_disc",
+      "josuke_music_disc",
+      "unaltra_music_disc",
+      "night_town_music_disc",
+      "prime_music_disc",
+      "equila_music_disc",
+      "therox_music_disc",
+      "koro_music_disc",
+      "akaza_music_disc",
+      "youseebiggirl_music_disc",
+      "death_note_music_disc",
+      "helikopter_music_disc",
+      "fossil_falls_music_disc",
+      "tanjiro_music_disc",
+      "mhwi_music_disc",
+      "muzan_music_disc",
+      "dragonhearted_music_disc",
+      "boss_one_music_disc",
+      "boss_two_music_disc",
+      "soupe_aux_choux_music_disc",
+      "burning_memory_music_disc",
+      "doopliss_music_disc",
+      "kakyoin_music_disc",
+      "malzeno_music_disc",
+      "davy_jones_music_disc",
+      "gigachad_music_disc",
+      "plantera_music_disc",
+      "lighter_atmosphere_music_disc",
+      "breaking_bad_music_disc",
+      "lotta_feroce_music_disc",
+      "hero_music_disc",
+      "aether_music_disc",
+      "imagine_dragons_music_disc",
+      "pucci_music_disc",
+      "jonathan_music_disc",
+      "star_gatherer_final_music_disc",
+      "hellfire_emperor_final_music_disc",
+      "hallowed_paladin_final_music_disc",
+      "reality_warper_final_music_disc"       
+    ]
+  ]
+}

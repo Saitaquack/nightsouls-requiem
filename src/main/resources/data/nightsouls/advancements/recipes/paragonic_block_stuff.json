@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:perfect_paragonic_block",
+      "nightsouls:akaza_altar",
+      "nightsouls:paragonic_music_disc"
+    ]
+  },
+  "criteria": {
+    "has_paragonic_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_block"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_paragonic_block",
+    ]
+  ]
+}

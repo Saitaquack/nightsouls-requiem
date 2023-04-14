@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:rowequite_tiles"
+    }
+  },
+  "result": {
+    "item": "nightsouls:rowequite_tiles_stairs",
+    "count": 4
+  }
+}

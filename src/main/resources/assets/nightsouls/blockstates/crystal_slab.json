@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "nightsouls:block/crystal_slab" },
+        "type=top": { "model": "nightsouls:block/crystal_slab_top" },
+        "type=double": { "model": "nightsouls:block/crystal_block" }
+    }
+}

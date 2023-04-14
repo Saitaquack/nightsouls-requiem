@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:therenite_ingot"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"}
+    
+  ],
+  
+  "result": {
+    "item": "minecraft:diamond"
+   }
+}

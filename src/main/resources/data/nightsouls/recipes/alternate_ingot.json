@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BIB",
+    "BBB"
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:pitch_black_block"
+    },
+    
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:alternate_ingot"
+  }
+}

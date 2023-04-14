@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "LSL",
+    " B "
+  ],
+  
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "L": {
+      "item": "nightsouls:life_crystal"
+    },
+    
+    "S": {
+      "item": "nightsouls:bastirite_sword"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:biotic_blade"
+  }
+}

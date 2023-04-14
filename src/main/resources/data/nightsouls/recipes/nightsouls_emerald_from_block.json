@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:nightsouls_emerald_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:nightsouls_emerald",
+    "count": 9
+  }
+}

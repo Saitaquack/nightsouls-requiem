@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GBG",
+    "GBG" 
+  ],
+  "key": {
+  
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    
+    "B": {
+      "item": "nightsouls:villager_blood"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:creeper_head"
+  }
+}

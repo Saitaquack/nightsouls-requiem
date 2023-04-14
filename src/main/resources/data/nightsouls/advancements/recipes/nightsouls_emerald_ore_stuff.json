@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:nightsouls_emerald_from_blasting",
+      "nightsouls:nightsouls_emerald_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_nightsouls_emerald_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_emerald_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_nightsouls_emerald_ore",
+    ]
+  ]
+}

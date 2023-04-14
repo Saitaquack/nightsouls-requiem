@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:saitastone_sword"},
+    {"item": "nightsouls:miizealite_sword"},
+    {"item": "nightsouls:pure_saitastone_ingot"},
+    {"item": "nightsouls:pure_miizealite_ingot"},
+    {"item": "nightsouls:night_soul"},
+    {"item": "nightsouls:night_soul"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:bloodzeal"
+  }
+}

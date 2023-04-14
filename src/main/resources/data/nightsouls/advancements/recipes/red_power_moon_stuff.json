@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:saitastone_ingot_from_power_moon",
+      "nightsouls:fossil_falls_music_disc"
+    ]
+  },
+  "criteria": {
+    "has_red_power_moon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:red_power_moon"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_red_power_moon",
+    ]
+  ]
+}

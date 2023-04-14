@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "nightsouls:saitastone_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:saitastone_chestplate"
+  }
+}

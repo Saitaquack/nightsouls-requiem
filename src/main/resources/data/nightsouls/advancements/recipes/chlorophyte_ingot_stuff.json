@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:chlorophyte_block",
+      "nightsouls:chlorophyte_rod",
+      "nightsouls:chlorophyte_sword",
+      "nightsouls:chlorophyte_pickaxe",
+      "nightsouls:chlorophyte_axe",
+      "nightsouls:chlorophyte_shovel",
+      "nightsouls:chlorophyte_hoe",
+      "nightsouls:chlorophyte_helmet",
+      "nightsouls:chlorophyte_chestplate",
+      "nightsouls:chlorophyte_leggings",
+      "nightsouls:chlorophyte_boots",
+      "nightsouls:true_night_soul",
+      "nightsouls:pure_blue_crystal_seeds",
+      "nightsouls:totem_of_undying",
+      "nightsouls:name_tag",
+      "nightsouls:elytra",
+      "nightsouls:blood_charm_from_chlorophyte",
+      "nightsouls:moon_charm_from_chlorophyte",
+      "nightsouls:hellfire_charm_from_chlorophyte",
+      "nightsouls:chlorophyte_tiles"
+    ]
+  },
+  "criteria": {
+    "has_chlorophyte_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:chlorophyte_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_chlorophyte_ingot",
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:creeper_head",
+      "nightsouls:zombie_head",
+      "nightsouls:skeleton_skull",
+      "nightsouls:wither_skeleton_skull",
+      "nightsouls:vampire_mask",
+      "nightsouls:blood_bottle"
+    ]
+  },
+  "criteria": {
+    "has_villager_blood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:villager_blood"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_villager_blood",
+    ]
+  ]
+}

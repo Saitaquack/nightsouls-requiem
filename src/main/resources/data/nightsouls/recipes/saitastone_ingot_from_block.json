@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:saitastone_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:saitastone_ingot",
+    "count": 9
+  }
+}

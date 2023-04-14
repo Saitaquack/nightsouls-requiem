@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:hellfire_emperor_boots"},
+    {"item": "nightsouls:hallowed_paladin_boots"},
+    {"item": "nightsouls:milky_way_boots"},
+    {"item": "nightsouls:binary_boots"},
+    {"item": "nightsouls:perfect_paragonic_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:paragonic_nightsouls_boots"
+  }
+}

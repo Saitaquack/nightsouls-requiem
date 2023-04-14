@@ -1,0 +1,6 @@
+{
+   "parent": "item/handheld",
+   "textures": {
+        "layer0": "nightsouls:items/white_power_moon" 
+        }
+}

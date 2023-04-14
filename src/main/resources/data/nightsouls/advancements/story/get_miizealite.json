@@ -1,0 +1,57 @@
+{
+  "parent": "nightsouls:story/get_night_soul_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    "title": {
+      "translate": "advancements.story.get_miizealite.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_miizealite.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "miizealite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_ingot"
+          }
+        ]
+      }
+    },
+     "miizealite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_ore"
+          }
+        ]
+      }
+    },
+    "nether_miizealite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nether_miizealite_ore"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "miizealite_ingot",
+      "miizealite_ore",
+      "nether_miizealite_ore"
+    ]
+  ]
+}

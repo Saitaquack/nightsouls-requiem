@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:rowequite_ingot"},
+    {"item": "nightsouls:cranite_ingot"},
+    {"item": "nightsouls:crystal_shard"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:cranite_ingot",
+    "count": 2
+  }
+}

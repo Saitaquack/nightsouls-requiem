@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CAC",
+    "GRG",
+    "GBG" 
+  ],
+  "key": {
+  
+    "C": {
+      "item": "nightsouls:chlorophyte_ingot"
+    },
+    
+    "A": {
+      "item": "nightsouls:bastirite_ingot"
+    },
+    
+    "R": {
+      "item": "nightsouls:cranite_ingot"
+    },
+    
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    
+    "B": {
+      "item": "minecraft:gold_block"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:totem_of_undying"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CPC",
+    "PBP",
+    "CPC" 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:broken_dragonblade"
+    },
+    
+    "P": {
+      "item": "nightsouls:primium_ingot"
+    },
+    
+    "C": {
+      "item": "nightsouls:crystal_shard"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:dragonblade"
+  }
+}

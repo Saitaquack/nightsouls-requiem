@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+  
+    "S": {
+      "item": "minecraft:snow_block"
+    },
+    
+    "C": {
+      "item": "nightsouls:cranite_sword"
+    }
+  },
+  "result": {
+    "item": "nightsouls:ice_blade"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB" 
+  ],
+  "key": {
+  
+    "B": {
+      "item": "nightsouls:blood_sample"
+    },
+    
+    "A": {
+      "item": "nightsouls:saitastone_leggings"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:bloody_leggings"
+  }
+}

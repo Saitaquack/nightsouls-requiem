@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NGN",
+    "BDB",
+    "LEL" 
+  ],
+  "key": {
+  
+    "N": {
+      "item": "minecraft:nether_wart_block"
+    },
+    
+    "E": {
+      "item": "nightsouls:nightsouls_essence"
+    },
+    
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    
+    "L": {
+      "item": "nightsouls:bloody_lens"
+    },
+    
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:crimson_rose"
+  }
+}

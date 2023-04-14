@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NPN",
+    "RPR",
+    "R R"
+  ],
+  "key": {
+  
+    "R": {
+      "item": "nightsouls:rowequite_ingot"
+    },
+  
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    
+    "P": {
+      "item": "minecraft:blaze_powder"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:laser_sprayer"
+  }
+}

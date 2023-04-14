@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "O O",
+    " O " 
+  ],
+  "key": {
+  
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+    
+  },
+  "result": {
+    "item": "nightsouls:blank_music_disc",
+    "count": 2
+  }
+}

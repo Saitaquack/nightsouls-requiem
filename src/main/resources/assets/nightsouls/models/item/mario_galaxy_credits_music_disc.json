@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+        "layer0": "nightsouls:items/mario_galaxy_credits_music_disc" 
+        }
+}

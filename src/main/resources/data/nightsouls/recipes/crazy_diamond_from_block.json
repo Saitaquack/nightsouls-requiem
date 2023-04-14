@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:crazy_diamond_block"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:crazy_diamond",
+    "count": 9
+  }
+}

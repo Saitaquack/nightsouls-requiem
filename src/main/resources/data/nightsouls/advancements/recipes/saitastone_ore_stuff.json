@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:saitastone_ingot_from_blasting",
+      "nightsouls:saitastone_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_saitastone_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_saitastone_ore",
+    ]
+  ]
+}

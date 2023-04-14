@@ -1,0 +1,69 @@
+{
+  "parent": "nightsouls:adventure/get_music_disc",
+  "display": {
+    "icon": {
+      "item": "nightsouls:nightsouls_helmet"
+    },
+    "title": {
+      "translate": "advancements.adventure.get_nightsouls_armor.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.get_nightsouls_armor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  
+  "criteria": {
+    "nightsouls_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_helmet"
+          }
+        ]
+      }
+    },
+     "nightsouls_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_chestplate"
+          }
+        ]
+      }
+    },
+    "nightsouls_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_leggings"
+          }
+        ]
+      }
+    },
+    "nightsouls_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:nightsouls_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nightsouls_helmet",
+      "nightsouls_chestplate",
+      "nightsouls_leggings",
+      "nightsouls_boots"
+    ]
+  ]
+}

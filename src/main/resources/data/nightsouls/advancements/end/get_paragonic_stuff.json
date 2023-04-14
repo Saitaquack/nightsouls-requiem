@@ -1,0 +1,82 @@
+{
+  "parent": "nightsouls:end/get_perfect_paragonic_block",
+  "display": {
+    "icon": {
+      "item": "nightsouls:paragonic_zenith"
+    },
+    "title": {
+      "translate": "advancements.end.get_paragonic_stuff.title"
+    },
+    "description": {
+      "translate": "advancements.end.get_paragonic_stuff.description"
+     },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 1500
+  },
+  "criteria": {
+    "paragonic_zenith": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_zenith"
+          }
+        ]
+      }
+    },
+    "paragonic_nightsouls_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_nightsouls_helmet"
+          }
+        ]
+      }
+    },
+    "paragonic_nightsouls_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_nightsouls_chestplate"
+          }
+        ]
+      }
+    },
+    "paragonic_nightsouls_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_nightsouls_leggings"
+          }
+        ]
+      }
+    },
+    "paragonic_nightsouls_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:paragonic_nightsouls_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "paragonic_zenith",
+      "paragonic_nightsouls_helmet",
+      "paragonic_nightsouls_chestplate",
+      "paragonic_nightsouls_leggings",
+      "paragonic_nightsouls_boots"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:paragonic_block"},
+    {"item": "nightsouls:true_night_soul"},
+    {"item": "nightsouls:nightsouls_essence"},
+    {"item": "nightsouls:ender_dragon_essence"},
+    {"item": "nightsouls:wither_essence"},
+    {"item": "nightsouls:super_nightsouls_emerald_block"},
+    {"item": "nightsouls:chlorophyte_block"},
+    {"item": "nightsouls:upper_demon_blood"},
+    {"item": "nightsouls:upper_demon_blood"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:perfect_paragonic_block"
+  }
+}

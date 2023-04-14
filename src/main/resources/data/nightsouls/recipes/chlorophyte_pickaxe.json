@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "nightsouls:chlorophyte_rod"
+    },
+    "X": {
+      "item": "nightsouls:chlorophyte_ingot"
+    }
+  },
+  "result": {
+    "item": "nightsouls:chlorophyte_pickaxe"
+  }
+}

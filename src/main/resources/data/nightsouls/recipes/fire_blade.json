@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BMB"
+  ],
+  "key": {
+  
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    
+    "M": {
+      "item": "nightsouls:miizealite_sword"
+    }
+  },
+  "result": {
+    "item": "nightsouls:fire_blade"
+  }
+}

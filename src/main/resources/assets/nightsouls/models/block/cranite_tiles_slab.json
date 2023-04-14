@@ -1,0 +1,9 @@
+
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "nightsouls:blocks/cranite_tiles",
+        "top": "nightsouls:blocks/cranite_tiles",
+        "side": "nightsouls:blocks/cranite_tiles"
+    }
+}

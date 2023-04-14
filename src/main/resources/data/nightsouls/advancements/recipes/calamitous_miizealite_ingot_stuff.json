@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:hellfire_emperor_trident",
+      "nightsouls:soul_stealer",
+      "nightsouls:bow_ser",
+      "nightsouls:hellfire_emperor_helmet",
+      "nightsouls:hellfire_emperor_chestplate",
+      "nightsouls:hellfire_emperor_leggings",
+      "nightsouls:hellfire_emperor_boots",
+      "nightsouls:hellfire_emperor_crown",
+      "nightsouls:hellfire_emperor_final_music_disc",
+      "nightsouls:meteor_staff"
+    ]
+  },
+  "criteria": {
+    "has_calamitous_miizealite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:calamitous_miizealite_ingot"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_calamitous_miizealite_ingot",
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nightsouls:therenite_ore"
+  },
+  
+  "result": "nightsouls:therenite_ingot",
+  "experience": 2,
+  "cookingtime": 200
+}

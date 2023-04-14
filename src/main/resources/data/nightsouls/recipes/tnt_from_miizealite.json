@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MGM",
+    "GMG",
+    "MGM" 
+  ],
+  "key": {
+  
+    "M": {
+      "item": "nightsouls:miizealite_ingot"
+    },
+    
+    "G": {
+      "item": "minecraft:gunpowder"
+    }
+    
+  },
+  "result": {
+    "item": "minecraft:tnt",
+    "count": 16
+  }
+}

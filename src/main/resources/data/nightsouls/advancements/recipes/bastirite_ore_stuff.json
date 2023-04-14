@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:bastirite_ingot_from_blasting",
+      "nightsouls:bastirite_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_bastirite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_bastirite_ore",
+    ]
+  ]
+}

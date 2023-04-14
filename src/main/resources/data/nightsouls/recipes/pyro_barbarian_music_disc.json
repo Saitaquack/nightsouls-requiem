@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "nightsouls:miizealite_ingot"},
+    {"item": "nightsouls:cranite_ingot"},
+    {"item": "minecraft:flint_and_steel"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:pyro_barbarian_music_disc"
+  }
+
+}

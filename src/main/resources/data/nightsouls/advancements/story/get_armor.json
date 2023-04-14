@@ -1,0 +1,333 @@
+{
+  "parent": "nightsouls:story/get_night_soul_pickaxe",
+  "display": {
+    "icon": {
+      "item": "nightsouls:saitastone_chestplate"
+    },
+    "title": {
+      "translate": "advancements.story.get_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.get_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+ },
+  "criteria": {
+    "armor1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_helmet"
+          }
+        ]
+      }
+    },
+     "armor2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_chestplate"
+          }
+        ]
+      }
+    },
+    "armor3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_leggings"
+          }
+        ]
+      }
+    },
+    "armor4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:miizealite_boots"
+          }
+        ]
+      }
+    },
+     "armor5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_helmet"
+          }
+        ]
+      }
+    },
+     "armor6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_chestplate"
+          }
+        ]
+      }
+    },
+     "armor7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_leggings"
+          }
+        ]
+      }
+    },
+    "armor8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:saitastone_boots"
+          }
+        ]
+      }
+    },
+    "armor9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_helmet"
+          }
+        ]
+      }
+    },
+    "armor10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_chestplate"
+          }
+        ]
+      }
+    },
+    "armor11": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_leggings"
+          }
+        ]
+      }
+    },
+    "armor12": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:cranite_boots"
+          }
+        ]
+      }
+    },
+    "armor13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_helmet"
+          }
+        ]
+      }
+    },
+    "armor14": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_chestplate"
+          }
+        ]
+      }
+    },
+    "armor15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_leggings"
+          }
+        ]
+      }
+    },
+    "armor16": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:bastirite_boots"
+          }
+        ]
+      }
+    },
+    "armor17": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_helmet"
+          }
+        ]
+      }
+    },
+    "armor18": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_chestplate"
+          }
+        ]
+      }
+    },
+    "armor19": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_leggings"
+          }
+        ]
+      }
+    },
+    "armor20": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:primium_boots"
+          }
+        ]
+      }
+    },
+   "armor21": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_helmet"
+          }
+        ]
+      }
+    },
+    "armor22": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_chestplate"
+          }
+        ]
+      }
+    },
+    "armor23": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_leggings"
+          }
+        ]
+      }
+    },
+    "armor24": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_boots"
+          }
+        ]
+      }
+    },
+    "armor25": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_helmet"
+          }
+        ]
+      }
+    },
+    "armor26": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_chestplate"
+          }
+        ]
+      }
+    },
+    "armor27": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_leggings"
+          }
+        ]
+      }
+    },
+    "armor28": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:therenite_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "armor1",
+      "armor2",
+      "armor3",
+      "armor4",
+      "armor5",
+      "armor6",
+      "armor7",
+      "armor8",
+      "armor9",
+      "armor10",
+      "armor11",
+      "armor12",
+      "armor13",
+      "armor14",
+      "armor15",
+      "armor16",
+      "armor17",
+      "armor18",
+      "armor19",
+      "armor20",
+      "armor21",
+      "armor22",
+      "armor23",
+      "armor24",
+      "armor25",
+      "armor26",
+      "armor27",
+      "armor28"
+       
+    ]
+  ]
+}

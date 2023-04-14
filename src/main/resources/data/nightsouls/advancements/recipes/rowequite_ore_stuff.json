@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:rowequite_ingot_from_blasting",
+      "nightsouls:rowequite_ingot_from_furnace"
+    ]
+  },
+  "criteria": {
+    "has_rowequite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:rowequite_ore"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_rowequite_ore",
+    ]
+  ]
+}

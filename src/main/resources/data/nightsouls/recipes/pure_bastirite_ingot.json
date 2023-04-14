@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:bastirite_ingot"},
+    {"item": "nightsouls:night_soul"}
+  ],
+  
+  "result": {
+    "item": "nightsouls:pure_bastirite_ingot"
+  }
+}

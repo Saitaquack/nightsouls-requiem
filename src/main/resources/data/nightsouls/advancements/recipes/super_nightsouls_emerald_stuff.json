@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "nightsouls:super_nightsouls_emerald_block"
+    ]
+  },
+  "criteria": {
+    "has_super_nightsouls_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "nightsouls:super_nightsouls_emerald"
+          }
+        ]
+      }
+   
+     }
+   }
+ },
+ "requirements": [
+    [
+      "has_super_nightsouls_emerald",
+    ]
+  ]
+}

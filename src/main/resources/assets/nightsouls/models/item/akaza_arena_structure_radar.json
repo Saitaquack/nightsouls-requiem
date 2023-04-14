@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+        "layer0": "nightsouls:items/akaza_arena_structure_radar" 
+        }
+}

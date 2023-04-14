@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:fire_blade"},
+    {"item": "nightsouls:ice_blade"},
+    {"item": "nightsouls:night_soul"},
+    {"item": "nightsouls:night_soul"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:coolfire_blade"
+  }
+}
