@@ -385,6 +385,10 @@ public class ItemInit {
 	public static final RegistryObject<Item> IMAGINE_DRAGONS_MUSIC_DISC = ITEMS.register("imagine_dragons_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.IMAGINE_DRAGONS.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
 	public static final RegistryObject<Item> PUCCI_MUSIC_DISC = ITEMS.register("pucci_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.PUCCI.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
 	public static final RegistryObject<Item> JONATHAN_MUSIC_DISC = ITEMS.register("jonathan_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.JONATHAN.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
+	public static final RegistryObject<Item> GENDARMES_MUSIC_DISC = ITEMS.register("gendarmes_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.GENDARMES.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
+	public static final RegistryObject<Item> MADE_IN_ABYSS_MUSIC_DISC = ITEMS.register("made_in_abyss_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.MADE_IN_ABYSS.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
+	public static final RegistryObject<Item> THE_FIRST_LAYER_MUSIC_DISC = ITEMS.register("the_first_layer_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.THE_FIRST_LAYER.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
+	public static final RegistryObject<Item> HANEZEVE_MUSIC_DISC = ITEMS.register("hanezeve_music_disc", () -> new NightSoulsMusicDisc(1, SoundInit.HANEZEVE.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance)));
 
 
 	public static final RegistryObject<Item> MARIO_GALAXY_CREDITS_MUSIC_DISC = ITEMS.register("mario_galaxy_credits_music_disc", () -> new EpicMusicDisc(1, SoundInit.MARIO_GALAXY_CREDITS.get(), new Item.Properties().maxStackSize(1).group(NightSoulsDiscsItemGroup.instance).isImmuneToFire()));

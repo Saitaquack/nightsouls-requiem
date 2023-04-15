@@ -2,18 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "nightsouls:emerald_splash",
-      "nightsouls:kakyoin_music_disc",
-      "nightsouls:the_first_layer_music_disc"
+      "nightsouls:gendarmes_music_disc"
     ]
   },
   "criteria": {
-    "has_emerald": {
+    "has_lapis_lazuli": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:emerald"
+            "item": "minecraft:lapis_lazuli"
           }
         ]
       }
@@ -23,7 +21,7 @@
  },
  "requirements": [
     [
-      "has_emerald",
+      "has_lapis_lazuli",
     ]
   ]
 }

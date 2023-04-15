@@ -1311,6 +1311,54 @@
 		
 	},
 	
+	"gendarmes": {
+		"category": "music",
+		"subtitle": "LA LA LALA LALALALA LA LALA",
+		"sounds": [
+			{
+				"name": "nightsouls:music/gendarmes",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"made_in_abyss": {
+		"category": "music",
+		"subtitle": "Made in Abyss Music Disc",
+		"sounds": [
+			{
+				"name": "nightsouls:music/made_in_abyss",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"the_first_layer": {
+		"category": "music",
+		"subtitle": "The First Layer Music Disc",
+		"sounds": [
+			{
+				"name": "nightsouls:music/the_first_layer",
+				"stream": true
+			}
+		]
+		
+	},
+	
+	"hanezeve": {
+		"category": "music",
+		"subtitle": "Hanezeve Caradhina",
+		"sounds": [
+			{
+				"name": "nightsouls:music/hanezeve",
+				"stream": true
+			}
+		]
+		
+	},
+	
 	
 	"paragon": {
 		"category": "music",

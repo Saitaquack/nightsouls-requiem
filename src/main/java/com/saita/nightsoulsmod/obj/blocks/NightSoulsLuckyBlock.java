@@ -516,6 +516,10 @@ public class NightSoulsLuckyBlock extends Block {
 		    ItemStack disc27 = new ItemStack(ItemInit.KAKYOIN_MUSIC_DISC.get());
 		    ItemStack disc28 = new ItemStack(ItemInit.GIGACHAD_MUSIC_DISC.get());
 		    ItemStack disc29 = new ItemStack(ItemInit.AETHER_MUSIC_DISC.get());
+		    ItemStack disc30 = new ItemStack(ItemInit.GENDARMES_MUSIC_DISC.get());
+		    ItemStack disc31 = new ItemStack(ItemInit.MADE_IN_ABYSS_MUSIC_DISC.get());
+		    ItemStack disc32 = new ItemStack(ItemInit.THE_FIRST_LAYER_MUSIC_DISC.get());
+		    ItemStack disc33 = new ItemStack(ItemInit.HANEZEVE_MUSIC_DISC.get());
 
 		    
 		    if(randomDisc == 1 || randomDisc2 == 1)
@@ -661,6 +665,26 @@ public class NightSoulsLuckyBlock extends Block {
 		    if(randomDisc == 29 || randomDisc2 == 29)
 		    {
 		    	spawnAsEntity(worldIn, pos, disc29);
+		    }
+		    
+		    if(randomDisc == 30 || randomDisc2 == 30)
+		    {
+		    	spawnAsEntity(worldIn, pos, disc30);
+		    }
+		    
+		    if(randomDisc == 31 || randomDisc2 == 31)
+		    {
+		    	spawnAsEntity(worldIn, pos, disc31);
+		    }
+		    
+		    if(randomDisc == 32 || randomDisc2 == 32)
+		    {
+		    	spawnAsEntity(worldIn, pos, disc32);
+		    }
+		    
+		    if(randomDisc == 33 || randomDisc2 == 33)
+		    {
+		    	spawnAsEntity(worldIn, pos, disc33);
 		    }
 		    		    
 		}

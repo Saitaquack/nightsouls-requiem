@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"},
+    {"item": "minecraft:lapis_lazuli"}
+    
+  ],
+  
+  "result": {
+    "item": "nightsouls:gendarmes_music_disc"
+  }
+
+}

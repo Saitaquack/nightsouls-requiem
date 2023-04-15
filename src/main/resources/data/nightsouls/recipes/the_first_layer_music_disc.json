@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  
+  "ingredients": [
+  
+    {"item": "nightsouls:blank_music_disc"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"}
+        
+  ],
+  
+  "result": {
+    "item": "nightsouls:the_first_layer_music_disc"
+  }
+
+}

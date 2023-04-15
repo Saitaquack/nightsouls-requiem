@@ -502,6 +502,18 @@ public class SoundInit {
 	public static final Lazy<SoundEvent> JONATHAN = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "jonathan")));
 	
+	public static final Lazy<SoundEvent> GENDARMES = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "gendarmes")));
+	
+	public static final Lazy<SoundEvent> MADE_IN_ABYSS = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "made_in_abyss")));
+	
+	public static final Lazy<SoundEvent> THE_FIRST_LAYER = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "the_first_layer")));
+	
+	public static final Lazy<SoundEvent> HANEZEVE = Lazy.of(() -> new SoundEvent
+			(new ResourceLocation(NightSoulsMod.MOD_ID, "hanezeve")));
+	
 	public static final Lazy<SoundEvent> PARAGON = Lazy.of(() -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "paragon")));
 	
