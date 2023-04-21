@@ -24,6 +24,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "nightsouls:crystal_seeds"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "function": "minecraft:set_count",

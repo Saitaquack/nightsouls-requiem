@@ -4,10 +4,14 @@
   "ingredients": [
   
     {"item": "nightsouls:blank_music_disc"},
-    {"item": "minecraft:diamond"},
-    {"item": "minecraft:emerald"},
-    {"item": "nightsouls:life_crystal"}
-    
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"},
+    {"item": "nightsouls:crystal_shard"}
   ],
   
   "result": {
