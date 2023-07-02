@@ -186,7 +186,6 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> CHAMPION_LEGGINGS = ITEMS.register("champion_leggings", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> CHAMPION_BOOTS = ITEMS.register("champion_boots", () -> new ChampionArmor(NightSoulsArmorTier.CHAMPION, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> DRAGONBLADE = ITEMS.register("dragonblade", () -> new DragonBlade(NightSoulsItemTier.DRAGONBLADE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
-    public static final RegistryObject<SwordItem> NANOBLADE = ITEMS.register("nanoblade", () -> new NanoBlade(NightSoulsItemTier.NANOBLADE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> BROKEN_DRAGONBLADE = ITEMS.register("broken_dragonblade", () -> new BrokenDragonBlade(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(16)));
 	public static final RegistryObject<Item> BLOOD_SAMPLE = ITEMS.register("blood_sample", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> JASON_MASK = ITEMS.register("jason_mask", () -> new JasonMask(NightSoulsArmorTier.JASON_MASK, EquipmentSlotType.HEAD, new Item.Properties().group(NightSoulsItemGroup.instance)));
@@ -273,9 +272,6 @@ public class ItemInit {
 	public static final RegistryObject<Item> FADE = ITEMS.register("fade", () -> new Fade(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> ADAPTIVE_SHIELD = ITEMS.register("adaptive_shield", () -> new AdaptiveShield(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> BLINK = ITEMS.register("blink", () -> new Blink(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	public static final RegistryObject<Item> SOUND_BARRIER = ITEMS.register("sound_barrier", () -> new SoundBarrier(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	public static final RegistryObject<Item> NANO_BOOST = ITEMS.register("nano_boost", () -> new NanoBoost(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	public static final RegistryObject<Item> PRIMAL_RAGE = ITEMS.register("primal_rage", () -> new PrimalRage(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> SUPER_BLINK = ITEMS.register("super_blink", () -> new SuperBlink(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 
 	public static final RegistryObject<Item> MOON_CHARM = ITEMS.register("moon_charm", () -> new MoonCharm(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
@@ -439,8 +435,6 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> CRYSTAL_BLOCK = ITEMS.register("crystal_block", () -> new BlockItem(BlockInit.CRYSTAL_BLOCK.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> CRYSTAL_STAIRS = ITEMS.register("crystal_stairs", () -> new BlockItem(BlockInit.CRYSTAL_STAIRS.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> CRYSTAL_SLAB = ITEMS.register("crystal_slab", () -> new BlockItem(BlockInit.CRYSTAL_SLAB.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> SPEEDING_MIXER = ITEMS.register("speeding_mixer", () -> new SpeedingMixer(BlockInit.SPEEDING_MIXER.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<BlockItem> HEALING_MIXER = ITEMS.register("healing_mixer", () -> new HealingMixer(BlockInit.HEALING_MIXER.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> ENDER_HEART_CRYSTAL = ITEMS.register("ender_heart_crystal", () -> new BlockItem(BlockInit.ENDER_HEART_CRYSTAL.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> COMPRESSED_COBBLESTONE = ITEMS.register("compressed_cobblestone", () -> new BlockItem(BlockInit.COMPRESSED_COBBLESTONE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<BlockItem> SUPER_COMPRESSED_COBBLESTONE = ITEMS.register("super_compressed_cobblestone", () -> new BlockItem(BlockInit.SUPER_COMPRESSED_COBBLESTONE.get(), new Item.Properties().group(NightSoulsItemGroup.instance)));

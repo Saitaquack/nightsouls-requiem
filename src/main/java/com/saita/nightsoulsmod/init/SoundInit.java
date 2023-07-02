@@ -50,21 +50,6 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> ADAPTIVE_SHIELD = SOUNDS.register("adaptive_shield", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "adaptive_shield")));
 	
-	public static final RegistryObject<SoundEvent> SOUND_BARRIER = SOUNDS.register("sound_barrier", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "sound_barrier")));
-	
-	public static final RegistryObject<SoundEvent> NANO_BOOST = SOUNDS.register("nano_boost", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "nano_boost")));
-	
-	public static final RegistryObject<SoundEvent> PRIMAL_RAGE = SOUNDS.register("primal_rage", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "primal_rage")));
-	
-	public static final RegistryObject<SoundEvent> SPEEDING = SOUNDS.register("speeding", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "speeding")));
-	
-	public static final RegistryObject<SoundEvent> HEALING = SOUNDS.register("healing", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "healing")));
-	
 	public static final RegistryObject<SoundEvent> BLINK = SOUNDS.register("blink", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "blink")));
 	

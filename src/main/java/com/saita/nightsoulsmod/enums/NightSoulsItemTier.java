@@ -111,15 +111,9 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.BLOOD_SAMPLE.get()); 
 	}),
-	
-	//Dragonblade and Nanoblade
 	DRAGONBLADE(6, 3000, 16.0F, 13.5F, 22, ()->
 	{ 
 		return Ingredient.fromItems( ItemInit.PRIMIUM_INGOT.get()); 
-	}),
-	NANOBLADE(6, 7200, 20.0F, 24.0F, 32, ()->
-	{ 
-		return Ingredient.fromItems( ItemInit.TRUE_NIGHT_SOUL.get()); 
 	}),
 	
 	//True combos

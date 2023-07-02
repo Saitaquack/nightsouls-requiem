@@ -147,66 +147,6 @@
 		
 	},
 	
-	"sound_barrier": {
-		"category": "master",
-		"subtitle": "Dropped the Beat",
-		"sounds": [
-			{
-				"name": "nightsouls:master/sound_barrier",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"nano_boost": {
-		"category": "master",
-		"subtitle": "Nano Boosted",
-		"sounds": [
-			{
-				"name": "nightsouls:master/nano_boost",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"primal_rage": {
-		"category": "master",
-		"subtitle": "Angry Monkey",
-		"sounds": [
-			{
-				"name": "nightsouls:master/primal_rage",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"speeding": {
-		"category": "master",
-		"subtitle": "Speed Boost Music",
-		"sounds": [
-			{
-				"name": "nightsouls:master/speeding",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"healing": {
-		"category": "master",
-		"subtitle": "Healing Music",
-		"sounds": [
-			{
-				"name": "nightsouls:master/healing",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"blink": {
 		"category": "master",
 		"subtitle": "Blink Used",

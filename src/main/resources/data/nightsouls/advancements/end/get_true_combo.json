@@ -55,16 +55,6 @@
           }
         ]
       }
-    },
-    "nanoblade": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:nanoblade"
-          }
-        ]
-      }
     }
   },
   "requirements": [
@@ -72,8 +62,7 @@
       "golden_reinhardt_hammer",
       "rancor",
       "blood_edge",
-      "fractal_blade",
-      "nanoblade"
+      "fractal_blade"
     ]
   ]
 }
