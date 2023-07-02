@@ -65,9 +65,6 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> HEALING = SOUNDS.register("healing", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "healing")));
 	
-	public static final RegistryObject<SoundEvent> FORTIFY = SOUNDS.register("fortify", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "fortify")));
-	
 	public static final RegistryObject<SoundEvent> BLINK = SOUNDS.register("blink", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "blink")));
 	

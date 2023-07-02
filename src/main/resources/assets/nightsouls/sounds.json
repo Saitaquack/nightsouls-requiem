@@ -207,18 +207,6 @@
 		
 	},
 	
-	"fortify": {
-		"category": "master",
-		"subtitle": "Fortify Used",
-		"sounds": [
-			{
-				"name": "nightsouls:master/fortify",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"blink": {
 		"category": "master",
 		"subtitle": "Blink Used",

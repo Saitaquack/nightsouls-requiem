@@ -28,7 +28,7 @@ public class AlternateArmor extends ArmorItem {
     {
     
 	tooltip.set(0, new StringTextComponent("§0"+tooltip.get(0).getString()+"§r"));	
-	tooltip.add(new StringTextComponent("§0Full set bonus : §7Infinite Haste II, Water Breathing, Invisibility and Speed I. Reduced cooldowns to Fortify and Blink."));			
+	tooltip.add(new StringTextComponent("§0Full set bonus : §7Infinite Haste II, Water Breathing, Invisibility and Speed I. Reduced cooldowns to Blink."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

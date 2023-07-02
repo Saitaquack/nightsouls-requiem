@@ -154,7 +154,7 @@ public class NightSoulsLuckyBlock extends Block {
 		}
 		else if(randomPrice < 208)
 		{
-			int randomOwItem = RANDOM.nextInt(7);
+			int randomOwItem = RANDOM.nextInt(6);
 			switch(randomOwItem)
 			{
 			case 0:			
@@ -178,10 +178,6 @@ public class NightSoulsLuckyBlock extends Block {
 				spawnAsEntity(worldIn, pos, shield);
 			break;	
 			case 5:			
-				ItemStack fortify = new ItemStack(ItemInit.FORTIFY.get(), 1);
-				spawnAsEntity(worldIn, pos, fortify);
-			break;	
-			case 6:			
 				ItemStack blink = new ItemStack(ItemInit.BLINK.get(), 1);
 				spawnAsEntity(worldIn, pos, blink);
 			break;	

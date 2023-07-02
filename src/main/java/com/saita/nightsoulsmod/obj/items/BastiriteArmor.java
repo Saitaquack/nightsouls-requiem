@@ -27,7 +27,7 @@ public class BastiriteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§9Full set bonus : §7Infinite Haste I and Water Breathing. Reduced cooldowns to Fortify and Blink."));			
+	tooltip.add(new StringTextComponent("§9Full set bonus : §7Infinite Haste I and Water Breathing. Reduced cooldowns to Blink."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

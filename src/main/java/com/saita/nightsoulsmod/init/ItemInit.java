@@ -272,7 +272,6 @@ public class ItemInit {
 	public static final RegistryObject<Item> AMP_IT_UP = ITEMS.register("amp_it_up", () -> new AmpItUp(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> FADE = ITEMS.register("fade", () -> new Fade(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> ADAPTIVE_SHIELD = ITEMS.register("adaptive_shield", () -> new AdaptiveShield(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
-	public static final RegistryObject<Item> FORTIFY = ITEMS.register("fortify", () -> new Fortify(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> BLINK = ITEMS.register("blink", () -> new Blink(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> SOUND_BARRIER = ITEMS.register("sound_barrier", () -> new SoundBarrier(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
 	public static final RegistryObject<Item> NANO_BOOST = ITEMS.register("nano_boost", () -> new NanoBoost(new Item.Properties().group(NightSoulsItemGroup.instance).maxStackSize(1)));
