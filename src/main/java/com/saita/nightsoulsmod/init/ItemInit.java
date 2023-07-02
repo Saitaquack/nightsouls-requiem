@@ -123,8 +123,6 @@ public class ItemInit {
     public static final RegistryObject<ArmorItem> WOODEN_CHESTPLATE = ITEMS.register("wooden_chestplate", () -> new WoodenArmor(NightSoulsArmorTier.WOODEN, EquipmentSlotType.CHEST, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> WOODEN_LEGGINGS = ITEMS.register("wooden_leggings", () -> new WoodenArmor(NightSoulsArmorTier.WOODEN, EquipmentSlotType.LEGS, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<ArmorItem> WOODEN_BOOTS = ITEMS.register("wooden_boots", () -> new WoodenArmor(NightSoulsArmorTier.WOODEN, EquipmentSlotType.FEET, new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> PACK_OF_FOUR_TORCHES = ITEMS.register("pack_of_four_torches", () -> new PackOfFourTorches(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> PACK_OF_SIXTEEN_TORCHES = ITEMS.register("pack_of_sixteen_torches", () -> new PackOfSixteenTorches(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> CAT_A_CLYSM = ITEMS.register("cat_a_clysm", () -> new CatAClysm(NightSoulsItemTier.CAT, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> BAT_TOOTH = ITEMS.register("bat_tooth", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> VILLAGER_BLOOD = ITEMS.register("villager_blood", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
