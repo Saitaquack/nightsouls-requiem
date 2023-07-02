@@ -179,22 +179,6 @@
 		
 	},
 	
-	"doppio": {
-		"category": "master",
-		"subtitle": "Tu turururururu",
-		"sounds": [
-			{
-				"name": "nightsouls:master/doppio1",
-				"stream": true
-			},
-			{
-				"name": "nightsouls:master/doppio2",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"star_platinum": {
 		"category": "master",
 		"subtitle": "ORA ORA ORA ORA ORA",
@@ -401,46 +385,6 @@
 		"sounds": [
 			{
 				"name": "nightsouls:master/biotic_rifle_heal",
-				"stream": false
-			}
-		]
-		
-	},
-	
-	"snore": {
-		"category": "master",
-		"subtitle": "AUUUUUUGH",
-		"sounds": [
-			{
-				"name": "nightsouls:master/snore1",
-				"stream": false
-			},
-			{
-				"name": "nightsouls:master/snore2",
-				"stream": false
-			}
-		]
-		
-	},
-	
-	"bruh": {
-		"category": "master",
-		"subtitle": "Bruh",
-		"sounds": [
-			{
-				"name": "nightsouls:master/bruh",
-				"stream": false
-			}
-		]
-		
-	},
-	
-	"boom": {
-		"category": "master",
-		"subtitle": "BOOM",
-		"sounds": [
-			{
-				"name": "nightsouls:master/boom",
 				"stream": false
 			}
 		]

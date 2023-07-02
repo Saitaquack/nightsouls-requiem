@@ -28,10 +28,10 @@ public class ItemInit {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, NightSoulsMod.MOD_ID);
 	
-	public static final RegistryObject<Item> SAITASTONE_INGOT = ITEMS.register("saitastone_ingot", () -> new SaitastoneIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> MIIZEALITE_INGOT = ITEMS.register("miizealite_ingot", () -> new MiizealiteIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> CRANITE_INGOT = ITEMS.register("cranite_ingot", () -> new CraniteIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
-	public static final RegistryObject<Item> BASTIRITE_INGOT = ITEMS.register("bastirite_ingot", () -> new BastiriteIngot(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> SAITASTONE_INGOT = ITEMS.register("saitastone_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> MIIZEALITE_INGOT = ITEMS.register("miizealite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> CRANITE_INGOT = ITEMS.register("cranite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
+	public static final RegistryObject<Item> BASTIRITE_INGOT = ITEMS.register("bastirite_ingot", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
 	public static final RegistryObject<Item> NIGHT_SOUL = ITEMS.register("night_soul", () -> new Item(new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<SwordItem> SAITASTONE_SWORD = ITEMS.register("saitastone_sword", () -> new SwordItem(NightSoulsItemTier.SAITASTONE, 3, -2.4F, new Item.Properties().group(NightSoulsItemGroup.instance)));
     public static final RegistryObject<PickaxeItem> SAITASTONE_PICKAXE = ITEMS.register("saitastone_pickaxe", () -> new NightSoulsOrePickaxe(NightSoulsItemTier.SAITASTONE, 1, -2.8F, new Item.Properties().group(NightSoulsItemGroup.instance)));

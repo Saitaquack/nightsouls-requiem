@@ -56,9 +56,6 @@ public class SoundInit {
 	public static final RegistryObject<SoundEvent> REQUIEM = SOUNDS.register("requiem", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "requiem")));
 	
-	public static final RegistryObject<SoundEvent> DOPPIO = SOUNDS.register("doppio", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "doppio")));
-	
 	public static final RegistryObject<SoundEvent> STAR_PLATINUM = SOUNDS.register("star_platinum", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "star_platinum")));
 	
@@ -106,15 +103,6 @@ public class SoundInit {
 	
 	public static final RegistryObject<SoundEvent> BIOTIC_RIFLE_HEAL = SOUNDS.register("biotic_rifle_heal", () -> new SoundEvent
 			(new ResourceLocation(NightSoulsMod.MOD_ID, "biotic_rifle_heal")));
-	
-	public static final RegistryObject<SoundEvent> SNORE = SOUNDS.register("snore", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "snore")));
-	
-	public static final RegistryObject<SoundEvent> BRUH = SOUNDS.register("bruh", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "bruh")));
-	
-	public static final RegistryObject<SoundEvent> BOOM = SOUNDS.register("boom", () -> new SoundEvent
-			(new ResourceLocation(NightSoulsMod.MOD_ID, "boom")));
 	
 	
 	//Armes 
