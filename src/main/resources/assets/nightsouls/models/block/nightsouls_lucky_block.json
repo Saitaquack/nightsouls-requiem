@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "nightsouls:blocks/nightsouls_lucky_block"
-    }
-}

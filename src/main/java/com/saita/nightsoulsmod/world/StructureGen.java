@@ -56,7 +56,6 @@ public class StructureGen {
 	            structures.add(() -> StructureInit.POOLROOMS_LANDMARK.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 
 	            structures.add(() -> StructureInit.PARAGONIC_CORE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-	            structures.add(() -> StructureInit.LUCKY_BLOCK.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.CELESTIAL_EMERALD.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.POWER_MOON.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 	            structures.add(() -> StructureInit.AKAZA_ARENA.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));

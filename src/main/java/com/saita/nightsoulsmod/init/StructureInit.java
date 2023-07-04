@@ -71,7 +71,6 @@ public class StructureInit {
     public static final RegistryObject<Structure<NoFeatureConfig>> MIIZEAL_LOOT_ROOM = STRUCTURES.register("miizeal_loot_room", MiizealLootRoomStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> CRANE_LOOT_ROOM = STRUCTURES.register("crane_loot_room", CraneLootRoomStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> BASTI_LOOT_ROOM = STRUCTURES.register("basti_loot_room", BastiLootRoomStructure::new); 
-    public static final RegistryObject<Structure<NoFeatureConfig>> LUCKY_BLOCK = STRUCTURES.register("lucky_block", LuckyBlockStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> CELESTIAL_EMERALD = STRUCTURES.register("celestial_emerald", CelestialEmeraldStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> POWER_MOON = STRUCTURES.register("power_moon", PowerMoonStructure::new);
     public static final RegistryObject<Structure<NoFeatureConfig>> AKAZA_ARENA = STRUCTURES.register("akaza_arena", AkazaArenaStructure::new);
@@ -128,7 +127,6 @@ public class StructureInit {
         setupMapSpacingAndLand(MIIZEAL_LOOT_ROOM.get(), new StructureSeparationSettings(16, 8, 266656), false);
         setupMapSpacingAndLand(CRANE_LOOT_ROOM.get(), new StructureSeparationSettings(16, 8, 366656), false);
         setupMapSpacingAndLand(BASTI_LOOT_ROOM.get(), new StructureSeparationSettings(16, 8, 466656), false);
-        setupMapSpacingAndLand(LUCKY_BLOCK.get(), new StructureSeparationSettings(24, 8, 268435456), false);
         setupMapSpacingAndLand(CELESTIAL_EMERALD.get(), new StructureSeparationSettings(45, 10, 268435446), false);
         setupMapSpacingAndLand(POWER_MOON.get(), new StructureSeparationSettings(14, 4, 178509578), false);
         setupMapSpacingAndLand(AKAZA_ARENA.get(), new StructureSeparationSettings(StructuresConstants.rarerMax + 20, StructuresConstants.rarerMin + 20, 88666666), true);
