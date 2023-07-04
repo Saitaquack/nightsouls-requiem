@@ -75,9 +75,10 @@ public class AkazaEntity extends MonsterEntity {
 		  this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
 	      this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
 	      this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, PaladinEntity.class, true));
-	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, LivingEntity.class, true));
-	      this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, HellfireServantEntity.class, true));
-	      this.targetSelector.addGoal(6, new NearestAttackableTargetGoal<>(this, DemonEyeEntity.class, true));
+	      
+	      this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, LivingEntity.class, 5, false, false, (p_234199_0_) -> {
+	          return !(p_234199_0_ instanceof HellfireServantEntity) && !(p_234199_0_ instanceof DemonEyeEntity);
+	       }));
   
 	   }
 	 

@@ -71,6 +71,10 @@ public enum NightSoulsItemTier implements IItemTier
 	{ 
 		return Ingredient.fromItems( ItemInit.MIIZEALITE_INGOT.get()); 
 	}),
+	DRAGONBLADE(6, 3000, 16.0F, 13.5F, 22, ()->
+	{ 
+		return Ingredient.fromItems( ItemInit.PRIMIUM_INGOT.get()); 
+	}),
 	CAT(6, 2031, 12.0F, 6.5F, 22, ()->
 	{ 
 		return Ingredient.fromItems( ItemInit.MIIZEALITE_INGOT.get()); 
@@ -110,10 +114,6 @@ public enum NightSoulsItemTier implements IItemTier
 	CARNAGE(6, 3000, 18.0F, 13.0F, 30, ()-> 
 	{ 
 		return Ingredient.fromItems( ItemInit.BLOOD_SAMPLE.get()); 
-	}),
-	DRAGONBLADE(6, 3000, 16.0F, 13.5F, 22, ()->
-	{ 
-		return Ingredient.fromItems( ItemInit.PRIMIUM_INGOT.get()); 
 	}),
 	
 	//True combos

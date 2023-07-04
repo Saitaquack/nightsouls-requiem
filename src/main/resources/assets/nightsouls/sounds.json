@@ -811,42 +811,6 @@
 		
 	},
 	
-	"prime": {
-		"category": "music",
-		"subtitle": "Prime Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/prime",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"equila": {
-		"category": "music",
-		"subtitle": "Equila Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/equila",
-				"stream": true
-			}
-		]
-		
-	},
-	
-	"therox": {
-		"category": "music",
-		"subtitle": "Therox Music",
-		"sounds": [
-			{
-				"name": "nightsouls:music/therox",
-				"stream": true
-			}
-		]
-		
-	},
-	
 	"koro": {
 		"category": "music",
 		"subtitle": "Au revoir, professeur Koro.",

@@ -354,39 +354,6 @@
       }
     },
     
-    "prime_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:prime_music_disc"
-          }
-        ]
-      }
-    },
-    
-    "equila_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:equila_music_disc"
-          }
-        ]
-      }
-    },
-    
-    "therox_music_disc": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "nightsouls:therox_music_disc"
-          }
-        ]
-      }
-    },
-    
     "koro_music_disc": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -817,9 +784,6 @@
       "josuke_music_disc",
       "unaltra_music_disc",
       "night_town_music_disc",
-      "prime_music_disc",
-      "equila_music_disc",
-      "therox_music_disc",
       "koro_music_disc",
       "akaza_music_disc",
       "youseebiggirl_music_disc",

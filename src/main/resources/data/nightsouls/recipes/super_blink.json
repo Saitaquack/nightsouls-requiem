@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BTB",
-    "COC",
-    "BTB" 
+    "CTC",
+    "TBT",
+    "CTC" 
   ],
   "key": {
   
-    "O": {
+    "B": {
       "item": "nightsouls:blink"
     },
     
@@ -15,12 +15,8 @@
       "item": "nightsouls:true_night_soul"
     },
     
-    "B": {
-      "item": "nightsouls:bastirite_block"
-    },
-    
     "C": {
-      "item": "nightsouls:chlorophyte_block"
+      "item": "nightsouls:chlorophyte_ingot"
     }
     
   },
