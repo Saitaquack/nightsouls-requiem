@@ -37,7 +37,7 @@ public class DragonBlade extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-    tooltip.add(new StringTextComponent("§aThe Dragon becomes you! §7Not to be confused with §5Dragon Sword§7. Right Click to gain a short burst of speed !"));
+    tooltip.add(new StringTextComponent("Â§aThe Dragon becomes you! Â§7Not to be confused with Â§5Dragon SwordÂ§7. Right Click to gain a short burst of speed !"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

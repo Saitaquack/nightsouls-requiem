@@ -20,7 +20,7 @@ public class SuspiciousBluePowder extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Can be used to upgrade crystal seeds."));
+    tooltip.add(new StringTextComponent("ยง7Can be used to upgrade crystal seeds."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

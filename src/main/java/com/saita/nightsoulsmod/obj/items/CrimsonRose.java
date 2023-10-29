@@ -38,8 +38,8 @@ public class CrimsonRose extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-		tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-		tooltip.add(new StringTextComponent("ง7Summons King Crimson."));
+		tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+		tooltip.add(new StringTextComponent("ยง7Summons King Crimson."));
 	    
 		super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
@@ -59,7 +59,7 @@ public class CrimsonRose extends Item {
 	    	
 	    	if(worldIn.isRemote)
 			{
-	    		 playerIn.sendMessage(new TranslationTextComponent("ง4Anyone who opposes me will be eliminated."), null);
+	    		 playerIn.sendMessage(new TranslationTextComponent("ยง4Anyone who opposes me will be eliminated."), null);
 	    	}
 	    	
 	    	KingCrimsonEntity kc = new KingCrimsonEntity(NightSoulsEntityTypes.KING_CRIMSON.get(), worldIn);	
@@ -70,7 +70,7 @@ public class CrimsonRose extends Item {
 		{
 			if(worldIn.isRemote)
 			{
-				playerIn.sendMessage(new TranslationTextComponent("งf"+playerIn.getName().getString()+", you can't summon King Crimson in peaceful mode."), null);
+				playerIn.sendMessage(new TranslationTextComponent("ยงf"+playerIn.getName().getString()+", you can't summon King Crimson in peaceful mode."), null);
 	    	}
 		}
 

@@ -39,8 +39,8 @@ public class SuspiciousLookingEye extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-		tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-		tooltip.add(new StringTextComponent("ง7Summons Eye of Cthulhu."));
+		tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+		tooltip.add(new StringTextComponent("ยง7Summons Eye of Cthulhu."));
 	    
 		super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
@@ -61,7 +61,7 @@ public class SuspiciousLookingEye extends Item {
 	    	
 	    	 if(worldIn.isRemote)
 	    	 {
-	    		 playerIn.sendMessage(new TranslationTextComponent("ง4You feel an evil presence watching you..."), null);
+	    		 playerIn.sendMessage(new TranslationTextComponent("ยง4You feel an evil presence watching you..."), null);
 	    	 }
 	    	
 	    	Random rand = new Random();
@@ -88,7 +88,7 @@ public class SuspiciousLookingEye extends Item {
 		{
 			if(worldIn.isRemote)
 			{
-				playerIn.sendMessage(new TranslationTextComponent("งf"+playerIn.getName().getString()+", you can't summon the Eye of Cthulhu in peaceful mode."), null);
+				playerIn.sendMessage(new TranslationTextComponent("ยงf"+playerIn.getName().getString()+", you can't summon the Eye of Cthulhu in peaceful mode."), null);
 	    	}
 		}
 

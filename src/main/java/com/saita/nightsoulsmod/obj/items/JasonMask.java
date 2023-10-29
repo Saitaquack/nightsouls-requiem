@@ -27,8 +27,8 @@ public class JasonMask extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง7Put in on to gain infinite Haste II and Strength I."));			
+	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง7Put in on to gain infinite Haste II and Strength I."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

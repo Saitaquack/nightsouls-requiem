@@ -42,15 +42,15 @@ public class HellfireEmperorArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("§4"+tooltip.get(0).getString()+"§r"));
+	tooltip.set(0, new StringTextComponent("Â§4"+tooltip.get(0).getString()+"Â§r"));
 	
     if(Screen.hasShiftDown())
 	{
-		tooltip.add(new StringTextComponent("§4Full set bonus : §7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime."));
+		tooltip.add(new StringTextComponent("Â§4Full set bonus : Â§7Infinite Fire Resistance, Strength I, Speed II, Haste I and Resistance I. Increased movement in the Nether. Your strength, regeneration, resistance and haste increases if you are on fire, in the Nether or in lava. Fire also removes most bad potion effects. Automatically gives you nightsouls emeralds overtime."));
 	}
 	else
 	{
-		tooltip.add(new StringTextComponent("§7Belonging to an evil emperor, it emits an overwhelming aura that could burn down anyone and anything. Press §eSHIFT§7 for more info."));
+		tooltip.add(new StringTextComponent("Â§7Belonging to an evil emperor, it emits an overwhelming aura that could burn down anyone and anything. Press Â§eSHIFTÂ§7 for more info."));
 	}
     
 	super.addInformation(stack, worldIn, tooltip, flagIn);

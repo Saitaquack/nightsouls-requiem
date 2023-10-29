@@ -38,7 +38,7 @@ public class StarPlatinum extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Consume it to beat the s*it out of someone using some ora's. 45 seconds cooldown."));
+    tooltip.add(new StringTextComponent("ยง7Consume it to beat the s*it out of someone using some ora's. 45 seconds cooldown."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	
@@ -60,7 +60,7 @@ public class StarPlatinum extends Item {
 		
 		if(worldIn.isRemote)
     	{
-			playerIn.sendMessage(new TranslationTextComponent("ง5Yare Yare Daze..."), null);
+			playerIn.sendMessage(new TranslationTextComponent("ยง5Yare Yare Daze..."), null);
     	}
     	
 		if(!worldIn.isRemote)

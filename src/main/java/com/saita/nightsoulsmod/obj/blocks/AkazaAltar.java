@@ -51,14 +51,14 @@ public class AkazaAltar extends Block {
 				
 				if(worldIn.isRemote)
 				{
-		    		 player.sendMessage(new TranslationTextComponent("ง4You sure look powerful. Fight me !"), null);
+		    		 player.sendMessage(new TranslationTextComponent("ยง4You sure look powerful. Fight me !"), null);
 		    	}
 			}
 			else
 			{
 				if(worldIn.isRemote)
 				{
-					player.sendMessage(new TranslationTextComponent("งf"+player.getName().getString()+", you can't summon Akaza in peaceful mode."), null);
+					player.sendMessage(new TranslationTextComponent("ยงf"+player.getName().getString()+", you can't summon Akaza in peaceful mode."), null);
 		    	}
 			}
 		
@@ -67,7 +67,7 @@ public class AkazaAltar extends Block {
 		{
 			 if(worldIn.isRemote)
 	    	 {
-				 player.sendMessage(new TranslationTextComponent("งf"+player.getName().getString()+", you can only challenge Akaza in a Requiem World"), null);
+				 player.sendMessage(new TranslationTextComponent("ยงf"+player.getName().getString()+", you can only challenge Akaza in a Requiem World"), null);
 	    	 }
 		}
 

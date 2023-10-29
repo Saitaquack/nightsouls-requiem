@@ -41,7 +41,7 @@ public class SuperBlink extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ง7Goes twice as far as regular Blink. Cooldown : 3 seconds"));
+	   tooltip.add(new StringTextComponent("ยง7Goes twice as far as regular Blink. Cooldown : 3 seconds"));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	} 
 	

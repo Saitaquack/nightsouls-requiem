@@ -29,7 +29,7 @@ public class LifeBand extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Heals you half a heart every 5 seconds while in your inventory."));
+    tooltip.add(new StringTextComponent("ยง7Heals you half a heart every 5 seconds while in your inventory."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

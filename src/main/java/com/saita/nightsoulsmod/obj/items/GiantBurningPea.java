@@ -27,7 +27,7 @@ public class GiantBurningPea extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง98 Damage"));	
+	tooltip.add(new StringTextComponent("ยง98 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

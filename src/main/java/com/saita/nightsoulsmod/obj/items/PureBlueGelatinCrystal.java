@@ -22,7 +22,7 @@ public class PureBlueGelatinCrystal extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7An absolute delicacy that removes most bad effects and heals 6 HP."));
+    tooltip.add(new StringTextComponent("ยง7An absolute delicacy that removes most bad effects and heals 6 HP."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

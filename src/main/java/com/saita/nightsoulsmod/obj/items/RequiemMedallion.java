@@ -27,8 +27,8 @@ public class RequiemMedallion extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));	
-	tooltip.add(new StringTextComponent("§7Having this in your inventory means you are the very first player to enable §5NightSouls Requiem§7 in this world. Congratulations !"));			
+	tooltip.set(0, new StringTextComponent("Â§5"+tooltip.get(0).getString()+"Â§r"));	
+	tooltip.add(new StringTextComponent("Â§7Having this in your inventory means you are the very first player to enable Â§5NightSouls RequiemÂ§7 in this world. Congratulations !"));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

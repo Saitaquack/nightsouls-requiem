@@ -39,9 +39,9 @@ public class GalacticSlayer extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง1"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7The strongest blade in the cosmos, created by the Star Gatherer himself !"));
-    tooltip.add(new StringTextComponent("ง9+0.5 Knockback"));
+	tooltip.set(0, new StringTextComponent("ยง1"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7The strongest blade in the cosmos, created by the Star Gatherer himself !"));
+    tooltip.add(new StringTextComponent("ยง9+0.5 Knockback"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

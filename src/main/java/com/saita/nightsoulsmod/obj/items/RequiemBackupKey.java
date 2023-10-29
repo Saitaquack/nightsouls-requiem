@@ -36,7 +36,7 @@ public class RequiemBackupKey extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("§7ADMIN ONLY. Right Click to revert §5NightSouls Requiem§7."));
+	tooltip.add(new StringTextComponent("Â§7ADMIN ONLY. Right Click to revert Â§5NightSouls RequiemÂ§7."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	
@@ -92,7 +92,7 @@ public class RequiemBackupKey extends Item {
     	{
     	    if(worldIn.isRemote)
     		{
-  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Requiem Backup Key"), null);
+  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Requiem Backup Key"), null);
     		}
     	}
 	    	    	

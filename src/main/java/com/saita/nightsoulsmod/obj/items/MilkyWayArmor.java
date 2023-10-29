@@ -42,15 +42,15 @@ public class MilkyWayArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("§1"+tooltip.get(0).getString()+"§r"));
+	tooltip.set(0, new StringTextComponent("Â§1"+tooltip.get(0).getString()+"Â§r"));
     
     if(Screen.hasShiftDown())
 	{
-		 tooltip.add(new StringTextComponent("§1Full set bonus : §7Infinite Strength III, Speed II, Jump Boost III, Haste I, Resistance I and restores health overtime. Hold sneak to enable slow falling. Automatically gives you star bits and nightsouls emeralds overtime."));	
+		 tooltip.add(new StringTextComponent("Â§1Full set bonus : Â§7Infinite Strength III, Speed II, Jump Boost III, Haste I, Resistance I and restores health overtime. Hold sneak to enable slow falling. Automatically gives you star bits and nightsouls emeralds overtime."));	
 	}
 	else
 	{
-		tooltip.add(new StringTextComponent("§7It is said that this armor was forged by a single entity after gathering hundreds of stars. You can feel the whole universe just by gazing at it. Press §eSHIFT§7 for more info."));
+		tooltip.add(new StringTextComponent("Â§7It is said that this armor was forged by a single entity after gathering hundreds of stars. You can feel the whole universe just by gazing at it. Press Â§eSHIFTÂ§7 for more info."));
 	}
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  

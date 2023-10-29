@@ -27,7 +27,7 @@ public class MiizealiteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง5Full set bonus : ง7Infinite Fire Resistance and immunity to Wither. Reduced cooldowns to Wraith Form. Hellfire Charm heals you when you are on fire."));			
+	tooltip.add(new StringTextComponent("ยง5Full set bonus : ยง7Infinite Fire Resistance and immunity to Wither. Reduced cooldowns to Wraith Form. Hellfire Charm heals you when you are on fire."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

@@ -34,7 +34,7 @@ public class InstaPickaxe extends PickaxeItem{
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Annihilates stone into atoms."));
+    tooltip.add(new StringTextComponent("ยง7Annihilates stone into atoms."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

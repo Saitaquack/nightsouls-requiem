@@ -43,7 +43,7 @@ public class MagicMirror extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("§7Gaze in the mirror to teleport to this world's spawnpoint. Hold §eSHIFT§7 while clicking to teleport to your bed. §f15 seconds cooldown."));
+    tooltip.add(new StringTextComponent("Â§7Gaze in the mirror to teleport to this world's spawnpoint. Hold Â§eSHIFTÂ§7 while clicking to teleport to your bed. ï¿½f15 seconds cooldown."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
     
@@ -98,7 +98,7 @@ public class MagicMirror extends Item {
     	{
     	    if(worldIn.isRemote)
     		{
-  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Magic Mirror"), null);
+  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Magic Mirror"), null);
     		}
     	}
 

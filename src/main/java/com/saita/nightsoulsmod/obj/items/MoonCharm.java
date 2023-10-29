@@ -34,7 +34,7 @@ public class MoonCharm extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	    tooltip.add(new StringTextComponent("ง7While in your inventory, you gain werewolf power during nighttime."));
+	    tooltip.add(new StringTextComponent("ยง7While in your inventory, you gain werewolf power during nighttime."));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	

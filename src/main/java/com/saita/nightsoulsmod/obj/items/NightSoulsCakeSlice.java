@@ -23,7 +23,7 @@ public class NightSoulsCakeSlice extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-    tooltip.add(new StringTextComponent("ง7Grants you random good effects for 20 seconds."));
+    tooltip.add(new StringTextComponent("ยง7Grants you random good effects for 20 seconds."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

@@ -27,7 +27,7 @@ public class BrokenRequiemKey extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("ง7Can be enpowered with 3 types of liminal gems."));
+	tooltip.add(new StringTextComponent("ยง7Can be enpowered with 3 types of liminal gems."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

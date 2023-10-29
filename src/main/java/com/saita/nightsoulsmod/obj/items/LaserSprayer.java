@@ -42,8 +42,8 @@ public class LaserSprayer extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7Shoots lasers ! Can be upgraded to a plasma sprayer."));	
-	tooltip.add(new StringTextComponent("ง910 Damage"));	
+	tooltip.add(new StringTextComponent("ยง7Shoots lasers ! Can be upgraded to a plasma sprayer."));	
+	tooltip.add(new StringTextComponent("ยง910 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

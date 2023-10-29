@@ -21,7 +21,7 @@ public class CrazyDiamondBlock extends BlockItem {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ง7Rapidly heals you and grants you speed if you step on it."));
+	   tooltip.add(new StringTextComponent("ยง7Rapidly heals you and grants you speed if you step on it."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	}
 	

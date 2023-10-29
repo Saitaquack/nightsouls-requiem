@@ -20,7 +20,7 @@ public class AlternateIngot extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("ง7Can be used to upgrade bastirite armor to alternate armor."));
+    tooltip.add(new StringTextComponent("ยง7Can be used to upgrade bastirite armor to alternate armor."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

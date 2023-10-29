@@ -42,9 +42,9 @@ public class SunAvatar extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("งe"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง7Embrace the sun !"));			
-	tooltip.add(new StringTextComponent("ง924 Damage"));	
+	tooltip.set(0, new StringTextComponent("ยงe"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง7Embrace the sun !"));			
+	tooltip.add(new StringTextComponent("ยง924 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

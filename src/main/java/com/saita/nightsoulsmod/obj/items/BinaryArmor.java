@@ -41,15 +41,15 @@ public class BinaryArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("§a"+tooltip.get(0).getString()+"§r"));
+	tooltip.set(0, new StringTextComponent("Â§a"+tooltip.get(0).getString()+"Â§r"));
     
     if(Screen.hasShiftDown())
    	{
-   		 tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration II, Saturation and Resistance II. Automatically gives you nightsouls emeralds overtime."));	
+   		 tooltip.add(new StringTextComponent("Â§aFull set bonus : Â§7Infinite Haste IV, Strength I, Speed II, Fire Resistance, Hero of The Village, Conduit Power and Dolphin's Grace. Automatically repairs itself. Hold sneak for Regeneration II, Saturation and Resistance II. Automatically gives you nightsouls emeralds overtime."));	
    	}
    	else
    	{
-   		tooltip.add(new StringTextComponent("§7A perfect armor created by the §kReality Warper§7. It has no known limits to its power. Press §eSHIFT§7 for more info."));
+   		tooltip.add(new StringTextComponent("Â§7A perfect armor created by the Â§kReality WarperÂ§7. It has no known limits to its power. Press Â§eSHIFTÂ§7 for more info."));
    	}
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  

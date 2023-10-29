@@ -40,7 +40,7 @@ public class UpperMoonCharm extends Item {
 	 public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	 {
 	    	
-	    tooltip.add(new StringTextComponent("ง7A much stronger version of Moon Charm. Effects are even stronger if you are a vampire."));
+	    tooltip.add(new StringTextComponent("ยง7A much stronger version of Moon Charm. Effects are even stronger if you are a vampire."));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	 }
 	

@@ -21,7 +21,7 @@ public class NightSoulsOrePickaxe extends PickaxeItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 		
-    tooltip.add(new StringTextComponent("ง7Able to mine any ores from the mod."));
+    tooltip.add(new StringTextComponent("ยง7Able to mine any ores from the mod."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

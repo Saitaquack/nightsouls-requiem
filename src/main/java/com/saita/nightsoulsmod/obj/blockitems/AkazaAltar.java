@@ -28,8 +28,8 @@ public class AkazaAltar extends BlockItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-		tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-		tooltip.add(new StringTextComponent("ง7Summons Akaza."));
+		tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+		tooltip.add(new StringTextComponent("ยง7Summons Akaza."));
 	    
 		super.addInformation(stack, worldIn, tooltip, flagIn);
     }  

@@ -27,7 +27,7 @@ public class ThereniteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§bFull set bonus : §7Infinite Strength I. Instant Healing Potion has no cooldown, heals more, and you have a chance to not consume it."));			
+	tooltip.add(new StringTextComponent("Â§bFull set bonus : Â§7Infinite Strength I. Instant Healing Potion has no cooldown, heals more, and you have a chance to not consume it."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

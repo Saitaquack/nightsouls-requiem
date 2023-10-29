@@ -43,11 +43,11 @@ public class RequiemKey extends Item {
 		
 	if(Screen.hasShiftDown())
 	{
-		tooltip.add(new StringTextComponent("§7In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, chlorophyte ore will spawn in the jungle, NightSouls forcefields will disappear, allowing you to get paragonic blocks. Stargazers, Hellfire Servants, Paladins, Reality Walkers and Titans will appear in the world, so be prepared ! You are also able to summon §4The Twins§7 and §4Akaza§7."));
+		tooltip.add(new StringTextComponent("Â§7In a Requiem World, you can increase your health to 20 hearts of HP, meteorites will spawn underground, chlorophyte ore will spawn in the jungle, NightSouls forcefields will disappear, allowing you to get paragonic blocks. Stargazers, Hellfire Servants, Paladins, Reality Walkers and Titans will appear in the world, so be prepared ! You are also able to summon Â§4The TwinsÂ§7 and Â§4AkazaÂ§7."));
 	}
 	else
 	{
-		tooltip.add(new StringTextComponent("§7Right Click to consume it and convert this world into a \"§5NightSouls Requiem World§7\". Press §eSHIFT§7 for more info."));
+		tooltip.add(new StringTextComponent("Â§7Right Click to consume it and convert this world into a \"Â§5NightSouls Requiem WorldÂ§7\". Press Â§eSHIFTÂ§7 for more info."));
 	}
 
 	super.addInformation(stack, worldIn, tooltip, flagIn);
@@ -105,7 +105,7 @@ public class RequiemKey extends Item {
 				    if(worldIn.isRemote)
 				    {			  
 				    	LOGGER.info(""+playerIn.getName().getString()+" enabled NightSouls Requiem in this world.");      	
-				    	playerIn.sendMessage(new TranslationTextComponent("§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
+				    	playerIn.sendMessage(new TranslationTextComponent("Â§5YOU CONVERTED THIS WORLD INTO A NIGHTSOULS REQUIEM WORLD !"), null);
 				    }
 				    
 			    }
@@ -131,7 +131,7 @@ public class RequiemKey extends Item {
 	    	{
 	    	    if(worldIn.isRemote)
 	    		{
-	  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Requiem Key"), null);
+	  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld to use a Requiem Key"), null);
 	    		}
 	    	}
 	    	    	

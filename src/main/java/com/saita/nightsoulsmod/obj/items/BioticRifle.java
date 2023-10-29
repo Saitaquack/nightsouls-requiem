@@ -35,8 +35,8 @@ public class BioticRifle extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7Heals players or villagers, and damages other entities."));
-    tooltip.add(new StringTextComponent("ง924 Damage"));	
+	tooltip.add(new StringTextComponent("ยง7Heals players or villagers, and damages other entities."));
+    tooltip.add(new StringTextComponent("ยง924 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

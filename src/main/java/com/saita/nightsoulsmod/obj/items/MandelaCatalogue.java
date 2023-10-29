@@ -20,7 +20,7 @@ public class MandelaCatalogue extends Item {
 		
 		 if(worldIn.isRemote)
     	 {
-			 playerIn.sendMessage(new TranslationTextComponent("ง0https://www.youtube.com/watch?v=C8d12w6pMos"), null);
+			 playerIn.sendMessage(new TranslationTextComponent("ยง0https://www.youtube.com/watch?v=C8d12w6pMos"), null);
     	 }
 		
 		return super.onItemRightClick(worldIn, playerIn, handIn);

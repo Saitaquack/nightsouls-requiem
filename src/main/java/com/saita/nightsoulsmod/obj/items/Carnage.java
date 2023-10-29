@@ -34,8 +34,8 @@ public class Carnage extends AxeItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("ง7Brings your enemies closer to you and has a chance to grant you regeneration."));
-	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
+	tooltip.add(new StringTextComponent("ยง7Brings your enemies closer to you and has a chance to grant you regeneration."));
+	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

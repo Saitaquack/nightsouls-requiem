@@ -41,15 +41,15 @@ public class HallowedPaladinArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("§6"+tooltip.get(0).getString()+"§r"));
+	tooltip.set(0, new StringTextComponent("Â§6"+tooltip.get(0).getString()+"Â§r"));
 	
 	if(Screen.hasShiftDown())
 	{
-		 tooltip.add(new StringTextComponent("§6Full set bonus : §7Infinite Speed III, Strength II, Regeneration I and Resistance I. Temporary shield every 20 seconds for 10 seconds that gives Absorption III and Resistance II. Hold sneak to jump super high, to regenerate health faster and to get super speed. Automatically gives you nightsouls emeralds overtime."));	
+		 tooltip.add(new StringTextComponent("Â§6Full set bonus : Â§7Infinite Speed III, Strength II, Regeneration I and Resistance I. Temporary shield every 20 seconds for 10 seconds that gives Absorption III and Resistance II. Hold sneak to jump super high, to regenerate health faster and to get super speed. Automatically gives you nightsouls emeralds overtime."));	
 	}
 	else
 	{
-		tooltip.add(new StringTextComponent("§7A mythical armor forged in the heavens by the most powerful servant of God. Press §eSHIFT§7 for more info."));
+		tooltip.add(new StringTextComponent("Â§7A mythical armor forged in the heavens by the most powerful servant of God. Press Â§eSHIFTÂ§7 for more info."));
 	}
    
 	super.addInformation(stack, worldIn, tooltip, flagIn);

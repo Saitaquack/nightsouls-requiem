@@ -43,7 +43,7 @@ public class VoidMirror extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-    tooltip.add(new StringTextComponent("§7An upgrade of the Magic Mirror. Can also teleport you to The End's center island. §f15 seconds cooldown."));
+    tooltip.add(new StringTextComponent("Â§7An upgrade of the Magic Mirror. Can also teleport you to The End's center island. ï¿½f15 seconds cooldown."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
     
@@ -113,7 +113,7 @@ public class VoidMirror extends Item {
     	{
     		if(worldIn.isRemote)
     		{
-  	           playerIn.sendMessage(new TranslationTextComponent("§f"+playerIn.getName().getString()+", you need to be in the Overworld or in The End to use a Void Mirror"), null);
+  	           playerIn.sendMessage(new TranslationTextComponent("Â§f"+playerIn.getName().getString()+", you need to be in the Overworld or in The End to use a Void Mirror"), null);
     		}
     	}
 

@@ -29,15 +29,15 @@ public class ChlorophyteArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§2"+tooltip.get(0).getString()+"§r"));
+	tooltip.set(0, new StringTextComponent("Â§2"+tooltip.get(0).getString()+"Â§r"));
 	
 	 if(Screen.hasShiftDown())
    	 {
-   		 	tooltip.add(new StringTextComponent("§2Full set bonus : §7Infinite Haste II, Strength III and Resistance I. Greatly restores health overtime. Immunity to a bunch of debuffs. Automatically repairs itself."));	
+   		 	tooltip.add(new StringTextComponent("Â§2Full set bonus : Â§7Infinite Haste II, Strength III and Resistance I. Greatly restores health overtime. Immunity to a bunch of debuffs. Automatically repairs itself."));	
    	 }
    	 else
    	 {
-   		 	tooltip.add(new StringTextComponent("§7An armor literally made of a metal that's ALIVE. Press §eSHIFT§7 for more info."));
+   		 	tooltip.add(new StringTextComponent("Â§7An armor literally made of a metal that's ALIVE. Press Â§eSHIFTÂ§7 for more info."));
    	 }
 
 	super.addInformation(stack, worldIn, tooltip, flagIn);

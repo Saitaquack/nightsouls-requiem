@@ -40,8 +40,8 @@ public class MechanicalEye extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-		tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-		tooltip.add(new StringTextComponent("ง7Summons The Twins."));
+		tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+		tooltip.add(new StringTextComponent("ยง7Summons The Twins."));
 	    
 		super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
@@ -65,7 +65,7 @@ public class MechanicalEye extends Item {
 		    	
 		    	 if(worldIn.isRemote)
 		    	 {
-		    		 playerIn.sendMessage(new TranslationTextComponent("ง4This is honestly a terrible idea..."), null);
+		    		 playerIn.sendMessage(new TranslationTextComponent("ยง4This is honestly a terrible idea..."), null);
 		    	 }
 		    	
 		    	Random rand = new Random();
@@ -109,7 +109,7 @@ public class MechanicalEye extends Item {
 			{
 				if(worldIn.isRemote)
 				{
-					playerIn.sendMessage(new TranslationTextComponent("งf"+playerIn.getName().getString()+", you can't summon the Twins in peaceful mode."), null);
+					playerIn.sendMessage(new TranslationTextComponent("ยงf"+playerIn.getName().getString()+", you can't summon the Twins in peaceful mode."), null);
 		    	}
 			}
 		
@@ -118,7 +118,7 @@ public class MechanicalEye extends Item {
 		{
 			 if(worldIn.isRemote)
 	    	 {
-				 playerIn.sendMessage(new TranslationTextComponent("งf"+playerIn.getName().getString()+", you can only summon the Twins in a Requiem World"), null);
+				 playerIn.sendMessage(new TranslationTextComponent("ยงf"+playerIn.getName().getString()+", you can only summon the Twins in a Requiem World"), null);
 	    	 }
 		}
 

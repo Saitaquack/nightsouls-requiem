@@ -37,7 +37,7 @@ public class PurificationGem extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ง7Allows you to destroy the vampire mask if you wear one. Right Click to use it and consume it."));
+	   tooltip.add(new StringTextComponent("ยง7Allows you to destroy the vampire mask if you wear one. Right Click to use it and consume it."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	} 
 	

@@ -32,7 +32,7 @@ public class BerserkerShield extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	    tooltip.add(new StringTextComponent("ง7Has the effects of both blood charm and heroic shield charm !"));
+	    tooltip.add(new StringTextComponent("ยง7Has the effects of both blood charm and heroic shield charm !"));
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 	}
 	

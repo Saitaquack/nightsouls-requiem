@@ -24,8 +24,8 @@ public class CoolFireBlade extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("งb"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7Frostburn's little brother."));
+	tooltip.set(0, new StringTextComponent("ยงb"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7Frostburn's little brother."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

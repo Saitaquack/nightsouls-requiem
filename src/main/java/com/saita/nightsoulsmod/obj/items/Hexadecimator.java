@@ -41,9 +41,9 @@ public class Hexadecimator extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.set(0, new StringTextComponent("ง2"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7The deadliest weapon of the Reality Warper. Gives your enemies random debuffs."));
-    tooltip.add(new StringTextComponent("ง9+0.5 Knockback"));
+	tooltip.set(0, new StringTextComponent("ยง2"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7The deadliest weapon of the Reality Warper. Gives your enemies random debuffs."));
+    tooltip.add(new StringTextComponent("ยง9+0.5 Knockback"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	

@@ -28,7 +28,7 @@ public class PrimiumArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("§aFull set bonus : §7Infinite Haste I, Hero of the Village and Luck."));			
+	tooltip.add(new StringTextComponent("Â§aFull set bonus : Â§7Infinite Haste I, Hero of the Village and Luck."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

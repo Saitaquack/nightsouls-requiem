@@ -28,15 +28,15 @@ public class NightSoulsArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("§5"+tooltip.get(0).getString()+"§r"));	
+	tooltip.set(0, new StringTextComponent("Â§5"+tooltip.get(0).getString()+"Â§r"));	
 	
 	if(Screen.hasShiftDown())
 	{
-		 tooltip.add(new StringTextComponent("§5Full set bonus : §7Has the effects of Saitastone, Miizealite, Cranite and Bastirite armors at the same time ! Reduced cooldowns of all Overwatch abilities !"));	
+		 tooltip.add(new StringTextComponent("Â§5Full set bonus : Â§7Has the effects of Saitastone, Miizealite, Cranite and Bastirite armors at the same time ! Reduced cooldowns of all Overwatch abilities !"));	
 	}
 	else
 	{
-		tooltip.add(new StringTextComponent("§7A powerful armor created from the essence of four ancient legends. Press §eSHIFT§7 for more info."));
+		tooltip.add(new StringTextComponent("Â§7A powerful armor created from the essence of four ancient legends. Press Â§eSHIFTÂ§7 for more info."));
 	}
 	
 	super.addInformation(stack, worldIn, tooltip, flagIn);	

@@ -21,8 +21,8 @@ public class Chloromud extends BlockItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง2"+tooltip.get(0).getString()+"งr"));	
-	tooltip.add(new StringTextComponent("ง7Can be used to spread chlorophyte ore."));
+	tooltip.set(0, new StringTextComponent("ยง2"+tooltip.get(0).getString()+"ยงr"));	
+	tooltip.add(new StringTextComponent("ยง7Can be used to spread chlorophyte ore."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 

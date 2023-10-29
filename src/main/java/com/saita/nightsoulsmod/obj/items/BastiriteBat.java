@@ -23,7 +23,7 @@ public class BastiriteBat extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-    tooltip.add(new StringTextComponent("ง9+0.75 Knockback"));
+    tooltip.add(new StringTextComponent("ยง9+0.75 Knockback"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

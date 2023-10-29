@@ -36,7 +36,7 @@ public class FinalCastleStructureRadar extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 	    	
-	   tooltip.add(new StringTextComponent("ง7One time use only. Will locate the nearest NightSouls Final Castle."));
+	   tooltip.add(new StringTextComponent("ยง7One time use only. Will locate the nearest NightSouls Final Castle."));
 	   super.addInformation(stack, worldIn, tooltip, flagIn);
 	} 
 	
@@ -66,7 +66,7 @@ public class FinalCastleStructureRadar extends Item {
 		{
 			 if(worldIn.isRemote)
 	    		{
-	  	           playerIn.sendMessage(new TranslationTextComponent("งf"+playerIn.getName().getString()+", you need to be in the Overworld to use a Structure Radar"), null);
+	  	           playerIn.sendMessage(new TranslationTextComponent("ยงf"+playerIn.getName().getString()+", you need to be in the Overworld to use a Structure Radar"), null);
 	    		} 
 		}
 	

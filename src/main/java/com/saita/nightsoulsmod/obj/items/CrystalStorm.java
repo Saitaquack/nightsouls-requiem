@@ -41,8 +41,8 @@ public class CrystalStorm extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7Rapidly shoots a lot of crystals."));	
-	tooltip.add(new StringTextComponent("ง97 Damage"));	
+	tooltip.add(new StringTextComponent("ยง7Rapidly shoots a lot of crystals."));	
+	tooltip.add(new StringTextComponent("ยง97 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

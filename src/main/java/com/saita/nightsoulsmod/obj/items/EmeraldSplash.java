@@ -42,9 +42,9 @@ public class EmeraldSplash extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("งa"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง7Shoots a barage of emeralds at your foes."));	
-	tooltip.add(new StringTextComponent("ง96 Damage"));	
+	tooltip.set(0, new StringTextComponent("ยงa"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง7Shoots a barage of emeralds at your foes."));	
+	tooltip.add(new StringTextComponent("ยง96 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

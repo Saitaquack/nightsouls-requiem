@@ -27,7 +27,7 @@ public class BrokenDragonBlade extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 
-	tooltip.add(new StringTextComponent("ง7It's broken. It could be repaired with primium ingots and crystal shards."));
+	tooltip.add(new StringTextComponent("ยง7It's broken. It could be repaired with primium ingots and crystal shards."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 

@@ -38,8 +38,8 @@ public class BloodEdge extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง7Bloodzeal's ancestor."));
+	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง7Bloodzeal's ancestor."));
 	super.addInformation(stack, worldIn, tooltip, flagIn);	
     }
 	

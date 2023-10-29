@@ -27,8 +27,8 @@ public class ParagonicNightSoulsHelmet extends ParagonicNightSoulsArmor {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง5"+tooltip.get(0).getString()+"งr"));	
-	tooltip.add(new StringTextComponent("ง6Let my power and God's might bless you, Warrior."));			
+	tooltip.set(0, new StringTextComponent("ยง5"+tooltip.get(0).getString()+"ยงr"));	
+	tooltip.add(new StringTextComponent("ยง6Let my power and God's might bless you, Warrior."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 	

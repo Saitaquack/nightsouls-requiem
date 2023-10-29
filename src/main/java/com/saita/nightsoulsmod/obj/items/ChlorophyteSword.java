@@ -23,8 +23,8 @@ public class ChlorophyteSword extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง2"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง7Automatically repairs itself."));	
+	tooltip.set(0, new StringTextComponent("ยง2"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง7Automatically repairs itself."));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

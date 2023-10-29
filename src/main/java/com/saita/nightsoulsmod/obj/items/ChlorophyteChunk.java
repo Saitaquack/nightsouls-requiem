@@ -20,7 +20,7 @@ public class ChlorophyteChunk extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง2"+tooltip.get(0).getString()+"งr"));
+	tooltip.set(0, new StringTextComponent("ยง2"+tooltip.get(0).getString()+"ยงr"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

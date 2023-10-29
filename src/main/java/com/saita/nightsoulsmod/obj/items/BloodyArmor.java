@@ -25,8 +25,8 @@ public class BloodyArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("ง4"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง4Full set bonus : ง7Has the same effects as Saitastone Armor but with stronger healing effects. Below half HP, the lower your HP is, the more healing you will get."));			
+	tooltip.set(0, new StringTextComponent("ยง4"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง4Full set bonus : ยง7Has the same effects as Saitastone Armor but with stronger healing effects. Below half HP, the lower your HP is, the more healing you will get."));			
 	super.addInformation(stack, worldIn, tooltip, flagIn);	
     }
 	

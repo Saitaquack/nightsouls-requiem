@@ -42,8 +42,8 @@ public class PlasmaSprayer extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7Shoots powerful blasts of plasma ! Can be upgraded to a sun avatar !"));		
-	tooltip.add(new StringTextComponent("ง914 Damage"));	
+	tooltip.add(new StringTextComponent("ยง7Shoots powerful blasts of plasma ! Can be upgraded to a sun avatar !"));		
+	tooltip.add(new StringTextComponent("ยง914 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

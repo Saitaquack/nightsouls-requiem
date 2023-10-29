@@ -44,9 +44,9 @@ public class MeteorStaff extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.set(0, new StringTextComponent("งc"+tooltip.get(0).getString()+"งr"));
-	tooltip.add(new StringTextComponent("ง7Summons meteorites from the sky !"));	
-	tooltip.add(new StringTextComponent("ง935 Damage"));	
+	tooltip.set(0, new StringTextComponent("ยงc"+tooltip.get(0).getString()+"ยงr"));
+	tooltip.add(new StringTextComponent("ยง7Summons meteorites from the sky !"));	
+	tooltip.add(new StringTextComponent("ยง935 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

@@ -28,15 +28,15 @@ public class ChampionArmor extends ArmorItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
 		
-	tooltip.set(0, new StringTextComponent("§e"+tooltip.get(0).getString()+"§r"));	
+	tooltip.set(0, new StringTextComponent("Â§e"+tooltip.get(0).getString()+"Â§r"));	
     	
 	if(Screen.hasShiftDown())
 	{
-		 tooltip.add(new StringTextComponent("§6Full set bonus : §7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Instant Healing Potion has no cooldown and heals more."));	
+		 tooltip.add(new StringTextComponent("Â§6Full set bonus : Â§7Has the effects of Primium, Rowequite and Therenite armors at the same time ! Instant Healing Potion has no cooldown and heals more."));	
 	}
 	else
 	{
-		tooltip.add(new StringTextComponent("§7It once belonged to the finest warrior of a fallen city. Press §eSHIFT§7 for more info."));
+		tooltip.add(new StringTextComponent("Â§7It once belonged to the finest warrior of a fallen city. Press Â§eSHIFTÂ§7 for more info."));
 	}
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	

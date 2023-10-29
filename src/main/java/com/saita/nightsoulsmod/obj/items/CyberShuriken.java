@@ -27,8 +27,8 @@ public class CyberShuriken extends Item {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     
-	tooltip.add(new StringTextComponent("ง7Throws 3 high damage shurikens."));
-	tooltip.add(new StringTextComponent("ง912 Damage"));	
+	tooltip.add(new StringTextComponent("ยง7Throws 3 high damage shurikens."));
+	tooltip.add(new StringTextComponent("ยง912 Damage"));	
 	super.addInformation(stack, worldIn, tooltip, flagIn);
 	
     }

@@ -41,9 +41,9 @@ public class GoldenReinhardtHammer extends SwordItem {
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
     	
-	tooltip.set(0, new StringTextComponent("ง6"+tooltip.get(0).getString()+"งr"));
-    tooltip.add(new StringTextComponent("ง7The ultimate crushing machine !"));
-    tooltip.add(new StringTextComponent("ง9+1 Knockback"));
+	tooltip.set(0, new StringTextComponent("ยง6"+tooltip.get(0).getString()+"ยงr"));
+    tooltip.add(new StringTextComponent("ยง7The ultimate crushing machine !"));
+    tooltip.add(new StringTextComponent("ยง9+1 Knockback"));
 	super.addInformation(stack, worldIn, tooltip, flagIn);
     }  
 	
