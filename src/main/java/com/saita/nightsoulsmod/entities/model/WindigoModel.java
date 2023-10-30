@@ -10,7 +10,6 @@ import net.minecraft.util.math.MathHelper;
 
 public class WindigoModel <T extends WindigoEntity> extends EntityModel<T> {
 	
-	private final ModelRenderer full;
 	private final ModelRenderer body;
 	private final ModelRenderer cube_r1;
 	private final ModelRenderer cube_r2;
@@ -101,13 +100,11 @@ public class WindigoModel <T extends WindigoEntity> extends EntityModel<T> {
 		textureWidth = 128;
 		textureHeight = 128;
 
-		full = new ModelRenderer(this);
-		full.setRotationPoint(0.0F, 24.0F, 0.0F);
-		
+		textureWidth = 128;
+		textureHeight = 128;
 
 		body = new ModelRenderer(this);
-		body.setRotationPoint(0.0F, -23.9104F, 2.6876F);
-		full.addChild(body);
+		body.setRotationPoint(0.0F, 0.0896F, 2.6876F);
 		
 
 		cube_r1 = new ModelRenderer(this);
@@ -461,8 +458,8 @@ public class WindigoModel <T extends WindigoEntity> extends EntityModel<T> {
 		cube_r45.setTextureOffset(0, 0).addBox(1.2815F, -0.539F, -6.5072F, 0.0F, 4.0F, 7.0F, 0.0F, false);
 
 		right_leg = new ModelRenderer(this);
-		right_leg.setRotationPoint(-3.275F, -21.6134F, 2.3237F);
-		full.addChild(right_leg);
+		right_leg.setRotationPoint(-3.275F, 2.2971F, -0.3639F);
+		body.addChild(right_leg);
 		
 
 		cube_r46 = new ModelRenderer(this);
@@ -539,8 +536,8 @@ public class WindigoModel <T extends WindigoEntity> extends EntityModel<T> {
 		cube_r55.setTextureOffset(112, 26).addBox(-2.0F, -2.6176F, -1.673F, 4.0F, 4.0F, 3.6F, 0.0F, false);
 
 		left_leg = new ModelRenderer(this);
-		left_leg.setRotationPoint(3.525F, -21.6134F, 2.3237F);
-		full.addChild(left_leg);
+		left_leg.setRotationPoint(3.525F, 2.2971F, -0.3639F);
+		body.addChild(left_leg);
 		
 
 		cube_r56 = new ModelRenderer(this);
@@ -614,7 +611,7 @@ public class WindigoModel <T extends WindigoEntity> extends EntityModel<T> {
 
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		full.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		body.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

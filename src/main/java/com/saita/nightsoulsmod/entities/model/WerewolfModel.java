@@ -10,7 +10,7 @@ import net.minecraft.util.math.MathHelper;
 
 public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 	
-	private final ModelRenderer Werewolf;
+	private final ModelRenderer Body;
 	private final ModelRenderer arms;
 	private final ModelRenderer leftArm;
 	private final ModelRenderer cube_r1;
@@ -38,7 +38,7 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 	private final ModelRenderer head;
 	private final ModelRenderer cube_r18;
 	private final ModelRenderer cube_r19;
-	private final ModelRenderer tooth;
+	private final ModelRenderer teeths;
 	private final ModelRenderer cube_r20;
 	private final ModelRenderer claws;
 	private final ModelRenderer cube_r21;
@@ -47,13 +47,13 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 		textureWidth = 128;
 		textureHeight = 128;
 
-		Werewolf = new ModelRenderer(this);
-		Werewolf.setRotationPoint(0.0F, 24.0F, 0.0F);
+		Body = new ModelRenderer(this);
+		Body.setRotationPoint(0.0F, 24.0F, 0.0F);
 		
 
 		arms = new ModelRenderer(this);
 		arms.setRotationPoint(-4.5F, -15.5F, 4.0F);
-		Werewolf.addChild(arms);
+		Body.addChild(arms);
 		
 
 		leftArm = new ModelRenderer(this);
@@ -65,13 +65,13 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 		cube_r1.setRotationPoint(6.5F, 5.852F, -13.2716F);
 		leftArm.addChild(cube_r1);
 		setRotationAngle(cube_r1, -0.3927F, 0.0F, 0.0F);
-		cube_r1.setTextureOffset(0, 19).addBox(-0.75F, -3.5F, -1.25F, 1.0F, 6.0F, 4.0F, 0.0F, false);
+		cube_r1.setTextureOffset(0, 19).addBox(-0.75F, -3.5F, -1.25F, 1.5F, 6.0F, 4.0F, 0.0F, false);
 
 		cube_r2 = new ModelRenderer(this);
 		cube_r2.setRotationPoint(8.0F, 0.0F, -10.0F);
 		leftArm.addChild(cube_r2);
 		setRotationAngle(cube_r2, -0.3927F, 0.0F, 0.0F);
-		cube_r2.setTextureOffset(17, 65).addBox(-2.5F, -7.5F, -1.75F, 3.0F, 11.0F, 3.0F, 0.0F, false);
+		cube_r2.setTextureOffset(17, 64).addBox(-2.5F, -7.5F, -1.75F, 3.0F, 11.0F, 3.5F, 0.0F, false);
 
 		cube_r3 = new ModelRenderer(this);
 		cube_r3.setRotationPoint(8.5F, -11.4692F, -6.3317F);
@@ -88,13 +88,13 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 		cube_r4.setRotationPoint(13.5F, 1.148F, -10.2284F);
 		rightArm.addChild(cube_r4);
 		setRotationAngle(cube_r4, -0.3927F, 0.0F, 0.0F);
-		cube_r4.setTextureOffset(38, 60).addBox(-18.5F, -7.5F, -1.75F, 3.0F, 11.0F, 3.0F, 0.0F, false);
+		cube_r4.setTextureOffset(38, 59).addBox(-18.5F, -7.5F, -1.75F, 3.0F, 11.0F, 3.5F, 0.0F, false);
 
 		cube_r5 = new ModelRenderer(this);
 		cube_r5.setRotationPoint(12.0F, 7.0F, -13.5F);
 		rightArm.addChild(cube_r5);
 		setRotationAngle(cube_r5, -0.3927F, 0.0F, 0.0F);
-		cube_r5.setTextureOffset(0, 0).addBox(-15.75F, -3.5F, -1.25F, 1.0F, 6.0F, 4.0F, 0.0F, false);
+		cube_r5.setTextureOffset(0, 0).addBox(-15.75F, -3.5F, -1.25F, 1.5F, 6.0F, 4.0F, 0.0F, false);
 
 		cube_r6 = new ModelRenderer(this);
 		cube_r6.setRotationPoint(14.0F, -10.3212F, -6.56F);
@@ -104,7 +104,7 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 
 		legs = new ModelRenderer(this);
 		legs.setRotationPoint(-8.0F, -8.0F, 8.0F);
-		Werewolf.addChild(legs);
+		Body.addChild(legs);
 		
 
 		rightLeg = new ModelRenderer(this);
@@ -155,32 +155,32 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 
 		torso = new ModelRenderer(this);
 		torso.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Werewolf.addChild(torso);
-		torso.setTextureOffset(0, 36).addBox(-5.0F, -24.0678F, -4.9677F, 10.0F, 2.0F, 12.0F, 0.0F, false);
+		Body.addChild(torso);
+		torso.setTextureOffset(0, 36).addBox(-5.0F, -24.0678F, -4.9677F, 10.0F, 2.9149F, 12.0F, 0.0F, false);
 
 		cube_r13 = new ModelRenderer(this);
 		cube_r13.setRotationPoint(0.0F, -12.785F, 17.0345F);
 		torso.addChild(cube_r13);
 		setRotationAngle(cube_r13, -0.7854F, 0.0F, 0.0F);
-		cube_r13.setTextureOffset(32, 37).addBox(-1.25F, -0.125F, -2.0F, 2.0F, 1.0F, 5.0F, 0.0F, false);
+		cube_r13.setTextureOffset(40, 51).addBox(-1.25F, -0.125F, -2.0F, 2.5F, 1.5F, 5.9655F, 0.0F, false);
 
 		cube_r14 = new ModelRenderer(this);
 		cube_r14.setRotationPoint(0.0F, -15.5F, 9.5F);
 		torso.addChild(cube_r14);
 		setRotationAngle(cube_r14, -0.3927F, 0.0F, 0.0F);
-		cube_r14.setTextureOffset(35, 0).addBox(-1.25F, -1.5F, -1.5F, 2.0F, 2.0F, 8.0F, 0.0F, false);
+		cube_r14.setTextureOffset(35, 0).addBox(-1.25F, -1.5F, -1.5F, 2.5F, 2.0F, 8.0F, 0.0F, false);
 
 		cube_r15 = new ModelRenderer(this);
 		cube_r15.setRotationPoint(0.0F, -27.7926F, -2.8357F);
 		torso.addChild(cube_r15);
 		setRotationAngle(cube_r15, 0.3927F, 0.0F, 0.0F);
-		cube_r15.setTextureOffset(0, 0).addBox(-6.0F, -3.2074F, -4.5F, 12.0F, 8.0F, 11.0F, 0.0F, false);
+		cube_r15.setTextureOffset(0, 0).addBox(-6.0F, -3.2074F, -4.5F, 12.0F, 8.4149F, 11.0F, 0.0F, false);
 
 		cube_r16 = new ModelRenderer(this);
 		cube_r16.setRotationPoint(0.0F, -27.2059F, 1.7858F);
 		torso.addChild(cube_r16);
 		setRotationAngle(cube_r16, -0.7854F, 0.0F, 0.0F);
-		cube_r16.setTextureOffset(0, 19).addBox(-7.0F, -3.7074F, -3.5F, 14.0F, 7.0F, 10.0F, 0.0F, false);
+		cube_r16.setTextureOffset(0, 19).addBox(-7.0F, -3.7074F, -3.5F, 14.0F, 7.4149F, 10.0F, 0.0F, false);
 
 		cube_r17 = new ModelRenderer(this);
 		cube_r17.setRotationPoint(0.5F, -19.0F, 5.5F);
@@ -190,16 +190,16 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 
 		head = new ModelRenderer(this);
 		head.setRotationPoint(0.0F, -27.0F, -5.0F);
-		Werewolf.addChild(head);
-		head.setTextureOffset(41, 29).addBox(-4.0F, -4.0F, -7.3357F, 8.0F, 6.0F, 7.0F, 0.0F, false);
-		head.setTextureOffset(61, 0).addBox(-2.0F, 0.0F, -12.3357F, 4.0F, 2.0F, 5.0F, 0.0F, false);
+		Body.addChild(head);
+		head.setTextureOffset(41, 29).addBox(-4.0F, -4.0F, -7.3357F, 8.0F, 6.4149F, 7.0F, 0.0F, false);
+		head.setTextureOffset(61, 0).addBox(-2.0F, 0.0F, -12.3357F, 4.0F, 2.4149F, 5.0F, 0.0F, false);
 
 		cube_r18 = new ModelRenderer(this);
 		cube_r18.setRotationPoint(4.125F, -3.5F, -4.0F);
 		head.addChild(cube_r18);
 		setRotationAngle(cube_r18, 0.7854F, 0.0F, 0.0F);
-		cube_r18.setTextureOffset(35, 2).addBox(-0.125F, 0.0F, -0.5F, 0.0F, 2.0F, 4.0F, 0.0F, false);
-		cube_r18.setTextureOffset(29, 67).addBox(-8.625F, 0.0F, -0.5F, 0.0F, 2.0F, 4.0F, 0.0F, false);
+		cube_r18.setTextureOffset(35, 2).addBox(-0.125F, 0.0F, -0.5F, 0.5F, 2.0F, 4.0F, 0.0F, false);
+		cube_r18.setTextureOffset(29, 67).addBox(-8.625F, 0.0F, -0.5F, 0.5F, 2.0F, 4.0F, 0.0F, false);
 
 		cube_r19 = new ModelRenderer(this);
 		cube_r19.setRotationPoint(0.0F, 3.4574F, -7.8357F);
@@ -207,19 +207,19 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 		setRotationAngle(cube_r19, 0.7854F, 0.0F, 0.0F);
 		cube_r19.setTextureOffset(73, 1).addBox(-2.0F, -0.4574F, -3.5F, 4.0F, 1.0F, 6.0F, 0.0F, false);
 
-		tooth = new ModelRenderer(this);
-		tooth.setRotationPoint(1.0F, 12.648F, 8.7716F);
-		head.addChild(tooth);
-		tooth.setTextureOffset(24, 80).addBox(0.75F, -11.1418F, -20.8046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
-		tooth.setTextureOffset(21, 80).addBox(-2.5F, -11.1418F, -20.8046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
-		tooth.setTextureOffset(21, 80).addBox(-2.5F, -12.1418F, -18.3046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
-		tooth.setTextureOffset(21, 80).addBox(-2.5F, -11.6418F, -19.5546F, 0.0F, 2.0F, 1.0F, 0.0F, false);
-		tooth.setTextureOffset(21, 80).addBox(0.75F, -12.1418F, -18.3046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
-		tooth.setTextureOffset(21, 80).addBox(0.75F, -11.6418F, -19.5546F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+		teeths = new ModelRenderer(this);
+		teeths.setRotationPoint(1.0F, 12.648F, 8.7716F);
+		head.addChild(teeths);
+		teeths.setTextureOffset(24, 80).addBox(0.75F, -11.1418F, -20.8046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+		teeths.setTextureOffset(21, 80).addBox(-2.5F, -11.1418F, -20.8046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+		teeths.setTextureOffset(21, 80).addBox(-2.5F, -12.1418F, -18.3046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+		teeths.setTextureOffset(21, 80).addBox(-2.5F, -11.6418F, -19.5546F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+		teeths.setTextureOffset(21, 80).addBox(0.75F, -12.1418F, -18.3046F, 0.0F, 2.0F, 1.0F, 0.0F, false);
+		teeths.setTextureOffset(21, 80).addBox(0.75F, -11.6418F, -19.5546F, 0.0F, 2.0F, 1.0F, 0.0F, false);
 
 		cube_r20 = new ModelRenderer(this);
 		cube_r20.setRotationPoint(0.5F, -8.648F, -18.5216F);
-		tooth.addChild(cube_r20);
+		teeths.addChild(cube_r20);
 		setRotationAngle(cube_r20, 0.7854F, 0.0F, 0.0F);
 		cube_r20.setTextureOffset(11, 80).addBox(0.0F, -0.5F, -1.25F, 0.0F, 2.0F, 1.0F, 0.0F, false);
 		cube_r20.setTextureOffset(11, 80).addBox(0.0F, 0.0F, 0.0F, 0.0F, 1.0F, 1.0F, 0.0F, false);
@@ -230,7 +230,7 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 
 		claws = new ModelRenderer(this);
 		claws.setRotationPoint(-8.0F, -8.0F, 8.0F);
-		Werewolf.addChild(claws);
+		Body.addChild(claws);
 		
 
 		cube_r21 = new ModelRenderer(this);
@@ -247,7 +247,7 @@ public class WerewolfModel <T extends WerewolfEntity> extends EntityModel<T> {
 
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		Werewolf.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		Body.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 	
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
