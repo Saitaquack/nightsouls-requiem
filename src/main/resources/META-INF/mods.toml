@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)" 
+license="All Rights Reserved"
+
+[[mods]] 
+
+modId="legendsawaken"
+version="0.1"
+displayName="Legends Awaken"
+authors="Saita"
+
+description='''The great sequel to NightSouls Mod !'''
+
+[[dependencies.legendsawaken]] 
+    modId="forge" 
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.legendsawaken]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

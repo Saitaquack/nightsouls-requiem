@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "legendsawaken:infernal_bricks"
+  },
+  "result": "legendsawaken:infernal_bricks_slab"
+}

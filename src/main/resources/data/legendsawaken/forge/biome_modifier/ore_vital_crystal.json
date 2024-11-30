@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "legendsawaken:ore_vital_crystal",
+  "biomes": "#minecraft:is_overworld",
+  "step": "underground_ores"
+}

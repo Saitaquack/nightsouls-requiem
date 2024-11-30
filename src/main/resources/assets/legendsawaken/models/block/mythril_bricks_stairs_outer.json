@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "legendsawaken:block/mythril_bricks",
+    "top": "legendsawaken:block/mythril_bricks",
+    "side": "legendsawaken:block/mythril_bricks"
+  }
+}

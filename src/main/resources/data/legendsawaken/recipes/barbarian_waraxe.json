@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+  
+    "W": {
+      "item": "legendsawaken:titanite_axe"
+    },
+    
+    "N": {
+      "item": "legendsawaken:night_soul"
+    },
+    
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    
+    "S": {
+      "item": "legendsawaken:shadow_essence"
+    }
+    
+  },
+  "pattern": [
+    "BNB",
+    "NWN",
+    "SNS"
+  ],
+  "result": {
+    "item": "legendsawaken:barbarian_waraxe"
+  },
+  "show_notification": true
+}

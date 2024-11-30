@@ -1,0 +1,418 @@
+{	
+	"launcher_used": {
+		"category": "master",
+		"subtitle": "Launcher used",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/launcher_used",
+				"stream": false
+			}
+		]
+		
+	},	
+	
+	"instant_potion": {
+		"category": "master",
+		"subtitle": "Instant potion used",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/instant_potion",
+				"stream": false
+			}
+		]
+		
+	},	
+	
+	"vital_crystal_used": {
+		"category": "master",
+		"subtitle": "Vital crystal used",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/vital_crystal_used",
+				"stream": false
+			}
+		]
+		
+	},	
+	
+	
+	"waraxe": {
+		"category": "master",
+		"subtitle": "Waraxe hit",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/waraxe",
+				"stream": false
+			}
+		]
+		
+	},	
+	
+	"hammer": {
+		"category": "master",
+		"subtitle": "Hammer hit",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/hammer",
+				"stream": false
+			}
+		]
+		
+	},	
+	
+	"hellfire_shotgun": {
+		"category": "master",
+		"subtitle": "Hellfire Shotgun shot",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/hellfire_shotgun1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:master/hellfire_shotgun2",
+				"stream": false
+			}
+		]
+		
+	},	
+	
+	"requiem": {
+		"category": "master",
+		"subtitle": "Kore ga... Requiem... da.",
+		"sounds": [
+			{
+				"name": "legendsawaken:master/requiem",
+				"stream": false
+			}
+		]
+		
+	},	
+
+	"werewolf_ambient": {
+		"category": "entity",
+		"subtitle": "Werewolf nearby",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/werewolf_ambient1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/werewolf_ambient2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_hurt": {
+		"category": "entity",
+		"subtitle": "Werewolf hurts",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/werewolf_hurt",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"werewolf_death": {
+		"category": "entity",
+		"subtitle": "Werewolf dies",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/werewolf_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_ambient": {
+		"category": "entity",
+		"subtitle": "Reaper nearby",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/reaper_ambient1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/reaper_ambient2",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/reaper_ambient3",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_hurt": {
+		"category": "entity",
+		"subtitle": "Reaper hurts",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/reaper_hurt",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"reaper_death": {
+		"category": "entity",
+		"subtitle": "Reaper dies",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/reaper_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"wendigo_ambient": {
+		"category": "entity",
+		"subtitle": "Wendigo nearby",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/wendigo_ambient1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/wendigo_ambient2",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/wendigo_ambient3",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/wendigo_ambient4",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/wendigo_ambient5",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/wendigo_ambient6",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"wendigo_hurt": {
+		"category": "entity",
+		"subtitle": "Wendigo hurts",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/wendigo_hurt1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/wendigo_hurt2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"wendigo_death": {
+		"category": "entity",
+		"subtitle": "Wendigo dies",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/wendigo_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_ambient": {
+		"category": "entity",
+		"subtitle": "Alternate nearby",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/alternate_ambient1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/alternate_ambient2",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/alternate_ambient3",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/alternate_ambient4",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/alternate_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_hurt": {
+		"category": "entity",
+		"subtitle": "Alternate hurts",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/alternate_hurt1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/alternate_hurt2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_death": {
+		"category": "entity",
+		"subtitle": "Alternate dies",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/alternate_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_step": {
+		"category": "entity",
+		"subtitle": "Alternate steps",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/alternate_step1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/alternate_step2",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"alternate_attack": {
+		"category": "entity",
+		"subtitle": "Alternate attacks",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/alternate_attack",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"partygoer_ambient": {
+		"category": "entity",
+		"subtitle": "Partygoer nearby",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/partygoer_ambient1",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/partygoer_ambient2",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/partygoer_ambient3",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/partygoer_ambient4",
+				"stream": false
+			},
+			{
+				"name": "legendsawaken:entity/partygoer_ambient5",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"partygoer_hurt": {
+		"category": "entity",
+		"subtitle": "Partygoer hurts",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/partygoer_hurt",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"partygoer_death": {
+		"category": "entity",
+		"subtitle": "Partygoer dies",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/partygoer_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"eye_hurt": {
+		"category": "entity",
+		"subtitle": "Eye hurts",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/eye_hurt",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"eye_death": {
+		"category": "entity",
+		"subtitle": "Eye dies",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/eye_death",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"cthulhu_scream": {
+		"category": "entity",
+		"subtitle": "Eye of Cthulhu screams",
+		"sounds": [
+			{
+				"name": "legendsawaken:entity/cthulhu_scream",
+				"stream": false
+			}
+		]
+		
+	},
+	
+	"boss_one": {
+		"category": "music",
+		"subtitle": "Boss One plays",
+		"sounds": [
+			{
+				"name": "legendsawaken:music/boss_one",
+				"stream": true
+			}
+		]
+		
+	}
+}

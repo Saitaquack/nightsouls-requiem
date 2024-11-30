@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "legendsawaken:titanite_block",
+    "legendsawaken:raw_titanite_block",
+    "legendsawaken:titanite_ore",
+    "legendsawaken:deepslate_titanite_ore",
+    "legendsawaken:titanite_bricks",
+    "legendsawaken:titanite_bricks_stairs",
+    "legendsawaken:titanite_bricks_slab",
+    "legendsawaken:infernal_stone",
+    "legendsawaken:infernal_block",
+    "legendsawaken:infernal_bricks",
+    "legendsawaken:infernal_bricks_stairs",
+    "legendsawaken:infernal_bricks_slab"
+  ]
+}

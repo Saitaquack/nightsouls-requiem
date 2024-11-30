@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "legendsawaken:hardened_gelatin_crystal"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "legendsawaken:hardened_gelatin_crystal_block",
+    "count": 2
+  },
+  "show_notification": true
+}

@@ -1,0 +1,59 @@
+package com.saita.legendsawaken.tiers;
+
+import java.util.function.Supplier;
+
+import org.jetbrains.annotations.NotNull;
+
+import com.saita.legendsawaken.LegendsAwakenMod;
+
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem.Type;
+import net.minecraft.world.item.crafting.Ingredient;
+
+public record LegendsAwakenArmorMaterial(String name, int durability, int[] protection, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) implements ArmorMaterial {
+    private static final int[] DURABILITY_PER_SLOT = new int[] { 13, 15, 16, 11 };
+
+
+	@Override
+	public int getDurabilityForType(Type slot) {
+
+    	return DURABILITY_PER_SLOT[slot.getSlot().getIndex()] * this.durability;
+	}
+
+	@Override
+	public int getDefenseForType(Type slot) {
+
+		return this.protection[slot.getSlot().getIndex()];
+	}
+
+    @Override
+    public int getEnchantmentValue() {
+        return this.enchantability;
+    }
+
+    @Override
+    public @NotNull SoundEvent getEquipSound() {
+        return this.equipSound;
+    }
+
+    @Override
+    public @NotNull Ingredient getRepairIngredient() {
+        return this.repairMaterial.get();
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return LegendsAwakenMod.MOD_ID + ":" + this.name;
+    }
+
+    @Override
+    public float getToughness() {
+        return this.toughness;
+    }
+
+    @Override
+    public float getKnockbackResistance() {
+        return this.knockbackResistance;
+    }
+}

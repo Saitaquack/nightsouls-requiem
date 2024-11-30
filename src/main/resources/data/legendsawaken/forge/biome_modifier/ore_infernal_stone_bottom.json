@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "legendsawaken:ore_infernal_stone_bottom",
+  "biomes": "#minecraft:is_nether",
+  "step": "underground_ores"
+}

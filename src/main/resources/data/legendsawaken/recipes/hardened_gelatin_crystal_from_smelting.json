@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.5,
+  "ingredient": {
+    "item": "legendsawaken:gelatin_crystal"
+  },
+  "result": "legendsawaken:hardened_gelatin_crystal"
+}

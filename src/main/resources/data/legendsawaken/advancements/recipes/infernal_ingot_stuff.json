@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "legendsawaken:infernal_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legendsawaken:infernal_block",
+      "legendsawaken:infernal_sword",
+      "legendsawaken:infernal_axe",
+      "legendsawaken:infernal_pickaxe",
+      "legendsawaken:infernal_shovel",
+      "legendsawaken:infernal_hoe",
+      "legendsawaken:infernal_helmet",
+      "legendsawaken:infernal_chestplate",
+      "legendsawaken:infernal_leggings",
+      "legendsawaken:infernal_boots",
+      "legendsawaken:infernal_bricks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

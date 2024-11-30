@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+    "ingredients": [
+    
+	    {"item": "legendsawaken:infernal_scrap"},
+	    {"item": "legendsawaken:infernal_scrap"},
+	    {"item": "legendsawaken:infernal_scrap"},
+	    {"item": "legendsawaken:infernal_scrap"},
+	    {"item": "minecraft:blaze_powder"},
+	    {"item": "minecraft:blaze_powder"},
+	    {"item": "minecraft:blaze_powder"},
+	    {"item": "minecraft:blaze_powder"}
+	    
+  	],
+  "result": {
+    "item": "legendsawaken:infernal_ingot"
+  }
+}

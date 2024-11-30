@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "legendsawaken:titanite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "legendsawaken:titanite_ingot"
+  }
+}

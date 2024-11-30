@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage0"
+    },
+    "age=1": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage1"
+    },
+    "age=2": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage2"
+    },
+    "age=3": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage3"
+    },
+    "age=4": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage4"
+    },
+    "age=5": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage5"
+    },
+    "age=6": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage6"
+    },
+    "age=7": {
+      "model": "legendsawaken:block/gelatin_crystal_crops_stage7"
+    }
+  }
+}

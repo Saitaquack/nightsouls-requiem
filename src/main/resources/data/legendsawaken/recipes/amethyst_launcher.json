@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    
+    "M": {
+      "item": "legendsawaken:mythril_ingot"
+    },
+    
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    
+    "S": {
+      "item": "legendsawaken:shadow_essence"
+    }
+    
+  },
+  "pattern": [
+    "AAA",
+    "MSG",
+    "AAA"
+  ],
+  "result": {
+    "item": "legendsawaken:amethyst_launcher"
+  },
+  "show_notification": true
+}

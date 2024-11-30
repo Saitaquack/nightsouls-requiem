@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "legendsawaken:mythril_block",
+    "legendsawaken:raw_mythril_block",
+    "legendsawaken:mythril_ore",
+    "legendsawaken:deepslate_mythril_ore",
+    "legendsawaken:mythril_bricks",
+    "legendsawaken:mythril_bricks_stairs",
+    "legendsawaken:mythril_bricks_slab",
+    "legendsawaken:vital_crystal_ore",
+    "legendsawaken:deepslate_vital_crystal_ore"
+  ]
+}

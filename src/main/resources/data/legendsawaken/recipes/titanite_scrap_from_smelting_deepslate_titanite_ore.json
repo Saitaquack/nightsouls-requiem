@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.5,
+  "ingredient": {
+    "item": "legendsawaken:deepslate_titanite_ore"
+  },
+  "result": "legendsawaken:titanite_scrap"
+}

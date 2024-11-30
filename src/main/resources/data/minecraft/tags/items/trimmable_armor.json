@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "legendsawaken:mythril_helmet",
+    "legendsawaken:mythril_chestplate",
+    "legendsawaken:mythril_leggings",
+    "legendsawaken:mythril_boots",
+    "legendsawaken:titanite_helmet",
+    "legendsawaken:titanite_leggings",
+    "legendsawaken:titanite_boots",
+    "legendsawaken:damage_titanite_chestplate",
+    "legendsawaken:tanking_titanite_chestplate",
+    "legendsawaken:healing_titanite_chestplate",
+    "legendsawaken:speed_titanite_chestplate",
+    "legendsawaken:infernal_helmet",
+    "legendsawaken:infernal_chestplate",
+    "legendsawaken:infernal_leggings",
+    "legendsawaken:infernal_boots"
+  ]
+}

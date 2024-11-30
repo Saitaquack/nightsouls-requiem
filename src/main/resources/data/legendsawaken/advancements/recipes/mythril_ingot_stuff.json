@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "legendsawaken:mythril_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legendsawaken:mythril_block",
+      "legendsawaken:mythril_sword",
+      "legendsawaken:mythril_pickaxe",
+      "legendsawaken:mythril_axe",
+      "legendsawaken:mythril_shovel",
+      "legendsawaken:mythril_hoe",
+      "legendsawaken:mythril_helmet",
+      "legendsawaken:mythril_chestplate",
+      "legendsawaken:mythril_leggings",
+      "legendsawaken:mythril_boots",
+      "legendsawaken:mythril_bricks",
+      "legendsawaken:amethyst_launcher",
+      "legendsawaken:mythril_arrow"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "legendsawaken:night_soul"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legendsawaken:barbarian_waraxe",
+      "legendsawaken:crusader_hammer",
+      "legendsawaken:suspicious_looking_eye"
+    ]
+  },
+  "sends_telemetry_event": false
+}

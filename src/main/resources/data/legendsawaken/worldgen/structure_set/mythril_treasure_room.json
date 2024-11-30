@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "legendsawaken:mythril_treasure_room",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 30035180,
+    "spacing": 16,
+    "separation": 6,
+    "type": "minecraft:random_spread"
+  }
+}

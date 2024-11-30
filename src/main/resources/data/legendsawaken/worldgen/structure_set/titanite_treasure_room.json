@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "legendsawaken:titanite_treasure_room",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 30035181,
+    "spacing": 26,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

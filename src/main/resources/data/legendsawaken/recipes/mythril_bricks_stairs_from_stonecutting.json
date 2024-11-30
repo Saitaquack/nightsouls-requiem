@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "legendsawaken:mythril_bricks"
+  },
+  "result": "legendsawaken:mythril_bricks_stairs"
+}

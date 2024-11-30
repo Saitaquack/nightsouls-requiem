@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "legendsawaken:block/mythril_bricks_slab"
+    },
+    "type=double": {
+      "model": "legendsawaken:block/mythril_bricks"
+    },
+    "type=top": {
+      "model": "legendsawaken:block/mythril_bricks_slab_top"
+    }
+  }
+}

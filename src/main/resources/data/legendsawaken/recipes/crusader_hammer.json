@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+  
+    "W": {
+      "item": "legendsawaken:titanite_sword"
+    },
+    
+    "N": {
+      "item": "legendsawaken:night_soul"
+    },
+    
+    "M": {
+      "item": "legendsawaken:mythril_ingot"
+    },
+    
+    "S": {
+      "item": "legendsawaken:shadow_essence"
+    }
+    
+  },
+  "pattern": [
+    "MNM",
+    "NWN",
+    "SNS"
+  ],
+  "result": {
+    "item": "legendsawaken:crusader_hammer"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "legendsawaken:block/titanite_bricks",
+    "top": "legendsawaken:block/titanite_bricks",
+    "side": "legendsawaken:block/titanite_bricks"
+  }
+}

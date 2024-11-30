@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "legendsawaken:block/infernal_bricks",
+    "top": "legendsawaken:block/infernal_bricks",
+    "side": "legendsawaken:block/infernal_bricks"
+  }
+}

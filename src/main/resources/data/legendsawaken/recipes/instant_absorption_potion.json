@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    
+      {"item": "minecraft:glass_bottle"},
+   	  {"item": "minecraft:glowstone_dust"},
+      {"item": "legendsawaken:hardened_gelatin_crystal"}
+    
+  ],
+  "result": {
+    "item": "legendsawaken:instant_absorption_potion"
+  }
+}

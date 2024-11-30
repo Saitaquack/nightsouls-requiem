@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "legendsawaken:raw_mythril_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "legendsawaken:raw_mythril"
+  }
+}

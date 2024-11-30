@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+  	"legendsawaken:infernal_stone",
+    "legendsawaken:petrified_infernal_stone",
+    "legendsawaken:petrified_abyssal_demonite_ore"
+  ]
+}

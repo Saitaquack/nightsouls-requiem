@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "legendsawaken:titanite_ingot"
+    },
+    
+     "S": {
+      "item": "minecraft:stick"
+    },
+    
+     "F": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "T",
+    "S",
+    "F"
+  ],
+  "result": {
+    "item": "legendsawaken:titanite_arrow",
+    "count": 16
+  },
+  "show_notification": true
+}

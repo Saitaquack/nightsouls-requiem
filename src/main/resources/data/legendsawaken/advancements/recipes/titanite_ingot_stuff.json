@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "legendsawaken:titanite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legendsawaken:titanite_block",
+      "legendsawaken:titanite_sword",
+      "legendsawaken:titanite_pickaxe",
+      "legendsawaken:titanite_axe",
+      "legendsawaken:titanite_shovel",
+      "legendsawaken:titanite_hoe",
+      "legendsawaken:titanite_helmet",
+      "legendsawaken:titanite_leggings",
+      "legendsawaken:titanite_boots",
+      "legendsawaken:damage_titanite_chestplate",
+      "legendsawaken:tanking_titanite_chestplate",
+      "legendsawaken:healing_titanite_chestplate",
+      "legendsawaken:speed_titanite_chestplate",
+      "legendsawaken:titanite_bricks",
+      "legendsawaken:titanite_arrow"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "legendsawaken:mythril_ingot"
+    },
+    
+     "S": {
+      "item": "minecraft:stick"
+    },
+    
+     "F": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "M",
+    "S",
+    "F"
+  ],
+  "result": {
+    "item": "legendsawaken:mythril_arrow",
+    "count": 16
+  },
+  "show_notification": true
+}

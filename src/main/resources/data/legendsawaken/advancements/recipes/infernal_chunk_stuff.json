@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "legendsawaken:infernal_chunk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legendsawaken:infernal_scrap_from_smelting_infernal_chunk",
+      "legendsawaken:infernal_scrap_from_blasting_infernal_chunk"
+    ]
+  },
+  "sends_telemetry_event": false
+}

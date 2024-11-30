@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "legendsawaken:cosmolite_ore",
+    "legendsawaken:deepslate_cosmolite_ore",
+    "legendsawaken:demonite_ore",
+    "legendsawaken:deepslate_demonite_ore",
+    "legendsawaken:abyssal_demonite_ore",
+    "legendsawaken:seraphite_ore",
+    "legendsawaken:deepslate_seraphite_ore",
+    "legendsawaken:warpstone_ore",
+    "legendsawaken:deepslate_warpstone_ore"
+   ]
+}

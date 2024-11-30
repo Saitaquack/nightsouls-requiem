@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    
+      {"item": "minecraft:glass_bottle"},
+   	  {"item": "minecraft:redstone"},
+      {"item": "legendsawaken:hardened_gelatin_crystal"}
+    
+  ],
+  "result": {
+    "item": "legendsawaken:instant_healing_potion"
+  }
+}

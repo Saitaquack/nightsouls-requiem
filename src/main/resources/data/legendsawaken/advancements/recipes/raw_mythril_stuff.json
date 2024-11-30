@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "legendsawaken:raw_mythril"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "legendsawaken:raw_mythril_block",
+      "legendsawaken:mythril_ingot_from_smelting_raw_mythril",
+      "legendsawaken:mythril_ingot_from_blasting_raw_mythril"
+    ]
+  },
+  "sends_telemetry_event": false
+}

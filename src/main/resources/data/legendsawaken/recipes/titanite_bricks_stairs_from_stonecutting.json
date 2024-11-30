@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "legendsawaken:titanite_bricks"
+  },
+  "result": "legendsawaken:titanite_bricks_stairs"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "legendsawaken:block/titanite_bricks_slab"
+    },
+    "type=double": {
+      "model": "legendsawaken:block/titanite_bricks"
+    },
+    "type=top": {
+      "model": "legendsawaken:block/titanite_bricks_slab_top"
+    }
+  }
+}
